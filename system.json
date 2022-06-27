@@ -1,0 +1,30 @@
+{
+  "name": "custom",
+  "title": "Système de jeu Custom",
+  "description": "Système de jeu Homemade par Mouny",
+  "version": "1.0",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9.255",
+  "templateVersion": 2,
+  "authors": [
+    {
+      "name": "Eryan"
+    }
+  ],
+  "esmodules": [
+    "system/main.js"
+  ],
+  "styles": [
+    "./css/main.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "socket": true,
+  "gridDistance": 1.5,
+  "gridUnits": "m"
+}
