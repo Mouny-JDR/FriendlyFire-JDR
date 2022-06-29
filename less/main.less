@@ -1,0 +1,72 @@
+@banner-height: 74px;
+
+.characterSheet  {
+    .window-content{
+        padding: unset;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sheet-tabs {
+        height: @banner-height;
+        background-image: url('../ui/character/banderole.webp');
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: stretch;
+        color: white;
+        text-align: center;
+
+        padding-block: 12px;
+        padding-inline: 20px;
+
+        a {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: rgba(72, 41, 11, 0.8);
+            
+            margin-inline: 2px;
+            font-size: 1.5rem;
+
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px black;
+        }
+        a:hover{
+            color:yellow;
+        }
+    } 
+    
+    .sheet-body{
+        flex-grow: 1;
+    
+        > div{
+            &{
+                height: 100%;
+            }
+
+            &:first-of-type{
+                background-image: url('../ui/character/page_perso_jdr_stats_off.webp');
+            }
+
+            &:not(:first-of-type){
+                background-image: url('../ui/character/page_vierge.webp');
+            }
+
+            p{
+                font-size: 30px;
+                color: white;
+                margin: unset;
+                text-align: center;
+                text-shadow: 1px 1px 2px black;
+            }
+        }
+    }
+}
+

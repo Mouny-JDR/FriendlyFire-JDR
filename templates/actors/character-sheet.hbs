@@ -1,8 +1,30 @@
-<form class="{{cssClass}}" autocomplete="off" style="display:flex; flex-direction:column">
-    <div style="width:100%;height:74px;background-color:red">
+<form class="{{cssClass}}" autocomplete="off">
+    <nav id="Banner" class="sheet-tabs" data-group="primary">
+        <a data-tab="character">Personnage</a>
+        <a data-tab="inventory">Inventaire</a>
+        <a data-tab="capacities">Capacités</a>
+        <a data-tab="aptitudes">Aptitudes</a>
+        <a data-tab="equipment">Equipement</a>
+    </nav>    
+    <section class="sheet-body">
+        <div class="tab characterTab" data-group="primary" data-tab="character">
+            {{> "systems/custom/templates/actors/tabs/characterTab.hbs"}}
+        </div>
 
-    </div>    
-    <div style="width:100%;height:1025px;background-color:blue">
+        <div class="tab inventoryTab" data-group="primary" data-tab="inventory">
+            {{> "systems/custom/templates/actors/tabs/inventoryTab.hbs"}}
+        </div>
 
-    </div>
+        <div class="tab capacitiesTab" data-group="primary" data-tab="capacities">
+            {{> "systems/custom/templates/actors/tabs/capacitiesTab.hbs"}}
+        </div>
+
+        <div class="tab aptitudesTab" data-group="primary" data-tab="aptitudes">
+            {{> "systems/custom/templates/actors/tabs/aptitudesTab.hbs"}}
+        </div>
+
+        <div class="tab equipmentTab" data-group="primary" data-tab="equipment">
+            {{> "systems/custom/templates/actors/tabs/equipmentTab.hbs"}}
+        </div>                                
+    </section>
 </form>

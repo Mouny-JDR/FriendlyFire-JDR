@@ -2,8 +2,15 @@ export const preloadHandlebarsTemplates = async function () {
 
     // Define template paths to load
     const templatePaths = [
-        // ACTOR
+        // Character sheet
         "systems/custom/templates/actors/character-sheet.hbs",
+        
+        // Character Tabs
+        "systems/custom/templates/actors/tabs/characterTab.hbs",       
+        "systems/custom/templates/actors/tabs/inventoryTab.hbs",           
+        "systems/custom/templates/actors/tabs/capacitiesTab.hbs",              
+        "systems/custom/templates/actors/tabs/aptitudesTab.hbs",          
+        "systems/custom/templates/actors/tabs/equipmentTab.hbs",
     ];
 
     // Load the template parts
