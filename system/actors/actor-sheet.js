@@ -4,10 +4,11 @@ export class CustomActorSheet extends ActorSheet{
         return mergeObject(super.defaultOptions, {
             classes: ["characterSheet"],
             template: "/systems/custom/templates/actors/character-sheet.hbs",
-            width: 863,
-            height: 1129,
+            width: 647,
+            height: 855,
             tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "character" }],
-            dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }]
+            dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }],
+            resizable: false
         });
     }
 

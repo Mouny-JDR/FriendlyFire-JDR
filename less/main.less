@@ -1,8 +1,10 @@
-@banner-height: 74px;
+@banner-height: 56px;
 
 .characterSheet  {
     .window-content{
         padding: unset;
+        width:647px;
+        height: 825px;
     }
 
     form {
@@ -12,7 +14,7 @@
 
     .sheet-tabs {
         height: @banner-height;
-        background-image: url('../ui/character/banderole.webp');
+        background-image: url('../ui/character/banderole2.webp');
         display:flex;
         flex-direction:row;
         justify-content: space-evenly;
@@ -20,8 +22,8 @@
         color: white;
         text-align: center;
 
-        padding-block: 12px;
-        padding-inline: 20px;
+        padding-block: 10px;
+        padding-inline: 15px;
 
         a {
             flex-grow: 1;
@@ -32,7 +34,7 @@
             background-color: rgba(72, 41, 11, 0.8);
             
             margin-inline: 2px;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
 
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
@@ -52,15 +54,15 @@
             }
 
             &:first-of-type{
-                background-image: url('../ui/character/page_perso_jdr_stats_off.webp');
+                background-image: url('../ui/character/page_perso_jdr_stats_off2.webp');
             }
 
             &:not(:first-of-type){
-                background-image: url('../ui/character/page_vierge.webp');
+                background-image: url('../ui/character/page_vierge2.webp');
             }
 
             p{
-                font-size: 30px;
+                font-size: 1.2rem;
                 color: white;
                 margin: unset;
                 text-align: center;
