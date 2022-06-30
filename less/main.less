@@ -10,6 +10,16 @@
         flex-direction: column;
     }
 
+    .box {
+        background-color: rgba(72, 41, 11, 0.5);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     .sheet-tabs {
         height: @banner-height;
         background-image: url('../ui/character/banderole2.webp');
@@ -44,7 +54,9 @@
     } 
     
     .sheet-body{
-        flex-grow: 1;
+        &{
+            flex-grow: 1;
+        }
     
         > div{
             &{
