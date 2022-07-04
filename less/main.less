@@ -145,27 +145,7 @@
                 height:32px
             }
 
-            .speed {
-                > div:first-of-type{
-                    background-image: url('../ui/character/vitesse.webp');
-                    background-size: contain;
-                }
-
-                > div:last-of-type{
-                    background-image: url('../ui/character/star.webp');
-                    background-size: contain;
-                }
-            }
-
-            .avatar {
-                height: 215px;
-                width: 215px;
-                background-image: url('../ui/character/avatar.webp');
-                background-size: contain;
-                position: absolute;
-                top: calc(50% - 65px);
-                border-radius: 50%;
-            }
+            @import 'tabs/characterTab.less';            
         }
     }
 }

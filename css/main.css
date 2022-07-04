@@ -144,3 +144,151 @@
   top: calc(50% - 65px);
   border-radius: 50%;
 }
+.characterSheet .sheet-body .tab .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .stats input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .rowStats1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  top: -30px;
+}
+.characterSheet .sheet-body .tab .rowStats1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats1 input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .rowStats1 div:first-of-type {
+  right: 30px;
+}
+.characterSheet .sheet-body .tab .rowStats1 div:not(:first-of-type) {
+  left: 30px;
+}
+.characterSheet .sheet-body .tab .rowStats2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  top: -45px;
+}
+.characterSheet .sheet-body .tab .rowStats2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats2 input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .rowStats2 div:first-of-type {
+  right: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats2 div:not(:first-of-type) {
+  left: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  top: -20px;
+}
+.characterSheet .sheet-body .tab .rowStats3 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats3 input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .rowStats3 div:first-of-type {
+  right: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats3 div:not(:first-of-type) {
+  left: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  top: -30px;
+}
+.characterSheet .sheet-body .tab .rowStats4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats4 input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .rowStats4 div:first-of-type {
+  right: 30px;
+}
+.characterSheet .sheet-body .tab .rowStats4 div:not(:first-of-type) {
+  left: 30px;
+}

@@ -1,0 +1,111 @@
+@rowStats1-space: 30px;
+@rowStats2-space: 120px;
+@rowStats3-space: 120px;
+@rowStats4-space: 30px;
+
+.speed {
+    > div:first-of-type{
+        background-image: url('../ui/character/vitesse.webp');
+        background-size: contain;
+    }
+
+    > div:last-of-type{
+        background-image: url('../ui/character/star.webp');
+        background-size: contain;
+    }
+}
+
+.avatar {
+    height: 215px;
+    width: 215px;
+    background-image: url('../ui/character/avatar.webp');
+    background-size: contain;
+    position: absolute;
+    top: calc(50% - 65px);
+    border-radius: 50%;
+}
+
+.stats{
+    &{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        position:relative;                
+    }
+
+    div {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        position: relative;
+    }
+
+    input {
+        text-align: center;
+        background-size: contain;
+        background-position: center;
+        width: 60px;
+        height: 60px;
+        background-image: url('../ui/character/stats2.webp');
+    }
+}
+
+.rowStats1{
+    .stats();
+    
+    top:-30px;
+
+    div:first-of-type{
+        right: @rowStats1-space;
+    }
+
+    div:not(:first-of-type){
+        left: @rowStats1-space;
+    }
+}
+
+.rowStats2{
+    .stats();
+    
+    top:-45px;
+
+    div:first-of-type{
+        right: @rowStats2-space;
+    }
+
+    div:not(:first-of-type){
+        left: @rowStats2-space;
+    }
+}
+
+.rowStats3{
+    .stats();
+    
+    top:-20px;
+
+    div:first-of-type{
+        right: @rowStats3-space;
+    }
+
+    div:not(:first-of-type){
+        left: @rowStats3-space;
+    }
+}
+
+.rowStats4{
+    .stats();
+    
+    top:-30px;
+
+    div:first-of-type{
+        right: @rowStats4-space;
+    }
+
+    div:not(:first-of-type){
+        left: @rowStats4-space;
+    }
+}
