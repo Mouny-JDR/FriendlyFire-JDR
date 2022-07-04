@@ -1,17 +1,85 @@
-<div style="display:flex;flex-direction:column;justify-content:center;align-items:center; padding-inline: 35px;">
-    <div style="font-size:1.3rem;color:white; height:32px">Personnage</div>
-    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; height:200px">
-        <div class="box" style="height:100px; flex-grow:1; margin-inline-end: 60px" >
-            <div style="display:flex; flex-direction:row; justify-content: space-between">
-                <div style="display:flex;flex-direction:row;align-items:center">
-                    <label style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 18px; color: white;">Age</label>
-                    <input type="text" maxlength="3" size="3">
-                </div>
+<div class="tab-title">Personnage</div>
+<div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; height:200px">
+    <div class="box" style="height:fit-content; flex-basis:255px;" >
+        
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between">
+            <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
+                <label>Age :</label>                
+                <input type="text" maxlength="3" placeholder="---" style="width:30px;">
+            </div>
+            <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
+                <label for="taillem">Taille :</label>
+                <input id="taillem" type="text" maxlength="2" placeholder="--" style="width:25px;text-align:end;">
+                <label for="taillecm">m</label>
+                <input id="taillecm" type="text" maxlength="2" placeholder="--" style="width:25px">
+            </div>
+            <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
+                <label>Sexe :</label>
+                <input type="text" maxlength="1" placeholder="-" style="width:10px;text-align:end;">
             </div>
         </div>
 
-        <div class="box" style="height:100px; flex-grow:1;" >
-
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between">
+            <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
+                <label>Race :</label>                
+                <input type="text" maxlength="14" placeholder="------------------" style="width:110px;">
+            </div>
+            <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
+                <label>Poids :</label>
+                <input type="text" maxlength="3" placeholder="---" style="width:30px;text-align:end;">
+                <label class="field" for="taillecm">Kg</label>
+            </div>
         </div>
+
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start">        
+            <label>Nom :</label>                
+            <input type="text" maxlength="24" placeholder="-------------------------------------" style="flex-grow:1">            
+        </div>
+
+        <div style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start">        
+            <label style="align-self:flex-start">Langue :</label>                
+            <textarea maxlength="50" rows="2" style="flex-grow:1; padding-block: unset;" placeholder="--------------------------------------------------"></textarea>
+        </div>        
+
+    </div>
+
+    <div style="display:flex;flex-direction:column;flex-basis:255px;">
+        <div class="box" style="height:fit-content;">
+            <div style="font-size:1rem; color:white; align-self:center;">Capacité Raciale</div>
+            <textarea maxlength="50" rows="4" style="padding-block: unset;" placeholder="--------------------------------------------------"></textarea>
+        </div>
+        <div class="speed" style="display:flex; flex-direction:row; justify-content:flex-end; padding:10px;">
+            <div style="height:80px;width:80px;"></div>
+            <div class="box" style="height:70px;width:70px;justify-content: center; align-items:center">                                              
+                <input type="text" maxlength="3" placeholder="---" style="width:30px;text-align:center">
+                <label>mètres</label>  
+            </div>
+            <div style="height:70px;width:70px;display:flex;flex-direction:row;justify-content: center;align-items: center;">
+                <label style="margin-inline-start: 10px; margin-block-start: 5px;">-</label>  
+                <input type="text" maxlength="2" placeholder="--" style="width:30px;text-align:start;margin-block-start: 5px;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="avatar"></div>
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; width: 100%; position:relative;top:-30px;">
+    <div style="display:flex;flex-direction:column;justify-content: center;align-items: center; margin-inline-end: 85px;">
+        <label>Force</label>
+        <input type="text" maxlength="2" placeholder="--" style="text-align: center; background-size: contain; background-position: center; width: 60px; height: 60px; background-image: url(systems/custom/ui/character/stats2.webp);">
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content: center;align-items: center;">
+        <label>Dextérité</label>
+        <input type="text" maxlength="2" placeholder="--" style="text-align: center; background-size: contain; background-position: center; width: 60px; height: 60px; background-image: url(systems/custom/ui/character/stats2.webp);">
+    </div>
+</div>
+
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; width: 100%; position:relative;top:-45px;">
+    <div style="display:flex;flex-direction:column;justify-content: center;align-items: center; margin-inline-end: 265px;">
+        <label>Constitution</label>
+        <input type="text" maxlength="2" placeholder="--" style="text-align: center; background-size: contain; background-position: center; width: 60px; height: 60px; background-image: url(systems/custom/ui/character/stats2.webp);">
+    </div>
+    <div style="display:flex;flex-direction:column;justify-content: center;align-items: center;">
+        <label>Arcane</label>
+        <input type="text" maxlength="2" placeholder="--" style="text-align: center; background-size: contain; background-position: center; width: 60px; height: 60px; background-image: url(systems/custom/ui/character/stats2.webp);">
     </div>
 </div>
