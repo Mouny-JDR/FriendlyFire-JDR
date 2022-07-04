@@ -1,13 +1,32 @@
 @banner-height: 56px;
 
 .characterSheet  {
+    &{
+        width: 647px !important;
+        height: 855px !important;
+    }
+
+    &.app {
+        max-height: 855px !important;
+    }
+
     .window-content{
         padding: unset;
     }
 
     form {
-        display: flex;
-        flex-direction: column;
+        &{
+            width: 647px !important;
+            height: 855px !important;
+        }
+
+        .wrapper {
+            width: 647px !important;;
+            height: 825px !important;;
+
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .box {

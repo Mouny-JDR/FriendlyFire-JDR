@@ -1,7 +1,20 @@
+.characterSheet {
+  width: 647px !important;
+  height: 855px !important;
+}
+.characterSheet.app {
+  max-height: 855px !important;
+}
 .characterSheet .window-content {
   padding: unset;
 }
 .characterSheet form {
+  width: 647px !important;
+  height: 855px !important;
+}
+.characterSheet form .wrapper {
+  width: 647px !important;
+  height: 825px !important;
   display: flex;
   flex-direction: column;
 }
