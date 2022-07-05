@@ -152,6 +152,9 @@
   width: 100%;
   position: relative;
 }
+.characterSheet .sheet-body .tab .stats label {
+  text-shadow: black 0px 0px 5px;
+}
 .characterSheet .sheet-body .tab .stats div {
   display: flex;
   flex-direction: column;
@@ -176,6 +179,9 @@
   width: 100%;
   position: relative;
   top: -30px;
+}
+.characterSheet .sheet-body .tab .rowStats1 label {
+  text-shadow: black 0px 0px 5px;
 }
 .characterSheet .sheet-body .tab .rowStats1 div {
   display: flex;
@@ -208,6 +214,9 @@
   position: relative;
   top: -45px;
 }
+.characterSheet .sheet-body .tab .rowStats2 label {
+  text-shadow: black 0px 0px 5px;
+}
 .characterSheet .sheet-body .tab .rowStats2 div {
   display: flex;
   flex-direction: column;
@@ -238,6 +247,9 @@
   width: 100%;
   position: relative;
   top: -20px;
+}
+.characterSheet .sheet-body .tab .rowStats3 label {
+  text-shadow: black 0px 0px 5px;
 }
 .characterSheet .sheet-body .tab .rowStats3 div {
   display: flex;
@@ -270,6 +282,9 @@
   position: relative;
   top: -30px;
 }
+.characterSheet .sheet-body .tab .rowStats4 label {
+  text-shadow: black 0px 0px 5px;
+}
 .characterSheet .sheet-body .tab .rowStats4 div {
   display: flex;
   flex-direction: column;
@@ -291,4 +306,11 @@
 }
 .characterSheet .sheet-body .tab .rowStats4 div:not(:first-of-type) {
   left: 30px;
+}
+.characterSheet .sheet-body .tab .level label,
+.characterSheet .sheet-body .tab .level input {
+  color: #fff500;
+}
+.characterSheet .sheet-body .tab .level input::placeholder {
+  color: #fff500;
 }

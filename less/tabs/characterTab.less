@@ -35,6 +35,10 @@
         position:relative;                
     }
 
+    label {
+        text-shadow: black 0px 0px 5px;
+    }
+
     div {
         display:flex;
         flex-direction:column;
@@ -107,5 +111,15 @@
 
     div:not(:first-of-type){
         left: @rowStats4-space;
+    }
+}
+
+.level{
+    label,input{
+        color: rgba(255, 245, 0, 1);
+    }
+
+    input::placeholder{
+        color: rgba(255, 245, 0, 1);
     }
 }
