@@ -281,6 +281,7 @@
   width: 100%;
   position: relative;
   top: -30px;
+  z-index: 10;
 }
 .characterSheet .sheet-body .tab .rowStats4 label {
   text-shadow: black 0px 0px 5px;
