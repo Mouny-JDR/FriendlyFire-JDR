@@ -104,6 +104,9 @@
 .characterSheet .sheet-tabs a:hover {
   color: yellow;
 }
+.characterSheet .sheet-tabs a.active {
+  color: orange;
+}
 .characterSheet .sheet-body {
   flex-grow: 1;
 }
@@ -144,80 +147,59 @@
   top: calc(50% - 65px);
   border-radius: 50%;
 }
-.characterSheet .sheet-body .tab .stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  position: relative;
-}
-.characterSheet .sheet-body .tab .stats label {
-  text-shadow: black 0px 0px 5px;
-}
-.characterSheet .sheet-body .tab .stats div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  position: relative;
-}
-.characterSheet .sheet-body .tab .stats input {
-  text-align: center;
-  background-size: contain;
-  background-position: center;
-  width: 60px;
-  height: 60px;
-  background-image: url('../ui/character/stats2.webp');
-}
-.characterSheet .sheet-body .tab .rowStats1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  position: relative;
+.characterSheet .sheet-body .tab .rowStats-1 {
   top: -30px;
-}
-.characterSheet .sheet-body .tab .rowStats1 label {
-  text-shadow: black 0px 0px 5px;
-}
-.characterSheet .sheet-body .tab .rowStats1 div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 80px;
+  align-items: flex-start;
+  width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats1 input {
-  text-align: center;
-  background-size: contain;
-  background-position: center;
-  width: 60px;
-  height: 60px;
-  background-image: url('../ui/character/stats2.webp');
-}
-.characterSheet .sheet-body .tab .rowStats1 div:first-of-type {
+.characterSheet .sheet-body .tab .rowStats-1 div:first-of-type {
   right: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats1 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab .rowStats-1 div:not(:first-of-type) {
   left: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats2 {
+.characterSheet .sheet-body .tab .rowStats-1 label {
+  text-shadow: black 0px 0px 5px;
+}
+.characterSheet .sheet-body .tab .rowStats-1 div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 100%;
+  align-items: center;
+  width: 80px;
   position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats-1 input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .rowStats-2 {
   top: -45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats2 label {
+.characterSheet .sheet-body .tab .rowStats-2 div:first-of-type {
+  right: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats-2 div:not(:first-of-type) {
+  left: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats-2 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab .rowStats2 div {
+.characterSheet .sheet-body .tab .rowStats-2 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,7 +207,7 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats2 input {
+.characterSheet .sheet-body .tab .rowStats-2 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -233,60 +215,25 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab .rowStats2 div:first-of-type {
-  right: 120px;
-}
-.characterSheet .sheet-body .tab .rowStats2 div:not(:first-of-type) {
-  left: 120px;
-}
-.characterSheet .sheet-body .tab .rowStats3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  position: relative;
+.characterSheet .sheet-body .tab .rowStats-3 {
   top: -20px;
-}
-.characterSheet .sheet-body .tab .rowStats3 label {
-  text-shadow: black 0px 0px 5px;
-}
-.characterSheet .sheet-body .tab .rowStats3 div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  position: relative;
-}
-.characterSheet .sheet-body .tab .rowStats3 input {
-  text-align: center;
-  background-size: contain;
-  background-position: center;
-  width: 60px;
-  height: 60px;
-  background-image: url('../ui/character/stats2.webp');
-}
-.characterSheet .sheet-body .tab .rowStats3 div:first-of-type {
-  right: 120px;
-}
-.characterSheet .sheet-body .tab .rowStats3 div:not(:first-of-type) {
-  left: 120px;
-}
-.characterSheet .sheet-body .tab .rowStats4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   position: relative;
-  top: -30px;
-  z-index: 10;
 }
-.characterSheet .sheet-body .tab .rowStats4 label {
+.characterSheet .sheet-body .tab .rowStats-3 div:first-of-type {
+  right: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats-3 div:not(:first-of-type) {
+  left: 120px;
+}
+.characterSheet .sheet-body .tab .rowStats-3 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab .rowStats4 div {
+.characterSheet .sheet-body .tab .rowStats-3 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -294,7 +241,7 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats4 input {
+.characterSheet .sheet-body .tab .rowStats-3 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -302,11 +249,47 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab .rowStats4 div:first-of-type {
+.characterSheet .sheet-body .tab .rowStats-4 {
+  top: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats-4 div:first-of-type {
   right: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats4 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab .rowStats-4 div:not(:first-of-type) {
   left: 30px;
+}
+.characterSheet .sheet-body .tab .rowStats-4 label {
+  text-shadow: black 0px 0px 5px;
+}
+.characterSheet .sheet-body .tab .rowStats-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .rowStats-4 input {
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -55px;
+  z-index: 10;
 }
 .characterSheet .sheet-body .tab .level label,
 .characterSheet .sheet-body .tab .level input {
@@ -314,4 +297,218 @@
 }
 .characterSheet .sheet-body .tab .level input::placeholder {
   color: #fff500;
+}
+.characterSheet .sheet-body .tab .level > label {
+  margin-block-end: 5px;
+}
+.characterSheet .sheet-body .tab .level > input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  box-shadow: 0px 0px 10px 5px green;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.characterSheet .sheet-body .tab .level .xp {
+  display: flex;
+  flex-direction: row;
+  margin-block-start: 5px;
+}
+.characterSheet .sheet-body .tab .level .xp label {
+  align-self: center;
+}
+.characterSheet .sheet-body .tab .level .xp input {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab .level .xp input:first-of-type {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab .level .xp input:not(:first-of-type) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab .bonusStats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  height: 180px;
+  bottom: 35px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div {
+  width: 255px;
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.characterSheet .sheet-body .tab .bonusStats > div .stat {
+  width: 100%;
+  max-height: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.characterSheet .sheet-body .tab .bonusStats > div .stat img {
+  z-index: 10;
+  border: unset;
+  position: relative;
+  top: -10px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div .stat input {
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  background-color: #aa7a46;
+  box-shadow: 0px 0px 12px 0px black;
+  border-radius: 50%;
+  position: relative;
+  z-index: 20;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks {
+  right: 32px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks > div {
+  width: 100%;
+  max-height: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks > div img {
+  z-index: 10;
+  border: unset;
+  position: relative;
+  top: -10px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks > div input {
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  background-color: #aa7a46;
+  box-shadow: 0px 0px 12px 0px black;
+  border-radius: 50%;
+  position: relative;
+  z-index: 20;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks > div img {
+  height: 60px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks > div input {
+  top: -23px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .perforant img {
+  content: url('../ui/character/perforant.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .tranchant img {
+  content: url('../ui/character/tranchant.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .contondant img {
+  content: url('../ui/character/contondant.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .feu img {
+  content: url('../ui/character/feu.webp');
+  top: -10px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .eau img {
+  content: url('../ui/character/eau.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .nature img {
+  content: url('../ui/character/nature.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .air img {
+  content: url('../ui/character/air.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .occulte img {
+  content: url('../ui/character/occulte.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .spirituel img {
+  content: url('../ui/character/spirituel.webp');
+  height: 40px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .spirituel input {
+  top: -12px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .lumiere img {
+  content: url('../ui/character/lumiere.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.attacks .tenebre img {
+  content: url('../ui/character/tenebre.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense {
+  left: 32px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense > div {
+  width: 100%;
+  max-height: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense > div img {
+  z-index: 10;
+  border: unset;
+  position: relative;
+  top: -10px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense > div input {
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  background-color: #aa7a46;
+  box-shadow: 0px 0px 12px 0px black;
+  border-radius: 50%;
+  position: relative;
+  z-index: 20;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense > div img {
+  height: 70px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense > div input {
+  top: -28px;
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .perforant img {
+  content: url('../ui/character/def_perforant.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .tranchant img {
+  content: url('../ui/character/def_tranchant.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .contondant img {
+  content: url('../ui/character/def_contondant.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .feu img {
+  content: url('../ui/character/def_feu.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .eau img {
+  content: url('../ui/character/def_eau.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .nature img {
+  content: url('../ui/character/def_nature.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .air img {
+  content: url('../ui/character/def_air.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .occulte img {
+  content: url('../ui/character/def_occulte.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .spirituel img {
+  content: url('../ui/character/def_spirituel.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .lumiere img {
+  content: url('../ui/character/def_lumiere.webp');
+}
+.characterSheet .sheet-body .tab .bonusStats > div.defense .tenebre img {
+  content: url('../ui/character/def_tenebre.webp');
 }

@@ -1,7 +1,7 @@
-@rowStats1-space: 30px;
-@rowStats2-space: 120px;
-@rowStats3-space: 120px;
-@rowStats4-space: 30px;
+@rowStatsSpace: 30px, 120px, 120px, 30px;
+@rowStatsTop: -30px, -45px, -20px, -30px;
+
+@statsBonusSpace: 32px;
 
 .speed {
     > div:first-of-type{
@@ -25,97 +25,64 @@
     border-radius: 50%;
 }
 
-.stats{
-    &{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        position:relative;                
-    }
+each(range(length(@rowStatsSpace)), {
+    .rowStats-@{value} {
 
-    label {
-        text-shadow: black 0px 0px 5px;
-    }
+        top: extract(@rowStatsTop, @value);
 
-    div {
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        position: relative;
-    }
-
-    input {
-        text-align: center;
-        background-size: contain;
-        background-position: center;
-        width: 60px;
-        height: 60px;
-        background-image: url('../ui/character/stats2.webp');
-    }
-}
-
-.rowStats1{
-    .stats();
+        div:first-of-type{
+            right: extract(@rowStatsSpace, @value);
+        }
     
-    top:-30px;
+        div:not(:first-of-type){
+            left: extract(@rowStatsSpace, @value);
+        }
 
-    div:first-of-type{
-        right: @rowStats1-space;
-    }
-
-    div:not(:first-of-type){
-        left: @rowStats1-space;
-    }
-}
-
-.rowStats2{
-    .stats();
+        &{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            position:relative;                
+        }
     
-    top:-45px;
-
-    div:first-of-type{
-        right: @rowStats2-space;
-    }
-
-    div:not(:first-of-type){
-        left: @rowStats2-space;
-    }
-}
-
-.rowStats3{
-    .stats();
+        label {
+            text-shadow: black 0px 0px 5px;
+        }
     
-    top:-20px;
-
-    div:first-of-type{
-        right: @rowStats3-space;
-    }
-
-    div:not(:first-of-type){
-        left: @rowStats3-space;
-    }
-}
-
-.rowStats4{
-    .stats();
+        div {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            position: relative;
+        }
     
-    top:-30px;
-    z-index: 10;
-
-    div:first-of-type{
-        right: @rowStats4-space;
-    }
-
-    div:not(:first-of-type){
-        left: @rowStats4-space;
-    }
-}
+        input {
+            text-align: center;
+            background-size: contain;
+            background-position: center;
+            width: 60px;
+            height: 60px;
+            background-image: url('../ui/character/stats2.webp');
+        } 
+        
+    }  
+});
 
 .level{
+    &{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        
+        position: relative;
+        top:-55px;
+        z-index: 10;   
+    }
+
     label,input{
         color: rgba(255, 245, 0, 1);
     }
@@ -123,4 +90,265 @@
     input::placeholder{
         color: rgba(255, 245, 0, 1);
     }
+
+    > label {
+        margin-block-end: 5px;
+    }
+
+    > input {
+        width: 40px;
+        height: 40px;
+        
+        text-align: center;
+        background-size: contain;
+        background-position: center;
+        box-shadow: 0px 0px 10px 5px green;
+        border-radius: 50%;
+        
+        margin-top:5px;
+    }
+
+    .xp {
+        &{
+            display:flex; 
+            flex-direction:row; 
+            margin-block-start: 5px;
+        }
+
+        label {
+            align-self: center;
+        }
+
+        input {
+            width: 50px;
+
+            &:first-of-type{
+                text-align: end;
+            }
+
+            &:not(:first-of-type){
+                text-align: start;
+            }
+        }
+    }
+}
+
+.bonusStats {
+    &{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        height: 180px;
+        bottom: 35px;
+    }
+
+    > div {
+        width:255px;
+        height:100%;
+        position:relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .stat{
+            width:100%;
+            max-height: 60px;
+            display:flex;
+            flex-direction:column;
+            flex-shrink:0;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+
+            img {
+                z-index: 10;
+                border: unset;
+
+                position:relative;
+                top:-10px;
+            }
+
+            input {
+                text-align: center;
+                width: 30px;
+                height: 20px;
+                background-color: rgb(170,122,70);
+                box-shadow: 0px 0px 12px 0px black;
+                border-radius: 50%;
+                position: relative;
+                z-index: 20;
+            }
+        }                
+
+        &.attacks {            
+            & {
+                right: @statsBonusSpace;
+            }
+
+            > div {
+                .stat();
+                img {
+                    height:60px;
+                }
+                input {
+                    top:-23px;
+                }
+            }
+
+            .perforant {                      
+                img {
+                    content: url('../ui/character/perforant.webp');
+                }
+            }
+
+            .tranchant{          
+                img {
+                    content: url('../ui/character/tranchant.webp');
+                }
+            }
+
+            .contondant{          
+                img {
+                    content: url('../ui/character/contondant.webp');
+                }
+            }
+
+            .feu{          
+                img {
+                    content: url('../ui/character/feu.webp');
+                    top:-10px;
+                }
+            }
+            
+            .eau{         
+                img {
+                    content: url('../ui/character/eau.webp');
+                }
+            }
+            
+            .nature{          
+                img {
+                    content: url('../ui/character/nature.webp');
+                }
+            }
+
+            .air{          
+                img {
+                    content: url('../ui/character/air.webp');
+                }
+            }
+            
+            .occulte{          
+                img {
+                    content: url('../ui/character/occulte.webp');
+                }
+            }  
+            
+            .spirituel{          
+                img {
+                    content: url('../ui/character/spirituel.webp');
+                    height: 40px;
+                }
+                input{
+                    top:-12px;
+                }                
+            }  
+            
+            .lumiere{        
+                img {
+                    content: url('../ui/character/lumiere.webp');
+                }
+            } 
+            
+            .tenebre{          
+                img {
+                    content: url('../ui/character/tenebre.webp');
+                }
+            }              
+        }
+
+        &.defense{
+            & {
+                left: @statsBonusSpace;
+            }
+
+            > div {
+                .stat();
+                img {
+                    height:70px;
+                }
+                input {
+                    top:-28px;
+                }
+            }
+
+            .perforant {                      
+                img {
+                    content: url('../ui/character/def_perforant.webp');
+                }
+            }
+
+            .tranchant{          
+                img {
+                    content: url('../ui/character/def_tranchant.webp');
+                }
+            }
+
+            .contondant{          
+                img {
+                    content: url('../ui/character/def_contondant.webp');
+                }
+            }
+
+            .feu{          
+                img {
+                    content: url('../ui/character/def_feu.webp');
+                }
+            }
+            
+            .eau{         
+                img {
+                    content: url('../ui/character/def_eau.webp');
+                }
+            }
+            
+            .nature{          
+                img {
+                    content: url('../ui/character/def_nature.webp');
+                }
+            }
+
+            .air{          
+                img {
+                    content: url('../ui/character/def_air.webp');
+                }
+            }
+            
+            .occulte{          
+                img {
+                    content: url('../ui/character/def_occulte.webp');
+                }
+            }  
+            
+            .spirituel{          
+                img {
+                    content: url('../ui/character/def_spirituel.webp');
+                }             
+            }  
+            
+            .lumiere{        
+                img {
+                    content: url('../ui/character/def_lumiere.webp');
+                }
+            } 
+            
+            .tenebre{          
+                img {
+                    content: url('../ui/character/def_tenebre.webp');
+                }
+            }   
+        }      
+    }    
 }
