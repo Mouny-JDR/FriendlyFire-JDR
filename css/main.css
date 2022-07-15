@@ -130,22 +130,29 @@
   color: white;
   height: 32px;
 }
-.characterSheet .sheet-body .tab .speed > div:first-of-type {
+.characterSheet .sheet-body .tab .attributes {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.characterSheet .sheet-body .tab .attributes .left {
+  height: fit-content;
+  flex-basis: 255px;
+}
+.characterSheet .sheet-body .tab .attributes .right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 255px;
+}
+.characterSheet .sheet-body .tab .attributes .speed > div:first-of-type {
   background-image: url('../ui/character/vitesse.webp');
   background-size: contain;
 }
-.characterSheet .sheet-body .tab .speed > div:last-of-type {
+.characterSheet .sheet-body .tab .attributes .speed > div:last-of-type {
   background-image: url('../ui/character/star.webp');
   background-size: contain;
-}
-.characterSheet .sheet-body .tab .avatar {
-  height: 215px;
-  width: 215px;
-  background-image: url('../ui/character/avatar.webp');
-  background-size: contain;
-  position: absolute;
-  top: calc(50% - 65px);
-  border-radius: 50%;
 }
 .characterSheet .sheet-body .tab .rowStats-1 {
   top: -30px;
@@ -282,6 +289,62 @@
   width: 60px;
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
+}
+.characterSheet .sheet-body .tab .hpmp {
+  width: 100%;
+  top: -30px;
+}
+.characterSheet .sheet-body .tab .hpmp,
+.characterSheet .sheet-body .tab .hpmp .hp,
+.characterSheet .sheet-body .tab .hpmp .mp {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.characterSheet .sheet-body .tab .hpmp .header {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+}
+.characterSheet .sheet-body .tab .hpmp .hp {
+  right: 45px;
+}
+.characterSheet .sheet-body .tab .hpmp .hp label:last-of-type {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  margin-inline-start: 25px;
+  color: red;
+  text-shadow: 0px 0px 5px #000000;
+}
+.characterSheet .sheet-body .tab .hpmp .avatar {
+  z-index: 50;
+  height: 220px;
+  width: 220px;
+  background-image: url('../ui/character/background.webp');
+  background-size: contain;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.characterSheet .sheet-body .tab .hpmp .mp {
+  left: 45px;
+}
+.characterSheet .sheet-body .tab .hpmp .mp label:first-of-type {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  margin-inline-end: 25px;
+  color: blue;
+  text-shadow: 0px 0px 4px #ffffff;
+}
+.characterSheet .sheet-body .tab .hpmp input {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab .hpmp input:first-of-type {
+  text-align: end;
 }
 .characterSheet .sheet-body .tab .level {
   display: flex;

@@ -1,6 +1,6 @@
 <div class="tab-title">Personnage</div>
-<div style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; height:200px">
-    <div class="box" style="height:fit-content; flex-basis:255px;" >
+<div class="attributes">
+    <div class="box left">
         
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between">
             <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
@@ -33,7 +33,7 @@
 
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start">        
             <label>Nom :</label>                
-            <input type="text" maxlength="24" placeholder="-------------------------------------" style="flex-grow:1">            
+            <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------" style="flex-grow:1">            
         </div>
 
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start">        
@@ -43,8 +43,8 @@
 
     </div>
 
-    <div style="display:flex;flex-direction:column;flex-basis:255px;">
-        <div class="box" style="height:fit-content;">
+    <div class="right">
+        <div class="box racial">
             <div style="font-size:1rem; color:white; align-self:center;">Capacité Raciale</div>
             <textarea maxlength="50" rows="4" style="padding-block: unset;" placeholder="--------------------------------------------------"></textarea>
         </div>
@@ -61,7 +61,7 @@
         </div>
     </div>
 </div>
-<div class="avatar"></div>
+
 <div class="rowStats-1">
     <div>
         <label>Force</label>
@@ -84,18 +84,19 @@
     </div>
 </div>
 
-<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; position:relative;top:-30px;height:50px">
-    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%; position: relative; right: 155px;">
-        <input type="text" maxlength="3" placeholder="---" style="width:30px;text-align:end">
-        <label style="width:10px; text-align:center;">/</label>
-        <input type="text" maxlength="3" placeholder="---" style="width:30px; margin-inline-end: 20px;">
-        <label style="align-self: flex-start; font-size: 18px; color: red; text-shadow: 0px 0px 5px #000000; font-weight: bold;">HP</label>
+<div class="hpmp">
+    <div class="hp">
+        <input type="text" maxlength="3" placeholder="---">
+        <label>/</label>
+        <input type="text" maxlength="3" placeholder="---">
+        <label>HP</label>
     </div>
-    <div style="display:flex; flex-direction:row; justify-content: center; align-items: center; position:relative; left:160px; height: 50px;">
-        <label style="margin-inline-end: 20px; align-self: flex-start; font-size: 18px; color: blue; text-shadow: 0px 0px 4px #ffffff; font-weight: bold;">MP</label>
-        <input type="text" maxlength="3" placeholder="---" style="width:30px;text-align:end">
-        <label style="width:10px; text-align:center;">/</label>
-        <input type="text" maxlength="3" placeholder="---" style="width:30px;">
+    <img class="avatar" src="{{actor.img}}" data-edit="img"></img>
+    <div class="mp">
+        <label>MP</label>
+        <input type="text" maxlength="3" placeholder="---">
+        <label>/</label>
+        <input type="text" maxlength="3" placeholder="---">
     </div>
 </div>
 
