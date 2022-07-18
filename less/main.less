@@ -80,6 +80,44 @@
         }
     }
 
+    .field {
+        & {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:flex-start;
+        }
+
+        input {
+            flex-grow: 1;
+        }
+    }
+
+    .fieldArea {
+        & {
+            display:flex;
+            flex-direction:row;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        textarea {
+            flex-grow:1;
+            padding-block: unset;
+        }
+    }
+
+    .multiFields {
+        & {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:space-between;
+        }
+
+        
+    }
+
     .sheet-tabs {
         height: @banner-height;
         background-image: url('../ui/character/banderole2.webp');

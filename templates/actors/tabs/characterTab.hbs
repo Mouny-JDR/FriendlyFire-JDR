@@ -3,7 +3,7 @@
     <div class="box left">
         
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between">
-            <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
+            <div class="field">
                 <label>Age :</label>                
                 <input type="text" maxlength="3" placeholder="---" style="width:30px;">
             </div>
@@ -13,50 +13,50 @@
                 <label for="taillecm">m</label>
                 <input id="taillecm" type="text" maxlength="2" placeholder="--" style="width:25px">
             </div>
-            <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
+            <div class="field">
                 <label>Sexe :</label>
                 <input type="text" maxlength="1" placeholder="-" style="width:10px;text-align:end;">
             </div>
         </div>
 
         <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between">
-            <div style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
+            <div class="field">
                 <label>Race :</label>                
-                <input type="text" maxlength="14" placeholder="------------------" style="width:110px;">
+                <input type="text" maxlength="14" placeholder="------------------">
             </div>
-            <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
+            <div class="field weight">
                 <label>Poids :</label>
-                <input type="text" maxlength="3" placeholder="---" style="width:30px;text-align:end;">
+                <input type="text" maxlength="3" placeholder="---">
                 <label class="field" for="taillecm">Kg</label>
             </div>
         </div>
 
-        <div style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start">        
+        <div class="field">      
             <label>Nom :</label>                
-            <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------" style="flex-grow:1">            
+            <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------">            
         </div>
 
-        <div style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start">        
-            <label style="align-self:flex-start">Langue :</label>                
-            <textarea maxlength="50" rows="2" style="flex-grow:1; padding-block: unset;" placeholder="--------------------------------------------------"></textarea>
+        <div class="fieldArea">
+            <label>Langue :</label>                
+            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
         </div>        
 
     </div>
 
     <div class="right">
         <div class="box racial">
-            <div style="font-size:1rem; color:white; align-self:center;">Capacité Raciale</div>
-            <textarea maxlength="50" rows="4" style="padding-block: unset;" placeholder="--------------------------------------------------"></textarea>
+            <div>Capacité Raciale</div>
+            <textarea maxlength="50" rows="4" placeholder="--------------------------------------------------"></textarea>
         </div>
-        <div class="speed" style="display:flex; flex-direction:row; justify-content:flex-end; padding:10px;">
-            <div style="height:80px;width:80px;"></div>
-            <div class="box" style="height:70px;width:70px;justify-content: center; align-items:center">                                              
-                <input type="text" maxlength="3" placeholder="---" style="width:30px;text-align:center">
+        <div class="speed">
+            <div></div>
+            <div class="box">                                              
+                <input type="text" maxlength="3" placeholder="---">
                 <label>mètres</label>  
             </div>
-            <div style="height:70px;width:70px;display:flex;flex-direction:row;justify-content: center;align-items: center;">
-                <label style="margin-inline-start: 10px; margin-block-start: 5px;">-</label>  
-                <input type="text" maxlength="2" placeholder="--" style="width:30px;text-align:start;margin-block-start: 5px;">
+            <div>
+                <label>-</label>  
+                <input type="text" maxlength="2" placeholder="--">
             </div>
         </div>
     </div>

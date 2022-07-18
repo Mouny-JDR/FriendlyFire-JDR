@@ -77,6 +77,31 @@
   font-size: 16px;
   color: white;
 }
+.characterSheet .field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .field input {
+  flex-grow: 1;
+}
+.characterSheet .fieldArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.characterSheet .fieldArea textarea {
+  flex-grow: 1;
+  padding-block: unset;
+}
+.characterSheet .multiFields {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .characterSheet .sheet-tabs {
   height: 56px;
   background-image: url('../ui/character/banderole2.webp');
@@ -141,18 +166,64 @@
   height: fit-content;
   flex-basis: 255px;
 }
+.characterSheet .sheet-body .tab .attributes .left .weight input {
+  width: 30px;
+  text-align: end;
+}
 .characterSheet .sheet-body .tab .attributes .right {
   display: flex;
   flex-direction: column;
   flex-basis: 255px;
 }
+.characterSheet .sheet-body .tab .attributes .right .racial div {
+  font-size: 1rem;
+  color: white;
+  align-self: center;
+}
+.characterSheet .sheet-body .tab .attributes .right .racial textarea {
+  padding-block: unset;
+}
+.characterSheet .sheet-body .tab .attributes .speed {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.characterSheet .sheet-body .tab .attributes .speed input {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab .attributes .speed .box {
+  height: 70px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab .attributes .speed .box input {
+  text-align: center;
+}
 .characterSheet .sheet-body .tab .attributes .speed > div:first-of-type {
+  height: 80px;
+  width: 80px;
   background-image: url('../ui/character/vitesse.webp');
   background-size: contain;
 }
 .characterSheet .sheet-body .tab .attributes .speed > div:last-of-type {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-image: url('../ui/character/star.webp');
   background-size: contain;
+}
+.characterSheet .sheet-body .tab .attributes .speed > div:last-of-type label {
+  margin-inline-start: 10px;
+  margin-block-start: 5px;
+}
+.characterSheet .sheet-body .tab .attributes .speed > div:last-of-type input {
+  text-align: start;
+  margin-block-start: 5px;
 }
 .characterSheet .sheet-body .tab .rowStats-1 {
   top: -30px;
