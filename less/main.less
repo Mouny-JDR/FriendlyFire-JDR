@@ -112,6 +112,10 @@
             &[maxlength="3"]{
                 width: 30px;
             }
+
+            &[maxlength="5"]{
+                width: 50px;
+            }
         }
     }
 
@@ -140,10 +144,10 @@
             flex-direction:row;
             justify-content: flex-start;
             align-items: flex-start;
+            width: 100%;
         }
 
         textarea {
-            flex-grow:1;
             padding-block: unset;
         }
     }
@@ -203,22 +207,28 @@
             }
 
             &.active {
+                height: 100%;
+
                 display:flex;
                 flex-direction:column;
                 justify-content:flex-start;
                 align-items:center;
                 padding-inline: 35px;
-
-                height: 100%;
             }            
 
-            .tab-title {
+            &-title {
                 font-size:1.3rem;
                 color:white;
                 height:32px
             }
 
-            @import 'tabs/characterTab.less';            
+            &.characterTab{
+                @import 'tabs/characterTab.less';
+            }
+
+            &.inventoryTab{
+                @import 'tabs/inventoryTab.less';            
+            }
         }
     }
 }

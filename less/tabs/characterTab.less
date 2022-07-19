@@ -18,16 +18,10 @@
     }
 
     .left {
-            & {
-                height: fit-content;
-                flex-basis: @attributesSize;
-            }
-
-            .weight {
-                input {
-                    text-align:end;
-                }
-            }
+        & {
+            height: fit-content;
+            flex-basis: @attributesSize;
+        }
     }
 
     .right {
@@ -182,6 +176,7 @@ each(range(length(@rowStatsSpace)), {
 
     .hp{    
         right: @hpmpSpace;
+        .field();
 
         label:last-of-type {
             .header();
@@ -204,6 +199,7 @@ each(range(length(@rowStatsSpace)), {
 
     .mp {
         left: @hpmpSpace; 
+        .field();
 
         label:first-of-type {
             .header();
@@ -212,15 +208,6 @@ each(range(length(@rowStatsSpace)), {
             text-shadow: 0px 0px 4px #ffffff;
         }
     }
-
-    input {
-        width: 30px;
-
-        &:first-of-type{
-            text-align: end;
-        }
-    }
-
 }
 
 .level{
@@ -260,27 +247,7 @@ each(range(length(@rowStatsSpace)), {
     }
 
     .xp {
-        &{
-            display:flex; 
-            flex-direction:row; 
-            margin-block-start: 5px;
-        }
-
-        label {
-            align-self: center;
-        }
-
-        input {
-            width: 50px;
-
-            &:first-of-type{
-                text-align: end;
-            }
-
-            &:not(:first-of-type){
-                text-align: start;
-            }
-        }
+        .field();
     }
 }
 

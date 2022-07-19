@@ -101,6 +101,9 @@
 .characterSheet .field input[maxlength="3"] {
   width: 30px;
 }
+.characterSheet .field input[maxlength="5"] {
+  width: 50px;
+}
 .characterSheet .multiFields {
   display: flex;
   flex-direction: row;
@@ -131,6 +134,9 @@
 .characterSheet .multiFields > div input[maxlength="3"] {
   width: 30px;
 }
+.characterSheet .multiFields > div input[maxlength="5"] {
+  width: 50px;
+}
 .characterSheet .multiFields > div:last-of-type input:first-of-type {
   text-align: end;
 }
@@ -139,9 +145,9 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
 }
 .characterSheet .fieldArea textarea {
-  flex-grow: 1;
   padding-block: unset;
 }
 .characterSheet .sheet-tabs {
@@ -185,70 +191,67 @@
   background-image: url('../ui/character/page_perso_jdr_stats_off2.webp');
 }
 .characterSheet .sheet-body .tab.active {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-inline: 35px;
-  height: 100%;
 }
-.characterSheet .sheet-body .tab .tab-title {
+.characterSheet .sheet-body .tab-title {
   font-size: 1.3rem;
   color: white;
   height: 32px;
 }
-.characterSheet .sheet-body .tab .attributes {
+.characterSheet .sheet-body .tab.characterTab .attributes {
   width: 100%;
   height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.characterSheet .sheet-body .tab .attributes .left {
+.characterSheet .sheet-body .tab.characterTab .attributes .left {
   height: fit-content;
   flex-basis: 255px;
 }
-.characterSheet .sheet-body .tab .attributes .left .weight input {
-  text-align: end;
-}
-.characterSheet .sheet-body .tab .attributes .right {
+.characterSheet .sheet-body .tab.characterTab .attributes .right {
   display: flex;
   flex-direction: column;
   flex-basis: 255px;
 }
-.characterSheet .sheet-body .tab .attributes .right .racial div {
+.characterSheet .sheet-body .tab.characterTab .attributes .right .racial div {
   font-size: 1rem;
   color: white;
   align-self: center;
 }
-.characterSheet .sheet-body .tab .attributes .right .racial textarea {
+.characterSheet .sheet-body .tab.characterTab .attributes .right .racial textarea {
   padding-block: unset;
 }
-.characterSheet .sheet-body .tab .attributes .speed {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 10px;
 }
-.characterSheet .sheet-body .tab .attributes .speed input {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed input {
   width: 30px;
 }
-.characterSheet .sheet-body .tab .attributes .speed .box {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed .box {
   height: 70px;
   width: 70px;
   justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab .attributes .speed .box input {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed .box input {
   text-align: center;
 }
-.characterSheet .sheet-body .tab .attributes .speed > div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:first-of-type {
   height: 80px;
   width: 80px;
   background-image: url('../ui/character/vitesse.webp');
   background-size: contain;
 }
-.characterSheet .sheet-body .tab .attributes .speed > div:last-of-type {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type {
   height: 70px;
   width: 70px;
   display: flex;
@@ -258,15 +261,15 @@
   background-image: url('../ui/character/star.webp');
   background-size: contain;
 }
-.characterSheet .sheet-body .tab .attributes .speed > div:last-of-type label {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type label {
   margin-inline-start: 10px;
   margin-block-start: 5px;
 }
-.characterSheet .sheet-body .tab .attributes .speed > div:last-of-type input {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type input {
   text-align: start;
   margin-block-start: 5px;
 }
-.characterSheet .sheet-body .tab .rowStats-1 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 {
   top: -30px;
   display: flex;
   flex-direction: row;
@@ -275,16 +278,16 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-1 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 div:first-of-type {
   right: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats-1 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type) {
   left: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats-1 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab .rowStats-1 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +295,7 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-1 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -300,7 +303,7 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab .rowStats-2 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 {
   top: -45px;
   display: flex;
   flex-direction: row;
@@ -309,16 +312,16 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-2 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 div:first-of-type {
   right: 120px;
 }
-.characterSheet .sheet-body .tab .rowStats-2 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type) {
   left: 120px;
 }
-.characterSheet .sheet-body .tab .rowStats-2 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab .rowStats-2 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -326,7 +329,7 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-2 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -334,7 +337,7 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab .rowStats-3 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 {
   top: -20px;
   display: flex;
   flex-direction: row;
@@ -343,16 +346,16 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-3 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 div:first-of-type {
   right: 120px;
 }
-.characterSheet .sheet-body .tab .rowStats-3 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type) {
   left: 120px;
 }
-.characterSheet .sheet-body .tab .rowStats-3 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab .rowStats-3 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -360,7 +363,7 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-3 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -368,7 +371,7 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab .rowStats-4 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 {
   top: -30px;
   display: flex;
   flex-direction: row;
@@ -377,16 +380,16 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-4 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 div:first-of-type {
   right: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats-4 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type) {
   left: 30px;
 }
-.characterSheet .sheet-body .tab .rowStats-4 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab .rowStats-4 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +397,7 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab .rowStats-4 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -402,13 +405,13 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab .hpmp {
+.characterSheet .sheet-body .tab.characterTab .hpmp {
   width: 100%;
   top: -30px;
 }
-.characterSheet .sheet-body .tab .hpmp,
-.characterSheet .sheet-body .tab .hpmp .hp,
-.characterSheet .sheet-body .tab .hpmp .mp {
+.characterSheet .sheet-body .tab.characterTab .hpmp,
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp,
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp {
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -416,15 +419,40 @@
   align-items: center;
   position: relative;
 }
-.characterSheet .sheet-body .tab .hpmp .header {
+.characterSheet .sheet-body .tab.characterTab .hpmp .header {
   align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
 }
-.characterSheet .sheet-body .tab .hpmp .hp {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp {
   right: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab .hpmp .hp label:last-of-type {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp label:last-of-type {
   align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
@@ -432,7 +460,7 @@
   color: red;
   text-shadow: 0px 0px 5px #000000;
 }
-.characterSheet .sheet-body .tab .hpmp .avatar {
+.characterSheet .sheet-body .tab.characterTab .hpmp .avatar {
   z-index: 50;
   height: 220px;
   width: 220px;
@@ -441,10 +469,35 @@
   object-fit: contain;
   border-radius: 50%;
 }
-.characterSheet .sheet-body .tab .hpmp .mp {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp {
   left: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab .hpmp .mp label:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp label:first-of-type {
   align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
@@ -452,13 +505,7 @@
   color: blue;
   text-shadow: 0px 0px 4px #ffffff;
 }
-.characterSheet .sheet-body .tab .hpmp input {
-  width: 30px;
-}
-.characterSheet .sheet-body .tab .hpmp input:first-of-type {
-  text-align: end;
-}
-.characterSheet .sheet-body .tab .level {
+.characterSheet .sheet-body .tab.characterTab .level {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,17 +513,17 @@
   top: -55px;
   z-index: 10;
 }
-.characterSheet .sheet-body .tab .level label,
-.characterSheet .sheet-body .tab .level input {
+.characterSheet .sheet-body .tab.characterTab .level label,
+.characterSheet .sheet-body .tab.characterTab .level input {
   color: #fff500;
 }
-.characterSheet .sheet-body .tab .level input::placeholder {
+.characterSheet .sheet-body .tab.characterTab .level input::placeholder {
   color: #fff500;
 }
-.characterSheet .sheet-body .tab .level > label {
+.characterSheet .sheet-body .tab.characterTab .level > label {
   margin-block-end: 5px;
 }
-.characterSheet .sheet-body .tab .level > input {
+.characterSheet .sheet-body .tab.characterTab .level > input {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -486,24 +533,34 @@
   border-radius: 50%;
   margin-top: 5px;
 }
-.characterSheet .sheet-body .tab .level .xp {
+.characterSheet .sheet-body .tab.characterTab .level .xp {
   display: flex;
   flex-direction: row;
-  margin-block-start: 5px;
+  align-items: center;
+  justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab .level .xp label {
-  align-self: center;
+.characterSheet .sheet-body .tab.characterTab .level .xp input {
+  flex-grow: 1;
 }
-.characterSheet .sheet-body .tab .level .xp input {
-  width: 50px;
-}
-.characterSheet .sheet-body .tab .level .xp input:first-of-type {
-  text-align: end;
-}
-.characterSheet .sheet-body .tab .level .xp input:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab .bonusStats {
+.characterSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.characterTab .bonusStats {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -512,7 +569,7 @@
   height: 180px;
   bottom: 35px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div {
   width: 255px;
   height: 100%;
   position: relative;
@@ -520,7 +577,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-.characterSheet .sheet-body .tab .bonusStats > div .stat {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat {
   width: 100%;
   max-height: 60px;
   display: flex;
@@ -530,13 +587,13 @@
   align-items: center;
   overflow: visible;
 }
-.characterSheet .sheet-body .tab .bonusStats > div .stat img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat img {
   z-index: 10;
   border: unset;
   position: relative;
   top: -10px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div .stat input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat input {
   text-align: center;
   width: 30px;
   height: 20px;
@@ -546,10 +603,10 @@
   position: relative;
   z-index: 20;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks {
   right: 32px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks > div {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div {
   width: 100%;
   max-height: 60px;
   display: flex;
@@ -559,13 +616,13 @@
   align-items: center;
   overflow: visible;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img {
   z-index: 10;
   border: unset;
   position: relative;
   top: -10px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input {
   text-align: center;
   width: 30px;
   height: 20px;
@@ -575,54 +632,54 @@
   position: relative;
   z-index: 20;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img {
   height: 60px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input {
   top: -23px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .perforant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .perforant img {
   content: url('../ui/character/perforant.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .tranchant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tranchant img {
   content: url('../ui/character/tranchant.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .contondant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .contondant img {
   content: url('../ui/character/contondant.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .feu img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .feu img {
   content: url('../ui/character/feu.webp');
   top: -10px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .eau img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .eau img {
   content: url('../ui/character/eau.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .nature img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .nature img {
   content: url('../ui/character/nature.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .air img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .air img {
   content: url('../ui/character/air.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .occulte img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .occulte img {
   content: url('../ui/character/occulte.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .spirituel img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel img {
   content: url('../ui/character/spirituel.webp');
   height: 40px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .spirituel input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel input {
   top: -12px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .lumiere img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .lumiere img {
   content: url('../ui/character/lumiere.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.attacks .tenebre img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tenebre img {
   content: url('../ui/character/tenebre.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense {
   left: 32px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense > div {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div {
   width: 100%;
   max-height: 60px;
   display: flex;
@@ -632,13 +689,13 @@
   align-items: center;
   overflow: visible;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img {
   z-index: 10;
   border: unset;
   position: relative;
   top: -10px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input {
   text-align: center;
   width: 30px;
   height: 20px;
@@ -648,42 +705,42 @@
   position: relative;
   z-index: 20;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img {
   height: 70px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input {
   top: -28px;
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .perforant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .perforant img {
   content: url('../ui/character/def_perforant.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .tranchant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tranchant img {
   content: url('../ui/character/def_tranchant.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .contondant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .contondant img {
   content: url('../ui/character/def_contondant.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .feu img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .feu img {
   content: url('../ui/character/def_feu.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .eau img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .eau img {
   content: url('../ui/character/def_eau.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .nature img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .nature img {
   content: url('../ui/character/def_nature.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .air img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .air img {
   content: url('../ui/character/def_air.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .occulte img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .occulte img {
   content: url('../ui/character/def_occulte.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .spirituel img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .spirituel img {
   content: url('../ui/character/def_spirituel.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .lumiere img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .lumiere img {
   content: url('../ui/character/def_lumiere.webp');
 }
-.characterSheet .sheet-body .tab .bonusStats > div.defense .tenebre img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tenebre img {
   content: url('../ui/character/def_tenebre.webp');
 }
