@@ -86,6 +86,54 @@
 .characterSheet .field input {
   flex-grow: 1;
 }
+.characterSheet .field input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .field input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .field input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .field input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .field input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .multiFields {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.characterSheet .multiFields > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .multiFields > div input {
+  flex-grow: 1;
+}
+.characterSheet .multiFields > div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .multiFields > div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .multiFields > div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .multiFields > div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .multiFields > div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .multiFields > div:last-of-type input:first-of-type {
+  text-align: end;
+}
 .characterSheet .fieldArea {
   display: flex;
   flex-direction: row;
@@ -95,12 +143,6 @@
 .characterSheet .fieldArea textarea {
   flex-grow: 1;
   padding-block: unset;
-}
-.characterSheet .multiFields {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 .characterSheet .sheet-tabs {
   height: 56px;
@@ -167,7 +209,6 @@
   flex-basis: 255px;
 }
 .characterSheet .sheet-body .tab .attributes .left .weight input {
-  width: 30px;
   text-align: end;
 }
 .characterSheet .sheet-body .tab .attributes .right {

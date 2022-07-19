@@ -89,7 +89,48 @@
         }
 
         input {
-            flex-grow: 1;
+            & {
+                flex-grow: 1;                
+            }
+            
+            &:first-of-type:nth-last-of-type(1){
+                text-align: start;
+            }
+
+            &:first-of-type:nth-last-of-type(2){
+                text-align: end;
+            }            
+
+            &[maxlength="1"]{
+                width: 10px;
+            }
+
+            &[maxlength="2"]{
+                width: 25px;
+            }
+
+            &[maxlength="3"]{
+                width: 30px;
+            }
+        }
+    }
+
+    .multiFields {
+        & {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            justify-content:space-between;
+        }
+
+        > div {
+            .field();            
+
+            &:last-of-type{
+                input:first-of-type{
+                    text-align: end;
+                }
+            }
         }
     }
 
@@ -105,17 +146,6 @@
             flex-grow:1;
             padding-block: unset;
         }
-    }
-
-    .multiFields {
-        & {
-            display:flex;
-            flex-direction:row;
-            align-items:center;
-            justify-content:space-between;
-        }
-
-        
     }
 
     .sheet-tabs {
