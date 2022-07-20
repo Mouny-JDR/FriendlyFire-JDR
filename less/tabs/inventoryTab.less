@@ -1,0 +1,32 @@
+.item {
+    & {
+        width:100%;
+        max-height:55px;
+        background-color: rgba(176, 125, 70, 0.65);
+        border-radius: 5px;
+        margin-block: 2px;
+        padding-block-end: 5px;
+
+        display: flex;
+        flex-direction: row;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    input,input::placeholder,label,textarea,textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .multiFields {
+        > div:first-of-type {
+            height: 20px;
+        }
+    }
+
+    .fieldArea {
+        .textarea {
+            min-height: 30px;
+        }
+    }
+}

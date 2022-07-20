@@ -27,27 +27,27 @@
         </div>
         <div class="box" style="flex-grow: 1; overflow-y: scroll; overflow-x: hidden; padding-block: 2px; flex-basis:120px; flex-grow:0; flex-shrink:0;">
             
-            <div style="width:100%;height:55px; background-color: rgba(176, 125, 70, 0.65); border-radius: 5px; margin-block: 2px; flex-basis: 50px; flex-grow: 0; flex-shrink: 0; display: flex; flex-direction: row; padding-block-end: 5px;">
+            <div class="item">
                 <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start; padding-inline: 5px; flex-grow:1;">
-                    <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between; height:20px; width:100%";>
-                        <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
-                            <label style="font-size:12px;">Nom :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------" style="font-size:12px;">
+                    <div class="multiFields">
+                        <div>
+                            <label>Nom :</label>                
+                            <input type="text" maxlength="25" placeholder="-------------------------">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-                            <label style="font-size:12px;">Prix :</label>
-                            <input type="text" maxlength="3" placeholder="---" style="font-size:12px; width:30px;">                                                
+                        <div>
+                            <label>Prix :</label>
+                            <input type="text" maxlength="3" placeholder="---">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
-                            <label style="font-size:12px;">Poids :</label>
-                            <input type="text" maxlength="2" placeholder="--" style="font-size:12px; width:20px; text-align: center;">
-                            <label style="font-size:12px; text-align: start;">kg</label>
+                        <div>
+                            <label>Poids :</label>
+                            <input type="text" maxlength="2" placeholder="--">
+                            <label style="text-align: start;">kg</label>
                         </div>
                     </div>
 
-                    <div class="fieldArea"><!-- style="display:flex; flex-direction: row; width:100%">-->
-                        <label style="font-size:12px;">Effets :</label> <!-- align-self: flex-start">-->
-                        <textarea maxlength="50" rows="2" style="font-size:12px; min-height:30px" placeholder="--------------------------------------------------"></textarea> <!-- flex-grow:1; padding-block: unset; min-height: 30px;"-->
+                    <div class="fieldArea">
+                        <label>Effets :</label>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                     </div>
                 </div>
 
