@@ -759,17 +759,55 @@
 .characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tenebre img {
   content: url('../ui/character/def_tenebre.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .consumable {
-  flex-grow: 2;
-  height: 100%;
+.characterSheet .sheet-body .tab.inventoryTab .wallet {
+  width: 180px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .consumable .header div {
-  background-image: url('../ui/character/consommable.webp');
+.characterSheet .sheet-body .tab.inventoryTab .wallet > div:first-of-type {
+  height: 50px;
+  width: 50px;
+  background-image: url('../ui/character/piece.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .consumable .container {
-  flex-basis: 120px;
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box {
+  height: 80px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="5"] {
+  width: 50px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .header {
   display: flex;
@@ -788,6 +826,25 @@
   align-self: center;
   margin-inline-start: 10px;
   font-size: 18px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .consumables,
+.characterSheet .sheet-body .tab.inventoryTab .general {
+  flex-grow: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.characterSheet .sheet-body .tab.inventoryTab .consumables .header div {
+  background-image: url('../ui/character/consommable.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .consumables .container {
+  flex-basis: 120px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .general .header div {
+  background-image: url('../ui/character/lanterne.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .general .container {
+  flex-basis: 120px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .item {
   width: 100%;
@@ -808,13 +865,13 @@
 .characterSheet .sheet-body .tab.inventoryTab .item textarea::placeholder {
   font-size: 12px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .item .multiFields > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .item .multiFields {
   height: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .item .fieldArea .textarea {
+.characterSheet .sheet-body .tab.inventoryTab .item .fieldArea textarea {
   min-height: 30px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .item > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .item-data {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -822,7 +879,7 @@
   padding-inline: 5px;
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .item > div:last-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .item-actions {
   flex-basis: 20px;
   flex-shrink: 0;
   flex-grow: 0;

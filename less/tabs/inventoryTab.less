@@ -1,20 +1,40 @@
-.consumable {
-    flex-grow:2;
-    height:100%;
+.wallet {
+    & {
+        width:180px;
+        height:100px;
     
-    display:flex;
-    flex-direction: column;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-    .header {
-        div {
-            background-image: url('../ui/character/consommable.webp');
+    > div {
+        &:first-of-type {
+            height:50px;
+            width:50px;
+            background-image: url('../ui/character/piece.webp');
+            background-size:cover;
+            background-repeat: no-repeat;
+            position:relative;
+            right:10px    
         }
     }
+    
+    .box {
+        & {
+            height: 80px;
+            width: 100px;
 
-    .container {
-        flex-basis: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            .field();
+        }
     }
-}   
+}
 
 .header {
     & {
@@ -39,6 +59,40 @@
     }
 }
 
+.consumables,.general {
+    & {
+        flex-grow:2;
+        height:100%;
+    
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+.consumables {
+    .header {
+        div {
+            background-image: url('../ui/character/consommable.webp');
+        }
+    }
+
+    .container {
+        flex-basis: 120px;
+    }
+}
+
+.general{
+    .header {
+        div {
+            background-image: url('../ui/character/lanterne.webp');
+        }
+    }
+
+    .container {
+        flex-basis: 120px;
+    }
+}
+
 .item {
     & {
         width:100%;
@@ -60,35 +114,31 @@
     }
 
     .multiFields {
-        > div:first-of-type {
-            height: 20px;
-        }
+        height: 20px;
     }
 
     .fieldArea {
-        .textarea {
+        textarea {
             min-height: 30px;
-        }
+        }        
     }
 
-    > div {
-        &:first-of-type {
-            display:flex;
-            flex-direction:column;
-            align-items:flex-start;
-            justify-content:flex-start;
-            padding-inline: 5px;
-            flex-grow:1;
-        }
-        
-        &:last-of-type {
-            flex-basis:20px;
-            flex-shrink:0;
-            flex-grow:0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-block-start: 5px;
-        }
+    &-data {
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:flex-start;
+        padding-inline: 5px;
+        flex-grow:1;
+    }
+
+    &-actions {
+        flex-basis:20px;
+        flex-shrink:0;
+        flex-grow:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-block-start: 5px;
     }
 }

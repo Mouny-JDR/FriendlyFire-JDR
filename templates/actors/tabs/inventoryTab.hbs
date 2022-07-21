@@ -1,26 +1,26 @@
 <div class="tab-title">Inventaire</div>
 <div style="display: flex; flex-direction:row; height:165px; width: 100%; align-items: center;">
-    <div style="width:180px; height:100px; display:flex; flex-direction: row; justify-content: center; align-items: center;">
-        <div style="height:50px; width:50px; background-image: url('systems/custom/ui/character/piece.webp'); background-size:cover; background-repeat: no-repeat; position:relative; right:10px"></div>
-        <div class="box" style="height: 80px; width:100px; display:flex; flex-direction:column; justify-content: center; align-items: flex-start; padding: 10px; ">
-            <div style="display:flex; flex-direction:row; width: 100%; justify-content: center;">
-                <label style="align-self: center">PO</label>
-                <input type="text" maxlength="3" placeholder="---" style="width:30px;">
+    <div class="wallet">
+        <div></div>
+        <div class="box">
+            <div>
+                <label>PO</label>
+                <input type="text" maxlength="3" placeholder="---">
             </div>
 
-            <div style="display:flex; flex-direction:row; width: 100%; justify-content: center;">
-                <label style="align-self: center">PA</label>
-                <input type="text" maxlength="3" placeholder="---" style="width:30px;">
+            <div>
+                <label>PA</label>
+                <input type="text" maxlength="3" placeholder="---">
             </div>
 
-            <div style="display:flex; flex-direction:row; width: 100%; justify-content: center;">
-                <label style="align-self: center">PC</label>
-                <input type="text" maxlength="3" placeholder="---" style="width:30px;">
-            </div>                        
+            <div>
+                <label>PC</label>
+                <input type="text" maxlength="3" placeholder="---">
+            </div>            
         </div>
     </div>
 
-    <div class="consumable">
+    <div class="consumables">
         <div class="header">
             <div></div>
             <label>Consommables</label>
@@ -28,7 +28,7 @@
 
         <div class="container">            
             <div class="item">
-                <div>
+                <div class="item-data">
                     <div class="multiFields">
                         <div>
                             <label>Nom :</label>                
@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
@@ -59,7 +59,7 @@
 
 <!-- Mock Data -->
             <div class="item">
-                <div>
+                <div class="item-data">
                     <div class="multiFields">
                         <div>
                             <label>Nom :</label>                
@@ -82,13 +82,13 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
 
             <div class="item">
-                <div>
+                <div class="item-data">
                     <div class="multiFields">
                         <div>
                             <label>Nom :</label>                
@@ -111,13 +111,13 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
 
             <div class="item">
-                <div>
+                <div class="item-data">
                     <div class="multiFields">
                         <div>
                             <label>Nom :</label>                
@@ -140,69 +140,10 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
-                </div>
-            </div>                        
-
-<!--
-            <div style="width:100%;height:55px; background-color: rgba(176, 125, 70, 0.65); border-radius: 5px; margin-block: 2px; flex-basis: 50px; flex-grow: 0; flex-shrink: 0; display: flex; flex-direction: row; padding-block-end: 5px;">
-                <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start; padding-inline: 5px; flex-grow:1;">
-                    <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between; height:20px; width:100%";>
-                        <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
-                            <label style="font-size:12px;">Nom :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------" style="font-size:12px;">
-                        </div>
-                        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-                            <label style="font-size:12px;">Prix :</label>
-                            <input type="text" maxlength="3" placeholder="---" style="font-size:12px; width:30px;">                                                
-                        </div>
-                        <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
-                            <label style="font-size:12px;">Poids :</label>
-                            <input type="text" maxlength="2" placeholder="--" style="font-size:12px; width:20px; text-align: center;">
-                            <label style="font-size:12px; text-align: start;">kg</label>
-                        </div>
-                    </div>
-
-                    <div style="display:flex; flex-direction: row; width:100%">
-                        <label style="font-size:12px; align-self: flex-start">Effets :</label>
-                        <textarea maxlength="50" rows="2" style="font-size:12px; flex-grow:1; padding-block: unset; min-height: 30px;" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div style="flex-basis:20px; flex-shrink:0; flex-grow:0; display: flex; flex-direction: row; justify-content: center; padding-block-start: 5px;">
-                    <i class="fas fa-times"></i>                    
                 </div>
             </div>
-
-            <div style="width:100%;height:55px; background-color: rgba(176, 125, 70, 0.65); border-radius: 5px; margin-block: 2px; flex-basis: 50px; flex-grow: 0; flex-shrink: 0; display: flex; flex-direction: row; padding-block-end: 5px;">
-                <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start; padding-inline: 5px; flex-grow:1;">
-                    <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between; height:20px; width:100%";>
-                        <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
-                            <label style="font-size:12px;">Nom :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------" style="font-size:12px;">
-                        </div>
-                        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-                            <label style="font-size:12px;">Prix :</label>
-                            <input type="text" maxlength="3" placeholder="---" style="font-size:12px; width:30px;">                                                
-                        </div>
-                        <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
-                            <label style="font-size:12px;">Poids :</label>
-                            <input type="text" maxlength="2" placeholder="--" style="font-size:12px; width:20px; text-align: center;">
-                            <label style="font-size:12px; text-align: start;">kg</label>
-                        </div>
-                    </div>
-
-                    <div style="display:flex; flex-direction: row; width:100%">
-                        <label style="font-size:12px; align-self: flex-start">Effets :</label>
-                        <textarea maxlength="50" rows="2" style="font-size:12px; flex-grow:1; padding-block: unset; min-height: 30px;" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div style="flex-basis:20px; flex-shrink:0; flex-grow:0; display: flex; flex-direction: row; justify-content: center; padding-block-start: 5px;">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>-->
         </div>
     </div>    
 </div>
@@ -252,104 +193,128 @@
         </div>
     </div>
 
-
-    <div style="flex-grow:2; height:100%; display:flex; flex-direction: column">
-        <div style="display:flex; flex-direction:row; flex-basis:40px; flex-grow:0; flex-shrink:0;">
-            <div style="height:40px; width:40px; background-image: url('systems/custom/ui/character/lanterne.webp'); background-size:cover; background-repeat: no-repeat;">
-            </div>
-            <label style="align-self: center; margin-inline-start: 10px; font-size: 18px;">Général</label>
+    <div class="general">
+        <div class="header">
+            <div></div>
+            <label>Général</label>
         </div>
-        <div class="box" style="flex-grow: 1; overflow-y: scroll; overflow-x: hidden; padding-block: 2px; flex-basis:120px; flex-grow:0; flex-shrink:0;">
-            
-            <div style="width:100%;height:55px; background-color: rgba(176, 125, 70, 0.65); border-radius: 5px; margin-block: 2px; flex-basis: 50px; flex-grow: 0; flex-shrink: 0; display: flex; flex-direction: row; padding-block-end: 5px;">
-                <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start; padding-inline: 5px; flex-grow:1;">
-                    <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between; height:20px; width:100%";>
-                        <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
-                            <label style="font-size:12px;">Nom :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------" style="font-size:12px;">
+
+        <div class="container">            
+            <div class="item">
+                <div class="item-data">
+                    <div class="multiFields">
+                        <div>
+                            <label>Nom :</label>                
+                            <input type="text" maxlength="25" placeholder="-------------------------">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-                            <label style="font-size:12px;">Prix :</label>
-                            <input type="text" maxlength="3" placeholder="---" style="font-size:12px; width:30px;">                                                
+                        <div>
+                            <label>Prix :</label>
+                            <input type="text" maxlength="3" placeholder="---">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
-                            <label style="font-size:12px;">Poids :</label>
-                            <input type="text" maxlength="2" placeholder="--" style="font-size:12px; width:20px; text-align: center;">
-                            <label style="font-size:12px; text-align: start;">kg</label>
+                        <div>
+                            <label>Poids :</label>
+                            <input type="text" maxlength="2" placeholder="--">
+                            <label>kg</label>
                         </div>
                     </div>
 
-                    <div style="display:flex; flex-direction: row; width:100%">
-                        <label style="font-size:12px; align-self: flex-start">Effets :</label>
-                        <textarea maxlength="50" rows="2" style="font-size:12px; flex-grow:1; padding-block: unset; min-height: 30px;" placeholder="--------------------------------------------------"></textarea>
+                    <div class="fieldArea">
+                        <label>Effets :</label>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                     </div>
                 </div>
 
-                <div style="flex-basis:20px; flex-shrink:0; flex-grow:0; display: flex; flex-direction: row; justify-content: center; padding-block-start: 5px;">
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
-                    <!--<i class="fas fa-user-shield"></i>-->
                 </div>
             </div>
 
 
-    <!-- Mock Data -->
-            <div style="width:100%;height:55px; background-color: rgba(176, 125, 70, 0.65); border-radius: 5px; margin-block: 2px; flex-basis: 50px; flex-grow: 0; flex-shrink: 0; display: flex; flex-direction: row; padding-block-end: 5px;">
-                <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start; padding-inline: 5px; flex-grow:1;">
-                    <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between; height:20px; width:100%";>
-                        <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
-                            <label style="font-size:12px;">Nom :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------" style="font-size:12px;">
+<!-- Mock Data -->
+            <div class="item">
+                <div class="item-data">
+                    <div class="multiFields">
+                        <div>
+                            <label>Nom :</label>                
+                            <input type="text" maxlength="25" placeholder="-------------------------">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-                            <label style="font-size:12px;">Prix :</label>
-                            <input type="text" maxlength="3" placeholder="---" style="font-size:12px; width:30px;">                                                
+                        <div>
+                            <label>Prix :</label>
+                            <input type="text" maxlength="3" placeholder="---">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
-                            <label style="font-size:12px;">Poids :</label>
-                            <input type="text" maxlength="2" placeholder="--" style="font-size:12px; width:20px; text-align: center;">
-                            <label style="font-size:12px; text-align: start;">kg</label>
+                        <div>
+                            <label>Poids :</label>
+                            <input type="text" maxlength="2" placeholder="--">
+                            <label>kg</label>
                         </div>
                     </div>
 
-                    <div style="display:flex; flex-direction: row; width:100%">
-                        <label style="font-size:12px; align-self: flex-start">Effets :</label>
-                        <textarea maxlength="50" rows="2" style="font-size:12px; flex-grow:1; padding-block: unset; min-height: 30px;" placeholder="--------------------------------------------------"></textarea>
+                    <div class="fieldArea">
+                        <label>Effets :</label>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                     </div>
                 </div>
 
-                <div style="flex-basis:20px; flex-shrink:0; flex-grow:0; display: flex; flex-direction: row; justify-content: center; padding-block-start: 5px;">
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
-                    <!--<i class="fas fa-user-shield"></i>-->
                 </div>
             </div>
 
-            <div style="width:100%;height:55px; background-color: rgba(176, 125, 70, 0.65); border-radius: 5px; margin-block: 2px; flex-basis: 50px; flex-grow: 0; flex-shrink: 0; display: flex; flex-direction: row; padding-block-end: 5px;">
-                <div style="display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start; padding-inline: 5px; flex-grow:1;">
-                    <div style="display:flex;flex-direction:row;align-items:center;justify-content:space-between; height:20px; width:100%";>
-                        <div class="field" style="display:flex;flex-direction:row;justify-content:flex-start;align-items:center">
-                            <label style="font-size:12px;">Nom :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------" style="font-size:12px;">
+            <div class="item">
+                <div class="item-data">
+                    <div class="multiFields">
+                        <div>
+                            <label>Nom :</label>                
+                            <input type="text" maxlength="25" placeholder="-------------------------">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center">
-                            <label style="font-size:12px;">Prix :</label>
-                            <input type="text" maxlength="3" placeholder="---" style="font-size:12px; width:30px;">                                                
+                        <div>
+                            <label>Prix :</label>
+                            <input type="text" maxlength="3" placeholder="---">
                         </div>
-                        <div style="display:flex;flex-direction:row;justify-content:flex-end;align-items:center">
-                            <label style="font-size:12px;">Poids :</label>
-                            <input type="text" maxlength="2" placeholder="--" style="font-size:12px; width:20px; text-align: center;">
-                            <label style="font-size:12px; text-align: start;">kg</label>
+                        <div>
+                            <label>Poids :</label>
+                            <input type="text" maxlength="2" placeholder="--">
+                            <label>kg</label>
                         </div>
                     </div>
 
-                    <div style="display:flex; flex-direction: row; width:100%">
-                        <label style="font-size:12px; align-self: flex-start">Effets :</label>
-                        <textarea maxlength="50" rows="2" style="font-size:12px; flex-grow:1; padding-block: unset; min-height: 30px;" placeholder="--------------------------------------------------"></textarea>
+                    <div class="fieldArea">
+                        <label>Effets :</label>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                     </div>
                 </div>
 
-                <div style="flex-basis:20px; flex-shrink:0; flex-grow:0; display: flex; flex-direction: row; justify-content: center; padding-block-start: 5px;">
+                <div class="item-actions">
                     <i class="fas fa-times"></i>
-                    <!--<i class="fas fa-user-shield"></i>-->
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-data">
+                    <div class="multiFields">
+                        <div>
+                            <label>Nom :</label>                
+                            <input type="text" maxlength="25" placeholder="-------------------------">
+                        </div>
+                        <div>
+                            <label>Prix :</label>
+                            <input type="text" maxlength="3" placeholder="---">
+                        </div>
+                        <div>
+                            <label>Poids :</label>
+                            <input type="text" maxlength="2" placeholder="--">
+                            <label>kg</label>
+                        </div>
+                    </div>
+
+                    <div class="fieldArea">
+                        <label>Effets :</label>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
+                    </div>
+                </div>
+
+                <div class="item-actions">
+                    <i class="fas fa-times"></i>
                 </div>
             </div>
         </div>
