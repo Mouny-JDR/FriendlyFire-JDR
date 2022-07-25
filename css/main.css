@@ -165,6 +165,183 @@
 .characterSheet .fieldArea textarea {
   padding-block: unset;
 }
+.characterSheet .item {
+  width: 100%;
+  max-height: 55px;
+  background-color: rgba(176, 125, 70, 0.65);
+  border-radius: 5px;
+  margin-block: 2px;
+  padding-block-end: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.characterSheet .item input,
+.characterSheet .item input::placeholder,
+.characterSheet .item label,
+.characterSheet .item textarea,
+.characterSheet .item textarea::placeholder {
+  font-size: 12px;
+}
+.characterSheet .item .multiFields {
+  height: 20px;
+}
+.characterSheet .item .fieldArea textarea {
+  min-height: 30px;
+}
+.characterSheet .item-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-inline: 5px;
+  flex-grow: 1;
+}
+.characterSheet .item-actions {
+  flex-basis: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-block-start: 5px;
+}
+.characterSheet .item-actions i {
+  color: darkred;
+}
+.characterSheet .statsSummary {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 35px;
+  padding-inline: 35px;
+}
+.characterSheet .statsSummary label {
+  width: 110px;
+  position: relative;
+  top: 20px;
+}
+.characterSheet .statsSummary img {
+  height: 50px;
+  width: 40px;
+  border: none;
+  position: relative;
+  top: 10px;
+}
+.characterSheet .statsSummary input {
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  background-color: #aa7a46;
+  box-shadow: 0px 0px 12px 0px black;
+  border-radius: 50%;
+  z-index: 20;
+  margin-inline: 5px;
+}
+.characterSheet .statsSummary > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  flex-grow: 1;
+}
+.characterSheet .statsSummary .stats {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.characterSheet .statsSummary .stats-block {
+  height: 100%;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .statsSummary .stats-block > div {
+  height: 100%;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .statsSummary .attacks .perforant img {
+  content: url('../ui/character/perforant.webp');
+}
+.characterSheet .statsSummary .attacks .tranchant img {
+  content: url('../ui/character/tranchant.webp');
+}
+.characterSheet .statsSummary .attacks .contondant img {
+  content: url('../ui/character/contondant.webp');
+}
+.characterSheet .statsSummary .attacks .feu img {
+  content: url('../ui/character/feu.webp');
+}
+.characterSheet .statsSummary .attacks .eau img {
+  content: url('../ui/character/eau.webp');
+}
+.characterSheet .statsSummary .attacks .nature img {
+  content: url('../ui/character/nature.webp');
+}
+.characterSheet .statsSummary .attacks .air img {
+  content: url('../ui/character/air.webp');
+}
+.characterSheet .statsSummary .attacks .occulte img {
+  content: url('../ui/character/occulte.webp');
+}
+.characterSheet .statsSummary .attacks .spirituel img {
+  content: url('../ui/character/spirituel.webp');
+  height: 40px;
+}
+.characterSheet .statsSummary .attacks .spirituel input {
+  position: relative;
+  top: 5px;
+}
+.characterSheet .statsSummary .attacks .lumiere img {
+  content: url('../ui/character/lumiere.webp');
+}
+.characterSheet .statsSummary .attacks .tenebre img {
+  content: url('../ui/character/tenebre.webp');
+}
+.characterSheet .statsSummary .defense .perforant img {
+  content: url('../ui/character/def_perforant.webp');
+}
+.characterSheet .statsSummary .defense .tranchant img {
+  content: url('../ui/character/def_tranchant.webp');
+}
+.characterSheet .statsSummary .defense .contondant img {
+  content: url('../ui/character/def_contondant.webp');
+}
+.characterSheet .statsSummary .defense .feu img {
+  content: url('../ui/character/def_feu.webp');
+}
+.characterSheet .statsSummary .defense .eau img {
+  content: url('../ui/character/def_eau.webp');
+}
+.characterSheet .statsSummary .defense .nature img {
+  content: url('../ui/character/def_nature.webp');
+}
+.characterSheet .statsSummary .defense .air img {
+  content: url('../ui/character/def_air.webp');
+}
+.characterSheet .statsSummary .defense .occulte img {
+  content: url('../ui/character/def_occulte.webp');
+}
+.characterSheet .statsSummary .defense .spirituel img {
+  content: url('../ui/character/def_spirituel.webp');
+}
+.characterSheet .statsSummary .defense .lumiere img {
+  content: url('../ui/character/def_lumiere.webp');
+}
+.characterSheet .statsSummary .defense .tenebre img {
+  content: url('../ui/character/def_tenebre.webp');
+}
 .characterSheet .sheet-tabs {
   height: 56px;
   background-image: url('../ui/character/banderole2.webp');
@@ -783,7 +960,7 @@
   align-items: center;
   padding: 10px;
   position: relative;
-  left: -10px;
+  right: 10px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .left {
   width: 180px;
@@ -817,49 +994,6 @@
   margin-inline-start: 10px;
   font-size: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .item {
-  width: 100%;
-  max-height: 55px;
-  background-color: rgba(176, 125, 70, 0.65);
-  border-radius: 5px;
-  margin-block: 2px;
-  padding-block-end: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-grow: 0;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-.characterSheet .sheet-body .tab.inventoryTab .item input,
-.characterSheet .sheet-body .tab.inventoryTab .item input::placeholder,
-.characterSheet .sheet-body .tab.inventoryTab .item label,
-.characterSheet .sheet-body .tab.inventoryTab .item textarea,
-.characterSheet .sheet-body .tab.inventoryTab .item textarea::placeholder {
-  font-size: 12px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .item .multiFields {
-  height: 20px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .item .fieldArea textarea {
-  min-height: 30px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .item-data {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-inline: 5px;
-  flex-grow: 1;
-}
-.characterSheet .sheet-body .tab.inventoryTab .item-actions {
-  flex-basis: 20px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-block-start: 5px;
-}
 .characterSheet .sheet-body .tab.inventoryTab .itemRow {
   width: 100%;
   display: flex;
@@ -882,7 +1016,7 @@
   align-items: center;
   padding: 10px;
   position: relative;
-  left: -10px;
+  right: 10px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet {
   width: 180px;
@@ -893,8 +1027,8 @@
   align-items: center;
 }
 .characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet > div:first-of-type {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background-image: url('../ui/character/piece.webp');
   background-size: cover;
   background-repeat: no-repeat;
@@ -906,6 +1040,8 @@
   width: 100px;
   justify-content: center;
   align-items: center;
+  position: relative;
+  right: 10px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div {
   display: flex;
@@ -962,7 +1098,7 @@
   align-items: center;
   padding: 10px;
   position: relative;
-  left: -10px;
+  right: 10px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight {
   display: flex;
@@ -1077,7 +1213,7 @@
   align-items: center;
   padding: 10px;
   position: relative;
-  left: -10px;
+  right: 10px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest {
   display: flex;
@@ -1196,6 +1332,9 @@
   flex-direction: row;
   justify-content: center;
   padding-block-start: 5px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i {
+  color: darkred;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance {
   display: flex;

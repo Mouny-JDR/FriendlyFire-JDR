@@ -11,6 +11,9 @@ export const preloadHandlebarsTemplates = async function () {
         "systems/custom/templates/actors/tabs/capacitiesTab.hbs",              
         "systems/custom/templates/actors/tabs/aptitudesTab.hbs",          
         "systems/custom/templates/actors/tabs/equipmentTab.hbs",
+
+        // Fragments
+        "systems/custom/templates/actors/tabs/parts/statsSummary.hbs"
     ];
 
     // Load the template parts

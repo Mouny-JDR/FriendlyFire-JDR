@@ -30,7 +30,7 @@
             padding: 10px;
 
             position: relative;
-            left: -10px;
+            right: 10px;
         }
     }
 }
@@ -75,58 +75,6 @@
     }
 }
 
-.item {
-    & {
-        width:100%;
-        max-height:55px;
-        background-color: rgba(176, 125, 70, 0.65);
-        border-radius: 5px;
-        margin-block: 2px;
-        padding-block-end: 5px;
-
-        display: flex;
-        flex-direction: row;
-
-        flex-grow: 0;
-        flex-shrink: 0;
-
-        overflow: hidden;
-    }
-
-    input,input::placeholder,label,textarea,textarea::placeholder {
-        font-size: 12px;
-    }
-
-    .multiFields {
-        height: 20px;
-    }
-
-    .fieldArea {
-        textarea {
-            min-height: 30px;
-        }        
-    }
-
-    &-data {
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:flex-start;
-        padding-inline: 5px;
-        flex-grow:1;
-    }
-
-    &-actions {
-        flex-basis:20px;
-        flex-shrink:0;
-        flex-grow:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-block-start: 5px;
-    }
-}
-
 .itemRow {
     & {
         .inventoryRow();
@@ -146,8 +94,8 @@
     
         > div {
             &:first-of-type {
-                height:50px;
-                width:50px;
+                height:70px;
+                width:70px;
                 background-image: url('../ui/character/piece.webp');
                 background-size:cover;
                 background-repeat: no-repeat;
@@ -163,6 +111,9 @@
     
                 justify-content: center;
                 align-items: center;
+
+                position: relative;
+                right: 10px;
             }
     
             div {
