@@ -1,53 +1,69 @@
-.wallet {
+.inventoryRow {
     & {
-        width:180px;
-        height:100px;
-    
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
+        width: 100%;
+
+        display: flex;
+        flex-direction:row;
         align-items: center;
     }
 
-    > div {
-        &:first-of-type {
-            height:50px;
-            width:50px;
-            background-image: url('../ui/character/piece.webp');
-            background-size:cover;
-            background-repeat: no-repeat;
-            position:relative;
-            right:10px    
+    .left {
+        > div:first-of-type > div:first-of-type  {
+            & {
+                height:70px;
+                width:70px;
+                                
+                background-size:cover;
+                background-repeat: no-repeat;
+                position:relative;
+                right:10px
+            }
         }
-    }
-    
-    .box {
-        & {
-            height: 80px;
-            width: 100px;
 
+        .box {
+            height: 70px;
+            width:100px;
+            
             justify-content: center;
             align-items: center;
-        }
+            
+            padding: 10px;
 
-        div {
-            .field();
+            position: relative;
+            left: -10px;
         }
     }
+}
+
+.left {
+    width:180px;
+    height:100%;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.right {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     & {
         display:flex;
         flex-direction:row;
-        flex-basis:40px;
+        flex-basis:55px;
         flex-grow:0;
         flex-shrink:0;
     }
 
     div {
-        height:40px;
-        width:40px;
+        height:55px;
+        width:55px;
         background-size:cover;
         background-repeat: no-repeat;
     }
@@ -55,41 +71,7 @@
     label {
         align-self: center;
         margin-inline-start: 10px;
-        font-size: 18px;
-    }
-}
-
-.consumables,.general {
-    & {
-        flex-grow:2;
-        height:100%;
-    
-        display:flex;
-        flex-direction: column;
-    }
-}
-
-.consumables {
-    .header {
-        div {
-            background-image: url('../ui/character/consommable.webp');
-        }
-    }
-
-    .container {
-        flex-basis: 120px;
-    }
-}
-
-.general{
-    .header {
-        div {
-            background-image: url('../ui/character/lanterne.webp');
-        }
-    }
-
-    .container {
-        flex-basis: 120px;
+        font-size: 20px;
     }
 }
 
@@ -107,6 +89,8 @@
 
         flex-grow: 0;
         flex-shrink: 0;
+
+        overflow: hidden;
     }
 
     input,input::placeholder,label,textarea,textarea::placeholder {
@@ -142,3 +126,232 @@
         padding-block-start: 5px;
     }
 }
+
+.itemRow {
+    & {
+        .inventoryRow();
+        height:175px;
+    }
+
+    .wallet {
+        & {
+            width:180px;
+            height:100px;
+        
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        > div {
+            &:first-of-type {
+                height:50px;
+                width:50px;
+                background-image: url('../ui/character/piece.webp');
+                background-size:cover;
+                background-repeat: no-repeat;
+                position:relative;
+                right:10px    
+            }
+        }
+        
+        .box {
+            & {
+                height: 80px;
+                width: 100px;
+    
+                justify-content: center;
+                align-items: center;
+            }
+    
+            div {
+                .field();
+            }
+        }
+    }
+
+    .right {
+        .header {
+            div {
+                background-image: url('../ui/character/consommable.webp');
+            }
+        }
+    
+        .container {
+            flex-basis: 120px;
+        }
+    }
+    
+}
+
+.generalRow{
+    & {
+        .inventoryRow();
+        height:175px;
+    }
+
+    .left {
+        .weight {
+            & {           
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            > div {
+                &:first-of-type {
+                    background-image: url('../ui/character/poids.webp');
+                }
+            }
+        
+            .box {       
+                div {
+                    .field();
+                    height: 20px;
+                }
+            }    
+        }
+        
+        .bag {
+            & {
+                .box();
+        
+                flex-basis:65px;
+                width:170px;
+        
+                margin-block-start: 10px;
+                margin-inline-end: 20px;
+                
+                padding-inline-start: 15px;
+            }
+        
+            div {
+                .field();
+                height: 20px;
+
+                label,input{
+                    font-size: 14px;
+                }
+            }
+        }        
+    }
+
+    .right {
+        .header {
+            div {
+                background-image: url('../ui/character/lanterne.webp');
+            }
+        }
+    
+        .container {
+            flex-basis: 120px;
+        }
+    }    
+}
+
+.equipmentRow {
+    & {
+        .inventoryRow();
+        flex-grow: 1;
+    }
+
+    .left {
+        .rest {
+            & {           
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            > div {
+                &:first-of-type {                   
+                    background-image: url('../ui/character/tente.webp');
+                }
+            }
+        
+            .box {      
+
+                & {
+                    height: 80px;
+                }
+
+                div {
+                    & {
+                        .field();
+                        height: 20px;
+                    }                    
+
+                    &:first-of-type {
+                        margin-block-start: 10px;
+                    }
+                }
+           
+            }    
+        }
+
+        .tent {
+            .box();
+            width: 170px;
+            flex-grow: 1;
+            
+            margin-block-start: 10px;
+            margin-inline-end: 20px;               
+            padding-inline-start: 15px;         
+            padding-block-end: unset;
+
+            input,input::placeholder,label,textarea,textarea::placeholder {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .right{
+        .header {
+            div {
+                background-image: url('../ui/character/equipment.webp');
+            }
+        }
+    
+        .container {
+            flex-grow: 1;
+
+            .item {
+                & {
+                    .item();
+                    max-height: 170px;
+                    padding-block-start: 5px;
+                }
+
+                &-data {
+
+                    .resistance{
+                        display:flex;
+                        flex-direction: row;
+                        height:45px;
+                        margin-top:5px;
+                    }
+
+                    > div {
+                        height: 15px;
+
+                        &:last-of-type {
+                            height: 45px;
+
+                            textarea {
+                                height: 45px;
+                            }
+                        }
+                    }
+                }
+
+                input {
+                    height: 15px;
+                }
+            }        
+        }
+    }    
+}
+

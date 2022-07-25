@@ -212,6 +212,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-inline: 35px;
+  padding-block-end: 35px;
 }
 .characterSheet .sheet-body .tab-title {
   font-size: 1.3rem;
@@ -759,92 +760,60 @@
 .characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tenebre img {
   content: url('../ui/character/def_tenebre.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .wallet {
-  width: 180px;
-  height: 100px;
+.characterSheet .sheet-body .tab.inventoryTab .inventoryRow {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .wallet > div:first-of-type {
-  height: 50px;
-  width: 50px;
-  background-image: url('../ui/character/piece.webp');
+.characterSheet .sheet-body .tab.inventoryTab .inventoryRow .left > div:first-of-type > div:first-of-type {
+  height: 70px;
+  width: 70px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box {
-  height: 80px;
+.characterSheet .sheet-body .tab.inventoryTab .inventoryRow .left .box {
+  height: 70px;
   width: 100px;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div {
+.characterSheet .sheet-body .tab.inventoryTab .left {
+  width: 180px;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input {
+.characterSheet .sheet-body .tab.inventoryTab .right {
   flex-grow: 1;
-}
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input:first-of-type:nth-last-of-type(1) {
-  text-align: start;
-}
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input:first-of-type:nth-last-of-type(2) {
-  text-align: end;
-}
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="1"] {
-  width: 10px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="2"] {
-  width: 25px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="3"] {
-  width: 30px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .wallet .box div input[maxlength="5"] {
-  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .characterSheet .sheet-body .tab.inventoryTab .header {
   display: flex;
   flex-direction: row;
-  flex-basis: 40px;
+  flex-basis: 55px;
   flex-grow: 0;
   flex-shrink: 0;
 }
 .characterSheet .sheet-body .tab.inventoryTab .header div {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .characterSheet .sheet-body .tab.inventoryTab .header label {
   align-self: center;
   margin-inline-start: 10px;
-  font-size: 18px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .consumables,
-.characterSheet .sheet-body .tab.inventoryTab .general {
-  flex-grow: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.characterSheet .sheet-body .tab.inventoryTab .consumables .header div {
-  background-image: url('../ui/character/consommable.webp');
-}
-.characterSheet .sheet-body .tab.inventoryTab .consumables .container {
-  flex-basis: 120px;
-}
-.characterSheet .sheet-body .tab.inventoryTab .general .header div {
-  background-image: url('../ui/character/lanterne.webp');
-}
-.characterSheet .sheet-body .tab.inventoryTab .general .container {
-  flex-basis: 120px;
+  font-size: 20px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .item {
   width: 100%;
@@ -857,6 +826,7 @@
   flex-direction: row;
   flex-grow: 0;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .characterSheet .sheet-body .tab.inventoryTab .item input,
 .characterSheet .sheet-body .tab.inventoryTab .item input::placeholder,
@@ -887,4 +857,359 @@
   flex-direction: row;
   justify-content: center;
   padding-block-start: 5px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 175px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .left > div:first-of-type > div:first-of-type {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .left .box {
+  height: 70px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet > div:first-of-type {
+  height: 50px;
+  width: 50px;
+  background-image: url('../ui/character/piece.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box {
+  height: 80px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .right .header div {
+  background-image: url('../ui/character/consommable.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .right .container {
+  flex-basis: 120px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 175px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left > div:first-of-type > div:first-of-type {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .box {
+  height: 70px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight > div:first-of-type {
+  background-image: url('../ui/character/poids.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 65px;
+  width: 170px;
+  margin-block-start: 10px;
+  margin-inline-end: 20px;
+  padding-inline-start: 15px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div label,
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input {
+  font-size: 14px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .right .header div {
+  background-image: url('../ui/character/lanterne.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .right .container {
+  flex-basis: 120px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left > div:first-of-type > div:first-of-type {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .box {
+  height: 70px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest > div:first-of-type {
+  background-image: url('../ui/character/tente.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box {
+  height: 80px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div:first-of-type {
+  margin-block-start: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 170px;
+  flex-grow: 1;
+  margin-block-start: 10px;
+  margin-inline-end: 20px;
+  padding-inline-start: 15px;
+  padding-block-end: unset;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent input,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent input::placeholder,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent label,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea::placeholder {
+  font-size: 14px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header div {
+  background-image: url('../ui/character/equipment.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item {
+  width: 100%;
+  max-height: 55px;
+  background-color: rgba(176, 125, 70, 0.65);
+  border-radius: 5px;
+  margin-block: 2px;
+  padding-block-end: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  max-height: 170px;
+  padding-block-start: 5px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input::placeholder,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item label,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea::placeholder {
+  font-size: 12px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields {
+  height: 20px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .fieldArea textarea {
+  min-height: 30px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-inline: 5px;
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions {
+  flex-basis: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-block-start: 5px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  margin-top: 5px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div {
+  height: 15px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type {
+  height: 45px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type textarea {
+  height: 45px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input {
+  height: 15px;
 }
