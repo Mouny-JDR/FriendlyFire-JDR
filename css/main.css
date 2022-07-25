@@ -196,7 +196,9 @@
   color: orange;
 }
 .characterSheet .sheet-body {
-  flex-grow: 1;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 772px;
 }
 .characterSheet .sheet-body .tab {
   height: 100%;
