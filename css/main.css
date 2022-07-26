@@ -1,6 +1,7 @@
 .characterSheet {
   width: 647px !important;
   height: 855px !important;
+  overflow: hidden;
 }
 .characterSheet.app {
   max-height: 855px !important;
@@ -15,6 +16,7 @@
 .characterSheet form .wrapper {
   width: 647px !important;
   height: 825px !important;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -343,7 +345,9 @@
   content: url('../ui/character/def_tenebre.webp');
 }
 .characterSheet .sheet-tabs {
-  height: 56px;
+  flex-basis: 56px;
+  flex-grow: 0;
+  flex-shrink: 0;
   background-image: url('../ui/character/banderole2.webp');
   display: flex;
   flex-direction: row;
@@ -1282,6 +1286,9 @@
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea::placeholder {
   font-size: 14px;
 }
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header {
+  padding-block-start: 5px;
+}
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header div {
   background-image: url('../ui/character/equipment.webp');
 }
@@ -1353,4 +1360,85 @@
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input {
   height: 15px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor {
+  height: 100%;
+  flex-basis: 175px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  position: relative;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img {
+  height: auto;
+  background-size: contain;
+  border: none;
+  position: absolute;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.helmet {
+  content: url('../ui/character/casque2.webp');
+  width: 46px;
+  left: calc(50% - 23px);
+  top: 10px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.pendant {
+  content: url('../ui/character/collier2.webp');
+  width: 25px;
+  left: calc(50% + 40px);
+  top: 20px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.torso {
+  content: url('../ui/character/torse2.webp');
+  width: 120px;
+  left: calc(50% - 60px);
+  top: 70px;
+  z-index: 10;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img .glove {
+  content: url('../ui/character/gant2.webp');
+  width: 30px;
+  top: 140px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.leftGlove {
+  content: url('../ui/character/gant2.webp');
+  width: 30px;
+  top: 140px;
+  left: calc(50% - 85px);
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.rightGlove {
+  content: url('../ui/character/gant2.webp');
+  width: 30px;
+  top: 140px;
+  left: calc(50% + 55px);
+  transform: scaleX(-1);
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img .ring {
+  content: url('../ui/character/anneau2.webp');
+  width: 20px;
+  top: 205px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.leftRing {
+  content: url('../ui/character/anneau2.webp');
+  width: 20px;
+  top: 205px;
+  left: calc(50% - 80px);
+  transform: scaleX(-1);
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.rightRing {
+  content: url('../ui/character/anneau2.webp');
+  width: 20px;
+  top: 205px;
+  left: calc(50% + 60px);
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.legs {
+  content: url('../ui/character/jambiere2.webp');
+  width: 90px;
+  left: calc(50% - 45px);
+  top: 170px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.boots {
+  content: url('../ui/character/bottes2.webp');
+  width: 90px;
+  left: calc(50% - 45px);
+  top: 280px;
 }

@@ -1,2 +1,2 @@
-export class CustomActor extends Actor {
+export class dhsActor extends Actor {
 }

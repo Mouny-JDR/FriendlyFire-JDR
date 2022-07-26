@@ -1,0 +1,111 @@
+.armor {
+    & {
+        height:100%;
+        flex-basis:175px; 
+        flex-grow:0;
+        flex-shrink:0;  
+        
+        display: flex;
+        position: relative;
+    }
+
+    img {
+        & {
+            height: auto;
+            background-size: contain;
+            border: none;
+            position: absolute;
+        }
+
+        &.helmet {
+            content: url('../ui/character/casque2.webp');
+
+            width: 46px;
+            
+            left: calc(50% - 23px);
+            top: 10px;
+        }
+
+        &.pendant {
+            content: url('../ui/character/collier2.webp');
+
+            width: 25px;
+            
+            left: calc(50% + 40px);
+            top: 20px;
+        }
+
+        &.torso {
+            content: url('../ui/character/torse2.webp');
+
+            width: 120px;
+            
+            left: calc(50% - 60px);
+            top: 70px;
+            
+            z-index: 10;
+        }
+
+        .glove {
+            content: url('../ui/character/gant2.webp');
+
+            width: 30px;
+
+            top: 140px;
+        }
+
+        &.leftGlove{
+            .glove();
+
+            left: calc(50% - 85px);
+        }
+
+        &.rightGlove{   
+            .glove();
+
+            left: calc(50% + 55px);
+            transform: scaleX(-1);
+        }
+
+        .ring {
+            content: url('../ui/character/anneau2.webp');
+
+            width: 20px;
+
+            top: 205px;
+        }
+
+        &.leftRing {
+            .ring();
+
+            left: calc(50% - 80px);  
+            transform: scaleX(-1);
+        }
+
+        &.rightRing {
+            .ring();
+
+            left: calc(50% + 60px);
+        }
+
+        &.legs {
+            content: url('../ui/character/jambiere2.webp');
+
+            width: 90px;
+
+            left: calc(50% - 45px);
+            top: 170px;
+        }
+
+        &.boots {
+            content: url('../ui/character/bottes2.webp');
+
+            width: 90px; 
+            
+            left: calc(50% - 45px);
+            top: 280px;
+        }
+    }
+
+
+}

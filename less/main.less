@@ -4,6 +4,7 @@
     &{
         width: 647px !important;
         height: 855px !important;
+        overflow: hidden;
     }
 
     &.app {
@@ -21,8 +22,9 @@
         }
 
         .wrapper {
-            width: 647px !important;;
-            height: 825px !important;;
+            width: 647px !important;
+            height: 825px !important;
+            overflow: hidden;        
 
             display: flex;
             flex-direction: column;
@@ -442,7 +444,10 @@
     }
 
     .sheet-tabs {
-        height: @banner-height;
+        flex-basis: @banner-height;
+        flex-grow: 0;
+        flex-shrink: 0;
+
         background-image: url('../ui/character/banderole2.webp');
         display:flex;
         flex-direction:row;
@@ -521,6 +526,10 @@
             &.inventoryTab{
                 @import 'tabs/inventoryTab.less';            
             }
+
+            &.equipmentTab{
+                @import 'tabs/equipmentTab.less';            
+            }            
         }
     }
 }
