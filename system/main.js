@@ -11,14 +11,14 @@ Hooks.once("setup", function(){
     Actors.unregisterSheet("core", ActorSheet);
 
     // Register actor sheets
-    Actors.registerSheet("custom", dhsCharacterSheet, {
+    Actors.registerSheet("dhs-jdr", dhsCharacterSheet, {
         types: ["character"],
         makeDefault: true,
         //label: "COF.sheet.character"
         label:"Personnage"
     });
 
-    Actors.registerSheet("custom", dhsNpcSheet, {
+    Actors.registerSheet("dhs-jdr", dhsNpcSheet, {
         types: ["npc"],
         makeDefault: true,
         //label: "COF.sheet.character"

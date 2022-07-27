@@ -1,6 +1,6 @@
 {
-  "name": "custom",
-  "title": "Système de jeu Custom",
+  "name": "dhs-jdr",
+  "title": "Système de jeu DHS",
   "description": "Système de jeu Homemade par Mouny",
   "version": "1.0",
   "minimumCoreVersion": "9",

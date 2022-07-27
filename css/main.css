@@ -1,26 +1,32 @@
-.characterSheet {
+.characterSheet,
+.npcSheet {
   width: 647px !important;
   height: 855px !important;
   overflow: hidden;
 }
-.characterSheet.app {
+.characterSheet.app,
+.npcSheet.app {
   max-height: 855px !important;
 }
-.characterSheet .window-content {
+.characterSheet .window-content,
+.npcSheet .window-content {
   padding: unset;
 }
-.characterSheet form {
+.characterSheet form,
+.npcSheet form {
   width: 647px !important;
   height: 855px !important;
 }
-.characterSheet form .wrapper {
+.characterSheet form .wrapper,
+.npcSheet form .wrapper {
   width: 647px !important;
   height: 825px !important;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.characterSheet .box {
+.characterSheet .box,
+.npcSheet .box {
   background-color: rgba(72, 41, 11, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -31,7 +37,8 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.characterSheet .container {
+.characterSheet .container,
+.npcSheet .container {
   background-color: rgba(72, 41, 11, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -45,14 +52,16 @@
   overflow-x: hidden;
   padding-block: 2px;
 }
-.characterSheet .fieldText {
+.characterSheet .fieldText,
+.npcSheet .fieldText {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: white;
 }
-.characterSheet label {
+.characterSheet label,
+.npcSheet label {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -60,7 +69,8 @@
   color: white;
   white-space: nowrap;
 }
-.characterSheet input {
+.characterSheet input,
+.npcSheet input {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -69,14 +79,16 @@
   border: none;
   background: transparent;
 }
-.characterSheet input::placeholder {
+.characterSheet input::placeholder,
+.npcSheet input::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: white;
 }
-.characterSheet textarea {
+.characterSheet textarea,
+.npcSheet textarea {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -86,88 +98,110 @@
   background: transparent;
   resize: none;
 }
-.characterSheet textarea::placeholder {
+.characterSheet textarea::placeholder,
+.npcSheet textarea::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: white;
 }
-.characterSheet .field {
+.characterSheet .field,
+.npcSheet .field {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.characterSheet .field input {
+.characterSheet .field input,
+.npcSheet .field input {
   flex-grow: 1;
 }
-.characterSheet .field input:first-of-type:nth-last-of-type(1) {
+.characterSheet .field input:first-of-type:nth-last-of-type(1),
+.npcSheet .field input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .field input:first-of-type:nth-last-of-type(2) {
+.characterSheet .field input:first-of-type:nth-last-of-type(2),
+.npcSheet .field input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .field input[maxlength="1"] {
+.characterSheet .field input[maxlength="1"],
+.npcSheet .field input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .field input[maxlength="2"] {
+.characterSheet .field input[maxlength="2"],
+.npcSheet .field input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .field input[maxlength="3"] {
+.characterSheet .field input[maxlength="3"],
+.npcSheet .field input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .field input[maxlength="5"] {
+.characterSheet .field input[maxlength="5"],
+.npcSheet .field input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .multiFields {
+.characterSheet .multiFields,
+.npcSheet .multiFields {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.characterSheet .multiFields > div {
+.characterSheet .multiFields > div,
+.npcSheet .multiFields > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.characterSheet .multiFields > div input {
+.characterSheet .multiFields > div input,
+.npcSheet .multiFields > div input {
   flex-grow: 1;
 }
-.characterSheet .multiFields > div input:first-of-type:nth-last-of-type(1) {
+.characterSheet .multiFields > div input:first-of-type:nth-last-of-type(1),
+.npcSheet .multiFields > div input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .multiFields > div input:first-of-type:nth-last-of-type(2) {
+.characterSheet .multiFields > div input:first-of-type:nth-last-of-type(2),
+.npcSheet .multiFields > div input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .multiFields > div input[maxlength="1"] {
+.characterSheet .multiFields > div input[maxlength="1"],
+.npcSheet .multiFields > div input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .multiFields > div input[maxlength="2"] {
+.characterSheet .multiFields > div input[maxlength="2"],
+.npcSheet .multiFields > div input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .multiFields > div input[maxlength="3"] {
+.characterSheet .multiFields > div input[maxlength="3"],
+.npcSheet .multiFields > div input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .multiFields > div input[maxlength="5"] {
+.characterSheet .multiFields > div input[maxlength="5"],
+.npcSheet .multiFields > div input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .multiFields > div:last-of-type input:first-of-type {
+.characterSheet .multiFields > div:last-of-type input:first-of-type,
+.npcSheet .multiFields > div:last-of-type input:first-of-type {
   text-align: end;
 }
-.characterSheet .fieldArea {
+.characterSheet .fieldArea,
+.npcSheet .fieldArea {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
 }
-.characterSheet .fieldArea textarea {
+.characterSheet .fieldArea textarea,
+.npcSheet .fieldArea textarea {
   padding-block: unset;
 }
-.characterSheet .item {
+.characterSheet .item,
+.npcSheet .item {
   width: 100%;
   max-height: 55px;
   background-color: rgba(176, 125, 70, 0.65);
@@ -181,19 +215,27 @@
   overflow: hidden;
 }
 .characterSheet .item input,
+.npcSheet .item input,
 .characterSheet .item input::placeholder,
+.npcSheet .item input::placeholder,
 .characterSheet .item label,
+.npcSheet .item label,
 .characterSheet .item textarea,
-.characterSheet .item textarea::placeholder {
+.npcSheet .item textarea,
+.characterSheet .item textarea::placeholder,
+.npcSheet .item textarea::placeholder {
   font-size: 12px;
 }
-.characterSheet .item .multiFields {
+.characterSheet .item .multiFields,
+.npcSheet .item .multiFields {
   height: 20px;
 }
-.characterSheet .item .fieldArea textarea {
+.characterSheet .item .fieldArea textarea,
+.npcSheet .item .fieldArea textarea {
   min-height: 30px;
 }
-.characterSheet .item-data {
+.characterSheet .item-data,
+.npcSheet .item-data {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -201,7 +243,8 @@
   padding-inline: 5px;
   flex-grow: 1;
 }
-.characterSheet .item-actions {
+.characterSheet .item-actions,
+.npcSheet .item-actions {
   flex-basis: 20px;
   flex-shrink: 0;
   flex-grow: 0;
@@ -210,10 +253,20 @@
   justify-content: center;
   padding-block-start: 5px;
 }
-.characterSheet .item-actions i {
+.characterSheet .item-actions i,
+.npcSheet .item-actions i {
   color: darkred;
 }
-.characterSheet .statsSummary {
+.characterSheet .avatar,
+.npcSheet .avatar {
+  z-index: 50;
+  background-image: url('../ui/character/background.webp');
+  background-size: contain;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.characterSheet .statsSummary,
+.npcSheet .statsSummary {
   width: 100%;
   flex-grow: 1;
   display: flex;
@@ -223,19 +276,22 @@
   bottom: 35px;
   padding-inline: 35px;
 }
-.characterSheet .statsSummary label {
+.characterSheet .statsSummary label,
+.npcSheet .statsSummary label {
   width: 110px;
   position: relative;
   top: 20px;
 }
-.characterSheet .statsSummary img {
+.characterSheet .statsSummary img,
+.npcSheet .statsSummary img {
   height: 50px;
   width: 40px;
   border: none;
   position: relative;
   top: 10px;
 }
-.characterSheet .statsSummary input {
+.characterSheet .statsSummary input,
+.npcSheet .statsSummary input {
   width: 30px;
   height: 20px;
   text-align: center;
@@ -245,27 +301,31 @@
   z-index: 20;
   margin-inline: 5px;
 }
-.characterSheet .statsSummary > div {
+.characterSheet .statsSummary > div,
+.npcSheet .statsSummary > div {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   flex-grow: 1;
 }
-.characterSheet .statsSummary .stats {
+.characterSheet .statsSummary .stats,
+.npcSheet .statsSummary .stats {
   flex-grow: 1;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
-.characterSheet .statsSummary .stats-block {
+.characterSheet .statsSummary .stats-block,
+.npcSheet .statsSummary .stats-block {
   height: 100%;
   flex-grow: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.characterSheet .statsSummary .stats-block > div {
+.characterSheet .statsSummary .stats-block > div,
+.npcSheet .statsSummary .stats-block > div {
   height: 100%;
   width: 40px;
   display: flex;
@@ -273,79 +333,103 @@
   justify-content: center;
   align-items: center;
 }
-.characterSheet .statsSummary .attacks .perforant img {
+.characterSheet .statsSummary .attacks .perforant img,
+.npcSheet .statsSummary .attacks .perforant img {
   content: url('../ui/character/perforant.webp');
 }
-.characterSheet .statsSummary .attacks .tranchant img {
+.characterSheet .statsSummary .attacks .tranchant img,
+.npcSheet .statsSummary .attacks .tranchant img {
   content: url('../ui/character/tranchant.webp');
 }
-.characterSheet .statsSummary .attacks .contondant img {
+.characterSheet .statsSummary .attacks .contondant img,
+.npcSheet .statsSummary .attacks .contondant img {
   content: url('../ui/character/contondant.webp');
 }
-.characterSheet .statsSummary .attacks .feu img {
+.characterSheet .statsSummary .attacks .feu img,
+.npcSheet .statsSummary .attacks .feu img {
   content: url('../ui/character/feu.webp');
 }
-.characterSheet .statsSummary .attacks .eau img {
+.characterSheet .statsSummary .attacks .eau img,
+.npcSheet .statsSummary .attacks .eau img {
   content: url('../ui/character/eau.webp');
 }
-.characterSheet .statsSummary .attacks .nature img {
+.characterSheet .statsSummary .attacks .nature img,
+.npcSheet .statsSummary .attacks .nature img {
   content: url('../ui/character/nature.webp');
 }
-.characterSheet .statsSummary .attacks .air img {
+.characterSheet .statsSummary .attacks .air img,
+.npcSheet .statsSummary .attacks .air img {
   content: url('../ui/character/air.webp');
 }
-.characterSheet .statsSummary .attacks .occulte img {
+.characterSheet .statsSummary .attacks .occulte img,
+.npcSheet .statsSummary .attacks .occulte img {
   content: url('../ui/character/occulte.webp');
 }
-.characterSheet .statsSummary .attacks .spirituel img {
+.characterSheet .statsSummary .attacks .spirituel img,
+.npcSheet .statsSummary .attacks .spirituel img {
   content: url('../ui/character/spirituel.webp');
   height: 40px;
 }
-.characterSheet .statsSummary .attacks .spirituel input {
+.characterSheet .statsSummary .attacks .spirituel input,
+.npcSheet .statsSummary .attacks .spirituel input {
   position: relative;
   top: 5px;
 }
-.characterSheet .statsSummary .attacks .lumiere img {
+.characterSheet .statsSummary .attacks .lumiere img,
+.npcSheet .statsSummary .attacks .lumiere img {
   content: url('../ui/character/lumiere.webp');
 }
-.characterSheet .statsSummary .attacks .tenebre img {
+.characterSheet .statsSummary .attacks .tenebre img,
+.npcSheet .statsSummary .attacks .tenebre img {
   content: url('../ui/character/tenebre.webp');
 }
-.characterSheet .statsSummary .defense .perforant img {
+.characterSheet .statsSummary .defense .perforant img,
+.npcSheet .statsSummary .defense .perforant img {
   content: url('../ui/character/def_perforant.webp');
 }
-.characterSheet .statsSummary .defense .tranchant img {
+.characterSheet .statsSummary .defense .tranchant img,
+.npcSheet .statsSummary .defense .tranchant img {
   content: url('../ui/character/def_tranchant.webp');
 }
-.characterSheet .statsSummary .defense .contondant img {
+.characterSheet .statsSummary .defense .contondant img,
+.npcSheet .statsSummary .defense .contondant img {
   content: url('../ui/character/def_contondant.webp');
 }
-.characterSheet .statsSummary .defense .feu img {
+.characterSheet .statsSummary .defense .feu img,
+.npcSheet .statsSummary .defense .feu img {
   content: url('../ui/character/def_feu.webp');
 }
-.characterSheet .statsSummary .defense .eau img {
+.characterSheet .statsSummary .defense .eau img,
+.npcSheet .statsSummary .defense .eau img {
   content: url('../ui/character/def_eau.webp');
 }
-.characterSheet .statsSummary .defense .nature img {
+.characterSheet .statsSummary .defense .nature img,
+.npcSheet .statsSummary .defense .nature img {
   content: url('../ui/character/def_nature.webp');
 }
-.characterSheet .statsSummary .defense .air img {
+.characterSheet .statsSummary .defense .air img,
+.npcSheet .statsSummary .defense .air img {
   content: url('../ui/character/def_air.webp');
 }
-.characterSheet .statsSummary .defense .occulte img {
+.characterSheet .statsSummary .defense .occulte img,
+.npcSheet .statsSummary .defense .occulte img {
   content: url('../ui/character/def_occulte.webp');
 }
-.characterSheet .statsSummary .defense .spirituel img {
+.characterSheet .statsSummary .defense .spirituel img,
+.npcSheet .statsSummary .defense .spirituel img {
   content: url('../ui/character/def_spirituel.webp');
 }
-.characterSheet .statsSummary .defense .lumiere img {
+.characterSheet .statsSummary .defense .lumiere img,
+.npcSheet .statsSummary .defense .lumiere img {
   content: url('../ui/character/def_lumiere.webp');
 }
-.characterSheet .statsSummary .defense .tenebre img {
+.characterSheet .statsSummary .defense .tenebre img,
+.npcSheet .statsSummary .defense .tenebre img {
   content: url('../ui/character/def_tenebre.webp');
 }
-.characterSheet .sheet-tabs {
-  flex-basis: 56px;
+.characterSheet .sheet-banner,
+.npcSheet .sheet-banner {
+  height: 56px;
   flex-grow: 0;
   flex-shrink: 0;
   background-image: url('../ui/character/banderole2.webp');
@@ -358,7 +442,8 @@
   padding-block: 10px;
   padding-inline: 15px;
 }
-.characterSheet .sheet-tabs a {
+.characterSheet .sheet-tabs a,
+.npcSheet .sheet-tabs a {
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -370,25 +455,33 @@
   border-radius: 5px;
   text-shadow: 1px 1px 2px black;
 }
-.characterSheet .sheet-tabs a:hover {
+.characterSheet .sheet-tabs a:hover,
+.npcSheet .sheet-tabs a:hover {
   color: yellow;
 }
-.characterSheet .sheet-tabs a.active {
+.characterSheet .sheet-tabs a.active,
+.npcSheet .sheet-tabs a.active {
   color: orange;
 }
-.characterSheet .sheet-body {
+.characterSheet .sheet-body,
+.npcSheet .sheet-body {
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: 772px;
-}
-.characterSheet .sheet-body .tab {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-image: url('../ui/character/page_vierge2.webp');
 }
-.characterSheet .sheet-body .tab.characterTab {
+.characterSheet .sheet-body .tab,
+.npcSheet .sheet-body .tab {
+  height: 100%;
+}
+.characterSheet .sheet-body .tab.characterTab,
+.npcSheet .sheet-body .tab.characterTab {
   background-image: url('../ui/character/page_perso_jdr_stats_off2.webp');
 }
-.characterSheet .sheet-body .tab.active {
+.characterSheet .sheet-body .tab.active,
+.npcSheet .sheet-body .tab.active {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -397,60 +490,72 @@
   padding-inline: 35px;
   padding-block-end: 35px;
 }
-.characterSheet .sheet-body .tab-title {
+.characterSheet .sheet-body .tab-title,
+.npcSheet .sheet-body .tab-title {
   font-size: 1.3rem;
   color: white;
   height: 32px;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes {
+.characterSheet .sheet-body .tab.characterTab .attributes,
+.npcSheet .sheet-body .tab.characterTab .attributes {
   width: 100%;
   height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .left {
+.characterSheet .sheet-body .tab.characterTab .attributes .left,
+.npcSheet .sheet-body .tab.characterTab .attributes .left {
   height: fit-content;
   flex-basis: 255px;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .right {
+.characterSheet .sheet-body .tab.characterTab .attributes .right,
+.npcSheet .sheet-body .tab.characterTab .attributes .right {
   display: flex;
   flex-direction: column;
   flex-basis: 255px;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .right .racial div {
+.characterSheet .sheet-body .tab.characterTab .attributes .right .racial div,
+.npcSheet .sheet-body .tab.characterTab .attributes .right .racial div {
   font-size: 1rem;
   color: white;
   align-self: center;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .right .racial textarea {
+.characterSheet .sheet-body .tab.characterTab .attributes .right .racial textarea,
+.npcSheet .sheet-body .tab.characterTab .attributes .right .racial textarea {
   padding-block: unset;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 10px;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed input {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed input,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed input {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed .box {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed .box,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed .box {
   height: 70px;
   width: 70px;
   justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed .box input {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed .box input,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed .box input {
   text-align: center;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:first-of-type,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed > div:first-of-type {
   height: 80px;
   width: 80px;
   background-image: url('../ui/character/vitesse.webp');
   background-size: contain;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type {
   height: 70px;
   width: 70px;
   display: flex;
@@ -460,15 +565,18 @@
   background-image: url('../ui/character/star.webp');
   background-size: contain;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type label {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type label,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type label {
   margin-inline-start: 10px;
   margin-block-start: 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type input {
+.characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type input,
+.npcSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type input {
   text-align: start;
   margin-block-start: 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-1 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1,
+.npcSheet .sheet-body .tab.characterTab .rowStats-1 {
   top: -30px;
   display: flex;
   flex-direction: row;
@@ -477,16 +585,20 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-1 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 div:first-of-type,
+.npcSheet .sheet-body .tab.characterTab .rowStats-1 div:first-of-type {
   right: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type),
+.npcSheet .sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type) {
   left: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-1 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 label,
+.npcSheet .sheet-body .tab.characterTab .rowStats-1 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-1 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 div,
+.npcSheet .sheet-body .tab.characterTab .rowStats-1 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -494,7 +606,8 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-1 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-1 input,
+.npcSheet .sheet-body .tab.characterTab .rowStats-1 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -502,7 +615,8 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-2 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2,
+.npcSheet .sheet-body .tab.characterTab .rowStats-2 {
   top: -45px;
   display: flex;
   flex-direction: row;
@@ -511,16 +625,20 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-2 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 div:first-of-type,
+.npcSheet .sheet-body .tab.characterTab .rowStats-2 div:first-of-type {
   right: 120px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type),
+.npcSheet .sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type) {
   left: 120px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-2 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 label,
+.npcSheet .sheet-body .tab.characterTab .rowStats-2 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-2 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 div,
+.npcSheet .sheet-body .tab.characterTab .rowStats-2 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -528,7 +646,8 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-2 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-2 input,
+.npcSheet .sheet-body .tab.characterTab .rowStats-2 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -536,7 +655,8 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-3 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3,
+.npcSheet .sheet-body .tab.characterTab .rowStats-3 {
   top: -20px;
   display: flex;
   flex-direction: row;
@@ -545,16 +665,20 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-3 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 div:first-of-type,
+.npcSheet .sheet-body .tab.characterTab .rowStats-3 div:first-of-type {
   right: 120px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type),
+.npcSheet .sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type) {
   left: 120px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-3 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 label,
+.npcSheet .sheet-body .tab.characterTab .rowStats-3 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-3 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 div,
+.npcSheet .sheet-body .tab.characterTab .rowStats-3 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -562,7 +686,8 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-3 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-3 input,
+.npcSheet .sheet-body .tab.characterTab .rowStats-3 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -570,7 +695,8 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-4 {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4,
+.npcSheet .sheet-body .tab.characterTab .rowStats-4 {
   top: -30px;
   display: flex;
   flex-direction: row;
@@ -579,16 +705,20 @@
   width: 100%;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-4 div:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 div:first-of-type,
+.npcSheet .sheet-body .tab.characterTab .rowStats-4 div:first-of-type {
   right: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type) {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type),
+.npcSheet .sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type) {
   left: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-4 label {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 label,
+.npcSheet .sheet-body .tab.characterTab .rowStats-4 label {
   text-shadow: black 0px 0px 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-4 div {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 div,
+.npcSheet .sheet-body .tab.characterTab .rowStats-4 div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -596,7 +726,8 @@
   width: 80px;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .rowStats-4 input {
+.characterSheet .sheet-body .tab.characterTab .rowStats-4 input,
+.npcSheet .sheet-body .tab.characterTab .rowStats-4 input {
   text-align: center;
   background-size: contain;
   background-position: center;
@@ -604,13 +735,17 @@
   height: 60px;
   background-image: url('../ui/character/stats2.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp {
+.characterSheet .sheet-body .tab.characterTab .hpmp,
+.npcSheet .sheet-body .tab.characterTab .hpmp {
   width: 100%;
   top: -30px;
 }
 .characterSheet .sheet-body .tab.characterTab .hpmp,
+.npcSheet .sheet-body .tab.characterTab .hpmp,
 .characterSheet .sheet-body .tab.characterTab .hpmp .hp,
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp {
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp,
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp,
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp {
   height: 50px;
   display: flex;
   flex-direction: row;
@@ -618,40 +753,50 @@
   align-items: center;
   position: relative;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .header {
+.characterSheet .sheet-body .tab.characterTab .hpmp .header,
+.npcSheet .sheet-body .tab.characterTab .hpmp .header {
   align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp,
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp {
   right: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input,
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="1"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="1"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="2"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="2"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="3"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="3"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="5"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="5"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .hp label:last-of-type {
+.characterSheet .sheet-body .tab.characterTab .hpmp .hp label:last-of-type,
+.npcSheet .sheet-body .tab.characterTab .hpmp .hp label:last-of-type {
   align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
@@ -659,44 +804,53 @@
   color: red;
   text-shadow: 0px 0px 5px #000000;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .avatar {
-  z-index: 50;
+.characterSheet .sheet-body .tab.characterTab .hpmp .avatar,
+.npcSheet .sheet-body .tab.characterTab .hpmp .avatar {
   height: 220px;
   width: 220px;
-  background-image: url('../ui/character/background.webp');
-  background-size: contain;
-  object-fit: contain;
-  border-radius: 50%;
+  /*background-image: url('../ui/character/background.webp');
+        background-size: contain;
+        object-fit: contain;
+        border-radius: 50%;*/
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp,
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp {
   left: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input,
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="1"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="1"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="2"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="2"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="3"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="3"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="5"] {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="5"],
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .sheet-body .tab.characterTab .hpmp .mp label:first-of-type {
+.characterSheet .sheet-body .tab.characterTab .hpmp .mp label:first-of-type,
+.npcSheet .sheet-body .tab.characterTab .hpmp .mp label:first-of-type {
   align-self: flex-start;
   font-size: 18px;
   font-weight: bold;
@@ -704,7 +858,8 @@
   color: blue;
   text-shadow: 0px 0px 4px #ffffff;
 }
-.characterSheet .sheet-body .tab.characterTab .level {
+.characterSheet .sheet-body .tab.characterTab .level,
+.npcSheet .sheet-body .tab.characterTab .level {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -713,16 +868,21 @@
   z-index: 10;
 }
 .characterSheet .sheet-body .tab.characterTab .level label,
-.characterSheet .sheet-body .tab.characterTab .level input {
+.npcSheet .sheet-body .tab.characterTab .level label,
+.characterSheet .sheet-body .tab.characterTab .level input,
+.npcSheet .sheet-body .tab.characterTab .level input {
   color: #fff500;
 }
-.characterSheet .sheet-body .tab.characterTab .level input::placeholder {
+.characterSheet .sheet-body .tab.characterTab .level input::placeholder,
+.npcSheet .sheet-body .tab.characterTab .level input::placeholder {
   color: #fff500;
 }
-.characterSheet .sheet-body .tab.characterTab .level > label {
+.characterSheet .sheet-body .tab.characterTab .level > label,
+.npcSheet .sheet-body .tab.characterTab .level > label {
   margin-block-end: 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .level > input {
+.characterSheet .sheet-body .tab.characterTab .level > input,
+.npcSheet .sheet-body .tab.characterTab .level > input {
   width: 40px;
   height: 40px;
   text-align: center;
@@ -732,34 +892,43 @@
   border-radius: 50%;
   margin-top: 5px;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp {
+.characterSheet .sheet-body .tab.characterTab .level .xp,
+.npcSheet .sheet-body .tab.characterTab .level .xp {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input {
+.characterSheet .sheet-body .tab.characterTab .level .xp input,
+.npcSheet .sheet-body .tab.characterTab .level .xp input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.characterTab .level .xp input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="1"] {
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="1"],
+.npcSheet .sheet-body .tab.characterTab .level .xp input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="2"] {
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="2"],
+.npcSheet .sheet-body .tab.characterTab .level .xp input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="3"] {
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="3"],
+.npcSheet .sheet-body .tab.characterTab .level .xp input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="5"] {
+.characterSheet .sheet-body .tab.characterTab .level .xp input[maxlength="5"],
+.npcSheet .sheet-body .tab.characterTab .level .xp input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats {
+.characterSheet .sheet-body .tab.characterTab .bonusStats,
+.npcSheet .sheet-body .tab.characterTab .bonusStats {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -768,7 +937,8 @@
   height: 180px;
   bottom: 35px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div {
   width: 255px;
   height: 100%;
   position: relative;
@@ -776,7 +946,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div .stat {
   width: 100%;
   max-height: 60px;
   display: flex;
@@ -786,13 +957,15 @@
   align-items: center;
   overflow: visible;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div .stat img {
   z-index: 10;
   border: unset;
   position: relative;
   top: -10px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div .stat input,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div .stat input {
   text-align: center;
   width: 30px;
   height: 20px;
@@ -802,10 +975,12 @@
   position: relative;
   z-index: 20;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks {
   right: 32px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div {
   width: 100%;
   max-height: 60px;
   display: flex;
@@ -815,13 +990,15 @@
   align-items: center;
   overflow: visible;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img {
   z-index: 10;
   border: unset;
   position: relative;
   top: -10px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input {
   text-align: center;
   width: 30px;
   height: 20px;
@@ -831,54 +1008,70 @@
   position: relative;
   z-index: 20;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div img {
   height: 60px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks > div input {
   top: -23px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .perforant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .perforant img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .perforant img {
   content: url('../ui/character/perforant.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tranchant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tranchant img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tranchant img {
   content: url('../ui/character/tranchant.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .contondant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .contondant img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .contondant img {
   content: url('../ui/character/contondant.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .feu img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .feu img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .feu img {
   content: url('../ui/character/feu.webp');
   top: -10px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .eau img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .eau img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .eau img {
   content: url('../ui/character/eau.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .nature img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .nature img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .nature img {
   content: url('../ui/character/nature.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .air img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .air img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .air img {
   content: url('../ui/character/air.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .occulte img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .occulte img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .occulte img {
   content: url('../ui/character/occulte.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel img {
   content: url('../ui/character/spirituel.webp');
   height: 40px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel input,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .spirituel input {
   top: -12px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .lumiere img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .lumiere img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .lumiere img {
   content: url('../ui/character/lumiere.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tenebre img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tenebre img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.attacks .tenebre img {
   content: url('../ui/character/tenebre.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense {
   left: 32px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div {
   width: 100%;
   max-height: 60px;
   display: flex;
@@ -888,13 +1081,15 @@
   align-items: center;
   overflow: visible;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img {
   z-index: 10;
   border: unset;
   position: relative;
   top: -10px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input {
   text-align: center;
   width: 30px;
   height: 20px;
@@ -904,52 +1099,67 @@
   position: relative;
   z-index: 20;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div img {
   height: 70px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense > div input {
   top: -28px;
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .perforant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .perforant img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .perforant img {
   content: url('../ui/character/def_perforant.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tranchant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tranchant img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tranchant img {
   content: url('../ui/character/def_tranchant.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .contondant img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .contondant img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .contondant img {
   content: url('../ui/character/def_contondant.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .feu img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .feu img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .feu img {
   content: url('../ui/character/def_feu.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .eau img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .eau img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .eau img {
   content: url('../ui/character/def_eau.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .nature img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .nature img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .nature img {
   content: url('../ui/character/def_nature.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .air img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .air img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .air img {
   content: url('../ui/character/def_air.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .occulte img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .occulte img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .occulte img {
   content: url('../ui/character/def_occulte.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .spirituel img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .spirituel img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .spirituel img {
   content: url('../ui/character/def_spirituel.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .lumiere img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .lumiere img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .lumiere img {
   content: url('../ui/character/def_lumiere.webp');
 }
-.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tenebre img {
+.characterSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tenebre img,
+.npcSheet .sheet-body .tab.characterTab .bonusStats > div.defense .tenebre img {
   content: url('../ui/character/def_tenebre.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .inventoryRow {
+.characterSheet .sheet-body .tab.inventoryTab .inventoryRow,
+.npcSheet .sheet-body .tab.inventoryTab .inventoryRow {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .inventoryRow .left > div:first-of-type > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .inventoryRow .left > div:first-of-type > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .inventoryRow .left > div:first-of-type > div:first-of-type {
   height: 70px;
   width: 70px;
   background-size: cover;
@@ -957,7 +1167,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .inventoryRow .left .box {
+.characterSheet .sheet-body .tab.inventoryTab .inventoryRow .left .box,
+.npcSheet .sheet-body .tab.inventoryTab .inventoryRow .left .box {
   height: 70px;
   width: 100px;
   justify-content: center;
@@ -966,7 +1177,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .left {
+.characterSheet .sheet-body .tab.inventoryTab .left,
+.npcSheet .sheet-body .tab.inventoryTab .left {
   width: 180px;
   height: 100%;
   display: flex;
@@ -974,38 +1186,44 @@
   justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .right {
+.characterSheet .sheet-body .tab.inventoryTab .right,
+.npcSheet .sheet-body .tab.inventoryTab .right {
   flex-grow: 1;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.characterSheet .sheet-body .tab.inventoryTab .header {
+.characterSheet .sheet-body .tab.inventoryTab .header,
+.npcSheet .sheet-body .tab.inventoryTab .header {
   display: flex;
   flex-direction: row;
   flex-basis: 55px;
   flex-grow: 0;
   flex-shrink: 0;
 }
-.characterSheet .sheet-body .tab.inventoryTab .header div {
+.characterSheet .sheet-body .tab.inventoryTab .header div,
+.npcSheet .sheet-body .tab.inventoryTab .header div {
   height: 55px;
   width: 55px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.characterSheet .sheet-body .tab.inventoryTab .header label {
+.characterSheet .sheet-body .tab.inventoryTab .header label,
+.npcSheet .sheet-body .tab.inventoryTab .header label {
   align-self: center;
   margin-inline-start: 10px;
   font-size: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 175px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .left > div:first-of-type > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .left > div:first-of-type > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .left > div:first-of-type > div:first-of-type {
   height: 70px;
   width: 70px;
   background-size: cover;
@@ -1013,7 +1231,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .left .box {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .left .box,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .left .box {
   height: 70px;
   width: 100px;
   justify-content: center;
@@ -1022,7 +1241,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet {
   width: 180px;
   height: 100px;
   display: flex;
@@ -1030,7 +1250,8 @@
   justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet > div:first-of-type {
   height: 70px;
   width: 70px;
   background-image: url('../ui/character/piece.webp');
@@ -1039,7 +1260,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box {
   height: 80px;
   width: 100px;
   justify-content: center;
@@ -1047,47 +1269,59 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="1"] {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="1"],
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="2"] {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="2"],
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="3"] {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="3"],
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="5"] {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="5"],
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .wallet .box div input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .right .header div {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .right .header div,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .right .header div {
   background-image: url('../ui/character/consommable.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .itemRow .right .container {
+.characterSheet .sheet-body .tab.inventoryTab .itemRow .right .container,
+.npcSheet .sheet-body .tab.inventoryTab .itemRow .right .container {
   flex-basis: 120px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 175px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left > div:first-of-type > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left > div:first-of-type > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left > div:first-of-type > div:first-of-type {
   height: 70px;
   width: 70px;
   background-size: cover;
@@ -1095,7 +1329,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .box {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .box,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .box {
   height: 70px;
   width: 100px;
   justify-content: center;
@@ -1104,44 +1339,55 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight > div:first-of-type {
   background-image: url('../ui/character/poids.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   height: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="1"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="1"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="2"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="2"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="3"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="3"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="5"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="5"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag {
   background-color: rgba(72, 41, 11, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -1157,52 +1403,66 @@
   margin-inline-end: 20px;
   padding-inline-start: 15px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   height: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="1"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="1"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="2"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="2"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="3"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="3"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="5"] {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="5"],
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input[maxlength="5"] {
   width: 50px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div label,
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input {
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div label,
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .left .bag div input {
   font-size: 14px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .right .header div {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .right .header div,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .right .header div {
   background-image: url('../ui/character/lanterne.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .generalRow .right .container {
+.characterSheet .sheet-body .tab.inventoryTab .generalRow .right .container,
+.npcSheet .sheet-body .tab.inventoryTab .generalRow .right .container {
   flex-basis: 120px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left > div:first-of-type > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left > div:first-of-type > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left > div:first-of-type > div:first-of-type {
   height: 70px;
   width: 70px;
   background-size: cover;
@@ -1210,7 +1470,8 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .box {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .box,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .box {
   height: 70px;
   width: 100px;
   justify-content: center;
@@ -1219,50 +1480,63 @@
   position: relative;
   right: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest > div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest > div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest > div:first-of-type {
   background-image: url('../ui/character/tente.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box {
   height: 80px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   height: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1) {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1) {
   text-align: start;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(2) {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(2) {
   text-align: end;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="1"] {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="1"],
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="1"] {
   width: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="2"] {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="2"],
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="2"] {
   width: 25px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="3"] {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="3"],
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="3"] {
   width: 30px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="5"] {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="5"],
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div:first-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div:first-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div:first-of-type {
   margin-block-start: 10px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent {
   background-color: rgba(72, 41, 11, 0.5);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -1280,22 +1554,31 @@
   padding-block-end: unset;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent input,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent input,
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent input::placeholder,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent input::placeholder,
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent label,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent label,
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea,
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea::placeholder {
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea::placeholder,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent textarea::placeholder {
   font-size: 14px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header {
   padding-block-start: 5px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header div {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header div,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .header div {
   background-image: url('../ui/character/equipment.webp');
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container {
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item {
   width: 100%;
   max-height: 55px;
   background-color: rgba(176, 125, 70, 0.65);
@@ -1311,19 +1594,27 @@
   padding-block-start: 5px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input,
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input::placeholder,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input::placeholder,
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item label,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item label,
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea,
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea::placeholder {
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea::placeholder,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea::placeholder {
   font-size: 12px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields {
   height: 20px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .fieldArea textarea {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .fieldArea textarea,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .fieldArea textarea {
   min-height: 30px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1331,7 +1622,8 @@
   padding-inline: 5px;
   flex-grow: 1;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions {
   flex-basis: 20px;
   flex-shrink: 0;
   flex-grow: 0;
@@ -1340,28 +1632,35 @@
   justify-content: center;
   padding-block-start: 5px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i {
   color: darkred;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance {
   display: flex;
   flex-direction: row;
   height: 45px;
   margin-top: 5px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div {
   height: 15px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type {
   height: 45px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type textarea {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type textarea,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div:last-of-type textarea {
   height: 45px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input {
   height: 15px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor {
+.characterSheet .sheet-body .tab.equipmentTab .armor,
+.npcSheet .sheet-body .tab.equipmentTab .armor {
   height: 100%;
   flex-basis: 175px;
   flex-grow: 0;
@@ -1369,74 +1668,90 @@
   display: flex;
   position: relative;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img {
+.characterSheet .sheet-body .tab.equipmentTab .armor img,
+.npcSheet .sheet-body .tab.equipmentTab .armor img {
   height: auto;
   background-size: contain;
   border: none;
   position: absolute;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.helmet {
+.characterSheet .sheet-body .tab.equipmentTab .armor img:hover,
+.npcSheet .sheet-body .tab.equipmentTab .armor img:hover {
+  filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
+}
+.characterSheet .sheet-body .tab.equipmentTab .armor img.helmet,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.helmet {
   content: url('../ui/character/casque2.webp');
   width: 46px;
   left: calc(50% - 23px);
   top: 10px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.pendant {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.pendant,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.pendant {
   content: url('../ui/character/collier2.webp');
   width: 25px;
   left: calc(50% + 40px);
   top: 20px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.torso {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.torso,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.torso {
   content: url('../ui/character/torse2.webp');
   width: 120px;
   left: calc(50% - 60px);
   top: 70px;
   z-index: 10;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img .glove {
+.characterSheet .sheet-body .tab.equipmentTab .armor img .glove,
+.npcSheet .sheet-body .tab.equipmentTab .armor img .glove {
   content: url('../ui/character/gant2.webp');
   width: 30px;
   top: 140px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.leftGlove {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.leftGlove,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.leftGlove {
   content: url('../ui/character/gant2.webp');
   width: 30px;
   top: 140px;
   left: calc(50% - 85px);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.rightGlove {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.rightGlove,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.rightGlove {
   content: url('../ui/character/gant2.webp');
   width: 30px;
   top: 140px;
   left: calc(50% + 55px);
   transform: scaleX(-1);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img .ring {
+.characterSheet .sheet-body .tab.equipmentTab .armor img .ring,
+.npcSheet .sheet-body .tab.equipmentTab .armor img .ring {
   content: url('../ui/character/anneau2.webp');
   width: 20px;
   top: 205px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.leftRing {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.leftRing,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.leftRing {
   content: url('../ui/character/anneau2.webp');
   width: 20px;
   top: 205px;
   left: calc(50% - 80px);
   transform: scaleX(-1);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.rightRing {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.rightRing,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.rightRing {
   content: url('../ui/character/anneau2.webp');
   width: 20px;
   top: 205px;
   left: calc(50% + 60px);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.legs {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.legs,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.legs {
   content: url('../ui/character/jambiere2.webp');
   width: 90px;
   left: calc(50% - 45px);
   top: 170px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.boots {
+.characterSheet .sheet-body .tab.equipmentTab .armor img.boots,
+.npcSheet .sheet-body .tab.equipmentTab .armor img.boots {
   content: url('../ui/character/bottes2.webp');
   width: 90px;
   left: calc(50% - 45px);

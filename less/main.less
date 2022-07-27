@@ -1,6 +1,7 @@
 @banner-height: 56px;
 
-.characterSheet  {
+.characterSheet, .npcSheet  {    
+
     &{
         width: 647px !important;
         height: 855px !important;
@@ -14,18 +15,18 @@
     .window-content{
         padding: unset;
     }
-
+    
     form {
         &{
             width: 647px !important;
             height: 855px !important;
         }
-
+    
         .wrapper {
             width: 647px !important;
             height: 825px !important;
             overflow: hidden;        
-
+    
             display: flex;
             flex-direction: column;
         }
@@ -171,30 +172,30 @@
             border-radius: 5px;
             margin-block: 2px;
             padding-block-end: 5px;
-    
+
             display: flex;
             flex-direction: row;
-    
+
             flex-grow: 0;
             flex-shrink: 0;
-    
+
             overflow: hidden;
         }
-    
+
         input,input::placeholder,label,textarea,textarea::placeholder {
             font-size: 12px;
         }
-    
+
         .multiFields {
             height: 20px;
         }
-    
+
         .fieldArea {
             textarea {
                 min-height: 30px;
             }        
         }
-    
+
         &-data {
             display:flex;
             flex-direction:column;
@@ -203,7 +204,7 @@
             padding-inline: 5px;
             flex-grow:1;
         }
-    
+
         &-actions {
             flex-basis:20px;
             flex-shrink:0;
@@ -217,6 +218,14 @@
                 color:darkred;
             }
         }
+    }
+
+    .avatar {
+        z-index: 50;    
+        background-image: url('../ui/character/background.webp');
+        background-size: contain;
+        object-fit: contain;
+        border-radius: 50%;
     }
 
     .statsSummary {
@@ -443,94 +452,101 @@
         }
     }
 
-    .sheet-tabs {
-        flex-basis: @banner-height;
-        flex-grow: 0;
-        flex-shrink: 0;
-
-        background-image: url('../ui/character/banderole2.webp');
-        display:flex;
-        flex-direction:row;
-        justify-content: space-evenly;
-        align-items: stretch;
-        color: white;
-        text-align: center;
-
-        padding-block: 10px;
-        padding-inline: 15px;
-
-        a {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            background-color: rgba(72, 41, 11, 0.8);
-            
-            margin-inline: 2px;
-            font-size: 1.2rem;
-
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 5px;
-            text-shadow: 1px 1px 2px black;
-
-            &:hover {
-                color: yellow;
-            }
-
-            &.active {
-                color: orange;
-            }
-        }
-    } 
-    
-    .sheet-body{
-        &{
-            flex-shrink: 0;
+    .sheet {
+        &-banner {
+            height: @banner-height;
             flex-grow: 0;
-            flex-basis: 772px;
+            flex-shrink: 0;
+    
+            background-image: url('../ui/character/banderole2.webp');
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: stretch;
+            color: white;
+            text-align: center;
+    
+            padding-block: 10px;
+            padding-inline: 15px;
         }
 
-        .tab { 
+        &-tabs {
+
+            a {
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                background-color: rgba(72, 41, 11, 0.8);
+                
+                margin-inline: 2px;
+                font-size: 1.2rem;
+
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                text-shadow: 1px 1px 2px black;
+
+                &:hover {
+                    color: yellow;
+                }
+
+                &.active {
+                    color: orange;
+                }
+            }
+        }
+
+        &-body{
             &{
-                height: 100%;
-
-                background-image: url('../ui/character/page_vierge2.webp');
-            }
-
-            &.characterTab {
-                background-image: url('../ui/character/page_perso_jdr_stats_off2.webp');
-            }
-
-            &.active {
-                height: 100%;
+                flex-shrink: 0;
+                flex-grow: 0;
+                flex-basis: 772px;
 
                 display:flex;
                 flex-direction:column;
-                justify-content:flex-start;
-                align-items:center;
-                padding-inline: 35px;
-                padding-block-end: 35px;
-            }            
 
-            &-title {
-                font-size:1.3rem;
-                color:white;
-                height:32px
+                background-image: url('../ui/character/page_vierge2.webp');
             }
-
-            &.characterTab{
-                @import 'tabs/characterTab.less';
+    
+            .tab { 
+                &{
+                    height: 100%;
+                }
+    
+                &.characterTab {
+                    background-image: url('../ui/character/page_perso_jdr_stats_off2.webp');
+                }
+    
+                &.active {
+                    height: 100%;
+    
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:flex-start;
+                    align-items:center;
+                    padding-inline: 35px;
+                    padding-block-end: 35px;
+                }            
+    
+                &-title {
+                    font-size:1.3rem;
+                    color:white;
+                    height:32px
+                }
+    
+                &.characterTab{
+                    @import 'tabs/characterTab.less';
+                }
+    
+                &.inventoryTab{
+                    @import 'tabs/inventoryTab.less';            
+                }
+    
+                &.equipmentTab{
+                    @import 'tabs/equipmentTab.less';            
+                }            
             }
-
-            &.inventoryTab{
-                @import 'tabs/inventoryTab.less';            
-            }
-
-            &.equipmentTab{
-                @import 'tabs/equipmentTab.less';            
-            }            
         }
-    }
+    } 
 }
-

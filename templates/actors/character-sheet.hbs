@@ -1,6 +1,6 @@
 <form class="{{cssClass}}" autocomplete="off" spellcheck="false">
     <div class="wrapper">
-        <nav id="Banner" class="sheet-tabs" data-group="primary">
+        <nav class="sheet-banner sheet-tabs" data-group="primary">
             <a data-tab="character">Personnage</a>
             <a data-tab="inventory">Inventaire</a>
             <a data-tab="capacities">Capacités</a>
@@ -9,23 +9,23 @@
         </nav>    
         <section class="sheet-body">
             <div class="tab characterTab" data-group="primary" data-tab="character">
-                {{> "systems/custom/templates/actors/tabs/characterTab.hbs"}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/characterTab.hbs"}}
             </div>
 
             <div class="tab inventoryTab" data-group="primary" data-tab="inventory">
-                {{> "systems/custom/templates/actors/tabs/inventoryTab.hbs"}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/inventoryTab.hbs"}}
             </div>
 
             <div class="tab capacitiesTab" data-group="primary" data-tab="capacities">
-                {{> "systems/custom/templates/actors/tabs/capacitiesTab.hbs"}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/capacitiesTab.hbs"}}
             </div>
 
             <div class="tab aptitudesTab" data-group="primary" data-tab="aptitudes">
-                {{> "systems/custom/templates/actors/tabs/aptitudesTab.hbs"}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/aptitudesTab.hbs"}}
             </div>
 
             <div class="tab equipmentTab" data-group="primary" data-tab="equipment">
-                {{> "systems/custom/templates/actors/tabs/equipmentTab.hbs"}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/equipmentTab.hbs"}}
             </div>                                
         </section>
     </div>
