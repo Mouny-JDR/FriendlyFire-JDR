@@ -32,28 +32,6 @@
         }
     }
 
-    .box {
-        background-color: rgba(72, 41, 11, 0.5);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-
-        padding: 5px;
-
-        flex-grow: 0;
-        flex-shrink: 0;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .container {        
-        .box();
-        overflow-y: scroll;
-        overflow-x: hidden;
-        padding-block: 2px;        
-    }
-
     .fieldText {
         font-family: 'Inter';
         font-style: normal;
@@ -61,396 +39,36 @@
         font-size: 16px;
         color: white;
     }
-
+    
     label {
         .fieldText();        
         white-space: nowrap
     }
-
+    
     input {
         .fieldText();
-
+    
         border: none;
         background: transparent;
-
+    
         &::placeholder {
             .fieldText();
         }
     }
-
+    
     textarea {
         .fieldText();
-
+    
         border: none;
         background: transparent;
         resize: none;
-
+    
         &::placeholder {
             .fieldText();
         }
     }
 
-    .field {
-        & {
-            display:flex;
-            flex-direction:row;
-            align-items:center;
-            justify-content:flex-start;
-        }
-
-        input {
-            & {
-                flex-grow: 1;                
-            }
-            
-            &:first-of-type:nth-last-of-type(1){
-                text-align: start;
-            }
-
-            &:first-of-type:nth-last-of-type(2){
-                text-align: end;
-            }            
-
-            &[maxlength="1"]{
-                width: 10px;
-            }
-
-            &[maxlength="2"]{
-                width: 25px;
-            }
-
-            &[maxlength="3"]{
-                width: 30px;
-            }
-
-            &[maxlength="5"]{
-                width: 50px;
-            }
-        }
-    }
-
-    .multiFields {
-        & {
-            width: 100%;
-
-            display:flex;
-            flex-direction:row;
-            align-items:center;
-            justify-content:space-between;            
-        }
-
-        > div {
-            .field();            
-
-            &:last-of-type{
-                input:first-of-type{
-                    text-align: end;
-                }
-            }
-        }
-    }
-
-    .fieldArea {
-        & {
-            display:flex;
-            flex-direction:row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            width: 100%;
-        }
-
-        textarea {
-            padding-block: unset;
-        }
-    }
-
-    .item {
-        & {
-            width:100%;
-            max-height:55px;
-            background-color: rgba(176, 125, 70, 0.65);
-            border-radius: 5px;
-            margin-block: 2px;
-            padding-block-end: 5px;
-
-            display: flex;
-            flex-direction: row;
-
-            flex-grow: 0;
-            flex-shrink: 0;
-
-            overflow: hidden;
-        }
-
-        input,input::placeholder,label,textarea,textarea::placeholder {
-            font-size: 12px;
-        }
-
-        .multiFields {
-            height: 20px;
-        }
-
-        .fieldArea {
-            textarea {
-                min-height: 30px;
-            }        
-        }
-
-        &-data {
-            display:flex;
-            flex-direction:column;
-            align-items:flex-start;
-            justify-content:flex-start;
-            padding-inline: 5px;
-            flex-grow:1;
-        }
-
-        &-actions {
-            flex-basis:20px;
-            flex-shrink:0;
-            flex-grow:0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-block-start: 5px;
-            
-            i {
-                color:darkred;
-            }
-        }
-    }
-
-    .avatar {
-        z-index: 50;    
-        background-image: url('../ui/character/background.webp');
-        background-size: contain;
-        object-fit: contain;
-        border-radius: 50%;
-    }
-
-    .statsSummary {
-        & {
-            width:100%;
-            flex-grow: 1;
-
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-        
-            position: absolute;
-            bottom: 35px;
-            padding-inline: 35px;
-        }
-
-        label {
-            width:110px;
-            position: relative;
-            top: 20px;
-        }
-
-        img {
-            height: 50px;
-            width: 40px;
-
-            border:none;
-            position:relative;
-            top:10px;
-        }
-
-        input {
-            width: 30px;
-            height: 20px;
-
-            text-align: center;
-
-            background-color: rgb(170,122,70);
-            box-shadow: 0px 0px 12px 0px black;
-            border-radius: 50%;
-            
-            z-index: 20;
-            margin-inline:5px
-        }
-
-        > div {
-            display:flex;
-            flex-direction: row;
-            width:100%;
-            align-items:center;
-            flex-grow: 1;
-        }
-
-        .stats {
-            & {
-                flex-grow:1;
-                height:100%;
-            
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            &-block {
-                & { 
-                    height:100%; 
-                    flex-grow: 0;
-
-                    display:flex;
-                    justify-content: center;
-                    align-items:center;
-                }
-
-                > div {
-                    height:100%;
-                    width:40px;
-                    
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-
-        .attacks { 
-            .perforant {                      
-                img {
-                    content: url('../ui/character/perforant.webp');
-                }
-            }
-
-            .tranchant{          
-                img {
-                    content: url('../ui/character/tranchant.webp');
-                }
-            }
-
-            .contondant{          
-                img {
-                    content: url('../ui/character/contondant.webp');
-                }
-            }
-
-            .feu{          
-                img {
-                    content: url('../ui/character/feu.webp');
-                }
-            }
-            
-            .eau{         
-                img {
-                    content: url('../ui/character/eau.webp');
-                }
-            }
-            
-            .nature{          
-                img {
-                    content: url('../ui/character/nature.webp');
-                }
-            }
-
-            .air{          
-                img {
-                    content: url('../ui/character/air.webp');
-                }
-            }
-            
-            .occulte{          
-                img {
-                    content: url('../ui/character/occulte.webp');
-                }
-            }  
-            
-            .spirituel{          
-                img {
-                    content: url('../ui/character/spirituel.webp');
-                    height: 40px;
-                }
-                input{
-                    position: relative;
-                    top: 5px;
-                }                
-            }  
-            
-            .lumiere{        
-                img {
-                    content: url('../ui/character/lumiere.webp');
-                }
-            } 
-            
-            .tenebre{          
-                img {
-                    content: url('../ui/character/tenebre.webp');
-                }
-            }            
-        }
-
-        .defense{
-            .perforant {                      
-                img {
-                    content: url('../ui/character/def_perforant.webp');
-                }
-            }
-
-            .tranchant{          
-                img {
-                    content: url('../ui/character/def_tranchant.webp');
-                }
-            }
-
-            .contondant{          
-                img {
-                    content: url('../ui/character/def_contondant.webp');
-                }
-            }
-
-            .feu{          
-                img {
-                    content: url('../ui/character/def_feu.webp');
-                }
-            }
-            
-            .eau{         
-                img {
-                    content: url('../ui/character/def_eau.webp');
-                }
-            }
-            
-            .nature{          
-                img {
-                    content: url('../ui/character/def_nature.webp');
-                }
-            }
-
-            .air{          
-                img {
-                    content: url('../ui/character/def_air.webp');
-                }
-            }
-            
-            .occulte{          
-                img {
-                    content: url('../ui/character/def_occulte.webp');
-                }
-            }  
-            
-            .spirituel{          
-                img {
-                    content: url('../ui/character/def_spirituel.webp');
-                }             
-            }  
-            
-            .lumiere{        
-                img {
-                    content: url('../ui/character/def_lumiere.webp');
-                }
-            } 
-            
-            .tenebre{          
-                img {
-                    content: url('../ui/character/def_tenebre.webp');
-                }
-            }  
-        }
-    }
+    @import 'common.less';
 
     .sheet {
         &-banner {
@@ -543,6 +161,14 @@
                     @import 'tabs/inventoryTab.less';            
                 }
     
+                &.capacitiesTab{
+                    @import 'tabs/capacitiesTab.less';            
+                }   
+
+                &.aptitudesTab{
+                    @import 'tabs/aptitudesTab.less';            
+                }   
+
                 &.equipmentTab{
                     @import 'tabs/equipmentTab.less';            
                 }            

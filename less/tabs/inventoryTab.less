@@ -238,8 +238,11 @@
                     &:first-of-type {
                         margin-block-start: 10px;
                     }
-                }
-           
+
+                    input:first-of-type:nth-last-of-type(1) {
+                        text-align: end;
+                    }                    
+                }            
             }    
         }
 
@@ -271,24 +274,18 @@
         }
     
         .container {
-            flex-grow: 1;
+            & {
+                flex-grow: 1;
+                flex-basis: 295px;
+            }
 
             .item {
                 & {
                     .item();
-                    max-height: 170px;
                     padding-block-start: 5px;
                 }
 
                 &-data {
-
-                    .resistance{
-                        display:flex;
-                        flex-direction: row;
-                        height:45px;
-                        margin-top:5px;
-                    }
-
                     > div {
                         height: 15px;
 
@@ -305,7 +302,41 @@
                 input {
                     height: 15px;
                 }
-            }        
+            }
+            
+            .addEquipmentRow {
+                & {
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                }
+
+                > div { 
+                    height: 40px;
+                    width: 40px;
+                    
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat; 
+                    
+                    display: flex;
+                    justify-content: center;                
+                }
+                
+                i {
+                    .addButton();
+                    position: relative;
+                    top: 10px;
+                }
+
+                .addArmorButton {
+                    background-image: url('../ui/character/casque2.webp');               
+                }
+                
+                .addWeaponButton {
+                    background-image: url('../ui/character/epee2.webp');
+                }                  
+            }            
         }
     }    
 }

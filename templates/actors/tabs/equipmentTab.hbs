@@ -1,5 +1,5 @@
 <div class="tab-title">Equipement</div>
-<div style="display:flex; flex-direction: row; width:100%; flex-basis:350px; overflow: visible;">
+<div class="armorRow">
     <div class="armor">
         <img class="helmet">
         <img class="pendant">
@@ -11,10 +11,10 @@
         <img class="rightRing">
         <img class="boots">                
     </div>
-    <div id="equippedArmor" class="box" style="flex-grow:1; height: 350px; overflow-y: scroll;">
-        <div id="helmet" class="item" style="max-height:unset; flex-basis: 150px"> <!--Casque-->
+    <div id="equippedArmor" class="armorContainer">
+        <div id="helmet" class="item"> <!--Casque-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Casque :</label>
                         <input type="text" placeholder="----------">
@@ -34,9 +34,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -98,14 +98,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div>
 
-        <div id="torso" class="item" style="max-height:unset; flex-basis: 150px"> <!--Plastron-->
+        <div id="torso" class="item"> <!--Plastron-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Plastron :</label>
                         <input type="text" placeholder="----------">
@@ -125,9 +125,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -189,14 +189,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div>
 
-        <div id="gloves" class="item" style="max-height:unset; flex-basis: 150px"> <!--Gants-->
+        <div id="gloves" class="item"> <!--Gants-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Gants :</label>
                         <input type="text" placeholder="----------">
@@ -216,9 +216,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -280,14 +280,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div> 
 
-        <div id="legs" class="item" style="max-height:unset; flex-basis: 150px"> <!--Jambière-->
+        <div id="legs" class="item"> <!--Jambière-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Jambière :</label>
                         <input type="text" placeholder="----------">
@@ -307,9 +307,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -371,14 +371,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div> 
 
-        <div id="boots" class="item" style="max-height:unset; flex-basis: 150px"> <!--Bottes-->
+        <div id="boots" class="item"> <!--Bottes-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Bottes :</label>
                         <input type="text" placeholder="----------">
@@ -398,9 +398,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -462,14 +462,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div> 
 
-        <div id="pendant" class="item" style="max-height:unset; flex-basis: 150px"> <!--Amulette-->
+        <div id="pendant" class="item"> <!--Amulette-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Amulette :</label>
                         <input type="text" placeholder="----------">
@@ -489,9 +489,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -553,14 +553,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div> 
 
-        <div id="leftRing" class="item" style="max-height:unset; flex-basis: 150px"> <!--Anneau 1-->
+        <div id="leftRing" class="item"> <!--Anneau 1-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Anneau 1 :</label>
                         <input type="text" placeholder="----------">
@@ -580,9 +580,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -644,14 +644,14 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div> 
 
-        <div id="rightRing" class="item" style="max-height:unset; flex-basis: 150px"> <!--Anneau 2-->
+        <div id="rightRing" class="item"> <!--Anneau 2-->
             <div class="item-data">
-                <div class="multiFields">
+                <div class="multiFields-spaced">
                     <div>
                         <label>Anneau 2 :</label>
                         <input type="text" placeholder="----------">
@@ -671,9 +671,9 @@
                     <input type="text" placeholder="----------">
                 </div>
 
-                <div class="resistance" style="display:flex">
+                <div class="resistance">
                     <label>Resistance :</label>
-                    <div style="display:grid; grid-template-columns: repeat(4, 60px); grid-template-rows: repeat(3, 15px); max-height:45px; height: 45px; padding-inline-start: 5px;">
+                    <div>
                         <div class="field">
                             <label>Per :</label>
                             <input type="text" placeholder="----------">
@@ -735,17 +735,17 @@
 
                 <div class="fieldArea">
                     <label>Effet supp :</label>
-                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" style="height:50px;"></textarea>
+                    <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                 </div>
             </div>
         </div>                                                      
     </div>
 </div>
 
-<div class="box" style="width:100%; flex-basis: 200px; overflow-y: scroll; margin-block-start: 20px">
-    <div class="item" style="max-height:unset; flex-basis: 80px">
+<div class="weaponContainer">
+    <div class="item">
         <div class="item-data">
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Arme 1 :</label>
                     <input type="text" placeholder="----------">
@@ -764,7 +764,7 @@
                 </div>                
             </div>
 
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Nombre de main :</label>
                     <input type="text" maxlength="2" placeholder="--">
@@ -790,9 +790,9 @@
         </div>
     </div>
 
-    <div class="item" style="max-height:unset; flex-basis: 80px">
+    <div class="item">
         <div class="item-data">
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Arme 2 :</label>
                     <input type="text" placeholder="----------">
@@ -811,7 +811,7 @@
                 </div>                
             </div>
 
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Nombre de main :</label>
                     <input type="text" maxlength="2" placeholder="--">
@@ -837,9 +837,9 @@
         </div>
     </div>
 
-    <div class="item" style="max-height:unset; flex-basis: 80px">
+    <div class="item">
         <div class="item-data">
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Arme 3 :</label>
                     <input type="text" placeholder="----------">
@@ -858,7 +858,7 @@
                 </div>                
             </div>
 
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Nombre de main :</label>
                     <input type="text" maxlength="2" placeholder="--">

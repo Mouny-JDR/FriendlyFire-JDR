@@ -1,113 +1,149 @@
-.armor {
+.armorRow {
     & {
-        height:100%;
-        flex-basis:175px; 
-        flex-grow:0;
-        flex-shrink:0;  
+        width:100%;
+        flex-basis:350px;
+
+        display:flex; 
+        flex-direction: row;
         
-        display: flex;
-        position: relative;
+        overflow: visible;
     }
 
-    img {
+    .armor {
         & {
-            height: auto;
-            background-size: contain;
-            border: none;
-            position: absolute;
-        }
-
-        &:hover {
-            filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
-        }
-
-        &.helmet {
-            content: url('../ui/character/casque2.webp');
-
-            width: 46px;
+            height:100%;
+            flex-basis:175px; 
+            flex-grow:0;
+            flex-shrink:0;  
             
-            left: calc(50% - 23px);
-            top: 10px;
+            display: flex;
+            position: relative;
         }
-
-        &.pendant {
-            content: url('../ui/character/collier2.webp');
-
-            width: 25px;
-            
-            left: calc(50% + 40px);
-            top: 20px;
-        }
-
-        &.torso {
-            content: url('../ui/character/torse2.webp');
-
-            width: 120px;
-            
-            left: calc(50% - 60px);
-            top: 70px;
-            
-            z-index: 10;
-        }
-
-        .glove {
-            content: url('../ui/character/gant2.webp');
-
-            width: 30px;
-
-            top: 140px;
-        }
-
-        &.leftGlove{
-            .glove();
-
-            left: calc(50% - 85px);
-        }
-
-        &.rightGlove{   
-            .glove();
-
-            left: calc(50% + 55px);
-            transform: scaleX(-1);
-        }
-
-        .ring {
-            content: url('../ui/character/anneau2.webp');
-
-            width: 20px;
-
-            top: 205px;
-        }
-
-        &.leftRing {
-            .ring();
-
-            left: calc(50% - 80px);  
-            transform: scaleX(-1);
-        }
-
-        &.rightRing {
-            .ring();
-
-            left: calc(50% + 60px);
-        }
-
-        &.legs {
-            content: url('../ui/character/jambiere2.webp');
-
-            width: 90px;
-
-            left: calc(50% - 45px);
-            top: 170px;
-        }
-
-        &.boots {
-            content: url('../ui/character/bottes2.webp');
-
-            width: 90px; 
-            
-            left: calc(50% - 45px);
-            top: 280px;
+    
+        img {
+            & {
+                height: auto;
+                background-size: contain;
+                border: none;
+                position: absolute;
+            }
+    
+            &:hover {
+                filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
+            }
+    
+            &.helmet {
+                content: url('../ui/character/casque2.webp');
+    
+                width: 46px;
+                
+                left: calc(50% - 23px);
+                top: 10px;
+            }
+    
+            &.pendant {
+                content: url('../ui/character/collier2.webp');
+    
+                width: 25px;
+                
+                left: calc(50% + 40px);
+                top: 20px;
+            }
+    
+            &.torso {
+                content: url('../ui/character/torse2.webp');
+    
+                width: 120px;
+                
+                left: calc(50% - 60px);
+                top: 70px;
+                
+                z-index: 10;
+            }
+    
+            .glove {
+                content: url('../ui/character/gant2.webp');
+    
+                width: 30px;
+    
+                top: 140px;
+            }
+    
+            &.leftGlove{
+                .glove();
+    
+                left: calc(50% - 85px);
+            }
+    
+            &.rightGlove{   
+                .glove();
+    
+                left: calc(50% + 55px);
+                transform: scaleX(-1);
+            }
+    
+            .ring {
+                content: url('../ui/character/anneau2.webp');
+    
+                width: 20px;
+    
+                top: 205px;
+            }
+    
+            &.leftRing {
+                .ring();
+    
+                left: calc(50% - 80px);  
+                transform: scaleX(-1);
+            }
+    
+            &.rightRing {
+                .ring();
+    
+                left: calc(50% + 60px);
+            }
+    
+            &.legs {
+                content: url('../ui/character/jambiere2.webp');
+    
+                width: 90px;
+    
+                left: calc(50% - 45px);
+                top: 170px;
+            }
+    
+            &.boots {
+                content: url('../ui/character/bottes2.webp');
+    
+                width: 90px; 
+                
+                left: calc(50% - 45px);
+                top: 280px;
+            }
         }
     }
+    
+    #equippedArmor {
+        & {
+            height: 350px;
+            flex-grow:1;
+        }
+
+        &.armorContainer {
+            .container();
+        }
+
+        textarea {
+            height: 50px;
+        }
+    }    
+}
+
+.weaponContainer {
+    .container();
+    
+    width:100%;
+    flex-basis: 200px;
+    
+    margin-block-start: 20px
 }

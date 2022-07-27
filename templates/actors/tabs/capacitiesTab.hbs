@@ -1,8 +1,8 @@
 <div class="tab-title">Capacités</div>
-<div class="box" style="width: 100%; flex-basis: 350px;  overflow-y: scroll;">
-    <div class="item" style="flex-basis:150px; max-height:unset;">
+<div class="activeCapacitiescontainer">
+    <div class="item">
         <div class="item-data">
-            <div class="multiFields">
+            <div class="multiFields-spaced">
                 <div>
                     <label>Compétence :</label>                
                     <input type="text" placeholder="---------------------------------------------">
@@ -13,45 +13,45 @@
                 </div>
                 <div>
                     <label>Coût :</label>
-                    <input type="text" maxlength="5" placeholder="--------------------------------------------------" style="text-align:start;">
+                    <input type="text" maxlength="5" placeholder="--------------------------------------------------">
                 </div>                
             </div>
 
-            <div class="multiFields">
-                <div style="flex-basis:180px">
+            <div class="multiFields-spaced">
+                <div class="range">
                     <label>Portée :</label>                
                     <input type="text" maxlength="10" placeholder="--------------------------------------------------">
                 </div>
-                <div style="flex-basis:120px">
+                <div class="target">
                     <label>Cible :</label>
                     <input type="text" maxlength="10" placeholder="--------------------------------------------------">
                 </div>
-                <div style="flex-grow:1; justify-content:end;">
+                <div class="lineOfSight">
                     <label>Ligne de vue :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
                 </div>                
             </div>
 
-            <div class="multiFields">
-                <div style="flex-basis:180px">
+            <div class="multiFields-spaced">
+                <div class="cast">
                     <label>Cast :</label>                
                     <input type="text" maxlength="10" placeholder="--------------------------------------------------">
                 </div>
-                <div style="flex-basis:120px">
+                <div class="duration">
                     <label>Durée :</label>
                     <input type="text" maxlength="10" placeholder="--------------------------------------------------">
                 </div>
-                <div style="flex-grow:1; justify-content:end;">
+                <div class="test">
                     <label>Test :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
                 </div>                
             </div>                       
 
-            <div class="field" style="width:100%;">
+            <div class="field">
                 <label>CC :</label>
                 <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
             </div>  
-            <div class="field" style="width:100%;">
+            <div class="field">
                 <label>EC :</label>
                 <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
             </div>                  
@@ -68,281 +68,281 @@
     </div>
 
     <!--Mock Data-->
-    <div class="item" style="flex-basis:150px; max-height:unset;">
-        <div class="item-data">
-            <div class="multiFields">
-                <div>
-                    <label>Compétence :</label>                
-                    <input type="text" placeholder="---------------------------------------------">
-                </div>
-                <div>
-                    <label>Niveau :</label>
-                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
-                </div>
-                <div>
-                    <label>Coût :</label>
-                    <input type="text" maxlength="5" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Portée :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Cible :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Ligne de vue :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Cast :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Durée :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Test :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>                       
-
-            <div class="field" style="width:100%;">
-                <label>CC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>  
-            <div class="field" style="width:100%;">
-                <label>EC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>                  
-
-            <div class="fieldArea">
-                <label>Effets :</label>
-                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
-            </div>
-        </div>
-
-        <div class="item-actions">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
-
-    <div class="item" style="flex-basis:150px; max-height:unset;">
-        <div class="item-data">
-            <div class="multiFields">
-                <div>
-                    <label>Compétence :</label>                
-                    <input type="text" placeholder="---------------------------------------------">
-                </div>
-                <div>
-                    <label>Niveau :</label>
-                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
-                </div>
-                <div>
-                    <label>Coût :</label>
-                    <input type="text" maxlength="5" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Portée :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Cible :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Ligne de vue :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Cast :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Durée :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Test :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>                       
-
-            <div class="field" style="width:100%;">
-                <label>CC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>  
-            <div class="field" style="width:100%;">
-                <label>EC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>                  
-
-            <div class="fieldArea">
-                <label>Effets :</label>
-                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
-            </div>
-        </div>
-
-        <div class="item-actions">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
-
-    <div class="item" style="flex-basis:150px; max-height:unset;">
-        <div class="item-data">
-            <div class="multiFields">
-                <div>
-                    <label>Compétence :</label>                
-                    <input type="text" placeholder="---------------------------------------------">
-                </div>
-                <div>
-                    <label>Niveau :</label>
-                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
-                </div>
-                <div>
-                    <label>Coût :</label>
-                    <input type="text" maxlength="5" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Portée :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Cible :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Ligne de vue :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Cast :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Durée :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Test :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>                       
-
-            <div class="field" style="width:100%;">
-                <label>CC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>  
-            <div class="field" style="width:100%;">
-                <label>EC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>                  
-
-            <div class="fieldArea">
-                <label>Effets :</label>
-                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
-            </div>
-        </div>
-
-        <div class="item-actions">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
-
-    <div class="item" style="flex-basis:150px; max-height:unset;">
-        <div class="item-data">
-            <div class="multiFields">
-                <div>
-                    <label>Compétence :</label>                
-                    <input type="text" placeholder="---------------------------------------------">
-                </div>
-                <div>
-                    <label>Niveau :</label>
-                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
-                </div>
-                <div>
-                    <label>Coût :</label>
-                    <input type="text" maxlength="5" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Portée :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Cible :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Ligne de vue :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>
-
-            <div class="multiFields">
-                <div style="flex-basis:180px">
-                    <label>Cast :</label>                
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-basis:120px">
-                    <label>Durée :</label>
-                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
-                </div>
-                <div style="flex-grow:1; justify-content:end;">
-                    <label>Test :</label>
-                    <input type="text" maxlength="20" placeholder="--------------------------------------------------" style="text-align:start;">
-                </div>                
-            </div>                       
-
-            <div class="field" style="width:100%;">
-                <label>CC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>  
-            <div class="field" style="width:100%;">
-                <label>EC :</label>
-                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
-            </div>                  
-
-            <div class="fieldArea">
-                <label>Effets :</label>
-                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
-            </div>
-        </div>
-
-        <div class="item-actions">
-            <i class="fas fa-times"></i>
-        </div>
-    </div>
-
-    <i class="fas fa-plus-circle" style="color:orange;align-self:center; background-color: black; border-radius:50%;"></i>        
-</div>
-
-<div class="box" style="width: 100%; margin-top: 20px; flex-basis: 200px; overflow-y: scroll;">
     <div class="item">
         <div class="item-data">
-            <div class="multiFields" style="justify-content: flex-start">
+            <div class="multiFields-spaced">
+                <div>
+                    <label>Compétence :</label>                
+                    <input type="text" placeholder="---------------------------------------------">
+                </div>
+                <div>
+                    <label>Niveau :</label>
+                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
+                </div>
+                <div>
+                    <label>Coût :</label>
+                    <input type="text" maxlength="5" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="range">
+                    <label>Portée :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="target">
+                    <label>Cible :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="lineOfSight">
+                    <label>Ligne de vue :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="cast">
+                    <label>Cast :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="duration">
+                    <label>Durée :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="test">
+                    <label>Test :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>                       
+
+            <div class="field">
+                <label>CC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>  
+            <div class="field">
+                <label>EC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>                  
+
+            <div class="fieldArea">
+                <label>Effets :</label>
+                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
+            </div>
+        </div>
+
+        <div class="item-actions">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="item-data">
+            <div class="multiFields-spaced">
+                <div>
+                    <label>Compétence :</label>                
+                    <input type="text" placeholder="---------------------------------------------">
+                </div>
+                <div>
+                    <label>Niveau :</label>
+                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
+                </div>
+                <div>
+                    <label>Coût :</label>
+                    <input type="text" maxlength="5" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="range">
+                    <label>Portée :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="target">
+                    <label>Cible :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="lineOfSight">
+                    <label>Ligne de vue :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="cast">
+                    <label>Cast :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="duration">
+                    <label>Durée :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="test">
+                    <label>Test :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>                       
+
+            <div class="field">
+                <label>CC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>  
+            <div class="field">
+                <label>EC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>                  
+
+            <div class="fieldArea">
+                <label>Effets :</label>
+                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
+            </div>
+        </div>
+
+        <div class="item-actions">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="item-data">
+            <div class="multiFields-spaced">
+                <div>
+                    <label>Compétence :</label>                
+                    <input type="text" placeholder="---------------------------------------------">
+                </div>
+                <div>
+                    <label>Niveau :</label>
+                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
+                </div>
+                <div>
+                    <label>Coût :</label>
+                    <input type="text" maxlength="5" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="range">
+                    <label>Portée :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="target">
+                    <label>Cible :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="lineOfSight">
+                    <label>Ligne de vue :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="cast">
+                    <label>Cast :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="duration">
+                    <label>Durée :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="test">
+                    <label>Test :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>                       
+
+            <div class="field">
+                <label>CC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>  
+            <div class="field">
+                <label>EC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>                  
+
+            <div class="fieldArea">
+                <label>Effets :</label>
+                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
+            </div>
+        </div>
+
+        <div class="item-actions">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="item-data">
+            <div class="multiFields-spaced">
+                <div>
+                    <label>Compétence :</label>                
+                    <input type="text" placeholder="---------------------------------------------">
+                </div>
+                <div>
+                    <label>Niveau :</label>
+                    <input type="text" maxlength="3" placeholder="--------------------------------------------------">
+                </div>
+                <div>
+                    <label>Coût :</label>
+                    <input type="text" maxlength="5" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="range">
+                    <label>Portée :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="target">
+                    <label>Cible :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="lineOfSight">
+                    <label>Ligne de vue :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>
+
+            <div class="multiFields-spaced">
+                <div class="cast">
+                    <label>Cast :</label>                
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="duration">
+                    <label>Durée :</label>
+                    <input type="text" maxlength="10" placeholder="--------------------------------------------------">
+                </div>
+                <div class="test">
+                    <label>Test :</label>
+                    <input type="text" maxlength="20" placeholder="--------------------------------------------------">
+                </div>                
+            </div>                       
+
+            <div class="field">
+                <label>CC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>  
+            <div class="field">
+                <label>EC :</label>
+                <input type="text" placeholder="-----------------------------------------------------------------------------------------------------------------------------">
+            </div>                  
+
+            <div class="fieldArea">
+                <label>Effets :</label>
+                <textarea rows="2" placeholder="-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
+            </div>
+        </div>
+
+        <div class="item-actions">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>            
+
+    <i class="fas fa-plus-circle addButton"></i>        
+</div>
+
+<div class="passiveCapacitiesContainer">
+    <div class="item">
+        <div class="item-data">
+            <div class="multiFields-start">
                 <div>
                     <label>Passif :</label>                
                     <input type="text" maxlength="25" placeholder="-------------------------">
@@ -368,7 +368,7 @@
 
     <div class="item">
         <div class="item-data">
-            <div class="multiFields" style="justify-content: flex-start">
+            <div class="multiFields-start">
                 <div>
                     <label>Passif :</label>                
                     <input type="text" maxlength="25" placeholder="-------------------------">
@@ -392,7 +392,7 @@
 
     <div class="item">
         <div class="item-data">
-            <div class="multiFields" style="justify-content: flex-start">
+            <div class="multiFields-start">
                 <div>
                     <label>Passif :</label>                
                     <input type="text" maxlength="25" placeholder="-------------------------">
@@ -416,7 +416,7 @@
 
     <div class="item">
         <div class="item-data">
-            <div class="multiFields" style="justify-content: flex-start">
+            <div class="multiFields-start">
                 <div>
                     <label>Passif :</label>                
                     <input type="text" maxlength="25" placeholder="-------------------------">
@@ -440,7 +440,7 @@
 
     <div class="item">
         <div class="item-data">
-            <div class="multiFields" style="justify-content: flex-start">
+            <div class="multiFields-start">
                 <div>
                     <label>Passif :</label>                
                     <input type="text" maxlength="25" placeholder="-------------------------">
@@ -462,7 +462,7 @@
         </div>
     </div>
 
-    <i class="fas fa-plus-circle" style="color:orange;align-self:center; background-color: black; border-radius: 50%;"></i>      
+    <i class="fas fa-plus-circle addButton"></i>      
 </div>
 
 {{> "systems/dhs-jdr/templates/actors/tabs/parts/statsSummary.hbs"}}

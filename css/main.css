@@ -25,33 +25,6 @@
   display: flex;
   flex-direction: column;
 }
-.characterSheet .box,
-.npcSheet .box {
-  background-color: rgba(72, 41, 11, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  padding: 5px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.characterSheet .container,
-.npcSheet .container {
-  background-color: rgba(72, 41, 11, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  padding: 5px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding-block: 2px;
-}
 .characterSheet .fieldText,
 .npcSheet .fieldText {
   font-family: 'Inter';
@@ -106,6 +79,40 @@
   font-size: 16px;
   color: white;
 }
+.characterSheet .box,
+.npcSheet .box {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.characterSheet .container,
+.npcSheet .container {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+}
+.characterSheet .addButton,
+.npcSheet .addButton {
+  color: orange;
+  align-self: center;
+  background-color: black;
+  border-radius: 50%;
+}
 .characterSheet .field,
 .npcSheet .field {
   display: flex;
@@ -147,7 +154,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 .characterSheet .multiFields > div,
 .npcSheet .multiFields > div {
@@ -184,9 +190,91 @@
 .npcSheet .multiFields > div input[maxlength="5"] {
   width: 50px;
 }
-.characterSheet .multiFields > div:last-of-type input:first-of-type,
-.npcSheet .multiFields > div:last-of-type input:first-of-type {
+.characterSheet .multiFields-start,
+.npcSheet .multiFields-start {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .multiFields-start > div,
+.npcSheet .multiFields-start > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .multiFields-start > div input,
+.npcSheet .multiFields-start > div input {
+  flex-grow: 1;
+}
+.characterSheet .multiFields-start > div input:first-of-type:nth-last-of-type(1),
+.npcSheet .multiFields-start > div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .multiFields-start > div input:first-of-type:nth-last-of-type(2),
+.npcSheet .multiFields-start > div input:first-of-type:nth-last-of-type(2) {
   text-align: end;
+}
+.characterSheet .multiFields-start > div input[maxlength="1"],
+.npcSheet .multiFields-start > div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .multiFields-start > div input[maxlength="2"],
+.npcSheet .multiFields-start > div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .multiFields-start > div input[maxlength="3"],
+.npcSheet .multiFields-start > div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .multiFields-start > div input[maxlength="5"],
+.npcSheet .multiFields-start > div input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .multiFields-spaced,
+.npcSheet .multiFields-spaced {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.characterSheet .multiFields-spaced > div,
+.npcSheet .multiFields-spaced > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.characterSheet .multiFields-spaced > div input,
+.npcSheet .multiFields-spaced > div input {
+  flex-grow: 1;
+}
+.characterSheet .multiFields-spaced > div input:first-of-type:nth-last-of-type(1),
+.npcSheet .multiFields-spaced > div input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .multiFields-spaced > div input:first-of-type:nth-last-of-type(2),
+.npcSheet .multiFields-spaced > div input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .multiFields-spaced > div input[maxlength="1"],
+.npcSheet .multiFields-spaced > div input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .multiFields-spaced > div input[maxlength="2"],
+.npcSheet .multiFields-spaced > div input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .multiFields-spaced > div input[maxlength="3"],
+.npcSheet .multiFields-spaced > div input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .multiFields-spaced > div input[maxlength="5"],
+.npcSheet .multiFields-spaced > div input[maxlength="5"] {
+  width: 50px;
 }
 .characterSheet .fieldArea,
 .npcSheet .fieldArea {
@@ -203,7 +291,6 @@
 .characterSheet .item,
 .npcSheet .item {
   width: 100%;
-  max-height: 55px;
   background-color: rgba(176, 125, 70, 0.65);
   border-radius: 5px;
   margin-block: 2px;
@@ -226,8 +313,12 @@
 .npcSheet .item textarea::placeholder {
   font-size: 12px;
 }
-.characterSheet .item .multiFields,
-.npcSheet .item .multiFields {
+.characterSheet .item .multiFields-start,
+.npcSheet .item .multiFields-start,
+.characterSheet .item .multiFields-spaced,
+.npcSheet .item .multiFields-spaced,
+.characterSheet .item .field,
+.npcSheet .item .field {
   height: 20px;
 }
 .characterSheet .item .fieldArea textarea,
@@ -427,6 +518,58 @@
 .npcSheet .statsSummary .defense .tenebre img {
   content: url('../ui/character/def_tenebre.webp');
 }
+.characterSheet .resistance,
+.npcSheet .resistance {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 45px;
+  margin-top: 5px;
+}
+.characterSheet .resistance > div,
+.npcSheet .resistance > div {
+  max-height: 45px;
+  height: 45px;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(3, 15px);
+  padding-inline-start: 5px;
+}
+.characterSheet .attributes-block,
+.npcSheet .attributes-block {
+  width: 100%;
+  flex-basis: 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.characterSheet .attributes-block > div,
+.npcSheet .attributes-block > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .attributes-block > div:nth-last-of-type(-n+3),
+.npcSheet .attributes-block > div:nth-last-of-type(-n+3) {
+  margin-block-start: 5px;
+}
+.characterSheet .attributes-block label,
+.npcSheet .attributes-block label {
+  height: 30px;
+  background-color: rgba(72, 41, 11, 0.5);
+  border-radius: 5px;
+  padding-inline: 10px;
+  padding-top: 5px;
+}
+.characterSheet .attributes-block input,
+.npcSheet .attributes-block input {
+  width: 40px;
+  text-align: center;
+  background-color: rgba(72, 41, 11, 0.5);
+  border-radius: 5px;
+}
 .characterSheet .sheet-banner,
 .npcSheet .sheet-banner {
   height: 56px;
@@ -509,6 +652,10 @@
   height: fit-content;
   flex-basis: 255px;
 }
+.characterSheet .sheet-body .tab.characterTab .attributes .left .sexe input,
+.npcSheet .sheet-body .tab.characterTab .attributes .left .sexe input {
+  text-align: end;
+}
 .characterSheet .sheet-body .tab.characterTab .attributes .right,
 .npcSheet .sheet-body .tab.characterTab .attributes .right {
   display: flex;
@@ -572,7 +719,6 @@
 }
 .characterSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type input,
 .npcSheet .sheet-body .tab.characterTab .attributes .speed > div:last-of-type input {
-  text-align: start;
   margin-block-start: 5px;
 }
 .characterSheet .sheet-body .tab.characterTab .rowStats-1,
@@ -1535,6 +1681,10 @@
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div:first-of-type {
   margin-block-start: 10px;
 }
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1) {
+  text-align: end;
+}
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent,
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .left .tent {
   background-color: rgba(72, 41, 11, 0.5);
@@ -1576,11 +1726,11 @@
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container,
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container {
   flex-grow: 1;
+  flex-basis: 295px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item,
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item {
   width: 100%;
-  max-height: 55px;
   background-color: rgba(176, 125, 70, 0.65);
   border-radius: 5px;
   margin-block: 2px;
@@ -1590,7 +1740,6 @@
   flex-grow: 0;
   flex-shrink: 0;
   overflow: hidden;
-  max-height: 170px;
   padding-block-start: 5px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input,
@@ -1605,8 +1754,12 @@
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item textarea::placeholder {
   font-size: 12px;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields,
-.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields-start,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields-start,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields-spaced,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .multiFields-spaced,
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .field,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .field {
   height: 20px;
 }
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item .fieldArea textarea,
@@ -1636,13 +1789,6 @@
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i {
   color: darkred;
 }
-.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance,
-.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data .resistance {
-  display: flex;
-  flex-direction: row;
-  height: 45px;
-  margin-top: 5px;
-}
 .characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div,
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div {
   height: 15px;
@@ -1659,8 +1805,203 @@
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .item input {
   height: 15px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor,
-.npcSheet .sheet-body .tab.equipmentTab .armor {
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow > div,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow > div {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow i,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow i {
+  color: orange;
+  align-self: center;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addArmorButton,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addArmorButton {
+  background-image: url('../ui/character/casque2.webp');
+}
+.characterSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton,
+.npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton {
+  background-image: url('../ui/character/epee2.webp');
+}
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 350px;
+}
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item {
+  flex-basis: 140px;
+}
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .range,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .range,
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .cast,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .cast {
+  flex-basis: 180px;
+}
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .target,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .target,
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .duration,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .duration {
+  flex-basis: 120px;
+}
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .lineOfSight,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .lineOfSight,
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .test,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .test {
+  flex-grow: 1;
+  justify-content: end;
+}
+.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .field,
+.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .field {
+  width: 100%;
+}
+.characterSheet .sheet-body .tab.capacitiesTab .passiveCapacitiesContainer,
+.npcSheet .sheet-body .tab.capacitiesTab .passiveCapacitiesContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 200px;
+  margin-top: 20px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .specializationContainer,
+.npcSheet .sheet-body .tab.aptitudesTab .specializationContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 300px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .specializationContainer .specialization,
+.npcSheet .sheet-body .tab.aptitudesTab .specializationContainer .specialization {
+  flex-basis: 300px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer,
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 200px;
+  margin-block-start: 20px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude,
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input,
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input {
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input:first-of-type:nth-last-of-type(1),
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input:first-of-type:nth-last-of-type(1) {
+  text-align: start;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input:first-of-type:nth-last-of-type(2),
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input:first-of-type:nth-last-of-type(2) {
+  text-align: end;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="1"],
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="1"] {
+  width: 10px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="2"],
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="2"] {
+  width: 25px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="3"],
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="3"] {
+  width: 30px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="5"],
+.npcSheet .sheet-body .tab.aptitudesTab .racialAptitudesContainer .racialAptitude input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .attributes-header,
+.npcSheet .sheet-body .tab.aptitudesTab .attributes-header {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.characterSheet .sheet-body .tab.aptitudesTab .attributes-header label,
+.npcSheet .sheet-body .tab.aptitudesTab .attributes-header label {
+  height: 100%;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armorRow,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow {
+  width: 100%;
+  flex-basis: 350px;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor {
   height: 100%;
   flex-basis: 175px;
   flex-grow: 0;
@@ -1668,92 +2009,134 @@
   display: flex;
   position: relative;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img,
-.npcSheet .sheet-body .tab.equipmentTab .armor img {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img {
   height: auto;
   background-size: contain;
   border: none;
   position: absolute;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img:hover,
-.npcSheet .sheet-body .tab.equipmentTab .armor img:hover {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img:hover,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img:hover {
   filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.helmet,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.helmet {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.helmet,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.helmet {
   content: url('../ui/character/casque2.webp');
   width: 46px;
   left: calc(50% - 23px);
   top: 10px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.pendant,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.pendant {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.pendant,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.pendant {
   content: url('../ui/character/collier2.webp');
   width: 25px;
   left: calc(50% + 40px);
   top: 20px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.torso,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.torso {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.torso,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.torso {
   content: url('../ui/character/torse2.webp');
   width: 120px;
   left: calc(50% - 60px);
   top: 70px;
   z-index: 10;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img .glove,
-.npcSheet .sheet-body .tab.equipmentTab .armor img .glove {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img .glove,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img .glove {
   content: url('../ui/character/gant2.webp');
   width: 30px;
   top: 140px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.leftGlove,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.leftGlove {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.leftGlove,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.leftGlove {
   content: url('../ui/character/gant2.webp');
   width: 30px;
   top: 140px;
   left: calc(50% - 85px);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.rightGlove,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.rightGlove {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.rightGlove,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.rightGlove {
   content: url('../ui/character/gant2.webp');
   width: 30px;
   top: 140px;
   left: calc(50% + 55px);
   transform: scaleX(-1);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img .ring,
-.npcSheet .sheet-body .tab.equipmentTab .armor img .ring {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img .ring,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img .ring {
   content: url('../ui/character/anneau2.webp');
   width: 20px;
   top: 205px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.leftRing,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.leftRing {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.leftRing,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.leftRing {
   content: url('../ui/character/anneau2.webp');
   width: 20px;
   top: 205px;
   left: calc(50% - 80px);
   transform: scaleX(-1);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.rightRing,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.rightRing {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.rightRing,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.rightRing {
   content: url('../ui/character/anneau2.webp');
   width: 20px;
   top: 205px;
   left: calc(50% + 60px);
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.legs,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.legs {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.legs,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.legs {
   content: url('../ui/character/jambiere2.webp');
   width: 90px;
   left: calc(50% - 45px);
   top: 170px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .armor img.boots,
-.npcSheet .sheet-body .tab.equipmentTab .armor img.boots {
+.characterSheet .sheet-body .tab.equipmentTab .armorRow .armor img.boots,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow .armor img.boots {
   content: url('../ui/character/bottes2.webp');
   width: 90px;
   left: calc(50% - 45px);
   top: 280px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor {
+  height: 350px;
+  flex-grow: 1;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor.armorContainer,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor.armorContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea,
+.npcSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea {
+  height: 50px;
+}
+.characterSheet .sheet-body .tab.equipmentTab .weaponContainer,
+.npcSheet .sheet-body .tab.equipmentTab .weaponContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 200px;
+  margin-block-start: 20px;
 }
