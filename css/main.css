@@ -2148,14 +2148,24 @@
 .npcSheet .sheet-body .tab.active {
   padding-block-start: 35px;
 }
-.npcSheet .sheet-body .tab.active .avatar {
+.npcSheet .sheet-body .tab.active .attributes-row {
+  flex-basis: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.npcSheet .sheet-body .tab.active .attributes-row .avatar {
   height: 140px;
   width: auto;
 }
-.npcSheet .sheet-body .tab.active .attributes-block {
+.npcSheet .sheet-body .tab.active .attributes-row > .box {
+  height: 100%;
+  flex-basis: 200px;
+}
+.npcSheet .sheet-body .tab.active .attributes-row .attributes-block {
   flex-basis: 140px;
 }
-.npcSheet .sheet-body .tab.active .attributes-block label {
+.npcSheet .sheet-body .tab.active .attributes-row .attributes-block label {
   padding-inline: 5px;
 }
 .npcSheet .sheet-body .tab.active .activeCapacitiescontainer {

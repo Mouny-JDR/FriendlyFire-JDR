@@ -179,7 +179,7 @@
         &-banner {
             justify-content: space-between;
             padding-block: unset;
-            align-items: center;
+            align-items: center;            
         }
 
         &-body {
@@ -189,16 +189,33 @@
                         padding-block-start: 35px;
                     }
 
-                    .avatar {
-                        height:140px;
-                        width:auto;
-                    }
+                    .attributes {
+                        &-row {
+                            & {
+                                flex-basis: 140px;
+                                width: 100%;
+                        
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            
+                            .avatar {
+                                height:140px;
+                                width:auto;
+                            }
+                            
+                            > .box {
+                                height:100%;
+                                flex-basis: 200px
+                            }
 
-                    .attributes-block {
-                        flex-basis: 140px;
+                            .attributes-block {
+                                flex-basis: 140px;
                 
-                        label {
-                            padding-inline: 5px;
+                                label {
+                                    padding-inline: 5px;
+                                }
+                            }
                         }
                     }
 
