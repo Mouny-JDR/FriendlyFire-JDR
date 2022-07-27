@@ -160,10 +160,6 @@
                 &.inventoryTab{
                     @import 'tabs/inventoryTab.less';            
                 }
-    
-                &.capacitiesTab{
-                    @import 'tabs/capacitiesTab.less';            
-                }   
 
                 &.aptitudesTab{
                     @import 'tabs/aptitudesTab.less';            
@@ -175,4 +171,56 @@
             }
         }
     } 
+}
+
+.npcSheet {
+
+    .sheet {
+        &-banner {
+            justify-content: space-between;
+            padding-block: unset;
+            align-items: center;
+        }
+
+        &-body {
+            .tab {
+                &.active {
+                    & {
+                        padding-block-start: 35px;
+                    }
+
+                    .avatar {
+                        height:140px;
+                        width:auto;
+                    }
+
+                    .attributes-block {
+                        flex-basis: 140px;
+                
+                        label {
+                            padding-inline: 5px;
+                        }
+                    }
+
+                    .activeCapacitiescontainer {
+                        flex-basis: 170px;
+                        
+                        margin-block-start: 10px;
+                    }
+
+                    .passiveCapacitiesContainer {
+                        flex-basis: 125px;
+
+                        margin-block-start: 10px;
+                    }
+
+                    .weaponContainer {
+                        flex-basis: 100px;
+
+                        margin-block-start: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

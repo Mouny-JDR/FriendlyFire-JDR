@@ -570,6 +570,86 @@
   background-color: rgba(72, 41, 11, 0.5);
   border-radius: 5px;
 }
+.characterSheet .activeCapacitiescontainer,
+.npcSheet .activeCapacitiescontainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 350px;
+}
+.characterSheet .activeCapacitiescontainer .item,
+.npcSheet .activeCapacitiescontainer .item {
+  flex-basis: 140px;
+}
+.characterSheet .activeCapacitiescontainer .item .range,
+.npcSheet .activeCapacitiescontainer .item .range,
+.characterSheet .activeCapacitiescontainer .item .cast,
+.npcSheet .activeCapacitiescontainer .item .cast {
+  flex-basis: 180px;
+}
+.characterSheet .activeCapacitiescontainer .item .target,
+.npcSheet .activeCapacitiescontainer .item .target,
+.characterSheet .activeCapacitiescontainer .item .duration,
+.npcSheet .activeCapacitiescontainer .item .duration {
+  flex-basis: 120px;
+}
+.characterSheet .activeCapacitiescontainer .item .lineOfSight,
+.npcSheet .activeCapacitiescontainer .item .lineOfSight,
+.characterSheet .activeCapacitiescontainer .item .test,
+.npcSheet .activeCapacitiescontainer .item .test {
+  flex-grow: 1;
+  justify-content: end;
+}
+.characterSheet .activeCapacitiescontainer .item .field,
+.npcSheet .activeCapacitiescontainer .item .field {
+  width: 100%;
+}
+.characterSheet .passiveCapacitiesContainer,
+.npcSheet .passiveCapacitiesContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 200px;
+  margin-top: 20px;
+}
+.characterSheet .weaponContainer,
+.npcSheet .weaponContainer {
+  background-color: rgba(72, 41, 11, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-block: 2px;
+  width: 100%;
+  flex-basis: 200px;
+  margin-block-start: 20px;
+}
 .characterSheet .sheet-banner,
 .npcSheet .sheet-banner {
   height: 56px;
@@ -1838,68 +1918,6 @@
 .npcSheet .sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton {
   background-image: url('../ui/character/epee2.webp');
 }
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer {
-  background-color: rgba(72, 41, 11, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  padding: 5px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding-block: 2px;
-  width: 100%;
-  flex-basis: 350px;
-}
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item {
-  flex-basis: 140px;
-}
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .range,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .range,
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .cast,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .cast {
-  flex-basis: 180px;
-}
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .target,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .target,
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .duration,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .duration {
-  flex-basis: 120px;
-}
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .lineOfSight,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .lineOfSight,
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .test,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .test {
-  flex-grow: 1;
-  justify-content: end;
-}
-.characterSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .field,
-.npcSheet .sheet-body .tab.capacitiesTab .activeCapacitiescontainer .item .field {
-  width: 100%;
-}
-.characterSheet .sheet-body .tab.capacitiesTab .passiveCapacitiesContainer,
-.npcSheet .sheet-body .tab.capacitiesTab .passiveCapacitiesContainer {
-  background-color: rgba(72, 41, 11, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  padding: 5px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding-block: 2px;
-  width: 100%;
-  flex-basis: 200px;
-  margin-top: 20px;
-}
 .characterSheet .sheet-body .tab.aptitudesTab .specializationContainer,
 .npcSheet .sheet-body .tab.aptitudesTab .specializationContainer {
   background-color: rgba(72, 41, 11, 0.5);
@@ -2122,21 +2140,33 @@
 .npcSheet .sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea {
   height: 50px;
 }
-.characterSheet .sheet-body .tab.equipmentTab .weaponContainer,
-.npcSheet .sheet-body .tab.equipmentTab .weaponContainer {
-  background-color: rgba(72, 41, 11, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  padding: 5px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding-block: 2px;
-  width: 100%;
-  flex-basis: 200px;
-  margin-block-start: 20px;
+.npcSheet .sheet-banner {
+  justify-content: space-between;
+  padding-block: unset;
+  align-items: center;
+}
+.npcSheet .sheet-body .tab.active {
+  padding-block-start: 35px;
+}
+.npcSheet .sheet-body .tab.active .avatar {
+  height: 140px;
+  width: auto;
+}
+.npcSheet .sheet-body .tab.active .attributes-block {
+  flex-basis: 140px;
+}
+.npcSheet .sheet-body .tab.active .attributes-block label {
+  padding-inline: 5px;
+}
+.npcSheet .sheet-body .tab.active .activeCapacitiescontainer {
+  flex-basis: 170px;
+  margin-block-start: 10px;
+}
+.npcSheet .sheet-body .tab.active .passiveCapacitiesContainer {
+  flex-basis: 125px;
+  margin-block-start: 10px;
+}
+.npcSheet .sheet-body .tab.active .weaponContainer {
+  flex-basis: 100px;
+  margin-block-start: 10px;
 }
