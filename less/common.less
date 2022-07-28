@@ -1,3 +1,39 @@
+.fieldText {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+label {
+    .fieldText();        
+    white-space: nowrap
+}
+
+input {
+    .fieldText();
+
+    border: none;
+    background: transparent;
+
+    &::placeholder {
+        .fieldText();
+    }
+}
+
+textarea {
+    .fieldText();
+
+    border: none;
+    background: transparent;
+    resize: none;
+
+    &::placeholder {
+        .fieldText();
+    }
+}
+
 .box {
     background-color: rgba(72, 41, 11, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -106,8 +142,7 @@
 
 .item {
     & {
-        width:100%;
-        //max-height:55px;
+        width:100%;        
         background-color: rgba(176, 125, 70, 0.65);
         border-radius: 5px;
         margin-block: 2px;
@@ -162,7 +197,7 @@
 
 .avatar {
     z-index: 50;    
-    background-image: url('../ui/character/background.webp');
+    background-image: url('../ui/actors/background.webp');
     background-size: contain;
     object-fit: contain;
     border-radius: 50%;
@@ -251,57 +286,57 @@
     }
 
     .attacks { 
-        .perforant {                      
+        .piercing {                      
             img {
-                content: url('../ui/character/perforant.webp');
+                content: url('../ui/actors/perforant.webp');
             }
         }
 
-        .tranchant{          
+        .slash{          
             img {
-                content: url('../ui/character/tranchant.webp');
+                content: url('../ui/actors/tranchant.webp');
             }
         }
 
         .contondant{          
             img {
-                content: url('../ui/character/contondant.webp');
+                content: url('../ui/actors/contondant.webp');
             }
         }
 
-        .feu{          
+        .fire{          
             img {
-                content: url('../ui/character/feu.webp');
+                content: url('../ui/actors/feu.webp');
             }
         }
         
-        .eau{         
+        .water{         
             img {
-                content: url('../ui/character/eau.webp');
+                content: url('../ui/actors/eau.webp');
             }
         }
         
         .nature{          
             img {
-                content: url('../ui/character/nature.webp');
+                content: url('../ui/actors/nature.webp');
             }
         }
 
         .air{          
             img {
-                content: url('../ui/character/air.webp');
+                content: url('../ui/actors/air.webp');
             }
         }
         
-        .occulte{          
+        .occult{          
             img {
-                content: url('../ui/character/occulte.webp');
+                content: url('../ui/actors/occulte.webp');
             }
         }  
         
-        .spirituel{          
+        .spirit{          
             img {
-                content: url('../ui/character/spirituel.webp');
+                content: url('../ui/actors/spirituel.webp');
                 height: 40px;
             }
             input{
@@ -310,83 +345,83 @@
             }                
         }  
         
-        .lumiere{        
+        .light{        
             img {
-                content: url('../ui/character/lumiere.webp');
+                content: url('../ui/actors/lumiere.webp');
             }
         } 
         
-        .tenebre{          
+        .darkness{          
             img {
-                content: url('../ui/character/tenebre.webp');
+                content: url('../ui/actors/tenebre.webp');
             }
         }            
     }
 
     .defense{
-        .perforant {                      
+        .piercing {                      
             img {
-                content: url('../ui/character/def_perforant.webp');
+                content: url('../ui/actors/def_perforant.webp');
             }
         }
 
-        .tranchant{          
+        .slash{          
             img {
-                content: url('../ui/character/def_tranchant.webp');
+                content: url('../ui/actors/def_tranchant.webp');
             }
         }
 
         .contondant{          
             img {
-                content: url('../ui/character/def_contondant.webp');
+                content: url('../ui/actors/def_contondant.webp');
             }
         }
 
-        .feu{          
+        .fire{          
             img {
-                content: url('../ui/character/def_feu.webp');
+                content: url('../ui/actors/def_feu.webp');
             }
         }
         
-        .eau{         
+        .water{         
             img {
-                content: url('../ui/character/def_eau.webp');
+                content: url('../ui/actors/def_eau.webp');
             }
         }
         
         .nature{          
             img {
-                content: url('../ui/character/def_nature.webp');
+                content: url('../ui/actors/def_nature.webp');
             }
         }
 
         .air{          
             img {
-                content: url('../ui/character/def_air.webp');
+                content: url('../ui/actors/def_air.webp');
             }
         }
         
-        .occulte{          
+        .occult{          
             img {
-                content: url('../ui/character/def_occulte.webp');
+                content: url('../ui/actors/def_occulte.webp');
             }
         }  
         
-        .spirituel{          
+        .spirit{          
             img {
-                content: url('../ui/character/def_spirituel.webp');
+                content: url('../ui/actors/def_spirituel.webp');
             }             
         }  
         
-        .lumiere{        
+        .light{        
             img {
-                content: url('../ui/character/def_lumiere.webp');
+                content: url('../ui/actors/def_lumiere.webp');
             }
         } 
         
-        .tenebre{          
+        .darkness{          
             img {
-                content: url('../ui/character/def_tenebre.webp');
+                content: url('../ui/actors/def_tenebre.webp');
             }
         }  
     }
@@ -396,15 +431,11 @@
     & {
         display:flex;
         flex-direction: row;
-        flex-basis: 45px;
-        //height:45px;
+        flex-basis: 45px;        
         margin-top:5px;
     }
 
-    > div {
-        max-height:45px;
-        height: 45px;
-        
+    > div {    
         display:grid;
         grid-template-columns: repeat(4, 60px);
         grid-template-rows: repeat(3, 15px); 

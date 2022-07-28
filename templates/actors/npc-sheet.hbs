@@ -1,135 +1,134 @@
 <form class="{{cssClass}}" autocomplete="off" spellcheck="false">
     <div class="wrapper">
-        <div class="sheet-banner">
-            <label style="font-size: 32px;">PNJ</label>
+        <div class="npc-sheet-banner">
+            <label class="title">{{ localize "dhs-jdr.ui.sheets.npc.title" }}</label>
 
-            <div style="display:flex; flex-direction: column;">
-                <div style="display: flex; height: 20px; align-items: center;">
-                    <label style="color: red; font-weight: bold; text-shadow: 1px 1px 1px black;">HP :</label>
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px; text-align: end; color: red; font-weight: bold; text-shadow: 1px 1px 1px black;">
-                    <label style="color: red; font-weight: bold; text-shadow: 1px 1px 1px black;">/</label>
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px; color: red; font-weight: bold; text-shadow: 1px 1px 1px black;">
+            <div class="hpMp">
+                <div class="hp">
+                    <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.hp" }} :</label>
+                    <input type="text" maxlength="3" placeholder="---">
+                    <label>/</label>
+                    <input type="text" maxlength="3" placeholder="---">
                 </div>
 
-                <div style="display: flex; height: 20px; align-items: center;">
-                    <label style="color: dodgerblue; font-weight: bold; text-shadow: 1px 1px 1px black;">MP :</label>
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px; text-align: end; color: dodgerblue; font-weight: bold; text-shadow: 1px 1px 1px black;">
-                    <label style="color: dodgerblue; font-weight: bold; text-shadow: 1px 1px 1px black;">/</label>
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px; color: dodgerblue; font-weight: bold; text-shadow: 1px 1px 1px black;">
+                <div class="mp">
+                    <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.mp" }} :</label>
+                    <input type="text" maxlength="3" placeholder="---">
+                    <label>/</label>
+                    <input type="text" maxlength="3" placeholder="---">
                 </div>             
             </div>
 
-            <div style="display:flex; flex-direction: column;">
-                <div class="field" style="height: 20px; align-items: center;">
-                    <label style="color: yellow; font-weight: bold; text-shadow: 1px 1px 1px black;">Esq :</label>
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px; text-align: end; color: yellow; font-weight: bold; text-shadow: 1px 1px 1px black;">
+            <div class="dodge">
+                <div>
+                    <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.dodge" }} :</label>
+                    <input type="text" maxlength="3" placeholder="---">
                 </div>
 
-                <div class="field" style="height: 20px; align-items: center;">
-                    <label style="color: yellow; font-weight: bold; text-shadow: 1px 1px 1px black;">Par :</label>
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px; text-align: end; color: yellow; font-weight: bold; text-shadow: 1px 1px 1px black;">
+                <div>
+                    <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.parry" }} :</label>
+                    <input type="text" maxlength="3" placeholder="---">
                 </div>                
             </div>
 
-            <div style="display:flex; flex-direction: column;  align-items: center;">
-                <label style="height: 20px;">Distance :</label>
-                <div class="field" style="height: 20px;">
-                    <input type="text" maxlength="3" placeholder="---" style="width: 30px;">
-                    <label>mètres</label>
+            <div class="distance">
+                <label>{{ localize "dhs-jdr.ui.sheets.npc.speed" }} :</label>
+                <div class="field">
+                    <input type="text" maxlength="3" placeholder="---">
+                    <label>{{ localize "dhs-jdr.ui.sheets.npc.speedUnit" }}</label>
                 </div>
             </div>
 
-            <div class="field" style="height: 20px;">
-                <label style="color: lawngreen; font-weight: bold; text-shadow: 1px 1px 1px black;">XP :</label>
-                <input type="text" maxlength="5" placeholder="-----" style="width: 30px; text-align: end; color: lawngreen; font-weight: bold; text-shadow: 1px 1px 1px black;">
+            <div class="xp" style="height: 20px;">
+                <label>{{ localize "dhs-jdr.ui.sheets.npc.xp" }} :</label>
+                <input type="text" maxlength="5" placeholder="-----">
             </div>
         </div>
         
-        <section class="sheet-body">
-            <div class="tab active">
-                <div class="attributes-row">
-                    <img class="avatar" src="{{actor.img}}" data-edit="img"></img>
-                    <div class="box">
-                        <div class="multiFields-spaced">
-                            <div>
-                                <label>Race :</label>
-                                <input type="text" placeholder="----------">
-                            </div>                      
-                            <div>
-                                <label>Type :</label>
-                                <input type="text" maxlength="5" placeholder="-----">
-                            </div>
+        <section class="npc-sheet-body">            
+            <div class="attributes-row">
+                <img class="avatar" src="{{actor.img}}" data-edit="img"></img>
+                <div class="box">
+                    <div class="multiFields-spaced">
+                        <div>
+                            <label>{{ localize "dhs-jdr.ui.sheets.npc.race" }} :</label>
+                            <input type="text" placeholder="----------">
+                        </div>                      
+                        <div>
+                            <label>{{ localize "dhs-jdr.ui.sheets.npc.type" }} :</label>
+                            <input type="text" maxlength="5" placeholder="-----">
                         </div>
-
-                        <div class="multiFields-spaced">
-                            <div>
-                                <label for="taillem">Taille :</label>
-                                <input id="taillem" type="text" maxlength="2" placeholder="--">
-                                <label for="taillecm">m</label>
-                                <input id="taillecm" type="text" maxlength="2" placeholder="--">
-                            </div>
-                            <div>
-                                <label>Sexe :</label>
-                                <input type="text" maxlength="1" placeholder="-">
-                            </div>
-                            <div>
-                                <label>Poids :</label>
-                                <input type="text" maxlength="3" placeholder="---">
-                                <label class="field" for="taillecm">Kg</label>
-                            </div>                            
-                        </div>
-
-                        <div class="field">      
-                            <label>Nom :</label>                
-                            <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------">            
-                        </div>
-
-                        <div class="fieldArea">
-                            <label>Langue :</label>                
-                            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                        </div>        
                     </div>
 
-                    <div class="attributes-block">
+                    <div class="multiFields-spaced">
                         <div>
-                            <label>For</label>
-                            <input type="text" maxlength="3" placeholder="---">
+                            <label for="taillem">{{ localize "dhs-jdr.ui.sheets.npc.size" }} :</label>
+                            <input id="taillem" type="text" maxlength="2" placeholder="--">
+                            <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.sizeUnit" }}</label>
+                            <input id="taillecm" type="text" maxlength="2" placeholder="--">
                         </div>
-
                         <div>
-                            <label>Dex</label>
-                            <input type="text" maxlength="3" placeholder="---">
+                            <label>{{ localize "dhs-jdr.ui.sheets.npc.sexe" }} :</label>
+                            <input type="text" maxlength="1" placeholder="-">
                         </div>
-
                         <div>
-                            <label>Arc</label>
+                            <label>{{ localize "dhs-jdr.ui.sheets.npc.weight" }} :</label>
                             <input type="text" maxlength="3" placeholder="---">
-                        </div>
+                            <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.weightUnit" }}</label>
+                        </div>                            
+                    </div>
 
+                    <div class="field">      
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.name" }} :</label>                
+                        <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------">            
+                    </div>
 
-                        <div>
-                            <label>Con</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-
-                        <div>
-                            <label>Cha</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-
-                        <div>
-                            <label>Eru</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>           
+                    <div class="fieldArea">
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.language" }} :</label>                
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
                     </div>        
                 </div>
 
-                {{> "systems/dhs-jdr/templates/actors/tabs/parts/capacities.hbs"}}
+                <div class="attributes-block">
+                    <div>
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.strength" }}</label>
+                        <input type="text" maxlength="3" placeholder="---">
+                    </div>
 
-                {{> "systems/dhs-jdr/templates/actors/tabs/parts/weapons.hbs"}}                
+                    <div>
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.dexterity" }}</label>
+                        <input type="text" maxlength="3" placeholder="---">
+                    </div>
 
-                {{> "systems/dhs-jdr/templates/actors/tabs/parts/statsSummary.hbs"}}
+                    <div>
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.arcana" }}</label>
+                        <input type="text" maxlength="3" placeholder="---">
+                    </div>
+
+
+                    <div>
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.constitution" }}</label>
+                        <input type="text" maxlength="3" placeholder="---">
+                    </div>
+
+                    <div>
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.charisma" }}</label>
+                        <input type="text" maxlength="3" placeholder="---">
+                    </div>
+
+                    <div>
+                        <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.erudition" }}</label>
+                        <input type="text" maxlength="3" placeholder="---">
+                    </div>           
+                </div>        
             </div>
+
+            {{> "systems/dhs-jdr/templates/actors/tabs/parts/capacities.hbs"}}
+
+            {{> "systems/dhs-jdr/templates/actors/tabs/parts/weapons.hbs"}}                
+
+            {{> "systems/dhs-jdr/templates/actors/tabs/parts/statsSummary.hbs"}}
+            
         </section>
     </div>
 </form>

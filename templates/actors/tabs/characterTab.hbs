@@ -1,42 +1,42 @@
-<div class="tab-title">Personnage</div>
+<div class="tab-title">{{ localize "dhs-jdr.ui.sheets.character.Tab" }}</div>
 <div class="attributes">
     <div class="box left">        
         <div class="multiFields-spaced">
             <div>
-                <label>Age :</label>                
+                <label>{{ localize "dhs-jdr.ui.sheets.character.age" }} :</label>                
                 <input type="text" maxlength="3" placeholder="---">
             </div>
             <div>
-                <label for="taillem">Taille :</label>
+                <label for="taillem">{{ localize "dhs-jdr.ui.sheets.character.size" }} :</label>
                 <input id="taillem" type="text" maxlength="2" placeholder="--">
-                <label for="taillecm">m</label>
+                <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.character.sizeUnit" }}</label>
                 <input id="taillecm" type="text" maxlength="2" placeholder="--">
             </div>
             <div class="sexe">
-                <label>Sexe :</label>
+                <label>{{ localize "dhs-jdr.ui.sheets.character.sexe" }} :</label>
                 <input type="text" maxlength="1" placeholder="-">
             </div>
         </div>
 
         <div class="multiFields-spaced">
             <div>
-                <label>Race :</label>                
+                <label>{{ localize "dhs-jdr.ui.sheets.character.race" }} :</label>                
                 <input type="text" maxlength="14" placeholder="------------------">
             </div>
             <div>
-                <label>Poids :</label>
+                <label>{{ localize "dhs-jdr.ui.sheets.character.weight" }} :</label>
                 <input type="text" maxlength="3" placeholder="---">
-                <label class="field" for="taillecm">Kg</label>
+                <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.character.weightUnit" }}</label>
             </div>
         </div>
 
         <div class="field">      
-            <label>Nom :</label>                
+            <label{{ localize "dhs-jdr.ui.sheets.character.name" }} :</label>                
             <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------">            
         </div>
 
         <div class="fieldArea">
-            <label>Langue :</label>                
+            <label>{{ localize "dhs-jdr.ui.sheets.character.language" }} :</label>                
             <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
         </div>        
 
@@ -44,14 +44,14 @@
 
     <div class="right">
         <div class="box racial">
-            <div>Capacité Raciale</div>
+            <div>{{ localize "dhs-jdr.ui.sheets.character.racialCapacities.label" }}</div>
             <textarea maxlength="50" rows="4" placeholder="--------------------------------------------------"></textarea>
         </div>
         <div class="speed">
             <div></div>
             <div class="box">                                              
                 <input type="text" maxlength="3" placeholder="---">
-                <label>mètres</label>  
+                <label>{{ localize "dhs-jdr.ui.sheets.character.speedUnit" }}</label>  
             </div>
             <div>
                 <label>-</label>  
@@ -63,22 +63,22 @@
 
 <div class="rowStats-1">
     <div>
-        <label>Force</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.strength" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
     <div>
-        <label>Dextérité</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dexterity" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
 </div>
 
 <div class="rowStats-2">
     <div>
-        <label>Constitution</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.constitution" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
     <div>
-        <label>Arcane</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.arcana" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
 </div>
@@ -88,11 +88,11 @@
         <input type="text" maxlength="3" placeholder="---">
         <label>/</label>
         <input type="text" maxlength="3" placeholder="---">
-        <label>HP</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.hp" }}</label>
     </div>
     <img class="avatar" src="{{actor.img}}" data-edit="img"></img>
     <div class="mp">
-        <label>MP</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.mp" }}</label>
         <input type="text" maxlength="3" placeholder="---">
         <label>/</label>
         <input type="text" maxlength="3" placeholder="---">
@@ -101,28 +101,28 @@
 
 <div class="rowStats-3">
     <div>
-        <label>Esquive</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dodge" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
     <div>
-        <label>Parade</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.parry" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
 </div>
 
 <div class="rowStats-4">
     <div>
-        <label>Charisme</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.charisma" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
     <div>
-        <label>Erudition</label>
+        <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.erudition" }}</label>
         <input type="text" maxlength="2" placeholder="--">
     </div>
 </div>
 
 <div class="level">
-    <label>lvl</label>
+    <label>{{ localize "dhs-jdr.ui.sheets.character.level.label" }}</label>
     <input type="text" maxlength="2" placeholder="--">
     <div class="xp">
         <input type="text" maxlength="5" placeholder="-----">
@@ -134,12 +134,12 @@
 <div class="bonusStats">
     <div class="attacks">        
 
-        <div class="perforant">
+        <div class="piercing">
             <img></img>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="tranchant">
+        <div class="slash">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
@@ -151,12 +151,12 @@
 
         <div></div>
 
-        <div class="feu">
+        <div class="fire">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="eau">
+        <div class="water">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
@@ -171,22 +171,22 @@
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="occulte">
+        <div class="occult">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="spirituel">
+        <div class="spirit">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="lumiere">
+        <div class="light">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="tenebre">
+        <div class="darkness">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>                                                                
@@ -195,12 +195,12 @@
     <div class="defense">
         <div></div>
         
-        <div class="perforant">
+        <div class="piercing">
             <img></img>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="tranchant">
+        <div class="slash">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
@@ -210,12 +210,12 @@
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="feu">
+        <div class="fire">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="eau">
+        <div class="water">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
@@ -230,22 +230,22 @@
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="occulte">
+        <div class="occult">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="spirituel">
+        <div class="spirit">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="lumiere">
+        <div class="light">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>
 
-        <div class="tenebre">
+        <div class="darkness">
             <img/>
             <input type="text" maxlength="2" placeholder="--">
         </div>  

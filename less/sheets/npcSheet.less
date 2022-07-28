@@ -1,0 +1,136 @@
+&-banner {
+    & {
+        justify-content: space-between;
+        align-items: center;            
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .hpMp {
+        display: flex;
+        flex-direction: column;
+
+        > div {
+            height: 20px;            
+        }
+
+        input, label {
+            font-weight: bold;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .hp {
+            .field();
+
+            input, label, input::placeholder {
+                color : red;
+            }
+        }
+
+        .mp {
+            .field();
+
+            input, label, input::placeholder {
+                color : dodgerblue;                
+            }                        
+        }
+    }
+
+    .dodge {
+        display: flex;
+        flex-direction: column; 
+
+        > div {
+            .field();
+            height: 20px;
+            align-items: center;
+
+            label, input {
+                color: yellow;
+                font-weight: bold;
+                text-shadow: 1px 1px 1px black;
+            }
+
+            input::placeholder {
+                color: yellow;
+            }        
+        }
+    }
+
+    .distance {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;        
+
+        label, div {
+            height: 20 px;
+        }
+    }
+
+    .xp {
+        .field();
+
+        height: 20px;
+
+        label, input, input::placeholder {
+            color: lawngreen;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px black;
+        }
+    }       
+}
+
+&-body {
+    align-items:center;
+    padding: 35px;
+
+    .attributes {
+        &-row {
+            & {
+                flex-basis: 140px;
+                width: 100%;
+        
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .avatar {
+                height:140px;
+                width:auto;
+            }
+            
+            > .box {
+                height:100%;
+                flex-basis: 200px
+            }
+
+            .attributes-block {
+                flex-basis: 140px;
+
+                label {
+                    padding-inline: 5px;
+                }
+            }
+        }
+    }
+
+    .activeCapacitiescontainer {
+        flex-basis: 170px;
+        
+        margin-block-start: 10px;
+    }
+
+    .passiveCapacitiesContainer {
+        flex-basis: 125px;
+
+        margin-block-start: 10px;
+    }
+
+    .weaponContainer {
+        flex-basis: 100px;
+
+        margin-block-start: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 import { dhsActor } from "./actors/actor.js";
-import { dhsCharacterSheet } from "./actors/actor-sheet.js";
+import { dhsCharacterSheet } from "./actors/character-sheet.js";
 import { dhsNpcSheet } from "./actors/npc-sheet.js";
 import { preloadHandlebarsTemplates } from "./templates.js";
 
@@ -25,5 +25,5 @@ Hooks.once("setup", function(){
         label:"PNJ"
     });    
 
-    preloadHandlebarsTemplates();
+    preloadHandlebarsTemplates(); 
 });

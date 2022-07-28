@@ -2,118 +2,37 @@
 
 .characterSheet, .npcSheet  {    
 
-    &{
-        width: 647px !important;
-        height: 855px !important;
-        overflow: hidden;
-    }
-
-    &.app {
-        max-height: 855px !important;
-    }
-
     .window-content{
-        padding: unset;
-    }
-    
-    form {
-        &{
-            width: 647px !important;
-            height: 855px !important;
-        }
-    
-        .wrapper {
-            width: 647px !important;
-            height: 825px !important;
-            overflow: hidden;        
-    
-            display: flex;
-            flex-direction: column;
-        }
-    }
+        padding: unset; 
+    }  
 
-    .fieldText {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        color: white;
-    }
-    
-    label {
-        .fieldText();        
-        white-space: nowrap
-    }
-    
-    input {
-        .fieldText();
-    
-        border: none;
-        background: transparent;
-    
-        &::placeholder {
-            .fieldText();
-        }
-    }
-    
-    textarea {
-        .fieldText();
-    
-        border: none;
-        background: transparent;
-        resize: none;
-    
-        &::placeholder {
-            .fieldText();
-        }
-    }
+    .wrapper {
+        position: absolute;
+        width: 647px;
+        height: 825px;
+        overflow: hidden;        
+
+        display: flex;
+        flex-direction: column;
+    } 
 
     @import 'common.less';
 
     .sheet {
+    
         &-banner {
-            height: @banner-height;
+            flex-basis: @banner-height;
             flex-grow: 0;
             flex-shrink: 0;
     
-            background-image: url('../ui/character/banderole2.webp');
+            background-image: url('../ui/actors/banderole2.webp');
             display:flex;
             flex-direction:row;
-            justify-content: space-evenly;
-            align-items: stretch;
             color: white;
             text-align: center;
     
-            padding-block: 10px;
             padding-inline: 15px;
-        }
-
-        &-tabs {
-
-            a {
-                flex-grow: 1;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                background-color: rgba(72, 41, 11, 0.8);
-                
-                margin-inline: 2px;
-                font-size: 1.2rem;
-
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 5px;
-                text-shadow: 1px 1px 2px black;
-
-                &:hover {
-                    color: yellow;
-                }
-
-                &.active {
-                    color: orange;
-                }
-            }
-        }
+        }    
 
         &-body{
             &{
@@ -124,120 +43,20 @@
                 display:flex;
                 flex-direction:column;
 
-                background-image: url('../ui/character/page_vierge2.webp');
-            }
-    
-            .tab { 
-                &{
-                    height: 100%;
-                }
-    
-                &.characterTab {
-                    background-image: url('../ui/character/page_perso_jdr_stats_off2.webp');
-                }
-    
-                &.active {
-                    height: 100%;
-    
-                    display:flex;
-                    flex-direction:column;
-                    justify-content:flex-start;
-                    align-items:center;
-                    padding-inline: 35px;
-                    padding-block-end: 35px;
-                }            
-    
-                &-title {
-                    font-size:1.3rem;
-                    color:white;
-                    height:32px
-                }
-    
-                &.characterTab{
-                    @import 'tabs/characterTab.less';
-                }
-    
-                &.inventoryTab{
-                    @import 'tabs/inventoryTab.less';            
-                }
-
-                &.aptitudesTab{
-                    @import 'tabs/aptitudesTab.less';            
-                }   
-
-                &.equipmentTab{
-                    @import 'tabs/equipmentTab.less';            
-                }            
-            }
+                background-image: url('../ui/actors/page_vierge2.webp');             
+            }            
         }
-    } 
-}
+    }
+    
+    .npc-sheet {
+        .sheet();
 
-.npcSheet {
+        @import 'sheets/npcSheet.less';
+    }
 
-    .sheet {
-        &-banner {
-            justify-content: space-between;
-            padding-block: unset;
-            align-items: center;            
-        }
+    .character-sheet {
+        .sheet();
 
-        &-body {
-            .tab {
-                &.active {
-                    & {
-                        padding-block-start: 35px;
-                    }
-
-                    .attributes {
-                        &-row {
-                            & {
-                                flex-basis: 140px;
-                                width: 100%;
-                        
-                                display: flex;
-                                justify-content: space-between;
-                            }
-                            
-                            .avatar {
-                                height:140px;
-                                width:auto;
-                            }
-                            
-                            > .box {
-                                height:100%;
-                                flex-basis: 200px
-                            }
-
-                            .attributes-block {
-                                flex-basis: 140px;
-                
-                                label {
-                                    padding-inline: 5px;
-                                }
-                            }
-                        }
-                    }
-
-                    .activeCapacitiescontainer {
-                        flex-basis: 170px;
-                        
-                        margin-block-start: 10px;
-                    }
-
-                    .passiveCapacitiesContainer {
-                        flex-basis: 125px;
-
-                        margin-block-start: 10px;
-                    }
-
-                    .weaponContainer {
-                        flex-basis: 100px;
-
-                        margin-block-start: 10px;
-                    }
-                }
-            }
-        }
+        @import 'sheets/characterSheet.less';
     }
 }

@@ -1,13 +1,13 @@
 <form class="{{cssClass}}" autocomplete="off" spellcheck="false">
     <div class="wrapper">
-        <nav class="sheet-banner sheet-tabs" data-group="primary">
-            <a data-tab="character">Personnage</a>
-            <a data-tab="inventory">Inventaire</a>
-            <a data-tab="capacities">Capacités</a>
-            <a data-tab="aptitudes">Aptitudes</a>
-            <a data-tab="equipment">Equipement</a>
+        <nav class="character-sheet-banner character-sheet-tabs" data-group="primary">
+            <a data-tab="character">{{ localize "dhs-jdr.ui.sheets.character.Tab" }}</a>
+            <a data-tab="inventory">{{ localize "dhs-jdr.ui.sheets.inventory.Tab" }}</a>
+            <a data-tab="capacities">{{ localize "dhs-jdr.ui.sheets.capacities.Tab" }}</a>
+            <a data-tab="aptitudes">{{ localize "dhs-jdr.ui.sheets.aptitudes.Tab" }}</a>
+            <a data-tab="equipment">{{ localize "dhs-jdr.ui.sheets.equipment.Tab" }}</a>
         </nav>    
-        <section class="sheet-body">
+        <section class="character-sheet-body">
             <div class="tab characterTab" data-group="primary" data-tab="character">
                 {{> "systems/dhs-jdr/templates/actors/tabs/characterTab.hbs"}}
             </div>

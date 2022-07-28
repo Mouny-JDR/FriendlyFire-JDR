@@ -1,4 +1,199 @@
 {
     "ACTOR.TypeCharacter": "Personnage",
-    "ACTOR.TypeNpc": "PNJ"
+    "ACTOR.TypeNpc": "PNJ",
+
+    "dhs-jdr.ui.sheets.character.Tab" : "Personnage",
+    "dhs-jdr.ui.sheets.inventory.Tab" : "Inventaire",
+    "dhs-jdr.ui.sheets.capacities.Tab" : "Capacités",
+    "dhs-jdr.ui.sheets.aptitudes.Tab" : "Aptitudes",
+    "dhs-jdr.ui.sheets.equipment.Tab" : "Equipement",
+
+    "dhs-jdr.ui.sheets.character.age" : "Age",
+    "dhs-jdr.ui.sheets.character.size" : "Taille",
+    "dhs-jdr.ui.sheets.character.sizeUnit" : "m",
+    "dhs-jdr.ui.sheets.character.sexe" : "Sexe",
+    "dhs-jdr.ui.sheets.character.race" : "Race",
+    "dhs-jdr.ui.sheets.character.weight" : "Poids",
+    "dhs-jdr.ui.sheets.character.weightUnit" : "Kg",    
+    "dhs-jdr.ui.sheets.character.name" : "Nom",
+    "dhs-jdr.ui.sheets.character.language" : "Langue",
+    "dhs-jdr.ui.sheets.character.racialCapacities.label" : "Capacité Raciale",
+    "dhs-jdr.ui.sheets.character.speedUnit" : "mètres",
+
+    "dhs-jdr.ui.sheets.character.attributes.hp" : "HP",
+    "dhs-jdr.ui.sheets.character.attributes.mp" : "MP",
+
+    "dhs-jdr.ui.sheets.character.attributes.label" : "Statistique personnage",
+    "dhs-jdr.ui.sheets.character.attributes.strength" : "Force",
+    "dhs-jdr.ui.sheets.character.attributes.dexterity" : "Dextérité",
+    "dhs-jdr.ui.sheets.character.attributes.constitution" : "Constitution",
+    "dhs-jdr.ui.sheets.character.attributes.arcana" : "Arcane",
+    "dhs-jdr.ui.sheets.character.attributes.dodge" : "Esquive",
+    "dhs-jdr.ui.sheets.character.attributes.parry" : "Parade",
+    "dhs-jdr.ui.sheets.character.attributes.charisma" : "Charisme",
+    "dhs-jdr.ui.sheets.character.attributes.erudition" : "Erudition",
+
+    "dhs-jdr.ui.sheets.character.level.label" : "lvl",
+
+    
+
+    "dhs-jdr.ui.sheets.npc.title" : "PNJ",
+    "dhs-jdr.ui.sheets.npc.speed" : "Distance",
+    "dhs-jdr.ui.sheets.npc.speedUnit" : "mètres",
+    "dhs-jdr.ui.sheets.npc.xp" : "XP",
+    "dhs-jdr.ui.sheets.npc.race" : "Race",
+    "dhs-jdr.ui.sheets.npc.type" : "Type",
+    "dhs-jdr.ui.sheets.npc.size" : "Taille",
+    "dhs-jdr.ui.sheets.npc.sizeUnit" : "m",
+    "dhs-jdr.ui.sheets.npc.sexe" : "Sexe",
+    "dhs-jdr.ui.sheets.npc.weight" : "Poids",
+    "dhs-jdr.ui.sheets.npc.weightUnit" : "Kg",
+    "dhs-jdr.ui.sheets.npc.name" : "Nom",
+    "dhs-jdr.ui.sheets.npc.language" : "Langue",
+
+    "dhs-jdr.ui.sheets.npc.attributes.hp" : "HP",
+    "dhs-jdr.ui.sheets.npc.attributes.mp" : "MP",
+    "dhs-jdr.ui.sheets.npc.attributes.dodge" : "Esq",
+    "dhs-jdr.ui.sheets.npc.attributes.parry" : "Par",    
+    "dhs-jdr.ui.sheets.npc.attributes.strength" : "For",
+    "dhs-jdr.ui.sheets.npc.attributes.dexterity" : "Dex",
+    "dhs-jdr.ui.sheets.npc.attributes.constitution" : "Con",
+    "dhs-jdr.ui.sheets.npc.attributes.arcana" : "Arc",
+    "dhs-jdr.ui.sheets.npc.attributes.charisma" : "Char",
+    "dhs-jdr.ui.sheets.npc.attributes.erudition" : "Eru",
+
+
+
+    "dhs-jdr.ui.sheets.inventory.wallet.PO" : "PO",
+    "dhs-jdr.ui.sheets.inventory.wallet.PA" : "PA",
+    "dhs-jdr.ui.sheets.inventory.wallet.PC" : "PC",
+
+    "dhs-jdr.ui.sheets.inventory.bag.weight" : "Poids",
+    "dhs-jdr.ui.sheets.inventory.bag.weightUnit" : "Kg",
+    "dhs-jdr.ui.sheets.inventory.bag.description" : "Sac",
+    "dhs-jdr.ui.sheets.inventory.bag.price" : "Prix",
+    "dhs-jdr.ui.sheets.inventory.bag.size" : "Capacité",
+
+    "dhs-jdr.ui.sheets.inventory.sleeping.tent.description" : "Tente",
+    "dhs-jdr.ui.sheets.inventory.sleeping.tent.price" : "Prix",
+    "dhs-jdr.ui.sheets.inventory.sleeping.tent.weight" : "Poids",
+    "dhs-jdr.ui.sheets.inventory.sleeping.tent.rest" : "Repos",
+    "dhs-jdr.ui.sheets.inventory.sleeping.tent.bonus" : "Bonus",
+
+    "dhs-jdr.ui.sheets.inventory.sleeping.bag.description" : "Duvet",
+    "dhs-jdr.ui.sheets.inventory.sleeping.bag.price" : "Prix",
+    "dhs-jdr.ui.sheets.inventory.sleeping.bag.weight" : "Poids",
+    "dhs-jdr.ui.sheets.inventory.sleeping.bag.rest" : "Repos",
+    "dhs-jdr.ui.sheets.inventory.sleeping.bag.bonus" : "Bonus",    
+
+    "dhs-jdr.ui.sheets.inventory.rest.label" : "Repos naturel",
+    "dhs-jdr.ui.sheets.inventory.rest.hp" : "HP",
+    "dhs-jdr.ui.sheets.inventory.rest.hpDelay" : "h",
+    "dhs-jdr.ui.sheets.inventory.rest.mp" : "MP",
+    "dhs-jdr.ui.sheets.inventory.rest.mpDelay" : "h",
+
+    "dhs-jdr.ui.sheets.inventory.consummables.title" : "Consommables",
+    "dhs-jdr.ui.sheets.inventory.general.title" : "Général",
+    "dhs-jdr.ui.sheets.inventory.equipment.title" : "Equipement",
+
+    "dhs-jdr.ui.sheets.inventory.item.name" : "Nom",
+    "dhs-jdr.ui.sheets.inventory.item.price" : "Prix",
+    "dhs-jdr.ui.sheets.inventory.item.weight" : "Poids",
+    "dhs-jdr.ui.sheets.inventory.item.weightUnit" : "kg",
+    "dhs-jdr.ui.sheets.inventory.item.effects" : "Effets",
+
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.name" : "Armure",
+    "dhs-jdr.ui.sheets.inventory.equipment.weapon.name" : "Arme",
+
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.helmet" : "Casque",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.torso" : "Plastron",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.gloves" : "Gants",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.legs" : "Jambière",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.boots" : "Bottes",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.pendant" : "Amulette",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.ring" : "Anneau",
+
+    "dhs-jdr.ui.sheets.inventory.equipment.price" : "Prix",
+    "dhs-jdr.ui.sheets.inventory.equipment.weight" : "Poids",
+    "dhs-jdr.ui.sheets.inventory.equipment.type" : "Type",
+    "dhs-jdr.ui.sheets.inventory.equipment.effects" : "Effet supp",
+
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.label" : "Resistance",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.piercing" : "Per",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.blunt" : "Con",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.slash" : "Tra",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.fire" : "Feu",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.water" : "Eau",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.nature" : "Nat",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.air" : "Air",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.occult" : "Occ",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.spirit" : "Spi",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.light" : "Lum",
+    "dhs-jdr.ui.sheets.inventory.equipment.resistance.darkness" : "Ten",
+
+    "dhs-jdr.ui.sheets.inventory.equipment.weapon.numberOfHands" : "Nombre de main",
+    "dhs-jdr.ui.sheets.inventory.equipment.weapon.range" : "Portée",
+    "dhs-jdr.ui.sheets.inventory.equipment.weapon.test" : "Test",
+    "dhs-jdr.ui.sheets.inventory.equipment.weapon.damage" : "Degat",
+
+    "dhs-jdr.ui.sheets.capacities.active.name" : "Compétence",
+    "dhs-jdr.ui.sheets.capacities.active.level" : "Niveau",
+    "dhs-jdr.ui.sheets.capacities.active.cost" : "Coût",
+    "dhs-jdr.ui.sheets.capacities.active.range" : "Portée",
+    "dhs-jdr.ui.sheets.capacities.active.target" : "Cible",
+    "dhs-jdr.ui.sheets.capacities.active.lineOfSight" : "Ligne de vue",
+    "dhs-jdr.ui.sheets.capacities.active.cast" : "Cast",
+    "dhs-jdr.ui.sheets.capacities.active.duration" : "Durée",
+    "dhs-jdr.ui.sheets.capacities.active.test" : "Test",
+    "dhs-jdr.ui.sheets.capacities.active.cc" : "CC",
+    "dhs-jdr.ui.sheets.capacities.active.ec" : "EC",
+    "dhs-jdr.ui.sheets.capacities.active.effects" : "Effets",
+
+    "dhs-jdr.ui.sheets.capacities.passive.name" : "Passif",
+    "dhs-jdr.ui.sheets.capacities.passive.level" : "Niv",
+    "dhs-jdr.ui.sheets.capacities.passive.effects" : "Effets",
+
+
+
+
+    "dhs-jdr.ui.sheets.stats.bonus.attack" : "Degat Bonus",
+    "dhs-jdr.ui.sheets.stats.bonus.defense" : "Defense Bonus",
+    
+    
+
+    "dhs-jdr.ui.sheets.aptitudes.specialization" : "Spécialisation",
+    "dhs-jdr.ui.sheets.aptitudes.level" : "Niveau spécialisation",
+    "dhs-jdr.ui.sheets.aptitudes.description" : "Description spécialisation",
+
+    "dhs-jdr.ui.sheets.racialCapacities.name" : "Capacité racial",
+    "dhs-jdr.ui.sheets.racialCapacities.description" : "Description",
+
+
+    "dhs-jdr.ui.sheets.equipped.armor.price" : "Prix",
+    "dhs-jdr.ui.sheets.equipped.armor.weight" : "Poids",
+    "dhs-jdr.ui.sheets.equipped.armor.type" : "Type",
+    "dhs-jdr.ui.sheets.equipped.armor.effects" : "Effet supp",
+    
+    "dhs-jdr.ui.sheets.equipped.resistance.label" : "Resistance",
+    "dhs-jdr.ui.sheets.equipped.resistance.piercing" : "Per",
+    "dhs-jdr.ui.sheets.equipped.resistance.contondant" : "Con",
+    "dhs-jdr.ui.sheets.equipped.resistance.slash" : "Tra",
+    "dhs-jdr.ui.sheets.equipped.resistance.fire" : "Feu",
+    "dhs-jdr.ui.sheets.equipped.resistance.water" : "Eau",
+    "dhs-jdr.ui.sheets.equipped.resistance.nature" : "Nat",
+    "dhs-jdr.ui.sheets.equipped.resistance.air" : "Air",
+    "dhs-jdr.ui.sheets.equipped.resistance.occult" : "Occ",
+    "dhs-jdr.ui.sheets.equipped.resistance.spirit" : "Spi",
+    "dhs-jdr.ui.sheets.equipped.resistance.light" : "Lum",
+    "dhs-jdr.ui.sheets.equipped.resistance.darkness" : "Ten",
+
+    "dhs-jdr.ui.sheets.equipped.weapon.name" : "Arme",
+    "dhs-jdr.ui.sheets.equipped.weapon.price" : "Prix",
+    "dhs-jdr.ui.sheets.equipped.weapon.weight" : "Poids",
+    "dhs-jdr.ui.sheets.equipped.weapon.type" : "Type",
+    "dhs-jdr.ui.sheets.equipped.weapon.numberOfHands" : "Nombre de main",
+    "dhs-jdr.ui.sheets.equipped.weapon.range" : "Portée",
+    "dhs-jdr.ui.sheets.equipped.weapon.test" : "Test",
+    "dhs-jdr.ui.sheets.equipped.weapon.damage" : "Degat",
+    "dhs-jdr.ui.sheets.equipped.weapon.effects" : "Effet supp"
 }

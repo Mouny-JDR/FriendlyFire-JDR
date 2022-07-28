@@ -5,15 +5,14 @@ export class dhsCharacterSheet extends ActorSheet{
             classes: ["characterSheet"],
             template: "/systems/dhs-jdr/templates/actors/character-sheet.hbs",
             width: 647,
-            height: 855,
-            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "character" }],
+            height: 855,            
+            tabs: [{ navSelector: ".character-sheet-tabs", contentSelector: ".character-sheet-body", initial: "character" }],
             resizable: false
         });
     }
 
     activateListeners(html) {
-        super.activateListeners(html);
-        
+        super.activateListeners(html);        
 
         html.find('.armor').children().click(ev => {
             ev.preventDefault();
