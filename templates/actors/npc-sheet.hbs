@@ -92,33 +92,33 @@
                 <div class="attributes-block">
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.strength" }}</label>
-                        <input type="text" maxlength="3" placeholder="---">
+                        <input type="number" maxlength="3" placeholder="---" name="data.attributes.strength" data-dtype="Number" value="{{formatNumber data.data.attributes.strength}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.dexterity" }}</label>
-                        <input type="text" maxlength="3" placeholder="---">
+                        <input type="number" maxlength="3" placeholder="---" name="data.attributes.dexterity" data-dtype="Number" value="{{formatNumber data.data.attributes.dexterity}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.arcana" }}</label>
-                        <input type="text" maxlength="3" placeholder="---">
+                        <input type="number" maxlength="3" placeholder="---" name="data.attributes.arcana" data-dtype="Number" value="{{formatNumber data.data.attributes.arcana}}">
                     </div>
 
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.constitution" }}</label>
-                        <input type="text" maxlength="3" placeholder="---">
+                        <input type="number" maxlength="3" placeholder="---" name="data.attributes.constitution" data-dtype="Number" value="{{formatNumber data.data.attributes.constitution}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.charisma" }}</label>
-                        <input type="text" maxlength="3" placeholder="---">
+                        <input type="number" maxlength="3" placeholder="---" name="data.attributes.charisma" data-dtype="Number" value="{{formatNumber data.data.attributes.charisma}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.erudition" }}</label>
-                        <input type="text" maxlength="3" placeholder="---">
+                        <input type="number" maxlength="3" placeholder="---" name="data.attributes.erudition" data-dtype="Number" value="{{formatNumber data.data.attributes.erudition}}">
                     </div>           
                 </div>        
             </div>
@@ -127,7 +127,7 @@
 
             {{> "systems/dhs-jdr/templates/actors/tabs/parts/weapons.hbs"}}                
 
-            {{> "systems/dhs-jdr/templates/actors/tabs/parts/statsSummary.hbs"}}
+            {{> "systems/dhs-jdr/templates/actors/tabs/parts/npc-statsSummary.hbs"}}
             
         </section>
     </div>

@@ -16,7 +16,8 @@ export const preloadHandlebarsTemplates = async function () {
         "systems/dhs-jdr/templates/actors/npc-sheet.hbs",
 
         // Fragments
-        "systems/dhs-jdr/templates/actors/tabs/parts/statsSummary.hbs",
+        "systems/dhs-jdr/templates/actors/tabs/parts/character-statsSummary.hbs",
+        "systems/dhs-jdr/templates/actors/tabs/parts/npc-statsSummary.hbs",
         "systems/dhs-jdr/templates/actors/tabs/parts/capacities.hbs",
         "systems/dhs-jdr/templates/actors/tabs/parts/weapons.hbs",
         "systems/dhs-jdr/templates/actors/tabs/parts/armor.hbs"      

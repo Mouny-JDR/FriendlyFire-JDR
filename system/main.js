@@ -2,6 +2,7 @@ import { dhsActor } from "./actors/actor.js";
 import { dhsCharacterSheet } from "./actors/character-sheet.js";
 import { dhsNpcSheet } from "./actors/npc-sheet.js";
 import { preloadHandlebarsTemplates } from "./templates.js";
+import { registerHelpers } from "./helpers.js";
 
 Hooks.once("setup", function(){
 
@@ -27,8 +28,5 @@ Hooks.once("setup", function(){
 
     preloadHandlebarsTemplates(); 
 
-    Handlebars.registerHelper('formatNumber', function (val) {
-        if (isNaN(val) || +val === 0) return null;
-        else return parseFloat(val).toFixed(0);
-    });
+    registerHelpers();
 });

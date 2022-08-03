@@ -1065,6 +1065,7 @@
 .characterSheet .character-sheet-body .tab.characterTab .attributes .speed input,
 .npcSheet .character-sheet-body .tab.characterTab .attributes .speed input {
   width: 30px;
+  text-align: center;
 }
 .characterSheet .character-sheet-body .tab.characterTab .attributes .speed .box,
 .npcSheet .character-sheet-body .tab.characterTab .attributes .speed .box {
@@ -1072,10 +1073,6 @@
   width: 70px;
   justify-content: center;
   align-items: center;
-}
-.characterSheet .character-sheet-body .tab.characterTab .attributes .speed .box input,
-.npcSheet .character-sheet-body .tab.characterTab .attributes .speed .box input {
-  text-align: center;
 }
 .characterSheet .character-sheet-body .tab.characterTab .attributes .speed > div:first-of-type,
 .npcSheet .character-sheet-body .tab.characterTab .attributes .speed > div:first-of-type {
@@ -1094,11 +1091,6 @@
   align-items: center;
   background-image: url('../ui/actors/star.webp');
   background-size: contain;
-}
-.characterSheet .character-sheet-body .tab.characterTab .attributes .speed > div:last-of-type label,
-.npcSheet .character-sheet-body .tab.characterTab .attributes .speed > div:last-of-type label {
-  margin-inline-start: 10px;
-  margin-block-start: 5px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .attributes .speed > div:last-of-type input,
 .npcSheet .character-sheet-body .tab.characterTab .attributes .speed > div:last-of-type input {
