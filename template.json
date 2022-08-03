@@ -3,8 +3,62 @@
     "types": [
       "character",
       "npc"
-    ]
-
+    ],
+    "templates":{
+      "attributes": {
+        "attributes": {
+          "strength": null,
+          "dexterity": null,
+          "constitution": null,
+          "arcana": null,
+          "charisma": null,
+          "erudition": null                                                
+        }
+      },
+      "bonus": {
+        "bonus":{
+          "attack":{
+            "piercing": null,
+            "slash": null,
+            "contondant": null,
+            "fire": null,
+            "water": null,
+            "nature": null,
+            "air": null,
+            "occult": null,
+            "spirit": null,
+            "light": null,
+            "darkness": null
+          },
+          "defense":{
+            "piercing": null,
+            "slash": null,
+            "contondant": null,
+            "fire": null,
+            "water": null,
+            "nature": null,
+            "air": null,
+            "occult": null,
+            "spirit": null,
+            "light": null,
+            "darkness": null
+          }
+        }
+      }
+    },
+    "character": {
+      "templates":[
+        "attributes",
+        "bonus"
+      ],
+      "attributes":{
+        "charisma": null,
+        "erudition": null
+      },
+      "inventory":{
+        "items":[]
+      }
+    }
   },
   "Item": {
     "types": [

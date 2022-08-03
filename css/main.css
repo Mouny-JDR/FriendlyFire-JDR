@@ -337,7 +337,7 @@
 .characterSheet .avatar,
 .npcSheet .avatar {
   z-index: 50;
-  background-image: url('../ui/actors/background.webp');
+  background-image: url('../ui/actors/avatar.webp');
   background-size: contain;
   object-fit: contain;
   border-radius: 50%;
@@ -412,39 +412,39 @@
 }
 .characterSheet .statsSummary .attacks .piercing img,
 .npcSheet .statsSummary .attacks .piercing img {
-  content: url('../ui/actors/perforant.webp');
+  content: url('../ui/actors/atk_piercing.webp');
 }
 .characterSheet .statsSummary .attacks .slash img,
 .npcSheet .statsSummary .attacks .slash img {
-  content: url('../ui/actors/tranchant.webp');
+  content: url('../ui/actors/atk_slash.webp');
 }
 .characterSheet .statsSummary .attacks .contondant img,
 .npcSheet .statsSummary .attacks .contondant img {
-  content: url('../ui/actors/contondant.webp');
+  content: url('../ui/actors/atk_contondant.webp');
 }
 .characterSheet .statsSummary .attacks .fire img,
 .npcSheet .statsSummary .attacks .fire img {
-  content: url('../ui/actors/feu.webp');
+  content: url('../ui/actors/atk_fire.webp');
 }
 .characterSheet .statsSummary .attacks .water img,
 .npcSheet .statsSummary .attacks .water img {
-  content: url('../ui/actors/eau.webp');
+  content: url('../ui/actors/atk_water.webp');
 }
 .characterSheet .statsSummary .attacks .nature img,
 .npcSheet .statsSummary .attacks .nature img {
-  content: url('../ui/actors/nature.webp');
+  content: url('../ui/actors/atk_nature.webp');
 }
 .characterSheet .statsSummary .attacks .air img,
 .npcSheet .statsSummary .attacks .air img {
-  content: url('../ui/actors/air.webp');
+  content: url('../ui/actors/atk_air.webp');
 }
 .characterSheet .statsSummary .attacks .occult img,
 .npcSheet .statsSummary .attacks .occult img {
-  content: url('../ui/actors/occulte.webp');
+  content: url('../ui/actors/atk_occult.webp');
 }
 .characterSheet .statsSummary .attacks .spirit img,
 .npcSheet .statsSummary .attacks .spirit img {
-  content: url('../ui/actors/spirituel.webp');
+  content: url('../ui/actors/atk_spirit.webp');
   height: 40px;
 }
 .characterSheet .statsSummary .attacks .spirit input,
@@ -454,19 +454,19 @@
 }
 .characterSheet .statsSummary .attacks .light img,
 .npcSheet .statsSummary .attacks .light img {
-  content: url('../ui/actors/lumiere.webp');
+  content: url('../ui/actors/atk_light.webp');
 }
 .characterSheet .statsSummary .attacks .darkness img,
 .npcSheet .statsSummary .attacks .darkness img {
-  content: url('../ui/actors/tenebre.webp');
+  content: url('../ui/actors/atk_darkness.webp');
 }
 .characterSheet .statsSummary .defense .piercing img,
 .npcSheet .statsSummary .defense .piercing img {
-  content: url('../ui/actors/def_perforant.webp');
+  content: url('../ui/actors/def_piercing.webp');
 }
 .characterSheet .statsSummary .defense .slash img,
 .npcSheet .statsSummary .defense .slash img {
-  content: url('../ui/actors/def_tranchant.webp');
+  content: url('../ui/actors/def_slash.webp');
 }
 .characterSheet .statsSummary .defense .contondant img,
 .npcSheet .statsSummary .defense .contondant img {
@@ -474,11 +474,11 @@
 }
 .characterSheet .statsSummary .defense .fire img,
 .npcSheet .statsSummary .defense .fire img {
-  content: url('../ui/actors/def_feu.webp');
+  content: url('../ui/actors/def_fire.webp');
 }
 .characterSheet .statsSummary .defense .water img,
 .npcSheet .statsSummary .defense .water img {
-  content: url('../ui/actors/def_eau.webp');
+  content: url('../ui/actors/def_water.webp');
 }
 .characterSheet .statsSummary .defense .nature img,
 .npcSheet .statsSummary .defense .nature img {
@@ -490,19 +490,19 @@
 }
 .characterSheet .statsSummary .defense .occult img,
 .npcSheet .statsSummary .defense .occult img {
-  content: url('../ui/actors/def_occulte.webp');
+  content: url('../ui/actors/def_occult.webp');
 }
 .characterSheet .statsSummary .defense .spirit img,
 .npcSheet .statsSummary .defense .spirit img {
-  content: url('../ui/actors/def_spirituel.webp');
+  content: url('../ui/actors/def_spirit.webp');
 }
 .characterSheet .statsSummary .defense .light img,
 .npcSheet .statsSummary .defense .light img {
-  content: url('../ui/actors/def_lumiere.webp');
+  content: url('../ui/actors/def_light.webp');
 }
 .characterSheet .statsSummary .defense .darkness img,
 .npcSheet .statsSummary .defense .darkness img {
-  content: url('../ui/actors/def_tenebre.webp');
+  content: url('../ui/actors/def_darkness.webp');
 }
 .characterSheet .resistance,
 .npcSheet .resistance {
@@ -634,12 +634,20 @@
   flex-basis: 200px;
   margin-block-start: 20px;
 }
+.characterSheet .weaponContainer .multiFields,
+.npcSheet .weaponContainer .multiFields {
+  height: 20px;
+}
+.characterSheet .weaponContainer .multiFields:nth-of-type(2) > div:nth-of-type(2),
+.npcSheet .weaponContainer .multiFields:nth-of-type(2) > div:nth-of-type(2) {
+  margin-inline-start: 80px;
+}
 .characterSheet .sheet-banner,
 .npcSheet .sheet-banner {
   flex-basis: 56px;
   flex-grow: 0;
   flex-shrink: 0;
-  background-image: url('../ui/actors/banderole2.webp');
+  background-image: url('../ui/actors/banner.webp');
   display: flex;
   flex-direction: row;
   color: white;
@@ -653,14 +661,14 @@
   flex-basis: 772px;
   display: flex;
   flex-direction: column;
-  background-image: url('../ui/actors/page_vierge2.webp');
+  background-image: url('../ui/actors/background.webp');
 }
 .characterSheet .npc-sheet-banner,
 .npcSheet .npc-sheet-banner {
   flex-basis: 56px;
   flex-grow: 0;
   flex-shrink: 0;
-  background-image: url('../ui/actors/banderole2.webp');
+  background-image: url('../ui/actors/banner.webp');
   display: flex;
   flex-direction: row;
   color: white;
@@ -674,7 +682,7 @@
   flex-basis: 772px;
   display: flex;
   flex-direction: column;
-  background-image: url('../ui/actors/page_vierge2.webp');
+  background-image: url('../ui/actors/background.webp');
 }
 .characterSheet .npc-sheet-banner,
 .npcSheet .npc-sheet-banner {
@@ -948,7 +956,7 @@
   flex-basis: 56px;
   flex-grow: 0;
   flex-shrink: 0;
-  background-image: url('../ui/actors/banderole2.webp');
+  background-image: url('../ui/actors/banner.webp');
   display: flex;
   flex-direction: row;
   color: white;
@@ -962,7 +970,7 @@
   flex-basis: 772px;
   display: flex;
   flex-direction: column;
-  background-image: url('../ui/actors/page_vierge2.webp');
+  background-image: url('../ui/actors/background.webp');
 }
 .characterSheet .character-sheet-banner,
 .npcSheet .character-sheet-banner {
@@ -997,7 +1005,7 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab,
 .npcSheet .character-sheet-body .tab.characterTab {
-  background-image: url('../ui/actors/page_perso_jdr_stats_off2.webp');
+  background-image: url('../ui/actors/background_character.webp');
 }
 .characterSheet .character-sheet-body .tab.active,
 .npcSheet .character-sheet-body .tab.active {
@@ -1073,7 +1081,7 @@
 .npcSheet .character-sheet-body .tab.characterTab .attributes .speed > div:first-of-type {
   height: 80px;
   width: 80px;
-  background-image: url('../ui/actors/vitesse.webp');
+  background-image: url('../ui/actors/speed.webp');
   background-size: contain;
 }
 .characterSheet .character-sheet-body .tab.characterTab .attributes .speed > div:last-of-type,
@@ -1134,7 +1142,7 @@
   background-position: center;
   width: 60px;
   height: 60px;
-  background-image: url('../ui/actors/stats2.webp');
+  background-image: url('../ui/actors/attribute.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-2,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-2 {
@@ -1174,7 +1182,7 @@
   background-position: center;
   width: 60px;
   height: 60px;
-  background-image: url('../ui/actors/stats2.webp');
+  background-image: url('../ui/actors/attribute.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-3,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-3 {
@@ -1214,7 +1222,7 @@
   background-position: center;
   width: 60px;
   height: 60px;
-  background-image: url('../ui/actors/stats2.webp');
+  background-image: url('../ui/actors/attribute.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-4,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-4 {
@@ -1254,7 +1262,7 @@
   background-position: center;
   width: 60px;
   height: 60px;
-  background-image: url('../ui/actors/stats2.webp');
+  background-image: url('../ui/actors/attribute.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .hpmp,
 .npcSheet .character-sheet-body .tab.characterTab .hpmp {
@@ -1329,10 +1337,6 @@
 .npcSheet .character-sheet-body .tab.characterTab .hpmp .avatar {
   height: 220px;
   width: 220px;
-  /*background-image: url('../ui/actors/background.webp');
-        background-size: contain;
-        object-fit: contain;
-        border-radius: 50%;*/
 }
 .characterSheet .character-sheet-body .tab.characterTab .hpmp .mp,
 .npcSheet .character-sheet-body .tab.characterTab .hpmp .mp {
@@ -1539,40 +1543,40 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .piercing img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .piercing img {
-  content: url('../ui/actors/perforant.webp');
+  content: url('../ui/actors/atk_piercing.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .slash img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .slash img {
-  content: url('../ui/actors/tranchant.webp');
+  content: url('../ui/actors/atk_slash.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .contondant img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .contondant img {
-  content: url('../ui/actors/contondant.webp');
+  content: url('../ui/actors/atk_contondant.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .fire img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .fire img {
-  content: url('../ui/actors/feu.webp');
+  content: url('../ui/actors/atk_fire.webp');
   top: -10px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .water img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .water img {
-  content: url('../ui/actors/eau.webp');
+  content: url('../ui/actors/atk_water.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .nature img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .nature img {
-  content: url('../ui/actors/nature.webp');
+  content: url('../ui/actors/atk_nature.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .air img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .air img {
-  content: url('../ui/actors/air.webp');
+  content: url('../ui/actors/atk_air.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .occult img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .occult img {
-  content: url('../ui/actors/occulte.webp');
+  content: url('../ui/actors/atk_occult.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .spirit img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .spirit img {
-  content: url('../ui/actors/spirituel.webp');
+  content: url('../ui/actors/atk_spirit.webp');
   height: 40px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .spirit input,
@@ -1581,11 +1585,11 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .light img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .light img {
-  content: url('../ui/actors/lumiere.webp');
+  content: url('../ui/actors/atk_light.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .darkness img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.attacks .darkness img {
-  content: url('../ui/actors/tenebre.webp');
+  content: url('../ui/actors/atk_darkness.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense {
@@ -1630,11 +1634,11 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .piercing img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .piercing img {
-  content: url('../ui/actors/def_perforant.webp');
+  content: url('../ui/actors/def_piercing.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .slash img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .slash img {
-  content: url('../ui/actors/def_tranchant.webp');
+  content: url('../ui/actors/def_slash.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .contondant img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .contondant img {
@@ -1642,11 +1646,11 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .fire img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .fire img {
-  content: url('../ui/actors/def_feu.webp');
+  content: url('../ui/actors/def_fire.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .water img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .water img {
-  content: url('../ui/actors/def_eau.webp');
+  content: url('../ui/actors/def_water.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .nature img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .nature img {
@@ -1658,19 +1662,19 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .occult img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .occult img {
-  content: url('../ui/actors/def_occulte.webp');
+  content: url('../ui/actors/def_occult.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .spirit img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .spirit img {
-  content: url('../ui/actors/def_spirituel.webp');
+  content: url('../ui/actors/def_spirit.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .light img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .light img {
-  content: url('../ui/actors/def_lumiere.webp');
+  content: url('../ui/actors/def_light.webp');
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .darkness img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .darkness img {
-  content: url('../ui/actors/def_tenebre.webp');
+  content: url('../ui/actors/def_darkness.webp');
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .inventoryRow,
 .npcSheet .character-sheet-body .tab.inventoryTab .inventoryRow {
@@ -1775,7 +1779,7 @@
 .npcSheet .character-sheet-body .tab.inventoryTab .itemRow .wallet > div:first-of-type {
   height: 70px;
   width: 70px;
-  background-image: url('../ui/actors/piece.webp');
+  background-image: url('../ui/actors/purse.webp');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -1827,7 +1831,7 @@
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .itemRow .right .header div,
 .npcSheet .character-sheet-body .tab.inventoryTab .itemRow .right .header div {
-  background-image: url('../ui/actors/consommable.webp');
+  background-image: url('../ui/actors/consummable.webp');
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container,
 .npcSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container {
@@ -1869,7 +1873,7 @@
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight > div:first-of-type,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight > div:first-of-type {
-  background-image: url('../ui/actors/poids.webp');
+  background-image: url('../ui/actors/weight.webp');
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight .box div,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight .box div {
@@ -1968,7 +1972,7 @@
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .right .header div,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .right .header div {
-  background-image: url('../ui/actors/lanterne.webp');
+  background-image: url('../ui/actors/lantern.webp');
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container {
@@ -2010,7 +2014,7 @@
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest > div:first-of-type,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest > div:first-of-type {
-  background-image: url('../ui/actors/tente.webp');
+  background-image: url('../ui/actors/tent.webp');
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest .box,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest .box {
@@ -2207,11 +2211,11 @@
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addArmorButton,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addArmorButton {
-  background-image: url('../ui/actors/casque2.webp');
+  background-image: url('../ui/actors/helmet.webp');
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton {
-  background-image: url('../ui/actors/epee2.webp');
+  background-image: url('../ui/actors/sword.webp');
 }
 .characterSheet .character-sheet-body .tab.aptitudesTab .specializationContainer,
 .npcSheet .character-sheet-body .tab.aptitudesTab .specializationContainer {
@@ -2308,7 +2312,7 @@
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow {
   width: 100%;
-  flex-basis: 350px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   overflow: visible;
@@ -2316,8 +2320,7 @@
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor {
   height: 100%;
-  flex-basis: 175px;
-  flex-grow: 0;
+  flex-grow: 1;
   flex-shrink: 0;
   display: flex;
   position: relative;
@@ -2335,21 +2338,21 @@
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.helmet,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.helmet {
-  content: url('../ui/actors/casque2.webp');
+  content: url('../ui/actors/helmet.webp');
   width: 46px;
   left: calc(50% - 23px);
   top: 10px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.pendant,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.pendant {
-  content: url('../ui/actors/collier2.webp');
+  content: url('../ui/actors/pendant.webp');
   width: 25px;
   left: calc(50% + 40px);
   top: 20px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.torso,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.torso {
-  content: url('../ui/actors/torse2.webp');
+  content: url('../ui/actors/torso.webp');
   width: 120px;
   left: calc(50% - 60px);
   top: 70px;
@@ -2357,20 +2360,20 @@
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img .glove,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img .glove {
-  content: url('../ui/actors/gant2.webp');
+  content: url('../ui/actors/glove.webp');
   width: 30px;
   top: 140px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.leftGlove,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.leftGlove {
-  content: url('../ui/actors/gant2.webp');
+  content: url('../ui/actors/glove.webp');
   width: 30px;
   top: 140px;
   left: calc(50% - 85px);
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.rightGlove,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.rightGlove {
-  content: url('../ui/actors/gant2.webp');
+  content: url('../ui/actors/glove.webp');
   width: 30px;
   top: 140px;
   left: calc(50% + 55px);
@@ -2378,13 +2381,13 @@
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img .ring,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img .ring {
-  content: url('../ui/actors/anneau2.webp');
+  content: url('../ui/actors/ring.webp');
   width: 20px;
   top: 205px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.leftRing,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.leftRing {
-  content: url('../ui/actors/anneau2.webp');
+  content: url('../ui/actors/ring.webp');
   width: 20px;
   top: 205px;
   left: calc(50% - 80px);
@@ -2392,29 +2395,28 @@
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.rightRing,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.rightRing {
-  content: url('../ui/actors/anneau2.webp');
+  content: url('../ui/actors/ring.webp');
   width: 20px;
   top: 205px;
   left: calc(50% + 60px);
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.legs,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.legs {
-  content: url('../ui/actors/jambiere2.webp');
+  content: url('../ui/actors/legs.webp');
   width: 90px;
   left: calc(50% - 45px);
   top: 170px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.boots,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.boots {
-  content: url('../ui/actors/bottes2.webp');
+  content: url('../ui/actors/boots.webp');
   width: 90px;
   left: calc(50% - 45px);
   top: 280px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor {
-  height: 350px;
-  flex-grow: 1;
+  flex-basis: 370px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor.armorContainer,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor.armorContainer {

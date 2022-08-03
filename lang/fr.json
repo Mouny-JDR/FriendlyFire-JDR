@@ -2,11 +2,14 @@
     "ACTOR.TypeCharacter": "Personnage",
     "ACTOR.TypeNpc": "PNJ",
 
-    "dhs-jdr.ui.sheets.character.Tab" : "Personnage",
-    "dhs-jdr.ui.sheets.inventory.Tab" : "Inventaire",
-    "dhs-jdr.ui.sheets.capacities.Tab" : "Capacités",
-    "dhs-jdr.ui.sheets.aptitudes.Tab" : "Aptitudes",
-    "dhs-jdr.ui.sheets.equipment.Tab" : "Equipement",
+    "dhs-jdr.ui.sheets.tabs.character" : "Personnage",
+    "dhs-jdr.ui.sheets.tabs.inventory" : "Inventaire",
+    "dhs-jdr.ui.sheets.tabs.capacities" : "Capacités",
+    "dhs-jdr.ui.sheets.tabs.aptitudes" : "Aptitudes",
+    "dhs-jdr.ui.sheets.tabs.equipment" : "Equipement",
+
+
+
 
     "dhs-jdr.ui.sheets.character.age" : "Age",
     "dhs-jdr.ui.sheets.character.size" : "Taille",
@@ -34,8 +37,9 @@
     "dhs-jdr.ui.sheets.character.attributes.erudition" : "Erudition",
 
     "dhs-jdr.ui.sheets.character.level.label" : "lvl",
+   
 
-    
+
 
     "dhs-jdr.ui.sheets.npc.title" : "PNJ",
     "dhs-jdr.ui.sheets.npc.speed" : "Distance",
@@ -64,6 +68,11 @@
 
 
 
+
+    "dhs-jdr.ui.sheets.inventory.consummables.title" : "Consommables",
+    "dhs-jdr.ui.sheets.inventory.general.title" : "Général",
+    "dhs-jdr.ui.sheets.inventory.equipment.title" : "Equipement",
+
     "dhs-jdr.ui.sheets.inventory.wallet.PO" : "PO",
     "dhs-jdr.ui.sheets.inventory.wallet.PA" : "PA",
     "dhs-jdr.ui.sheets.inventory.wallet.PC" : "PC",
@@ -91,10 +100,6 @@
     "dhs-jdr.ui.sheets.inventory.rest.hpDelay" : "h",
     "dhs-jdr.ui.sheets.inventory.rest.mp" : "MP",
     "dhs-jdr.ui.sheets.inventory.rest.mpDelay" : "h",
-
-    "dhs-jdr.ui.sheets.inventory.consummables.title" : "Consommables",
-    "dhs-jdr.ui.sheets.inventory.general.title" : "Général",
-    "dhs-jdr.ui.sheets.inventory.equipment.title" : "Equipement",
 
     "dhs-jdr.ui.sheets.inventory.item.name" : "Nom",
     "dhs-jdr.ui.sheets.inventory.item.price" : "Prix",
@@ -136,6 +141,9 @@
     "dhs-jdr.ui.sheets.inventory.equipment.weapon.test" : "Test",
     "dhs-jdr.ui.sheets.inventory.equipment.weapon.damage" : "Degat",
 
+
+
+
     "dhs-jdr.ui.sheets.capacities.active.name" : "Compétence",
     "dhs-jdr.ui.sheets.capacities.active.level" : "Niveau",
     "dhs-jdr.ui.sheets.capacities.active.cost" : "Coût",
@@ -161,6 +169,7 @@
     
     
 
+
     "dhs-jdr.ui.sheets.aptitudes.specialization" : "Spécialisation",
     "dhs-jdr.ui.sheets.aptitudes.level" : "Niveau spécialisation",
     "dhs-jdr.ui.sheets.aptitudes.description" : "Description spécialisation",
@@ -169,6 +178,8 @@
     "dhs-jdr.ui.sheets.racialCapacities.description" : "Description",
 
 
+
+    
     "dhs-jdr.ui.sheets.equipped.armor.price" : "Prix",
     "dhs-jdr.ui.sheets.equipped.armor.weight" : "Poids",
     "dhs-jdr.ui.sheets.equipped.armor.type" : "Type",

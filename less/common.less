@@ -197,7 +197,7 @@ textarea {
 
 .avatar {
     z-index: 50;    
-    background-image: url('../ui/actors/background.webp');
+    background-image: url('../ui/actors/avatar.webp');
     background-size: contain;
     object-fit: contain;
     border-radius: 50%;
@@ -288,55 +288,55 @@ textarea {
     .attacks { 
         .piercing {                      
             img {
-                content: url('../ui/actors/perforant.webp');
+                content: url('../ui/actors/atk_piercing.webp');
             }
         }
 
         .slash{          
             img {
-                content: url('../ui/actors/tranchant.webp');
+                content: url('../ui/actors/atk_slash.webp');
             }
         }
 
         .contondant{          
             img {
-                content: url('../ui/actors/contondant.webp');
+                content: url('../ui/actors/atk_contondant.webp');
             }
         }
 
         .fire{          
             img {
-                content: url('../ui/actors/feu.webp');
+                content: url('../ui/actors/atk_fire.webp');
             }
         }
         
         .water{         
             img {
-                content: url('../ui/actors/eau.webp');
+                content: url('../ui/actors/atk_water.webp');
             }
         }
         
         .nature{          
             img {
-                content: url('../ui/actors/nature.webp');
+                content: url('../ui/actors/atk_nature.webp');
             }
         }
 
         .air{          
             img {
-                content: url('../ui/actors/air.webp');
+                content: url('../ui/actors/atk_air.webp');
             }
         }
         
         .occult{          
             img {
-                content: url('../ui/actors/occulte.webp');
+                content: url('../ui/actors/atk_occult.webp');
             }
         }  
         
         .spirit{          
             img {
-                content: url('../ui/actors/spirituel.webp');
+                content: url('../ui/actors/atk_spirit.webp');
                 height: 40px;
             }
             input{
@@ -347,13 +347,13 @@ textarea {
         
         .light{        
             img {
-                content: url('../ui/actors/lumiere.webp');
+                content: url('../ui/actors/atk_light.webp');
             }
         } 
         
         .darkness{          
             img {
-                content: url('../ui/actors/tenebre.webp');
+                content: url('../ui/actors/atk_darkness.webp');
             }
         }            
     }
@@ -361,13 +361,13 @@ textarea {
     .defense{
         .piercing {                      
             img {
-                content: url('../ui/actors/def_perforant.webp');
+                content: url('../ui/actors/def_piercing.webp');
             }
         }
 
         .slash{          
             img {
-                content: url('../ui/actors/def_tranchant.webp');
+                content: url('../ui/actors/def_slash.webp');
             }
         }
 
@@ -379,13 +379,13 @@ textarea {
 
         .fire{          
             img {
-                content: url('../ui/actors/def_feu.webp');
+                content: url('../ui/actors/def_fire.webp');
             }
         }
         
         .water{         
             img {
-                content: url('../ui/actors/def_eau.webp');
+                content: url('../ui/actors/def_water.webp');
             }
         }
         
@@ -403,25 +403,25 @@ textarea {
         
         .occult{          
             img {
-                content: url('../ui/actors/def_occulte.webp');
+                content: url('../ui/actors/def_occult.webp');
             }
         }  
         
         .spirit{          
             img {
-                content: url('../ui/actors/def_spirituel.webp');
+                content: url('../ui/actors/def_spirit.webp');
             }             
         }  
         
         .light{        
             img {
-                content: url('../ui/actors/def_lumiere.webp');
+                content: url('../ui/actors/def_light.webp');
             }
         } 
         
         .darkness{          
             img {
-                content: url('../ui/actors/def_tenebre.webp');
+                content: url('../ui/actors/def_darkness.webp');
             }
         }  
     }
@@ -534,5 +534,13 @@ textarea {
     width:100%;
     flex-basis: 200px;
     
-    margin-block-start: 20px
+    margin-block-start: 20px;
+
+    .multiFields {
+        height: 20px;
+
+       &:nth-of-type(2) > div:nth-of-type(2) {
+            margin-inline-start: 80px;
+        }
+    }
 }

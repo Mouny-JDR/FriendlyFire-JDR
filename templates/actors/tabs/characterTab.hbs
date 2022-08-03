@@ -1,4 +1,4 @@
-<div class="tab-title">{{ localize "dhs-jdr.ui.sheets.character.Tab" }}</div>
+<div class="tab-title">{{ localize "dhs-jdr.ui.sheets.tabs.character" }}</div>
 <div class="attributes">
     <div class="box left">        
         <div class="multiFields-spaced">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="field">      
-            <label{{ localize "dhs-jdr.ui.sheets.character.name" }} :</label>                
+            <label>{{ localize "dhs-jdr.ui.sheets.character.name" }} :</label>                
             <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------">            
         </div>
 
@@ -64,22 +64,22 @@
 <div class="rowStats-1">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.strength" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.strength" data-dtype="Number" value="{{formatNumber data.data.attributes.strength}}">
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dexterity" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.dexterity" data-dtype="Number" value="{{formatNumber data.data.attributes.dexterity}}">
     </div>
 </div>
 
 <div class="rowStats-2">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.constitution" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.constitution" data-dtype="Number" value="{{formatNumber data.data.attributes.constitution}}">
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.arcana" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.arcana" data-dtype="Number" value="{{formatNumber data.data.attributes.arcana}}">
     </div>
 </div>
 
@@ -102,22 +102,22 @@
 <div class="rowStats-3">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dodge" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.dodge" data-dtype="Number" value="{{formatNumber data.data.attributes.dodge}}">
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.parry" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.parry" data-dtype="Number" value="{{formatNumber data.data.attributes.parry}}">
     </div>
 </div>
 
 <div class="rowStats-4">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.charisma" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.charisma" data-dtype="Number" value="{{formatNumber data.data.attributes.charisma}}">
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.erudition" }}</label>
-        <input type="text" maxlength="2" placeholder="--">
+        <input type="number" maxlength="2" placeholder="--" name="data.attributes.erudition" data-dtype="Number" value="{{formatNumber data.data.attributes.erudition}}">
     </div>
 </div>
 
@@ -136,59 +136,59 @@
 
         <div class="piercing">
             <img></img>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.piercing" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.piercing}}">
         </div>
 
         <div class="slash">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.slash" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.slash}}">
         </div>
 
         <div class="contondant">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.contondant" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.contondant}}">
         </div>
 
         <div></div>
 
         <div class="fire">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.fire" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.fire}}">
         </div>
 
         <div class="water">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.water" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.water}}">
         </div>
 
         <div class="nature">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.nature" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.nature}}">
         </div>
 
         <div class="air">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.air" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.air}}">
         </div>
 
         <div class="occult">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.occult" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.occult}}">
         </div>
 
         <div class="spirit">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.spirit" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.spirit}}">
         </div>
 
         <div class="light">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.light" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.light}}">
         </div>
 
         <div class="darkness">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.attack.darkness" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.darkness}}">
         </div>                                                                
     </div>
 
@@ -197,57 +197,57 @@
         
         <div class="piercing">
             <img></img>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.piercing" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.piercing}}">
         </div>
 
         <div class="slash">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.slash" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.slash}}">
         </div>
 
         <div class="contondant">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.contondant" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.contondant}}">
         </div>
 
         <div class="fire">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.fire" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.fire}}">
         </div>
 
         <div class="water">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.water" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.water}}">
         </div>
 
         <div class="nature">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.nature" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.nature}}">
         </div>
 
         <div class="air">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.air" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.air}}">
         </div>
 
         <div class="occult">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.occult" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.occult}}">
         </div>
 
         <div class="spirit">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.spirit" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.spirit}}">
         </div>
 
         <div class="light">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.light" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.light}}">
         </div>
 
         <div class="darkness">
             <img/>
-            <input type="text" maxlength="2" placeholder="--">
+            <input type="number" maxlength="2" placeholder="--" name="data.bonus.defense.darkness" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.darkness}}">
         </div>  
     </div>
 </div>

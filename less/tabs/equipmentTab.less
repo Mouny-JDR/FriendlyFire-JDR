@@ -1,7 +1,7 @@
 .armorRow {
     & {
         width:100%;
-        flex-basis:350px;
+        height:350px;
 
         display:flex; 
         flex-direction: row;
@@ -12,8 +12,7 @@
     .armor {
         & {
             height:100%;
-            flex-basis:175px; 
-            flex-grow:0;
+            flex-grow:1;
             flex-shrink:0;  
             
             display: flex;
@@ -33,7 +32,7 @@
             }
     
             &.helmet {
-                content: url('../ui/actors/casque2.webp');
+                content: url('../ui/actors/helmet.webp');
     
                 width: 46px;
                 
@@ -42,7 +41,7 @@
             }
     
             &.pendant {
-                content: url('../ui/actors/collier2.webp');
+                content: url('../ui/actors/pendant.webp');
     
                 width: 25px;
                 
@@ -51,7 +50,7 @@
             }
     
             &.torso {
-                content: url('../ui/actors/torse2.webp');
+                content: url('../ui/actors/torso.webp');
     
                 width: 120px;
                 
@@ -62,7 +61,7 @@
             }
     
             .glove {
-                content: url('../ui/actors/gant2.webp');
+                content: url('../ui/actors/glove.webp');
     
                 width: 30px;
     
@@ -83,7 +82,7 @@
             }
     
             .ring {
-                content: url('../ui/actors/anneau2.webp');
+                content: url('../ui/actors/ring.webp');
     
                 width: 20px;
     
@@ -104,7 +103,7 @@
             }
     
             &.legs {
-                content: url('../ui/actors/jambiere2.webp');
+                content: url('../ui/actors/legs.webp');
     
                 width: 90px;
     
@@ -113,7 +112,7 @@
             }
     
             &.boots {
-                content: url('../ui/actors/bottes2.webp');
+                content: url('../ui/actors/boots.webp');
     
                 width: 90px; 
                 
@@ -124,9 +123,8 @@
     }
     
     #equippedArmor {
-        & {
-            height: 350px;
-            flex-grow:1;
+        & {         
+            flex-basis: 370px;
         }
 
         &.armorContainer {
