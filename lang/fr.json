@@ -83,13 +83,13 @@
     "dhs-jdr.ui.sheets.inventory.bag.price" : "Prix",
     "dhs-jdr.ui.sheets.inventory.bag.size" : "Capacité",
 
-    "dhs-jdr.ui.sheets.inventory.sleeping.tent.description" : "Tente",
+    "dhs-jdr.ui.sheets.inventory.sleeping.tent.name" : "Tente",
     "dhs-jdr.ui.sheets.inventory.sleeping.tent.price" : "Prix",
     "dhs-jdr.ui.sheets.inventory.sleeping.tent.weight" : "Poids",
     "dhs-jdr.ui.sheets.inventory.sleeping.tent.rest" : "Repos",
     "dhs-jdr.ui.sheets.inventory.sleeping.tent.bonus" : "Bonus",
 
-    "dhs-jdr.ui.sheets.inventory.sleeping.bag.description" : "Duvet",
+    "dhs-jdr.ui.sheets.inventory.sleeping.bag.name" : "Duvet",
     "dhs-jdr.ui.sheets.inventory.sleeping.bag.price" : "Prix",
     "dhs-jdr.ui.sheets.inventory.sleeping.bag.weight" : "Poids",
     "dhs-jdr.ui.sheets.inventory.sleeping.bag.rest" : "Repos",
