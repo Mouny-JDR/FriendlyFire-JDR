@@ -99,6 +99,10 @@
   background-color: black;
   border-radius: 50%;
 }
+.characterSheet .addButton:hover,
+.npcSheet .addButton:hover {
+  background-color: white;
+}
 .characterSheet .field,
 .npcSheet .field {
   display: flex;
@@ -1668,6 +1672,21 @@
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .darkness img {
   content: url('../ui/actors/def_darkness.webp');
 }
+.characterSheet .character-sheet-body .tab.inventoryTab .addConsumable,
+.npcSheet .character-sheet-body .tab.inventoryTab .addConsumable,
+.characterSheet .character-sheet-body .tab.inventoryTab .addItem,
+.npcSheet .character-sheet-body .tab.inventoryTab .addItem {
+  color: orange;
+  align-self: center;
+  background-color: black;
+  border-radius: 50%;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .addConsumable:hover,
+.npcSheet .character-sheet-body .tab.inventoryTab .addConsumable:hover,
+.characterSheet .character-sheet-body .tab.inventoryTab .addItem:hover,
+.npcSheet .character-sheet-body .tab.inventoryTab .addItem:hover {
+  background-color: white;
+}
 .characterSheet .character-sheet-body .tab.inventoryTab .inventoryRow,
 .npcSheet .character-sheet-body .tab.inventoryTab .inventoryRow {
   width: 100%;
@@ -2200,6 +2219,10 @@
   border-radius: 50%;
   position: relative;
   top: 10px;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow i:hover,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow i:hover {
+  background-color: white;
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addArmorButton,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addArmorButton {

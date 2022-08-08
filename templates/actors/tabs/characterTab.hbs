@@ -4,40 +4,40 @@
         <div class="multiFields-spaced">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.character.age" }} :</label>                
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="number" maxlength="3" placeholder="---" name="data.age" data-dtype="Number" value="{{formatNumber data.data.age}}">
             </div>
             <div>
                 <label for="taillem">{{ localize "dhs-jdr.ui.sheets.character.size" }} :</label>
-                <input id="taillem" type="text" maxlength="2" placeholder="--">
+                <input id="taillem" type="number" maxlength="2" placeholder="--" name="data.size.units" data-dtype="Number" value="{{formatNumber data.data.size.units}}">
                 <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.character.sizeUnit" }}</label>
-                <input id="taillecm" type="text" maxlength="2" placeholder="--">
+                <input id="taillecm" type="number" maxlength="2" placeholder="--" name="data.size.decimals" data-dtype="Number" value="{{formatNumber data.data.size.decimals}}">
             </div>
             <div class="sexe">
                 <label>{{ localize "dhs-jdr.ui.sheets.character.sexe" }} :</label>
-                <input type="text" maxlength="1" placeholder="-">
+                <input type="text" maxlength="1" placeholder="-" name="data.sexe" data-dtype="String" value="{{data.data.sexe}}">
             </div>
         </div>
 
         <div class="multiFields-spaced">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.character.race" }} :</label>                
-                <input type="text" maxlength="14" placeholder="------------------">
+                <input type="text" maxlength="14" placeholder="------------------" name="data.race" data-dtype="String" value="{{data.data.race}}">
             </div>
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.character.weight" }} :</label>
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="number" maxlength="3" placeholder="---" name="data.weight" data-dtype="Number" value="{{formatNumber data.data.weight}}">
                 <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.character.weightUnit" }}</label>
             </div>
         </div>
 
         <div class="field">      
             <label>{{ localize "dhs-jdr.ui.sheets.character.name" }} :</label>                
-            <input type="text" name="name" value="{{actor.name}}" maxlength="24" placeholder="-------------------------------------">            
+            <input type="text" name="name" value="{{actor.name}}" data-dtype="String" maxlength="24" placeholder="-------------------------------------">            
         </div>
 
         <div class="fieldArea">
             <label>{{ localize "dhs-jdr.ui.sheets.character.language" }} :</label>                
-            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
+            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.language" data-dtype="String">{{data.data.language}}</textarea>
         </div>        
 
     </div>
@@ -45,17 +45,16 @@
     <div class="right">
         <div class="box racial">
             <div>{{ localize "dhs-jdr.ui.sheets.character.racialCapacities.label" }}</div>
-            <textarea maxlength="50" rows="4" placeholder="--------------------------------------------------"></textarea>
+            <textarea maxlength="50" rows="4" placeholder="--------------------------------------------------" name="data.racialCapacity" data-dtype="String" value="{{data.data.racialCapacity}}"></textarea>
         </div>
         <div class="speed">
             <div></div>
             <div class="box">                                              
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="text" maxlength="3" placeholder="---" name="data.speed.distance" data-dtype="Number" value="{{formatNumber data.data.speed.distance}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.character.speedUnit" }}</label>  
             </div>
             <div>
-                <!--<label>-</label>-->
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="text" maxlength="3" placeholder="---" name="data.speed.modifier" data-dtype="Number" value="{{formatNumber data.data.speed.modifier}}">
             </div>
         </div>
     </div>
@@ -85,17 +84,17 @@
 
 <div class="hpmp">
     <div class="hp">
-        <input type="text" maxlength="3" placeholder="---">
+        <input type="number" maxlength="3" placeholder="---" name="data.hp.current" data-dtype="Number" value="{{formatNumber data.data.hp.current}}">
         <label>/</label>
-        <input type="text" maxlength="3" placeholder="---">
+        <input type="number" maxlength="3" placeholder="---" name="data.hp.max" data-dtype="Number" value="{{formatNumber data.data.hp.max}}">
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.hp" }}</label>
     </div>
     <img class="avatar" src="{{actor.img}}" data-edit="img"></img>
     <div class="mp">
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.mp" }}</label>
-        <input type="text" maxlength="3" placeholder="---">
+        <input type="number" maxlength="3" placeholder="---" name="data.mp.current" data-dtype="Number" value="{{formatNumber data.data.mp.current}}">
         <label>/</label>
-        <input type="text" maxlength="3" placeholder="---">
+        <input type="number" maxlength="3" placeholder="---" name="data.mp.max" data-dtype="Number" value="{{formatNumber data.data.mp.max}}">
     </div>
 </div>
 
@@ -123,11 +122,11 @@
 
 <div class="level">
     <label>{{ localize "dhs-jdr.ui.sheets.character.level.label" }}</label>
-    <input type="text" maxlength="2" placeholder="--">
+    <input type="number" maxlength="2" placeholder="--" name="data.level" data-dtype="Number" value="{{formatNumber data.data.level}}">
     <div class="xp">
-        <input type="text" maxlength="5" placeholder="-----">
+        <input type="number" maxlength="5" placeholder="-----" name="data.xp.current" data-dtype="Number" value="{{formatNumber data.data.xp.current}}">
         <label>/</label>
-        <input type="text" maxlength="5" placeholder="-----">
+        <input type="number" maxlength="5" placeholder="-----" data-dtype="Number" value="{{formatNumber data.data.xp.max}}" readonly>
     </div>
 </div>
 

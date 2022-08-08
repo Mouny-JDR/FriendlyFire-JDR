@@ -26,126 +26,13 @@
             <label>{{ localize "dhs-jdr.ui.sheets.inventory.consummables.title" }}</label>
         </div>
 
-        <div class="container">            
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
+        <div class="container">
 
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
+            {{#each data.data.inventory.consumables as |item id|}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/parts/consumable.hbs" item=item id=id}}
+            {{/each}}
 
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-
-<!-- Mock Data -->
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <i class="fas fa-plus-circle addButton"></i>              
+            <i class="fas fa-plus-circle addConsumable"></i>              
         </div>
     </div>    
 </div>
@@ -197,125 +84,12 @@
         </div>
 
         <div class="container">            
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
 
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
+            {{#each data.data.inventory.items as |item id|}}
+                {{> "systems/dhs-jdr/templates/actors/tabs/parts/item.hbs" item=item id=id}}
+            {{/each}}           
 
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-
-<!-- Mock Data -->
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-data">
-                    <div class="multiFields-spaced">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                            <input type="text" maxlength="25" placeholder="-------------------------">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <i class="fas fa-plus-circle addButton"></i>              
+            <i class="fas fa-plus-circle addItem"></i>              
         </div>
     </div>
 </div>

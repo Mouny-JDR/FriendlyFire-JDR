@@ -25,6 +25,48 @@ export class dhsCharacterSheet extends ActorSheet{
             else {
                 html.find(`#equippedArmor #${className}`)?.get()[0].scrollIntoView({behavior:'smooth', block: 'end'});
             }            
-        });                        
+        });
+        
+        html.find('.addConsumable').click(ev => {
+            let data = duplicate(this.actor.data);
+            if (!Array.isArray(data.data.inventory.consumables)) data.data.inventory.consumables = [];
+            data.data.inventory.consumables.push({});
+            this.actor.update(data);
+        });
+
+        html.find('.deleteConsumable').click(ev => {
+            ev.preventDefault();
+            const elt = $(ev.currentTarget);
+            const index = elt.data("index");
+            let data = duplicate(this.actor.data);
+            data.data.inventory.consumables.splice(index,1);
+            this.actor.update(data);
+        });
+
+        html.find('.addItem').click(ev => {
+            let data = duplicate(this.actor.data);
+            if (!Array.isArray(data.data.inventory.items)) data.data.inventory.items = [];
+            data.data.inventory.items.push({});
+            this.actor.update(data);
+        });
+
+        html.find('.deleteItem').click(ev => {
+            ev.preventDefault();
+            const elt = $(ev.currentTarget);
+            const index = elt.data("index");
+            let data = duplicate(this.actor.data);
+            data.data.inventory.items.splice(index,1);
+            this.actor.update(data);
+        });
+
     }
+
+    _getSubmitData(updateData={}) {
+        const fd = new FormDataExtended(this.form, {editors: this.editors});
+        let data = foundry.utils.expandObject(fd.toObject());
+        if ( updateData ) foundry.utils.mergeObject(data, updateData);
+        data.data.inventory.consumables = Array.from(Object.values(data.data.inventory.consumables || {}));
+        data.data.inventory.items = Array.from(Object.values(data.data.inventory.items || {}));
+        return data;
+      }    
 }

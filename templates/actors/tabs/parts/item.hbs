@@ -1,0 +1,28 @@
+          <div class="item">
+                <div class="item-data">
+                    <div class="multiFields-spaced">
+                        <div>
+                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
+                            <input type="text" maxlength="25" placeholder="-------------------------" name="data.inventory.items.{{id}}.name" data-dtype="String" value="{{name}}">
+                        </div>
+                        <div>
+                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
+                            <input type="number" maxlength="3" placeholder="---" name="data.inventory.items.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
+                        </div>
+                        <div>
+                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
+                            <input type="text" maxlength="2" placeholder="--" name="data.inventory.items.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
+                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
+                        </div>
+                    </div>
+
+                    <div class="fieldArea">
+                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.inventory.items.{{id}}.effects" data-dtype="String">{{effects}}</textarea>
+                    </div>
+                </div>
+
+                <div class="item-actions">
+                    <i class="fas fa-times deleteItem" data-index="{{id}}"></i>
+                </div>
+            </div>
