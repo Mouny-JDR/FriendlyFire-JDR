@@ -37,7 +37,7 @@
 
         <div class="fieldArea">
             <label>{{ localize "dhs-jdr.ui.sheets.character.language" }} :</label>                
-            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.language" data-dtype="String">{{data.data.language}}</textarea>
+            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.language" data-dtype="String">{{{formatTextarea data.data.language}}}</textarea>
         </div>        
 
     </div>
@@ -45,7 +45,7 @@
     <div class="right">
         <div class="box racial">
             <div>{{ localize "dhs-jdr.ui.sheets.character.racialCapacities.label" }}</div>
-            <textarea maxlength="50" rows="4" placeholder="--------------------------------------------------" name="data.racialCapacity" data-dtype="String" value="{{data.data.racialCapacity}}"></textarea>
+            <textarea maxlength="50" rows="4" placeholder="--------------------------------------------------" name="data.racialCapacity" data-dtype="String">{{{formatTextarea data.data.racialCapacity}}}</textarea>
         </div>
         <div class="speed">
             <div></div>

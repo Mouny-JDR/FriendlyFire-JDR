@@ -28,37 +28,37 @@ export class dhsCharacterSheet extends ActorSheet{
         });
         
         html.find('.addConsumable').click(ev => {
-            let data = duplicate(this.actor.data);
-            if (!Array.isArray(data.data.inventory.consumables)) data.data.inventory.consumables = [];
-            data.data.inventory.consumables.push({});
-            this.actor.update(data);
+            this._addInventoryItem('consumables');
         });
 
         html.find('.deleteConsumable').click(ev => {
-            ev.preventDefault();
-            const elt = $(ev.currentTarget);
-            const index = elt.data("index");
-            let data = duplicate(this.actor.data);
-            data.data.inventory.consumables.splice(index,1);
-            this.actor.update(data);
+            let index = $(ev.currentTarget)?.data("index");
+            this._deleteInventoryItem('consumables', index);
         });
 
         html.find('.addItem').click(ev => {
-            let data = duplicate(this.actor.data);
-            if (!Array.isArray(data.data.inventory.items)) data.data.inventory.items = [];
-            data.data.inventory.items.push({});
-            this.actor.update(data);
+            this._addInventoryItem('items');
         });
 
-        html.find('.deleteItem').click(ev => {
-            ev.preventDefault();
-            const elt = $(ev.currentTarget);
-            const index = elt.data("index");
-            let data = duplicate(this.actor.data);
-            data.data.inventory.items.splice(index,1);
-            this.actor.update(data);
+        html.find('.deleteItem').click(ev => {            
+            let index = $(ev.currentTarget)?.data("index");
+            this._deleteInventoryItem('items', index);
         });
 
+    }
+
+    _addInventoryItem(key) {
+        let items = Array.isArray(this.actor.data.data.inventory[key]) ? duplicate(this.actor.data.data.inventory[key]) : [];
+        items.push({});
+        this.actor.update({[`data.inventory.${key}`]: items});        
+    }
+
+    _deleteInventoryItem(key, index) {
+        if (!isNaN(+index)) {
+            let items = duplicate(this.actor.data.data.inventory[key]);
+            items.splice(index, 1);
+            this.actor.update({[`data.inventory.${key}`]: items});
+        }
     }
 
     _getSubmitData(updateData={}) {
