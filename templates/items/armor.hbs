@@ -1,0 +1,95 @@
+<div class="item" data-index="{{id}}">
+    <div class="item-data">
+        <div class="field">
+            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.name" }} :</label>
+            <input type="text" placeholder="----------"  name="data.inventory.armors.{{id}}.name" data-dtype="String" value="{{name}}">
+        </div>       
+
+        <div class="multiFields-start">                        
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.price" }} :</label>
+                <input type="number" maxlength="5" placeholder="-----" name="data.inventory.armors.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
+            </div>
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weight" }} :</label>
+                <input type="number" maxlength="2" placeholder="--" name="data.inventory.armors.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
+            </div>
+        </div>
+
+        <div class="field">
+            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.type" }} :</label>
+            <input type="text" placeholder="----------" name="data.inventory.armors.{{id}}.type" data-dtype="String" value="{{type}}">
+        </div>
+
+        <div class="resistance">
+            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.label" }} :</label>
+            <div>
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.piercing" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.piercing" data-dtype="Number" value="{{formatNumber resistance.piercing}}">
+                </div> 
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.blunt" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.blunt" data-dtype="Number" value="{{formatNumber resistance.blunt}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.slash" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.slash" data-dtype="Number" value="{{formatNumber resistance.slash}}">
+                </div>   
+
+                <div></div>
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.fire" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.fire" data-dtype="Number" value="{{formatNumber resistance.fire}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.water" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.water" data-dtype="Number" value="{{formatNumber resistance.water}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.nature" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.nature" data-dtype="Number" value="{{formatNumber resistance.nature}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.air" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.air" data-dtype="Number" value="{{formatNumber resistance.air}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.occult" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.occult" data-dtype="Number" value="{{formatNumber resistance.occult}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.spirit" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.spirit" data-dtype="Number" value="{{formatNumber resistance.spirit}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.light" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.light" data-dtype="Number" value="{{formatNumber resistance.light}}">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.darkness" }} :</label>
+                    <input type="number" placeholder="----------" name="data.inventory.armors.{{id}}.resistance.darkness" data-dtype="Number" value="{{formatNumber resistance.darkness}}">
+                </div>                                                                                                                                                                                                                                                                                                                     
+            </div>
+        </div>
+
+        <div class="fieldArea">
+            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.effects" }} :</label>
+            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="inventory.armors.{{id}}.effects" data-dtype="String">{{{formatTextarea effects}}}</textarea>
+        </div>
+    </div>
+
+    <div class="item-actions">
+        <i class="fas fa-times deleteItem" data-type="armors"></i>
+    </div>
+</div>

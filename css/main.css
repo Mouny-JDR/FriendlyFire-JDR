@@ -336,7 +336,13 @@
 }
 .characterSheet .item-actions i,
 .npcSheet .item-actions i {
+  width: 10px;
+  height: auto;
   color: darkred;
+}
+.characterSheet .item-actions i:hover,
+.npcSheet .item-actions i:hover {
+  color: yellow;
 }
 .characterSheet .avatar,
 .npcSheet .avatar {
@@ -2177,7 +2183,13 @@
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i {
+  width: 10px;
+  height: auto;
   color: darkred;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i:hover,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item-actions i:hover {
+  color: yellow;
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item-data > div {

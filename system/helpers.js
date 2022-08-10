@@ -6,6 +6,7 @@ export function registerHelpers(){
     });
 
     Handlebars.registerHelper('formatTextarea', function (val) {
-        return val.replaceAll('\n','&#13;&#10;');
+        if (val === undefined || val === null || val.length === '') return val;
+        else return val.replaceAll('\n','&#13;&#10;');
     });
 }

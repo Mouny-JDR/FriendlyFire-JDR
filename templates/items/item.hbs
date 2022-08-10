@@ -1,4 +1,4 @@
-          <div class="item">
+          <div class="item" data-type="items" data-index="{{id}}">
                 <div class="item-data">
                     <div class="multiFields-spaced">
                         <div>
@@ -18,11 +18,11 @@
 
                     <div class="fieldArea">
                         <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.inventory.items.{{id}}.effects" data-dtype="String">{{effects}}</textarea>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="inventory.items.{{id}}.effects" data-dtype="String">{{{formatTextarea effects}}}</textarea>
                     </div>
                 </div>
 
                 <div class="item-actions">
-                    <i class="fas fa-times deleteItem" data-index="{{id}}"></i>
+                    <i class="fas fa-times deleteItem" data-type="items"></i>
                 </div>
             </div>

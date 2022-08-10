@@ -29,10 +29,10 @@
         <div class="container">
 
             {{#each data.data.inventory.consumables as |item id|}}
-                {{> "systems/dhs-jdr/templates/actors/tabs/parts/consumable.hbs" item=item id=id}}
+                {{> "systems/dhs-jdr/templates/items/consumable.hbs" item=item id=id}}
             {{/each}}
 
-            <i class="fas fa-plus-circle addConsumable"></i>              
+            <i class="fas fa-plus-circle addItem" data-type="consumables"></i>              
         </div>
     </div>    
 </div>
@@ -86,10 +86,10 @@
         <div class="container">            
 
             {{#each data.data.inventory.items as |item id|}}
-                {{> "systems/dhs-jdr/templates/actors/tabs/parts/item.hbs" item=item id=id}}
+                {{> "systems/dhs-jdr/templates/items/item.hbs" item=item id=id}}
             {{/each}}           
 
-            <i class="fas fa-plus-circle addItem"></i>              
+            <i class="fas fa-plus-circle addItem" data-type="items"></i>              
         </div>
     </div>
 </div>
@@ -163,7 +163,15 @@
         </div>
 
         <div class="container">
-            <div class="item"> <!--Armure-->
+
+            {{#each data.data.inventory.weapons as |item id|}}
+                {{> "systems/dhs-jdr/templates/items/weapon.hbs" item=item id=id}}
+            {{/each}} 
+
+            {{#each data.data.inventory.armors as |item id|}}
+                {{> "systems/dhs-jdr/templates/items/armor.hbs" item=item id=id}}
+            {{/each}}  
+            <!--<div class="item">
                 <div class="item-data">
                     <div class="field">
                         <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.name" }} :</label>
@@ -259,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="item"> <!--Arme-->
+            <div class="item">
                 <div class="item-data">
                     <div class="field">
                         <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.name" }} :</label>
@@ -314,8 +322,7 @@
                 </div>
             </div>                        
 
-            <!--MockData-->
-            <div class="item"> <!--Armure-->
+            <div class="item">
                 <div class="item-data">
                     <div class="field">
                         <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.name" }} :</label>
@@ -409,16 +416,16 @@
                 <div class="item-actions">
                     <i class="fas fa-times"></i>
                 </div>
-            </div>          
+            </div>-->         
 
             <div class="addEquipmentRow">
-                <div class="addArmorButton">                  
-                    <i class="fas fa-plus-circle"></i>
-                </div>
-
                 <div class="addWeaponButton">                  
-                    <i class="fas fa-plus-circle"></i>
-                </div>              
+                    <i class="fas fa-plus-circle addItem" data-type="weapons"></i>
+                </div>  
+
+                <div class="addArmorButton">                  
+                    <i class="fas fa-plus-circle addItem" data-type="armors"></i>
+                </div>            
             </div>
         </div>
     </div>

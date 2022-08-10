@@ -21,8 +21,12 @@ export const preloadHandlebarsTemplates = async function () {
         "systems/dhs-jdr/templates/actors/tabs/parts/capacities.hbs",
         "systems/dhs-jdr/templates/actors/tabs/parts/weapons.hbs",
         "systems/dhs-jdr/templates/actors/tabs/parts/armor.hbs",
-        "systems/dhs-jdr/templates/actors/tabs/parts/consumable.hbs",
-        "systems/dhs-jdr/templates/actors/tabs/parts/item.hbs"
+
+        // Items
+        "systems/dhs-jdr/templates/items/consumable.hbs",
+        "systems/dhs-jdr/templates/items/item.hbs",
+        "systems/dhs-jdr/templates/items/weapon.hbs",
+        "systems/dhs-jdr/templates/items/armor.hbs"                 
     ];
 
     // Load the template parts
