@@ -5,17 +5,17 @@
         <div class="box">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.wallet.PO" }}</label>
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="number" maxlength="3" placeholder="---" name="data.wallet.po" data-dtype="Number" value="{{formatNumber data.data.wallet.po}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.wallet.PA" }}</label>
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="number" maxlength="3" placeholder="---" name="data.wallet.pa" data-dtype="Number" value="{{formatNumber data.data.wallet.pa}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.wallet.PC" }}</label>
-                <input type="text" maxlength="3" placeholder="---">
+                <input type="number" maxlength="3" placeholder="---" name="data.wallet.pc" data-dtype="Number" value="{{formatNumber data.data.wallet.pc}}">
             </div>            
         </div>
     </div>
@@ -48,9 +48,9 @@
                 </div>
 
                 <div>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.bag.weight.current" data-dtype="Number" value="{{formatNumber data.data.bag.weight.current}}">
                     <label>/</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.bag.weight.max" data-dtype="Number" value="{{formatNumber data.data.bag.weight.max}}">
                 </div>
 
                 <div>
@@ -62,17 +62,17 @@
         <div class="bag">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.bag.description" }} :</label>
-                <input type="text" maxlength="20" placeholder="--------------------">
+                <input type="text" maxlength="20" placeholder="--------------------" name="data.bag.name" data-dtype="String" value="{{data.data.bag.name}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.bag.price" }} :</label>
-                <input type="text" maxlength="10" placeholder="----------">
+                <input type="number" maxlength="10" placeholder="----------" name="data.bag.price" data-dtype="Number" value="{{formatNumber data.data.bag.price}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.bag.size" }} :</label>
-                <input type="text" maxlength="20" placeholder="--------------------">
+                <input type="text" maxlength="20" placeholder="--------------------" name="data.bag.capacity" data-dtype="String" value="{{data.data.bag.capacity}}">
             </div>                
         </div>            
     </div>
@@ -104,13 +104,13 @@
 
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.inventory.rest.hp" }}</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.rest.hp" data-dtype="Number" value="{{formatNumber data.data.rest.hp}}">
                     <label>/ {{ localize "dhs-jdr.ui.sheets.inventory.rest.hpDelay" }}</label>                    
                 </div>
 
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.inventory.rest.mp" }}</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.rest.mp" data-dtype="Number" value="{{formatNumber data.data.rest.mp}}">
                     <label>/ {{ localize "dhs-jdr.ui.sheets.inventory.rest.mpDelay" }}</label>                    
                 </div>                  
             </div>
@@ -119,39 +119,39 @@
         <div class="tent">
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.name" }} :</label>
-                <input type="text" placeholder="----------">
+                <input type="text" placeholder="----------" name="data.rest.tent.name" data-dtype="String" value="{{data.data.rest.tent.name}}">
             </div>
             <div class="multiFields-spaced">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.price" }} :</label>
-                <input type="text" placeholder="------">
+                <input type="number" placeholder="------" name="data.rest.tent.price" data-dtype="Number" value="{{formatNumber data.data.rest.tent.price}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.weight" }} :</label>
-                <input type="text" placeholder="------">                
+                <input type="number" placeholder="------" name="data.rest.tent.weight" data-dtype="Number" value="{{formatNumber data.data.rest.tent.weight}}">
             </div>
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.rest" }} :</label>
-                <input type="text" placeholder="----------">
+                <input type="text" placeholder="----------" name="data.rest.tent.rest" data-dtype="String" value="{{data.data.rest.tent.rest}}">
             </div>
             <div class="fieldArea">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.bonus" }} :</label>
-                <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
+                <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.rest.tent.bonus" data-dtype="String">{{{formatTextarea data.data.rest.tent.bonus}}}</textarea>
             </div>
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.name" }} :</label>
-                <input type="text" placeholder="----------">
+                <input type="text" placeholder="----------" name="data.rest.sleepingBag.name" data-dtype="String" value="{{data.data.rest.sleepingBag.name}}">
             </div>
             <div class="multiFields-spaced">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.price" }} :</label>
-                <input type="text" placeholder="------">
+                <input type="number" placeholder="------" name="data.rest.sleepingBag.price" data-dtype="Number" value="{{formatNumber data.data.rest.sleepingBag.price}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.weight" }} :</label>
-                <input type="text" placeholder="------">                
+                <input type="number" placeholder="------" name="data.rest.sleepingBag.weight" data-dtype="Number" value="{{formatNumber data.data.rest.sleepingBag.weight}}">                
             </div>            
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.rest" }} :</label>
-                <input type="text" placeholder="----------">
+                <input type="text" placeholder="----------" name="data.rest.sleepingBag.rest" data-dtype="String" value="{{data.data.rest.sleepingBag.rest}}">
             </div>                        
             <div class="fieldArea">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.bonus" }} :</label>
-                <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
+                <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.rest.sleepingBag.bonus" data-dtype="String">{{{formatTextarea data.data.rest.sleepingBag.bonus}}}</textarea>
             </div>
         </div>
     </div>
@@ -170,253 +170,7 @@
 
             {{#each data.data.inventory.armors as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/armor.hbs" item=item id=id}}
-            {{/each}}  
-            <!--<div class="item">
-                <div class="item-data">
-                    <div class="field">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.name" }} :</label>
-                        <input type="text" placeholder="----------">
-                    </div>       
-
-                    <div class="multiFields-start">                        
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.price" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.type" }} :</label>
-                        <input type="text" placeholder="----------">
-                    </div>
-
-                    <div class="resistance">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.label" }} :</label>
-                        <div>
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.piercing" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div> 
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.blunt" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.slash" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div></div>
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.fire" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.water" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.nature" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.air" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.occult" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.spirit" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.light" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.darkness" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>                                                                                                                                                                                                                                                                                                                     
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-data">
-                    <div class="field">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.name" }} :</label>
-                        <input type="text" placeholder="----------">
-                    </div>       
-
-                    <div class="multiFields-start">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.price" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weight" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
-                        </div>
-
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.type" }} :</label>
-                            <input type="text" maxlength="20" placeholder="--------------------">
-                        </div>                        
-                    </div>
-
-                    <div class="multiFields-start">
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.numberOfHands" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.range" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
-                        </div>
-
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.test" }} :</label>
-                            <input type="text" maxlength="20" placeholder="--------------------">
-                        </div>                        
-                    </div>                    
-
-                    <div class="field">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.damage" }} :</label>
-                        <input type="text" placeholder="----------">
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>                        
-
-            <div class="item">
-                <div class="item-data">
-                    <div class="field">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.name" }} :</label>
-                        <input type="text" placeholder="----------">
-                    </div>       
-
-                    <div class="multiFields-start">                        
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.price" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
-                        </div>
-                        <div>
-                            <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weight" }} :</label>
-                            <input type="text" maxlength="2" placeholder="--">
-                        </div>
-                    </div>
-
-                    <div class="field">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.type" }} :</label>
-                        <input type="text" placeholder="----------">
-                    </div>
-
-                    <div class="resistance">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.label" }} :</label>
-                        <div>
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.piercing" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div> 
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.blunt" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.slash" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div></div>
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.fire" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.water" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.nature" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.air" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.occult" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.spirit" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.light" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>   
-
-                            <div class="field">
-                                <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.resistance.darkness" }} :</label>
-                                <input type="text" placeholder="----------">
-                            </div>                                                                                                                                                                                                                                                                                                                     
-                        </div>
-                    </div>
-
-                    <div class="fieldArea">
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.effects" }} :</label>
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
-                    </div>
-                </div>
-
-                <div class="item-actions">
-                    <i class="fas fa-times"></i>
-                </div>
-            </div>-->         
+            {{/each}}                   
 
             <div class="addEquipmentRow">
                 <div class="addWeaponButton">                  
