@@ -119,6 +119,10 @@
           "bonus": null          
         }
       },
+      "capacities":{
+        "activeCapacities": [],
+        "passiveCapacities": []
+      },
       "equipment": {
         "armor": {
           "helmet": {
