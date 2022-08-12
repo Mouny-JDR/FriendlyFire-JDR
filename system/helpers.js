@@ -9,4 +9,8 @@ export function registerHelpers(){
         if (val === undefined || val === null || val.length === '') return val;
         else return val.replaceAll('\n','&#13;&#10;');
     });
+
+    Handlebars.registerHelper('armorLabel', function (key, armorPart) {
+        return game.i18n.localize(key+armorPart);        
+    });   
 }

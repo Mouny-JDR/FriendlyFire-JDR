@@ -30,7 +30,14 @@ export const preloadHandlebarsTemplates = async function () {
 
         // Capacities
         "systems/dhs-jdr/templates/capacities/activeCapacity.hbs",
-        "systems/dhs-jdr/templates/capacities/passiveCapacity.hbs"
+        "systems/dhs-jdr/templates/capacities/passiveCapacity.hbs",
+
+        // Aptitudes
+        "systems/dhs-jdr/templates/aptitudes/specialization.hbs",
+        "systems/dhs-jdr/templates/aptitudes/racialCapacity.hbs",
+        
+        // Equipment
+        "systems/dhs-jdr/templates/equipment/armor.hbs"
     ];
 
     // Load the template parts

@@ -1,4 +1,6 @@
-export class dhsNpcSheet extends ActorSheet{
+import { dhsBaseSheet } from "./base-sheet.js";
+
+export class dhsNpcSheet extends dhsBaseSheet{
     
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
@@ -8,5 +10,5 @@ export class dhsNpcSheet extends ActorSheet{
             height: 855,
             resizable: false
         });
-    }
+    }     
 }

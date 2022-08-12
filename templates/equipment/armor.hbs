@@ -1,0 +1,90 @@
+<div id="{{armorType}}" class="item"> <!--Plastron-->
+    <div class="item-data">
+        <div class="multiFields-spaced">
+            <div>{{log armorType}} {{log armor}}
+                <label>{{ armorLabel "dhs-jdr.ui.sheets.inventory.equipment.armor." armorType }} :</label>
+                <input type="text" placeholder="----------" name="data.equipment.armor.{{armorType}}.name" data-dtype="String" value="{{armor.name}}">
+            </div>                      
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.armor.price" }} :</label>
+                <input type="text" maxlength="5" placeholder="-----">
+            </div>
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.armor.weight" }} :</label>
+                <input type="text" maxlength="3" placeholder="--">
+            </div>
+        </div>
+
+        <div class="field">
+            <label>{{ localize "dhs-jdr.ui.sheets.equipped.armor.type" }} :</label>
+            <input type="text" placeholder="----------">
+        </div>
+
+        <div class="resistance">
+            <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.label" }} :</label>
+            <div>
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.piercing" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div> 
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.contondant" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.slash" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div></div>
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.fire" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.water" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.nature" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.air" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.occult" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.spirit" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.light" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>   
+
+                <div class="field">
+                    <label>{{ localize "dhs-jdr.ui.sheets.equipped.resistance.darkness" }} :</label>
+                    <input type="text" placeholder="----------">
+                </div>                                                                                                                                                                                                                                                                                                                     
+            </div>
+        </div>
+
+        <div class="fieldArea">
+            <label>{{ localize "dhs-jdr.ui.sheets.equipped.armor.effects" }} :</label>
+            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
+        </div>
+    </div>
+</div>

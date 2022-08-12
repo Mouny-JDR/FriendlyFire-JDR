@@ -92,15 +92,15 @@
   overflow-x: hidden;
   padding-block: 2px;
 }
-.characterSheet .addButton,
-.npcSheet .addButton {
+.characterSheet .addItem,
+.npcSheet .addItem {
   color: orange;
   align-self: center;
   background-color: black;
   border-radius: 50%;
 }
-.characterSheet .addButton:hover,
-.npcSheet .addButton:hover {
+.characterSheet .addItem:hover,
+.npcSheet .addItem:hover {
   background-color: white;
 }
 .characterSheet .field,
@@ -1677,17 +1677,6 @@
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .darkness img,
 .npcSheet .character-sheet-body .tab.characterTab .bonusStats > div.defense .darkness img {
   content: url('../ui/actors/def_darkness.webp');
-}
-.characterSheet .character-sheet-body .tab.inventoryTab .addItem,
-.npcSheet .character-sheet-body .tab.inventoryTab .addItem {
-  color: orange;
-  align-self: center;
-  background-color: black;
-  border-radius: 50%;
-}
-.characterSheet .character-sheet-body .tab.inventoryTab .addItem:hover,
-.npcSheet .character-sheet-body .tab.inventoryTab .addItem:hover {
-  background-color: white;
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .inventoryRow,
 .npcSheet .character-sheet-body .tab.inventoryTab .inventoryRow {

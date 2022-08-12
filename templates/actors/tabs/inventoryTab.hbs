@@ -26,7 +26,7 @@
             <label>{{ localize "dhs-jdr.ui.sheets.inventory.consummables.title" }}</label>
         </div>
 
-        <div class="container">
+        <div class="container" data-category="inventory">
 
             {{#each data.data.inventory.consumables as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/consumable.hbs" item=item id=id}}
@@ -83,7 +83,7 @@
             <label>{{ localize "dhs-jdr.ui.sheets.inventory.general.title" }}</label>
         </div>
 
-        <div class="container">            
+        <div class="container" data-category="inventory">            
 
             {{#each data.data.inventory.items as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/item.hbs" item=item id=id}}
@@ -162,7 +162,7 @@
             <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.title" }}</label>
         </div>
 
-        <div class="container">
+        <div class="container" data-category="inventory">
 
             {{#each data.data.inventory.weapons as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/weapon.hbs" item=item id=id}}

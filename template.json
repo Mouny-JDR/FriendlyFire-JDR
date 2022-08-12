@@ -44,12 +44,19 @@
             "darkness": null
           }
         }
+      },
+      "capacities" : {
+        "capacities":{
+          "activeCapacities": [],
+          "passiveCapacities": []
+        }
       }
     },
     "character": {
       "templates":[
         "attributes",
-        "bonus"
+        "bonus",
+        "capacities"
       ],
       "age": null,
       "size": {
@@ -122,6 +129,10 @@
       "capacities":{
         "activeCapacities": [],
         "passiveCapacities": []
+      },
+      "aptitudes": {
+        "specializations": [],
+        "racialCapacities": []
       },
       "equipment": {
         "armor": {
@@ -302,6 +313,11 @@
           }                    
         }
       }      
+    },
+    "npc": {
+      "templates":[        
+        "capacities"
+      ]      
     }
   },
   "Item": {

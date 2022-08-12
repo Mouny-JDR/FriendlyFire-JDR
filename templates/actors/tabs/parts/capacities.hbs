@@ -1,15 +1,15 @@
-<div class="activeCapacitiescontainer">
+<div class="activeCapacitiescontainer" data-category="capacities">
     {{#each data.data.capacities.activeCapacities as |capacity id|}}
         {{> "systems/dhs-jdr/templates/capacities/activeCapacity.hbs" capacity=capacity id=id}}
     {{/each}}          
 
-    <i class="fas fa-plus-circle addCapacity" data-type="activeCapacities"></i>        
+    <i class="fas fa-plus-circle addItem" data-type="activeCapacities"></i>        
 </div>
 
-<div class="passiveCapacitiesContainer">
+<div class="passiveCapacitiesContainer" data-category="capacities">
     {{#each data.data.capacities.passiveCapacities as |capacity id|}}
         {{> "systems/dhs-jdr/templates/capacities/passiveCapacity.hbs" capacity=capacity id=id}}
     {{/each}}     
 
-    <i class="fas fa-plus-circle addCapacity" data-type="passiveCapacities"></i>      
+    <i class="fas fa-plus-circle addItem" data-type="passiveCapacities"></i>      
 </div>
