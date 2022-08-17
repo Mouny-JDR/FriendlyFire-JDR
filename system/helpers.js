@@ -12,5 +12,5 @@ export function registerHelpers(){
 
     Handlebars.registerHelper('armorLabel', function (key, armorPart) {
         return game.i18n.localize(key+armorPart);        
-    });   
+    });
 }

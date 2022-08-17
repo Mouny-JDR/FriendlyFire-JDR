@@ -25,9 +25,29 @@ export class dhsBaseSheet extends ActorSheet{
             let type = item?.data("type"); 
 
             if (!isNaN(+index) && category && type) {
+                
                 let items = duplicate(this.actor.data.data[category][type]);
-                items.splice(index, 1);
-                this.actor.update({[`data.${category}.${type}`]: items});
+                let item = items.splice(index, 1)[0];                    
+
+                new Dialog({
+                    title: game.i18n.localize("dhs-jdr.ui.dialog.deleteConfirmation.title"),
+                    content: `<p>${game.i18n.localize("dhs-jdr.ui.dialog.deleteConfirmation.question")} ${game.i18n.localize(`dhs-jdr.ui.dialog.deleteConfirmation.type.${type}`)} : '${item.name ?? ''}' ?</p>`,
+                    buttons: {
+                        submit: {
+                            icon: '<i class="fas fa-trash-alt"></i>',
+                            label: game.i18n.localize("dhs-jdr.ui.dialog.deleteConfirmation.submit"),
+                            callback: (html) => {
+                                this.actor.update({[`data.${category}.${type}`]: items});                                
+                            }
+                        },		
+                        cancel: {
+                            icon: '<i class="fas fa-times"></i>',
+                            label: game.i18n.localize("dhs-jdr.ui.dialog.deleteConfirmation.cancel"),
+                            callback: () => {
+                            }
+                        }
+                    }
+                },{classes:['dhs-dialog'],width:'fit-content',height:'fit-content'}).render(true);                
             }
         });
     }    
@@ -44,6 +64,9 @@ export class dhsBaseSheet extends ActorSheet{
         
         if (data.data.capacities?.activeCapacities) data.data.capacities.activeCapacities = Array.from(Object.values(data.data.capacities.activeCapacities || {}));
         if (data.data.capacities?.passiveCapacities) data.data.capacities.passiveCapacities = Array.from(Object.values(data.data.capacities.passiveCapacities || {}));
+
+        if (data.data.aptitudes?.specializations) data.data.aptitudes.specializations = Array.from(Object.values(data.data.aptitudes.specializations || {}));
+        if (data.data.aptitudes?.racialCapacities) data.data.aptitudes.racialCapacities = Array.from(Object.values(data.data.aptitudes.racialCapacities || {}));
 
         return data;
     }    

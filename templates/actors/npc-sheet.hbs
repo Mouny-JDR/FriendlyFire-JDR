@@ -6,42 +6,42 @@
             <div class="hpMp">
                 <div class="hp">
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.hp" }} :</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.hp.current" data-dtype="Number" value="{{formatNumber data.data.hp.current}}">
                     <label>/</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.hp.max" data-dtype="Number" value="{{formatNumber data.data.hp.max}}">
                 </div>
 
                 <div class="mp">
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.mp" }} :</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.mp.current" data-dtype="Number" value="{{formatNumber data.data.mp.current}}">
                     <label>/</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.mp.max" data-dtype="Number" value="{{formatNumber data.data.mp.max}}">
                 </div>             
             </div>
 
             <div class="dodge">
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.dodge" }} :</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.attributes.dodge" data-dtype="Number" value="{{formatNumber data.data.attributes.dodge}}">
                 </div>
 
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.parry" }} :</label>
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.attributes.parry" data-dtype="Number" value="{{formatNumber data.data.attributes.parry}}">
                 </div>                
             </div>
 
             <div class="distance">
                 <label>{{ localize "dhs-jdr.ui.sheets.npc.speed" }} :</label>
                 <div class="field">
-                    <input type="text" maxlength="3" placeholder="---">
+                    <input type="number" maxlength="3" placeholder="---" name="data.speed.distance" data-dtype="Number" value="{{formatNumber data.data.speed.distance}}">
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.speedUnit" }}</label>
                 </div>
             </div>
 
             <div class="xp" style="height: 20px;">
                 <label>{{ localize "dhs-jdr.ui.sheets.npc.xp" }} :</label>
-                <input type="text" maxlength="5" placeholder="-----">
+                <input type="number" maxlength="5" placeholder="-----" name="data.xp" data-dtype="Number" value="{{formatNumber data.data.xp}}">
             </div>
         </div>
         
@@ -52,28 +52,28 @@
                     <div class="multiFields-spaced">
                         <div>
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.race" }} :</label>
-                            <input type="text" placeholder="----------">
+                            <input type="text" placeholder="----------" name="data.race" data-dtype="String" value="{{data.data.race}}">
                         </div>                      
                         <div>
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.type" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----">
+                            <input type="text" maxlength="5" placeholder="-----" name="data.type" data-dtype="String" value="{{data.data.type}}">
                         </div>
                     </div>
 
                     <div class="multiFields-spaced">
                         <div>
                             <label for="taillem">{{ localize "dhs-jdr.ui.sheets.npc.size" }} :</label>
-                            <input id="taillem" type="text" maxlength="2" placeholder="--">
+                            <input id="taillem" type="number" maxlength="2" placeholder="--" name="data.size.units" data-dtype="Number" value="{{formatNumber data.data.size.units}}">
                             <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.sizeUnit" }}</label>
-                            <input id="taillecm" type="text" maxlength="2" placeholder="--">
+                            <input id="taillecm" type="number" maxlength="2" placeholder="--" name="data.size.decimals" data-dtype="Number" value="{{formatNumber data.data.size.decimals}}">
                         </div>
                         <div>
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.sexe" }} :</label>
-                            <input type="text" maxlength="1" placeholder="-">
+                            <input type="text" maxlength="1" placeholder="-" name="data.sexe" data-dtype="String" value="{{data.data.sexe}}">
                         </div>
                         <div>
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.weight" }} :</label>
-                            <input type="text" maxlength="3" placeholder="---">
+                            <input type="number" maxlength="3" placeholder="---" name="data.weight" data-dtype="Number" value="{{formatNumber data.data.weight}}">
                             <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.weightUnit" }}</label>
                         </div>                            
                     </div>
@@ -85,7 +85,7 @@
 
                     <div class="fieldArea">
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.language" }} :</label>                
-                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------"></textarea>
+                        <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.language" data-dtype="String">{{{formatTextarea data.data.language}}}</textarea>
                     </div>        
                 </div>
 

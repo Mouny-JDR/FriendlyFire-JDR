@@ -1,0 +1,46 @@
+<div class="item">
+    <div class="item-data">
+        <div class="multiFields">
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.name" }} {{id}} :</label>
+                <input type="text" placeholder="----------" name="data.equipment.weapons.weapon{{id}}.name" data-dtype="String" value="{{weapon.name}}">
+            </div>                      
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.price" }} :</label>
+                <input type="text" maxlength="5" placeholder="-----" name="data.equipment.weapons.weapon{{id}}.price" data-dtype="String" value="{{weapon.price}}">
+            </div>
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.weight" }} :</label>
+                <input type="text" maxlength="3" placeholder="--" name="data.equipment.weapons.weapon{{id}}.weight" data-dtype="String" value="{{weapon.weight}}">
+            </div>
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.type" }} :</label>
+                <input type="text" placeholder="-----------------" name="data.equipment.weapons.weapon{{id}}.type" data-dtype="String" value="{{weapon.type}}">
+            </div>                
+        </div>
+
+        <div class="multiFields">
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.numberOfHands" }} :</label>
+                <input type="number" maxlength="2" placeholder="--" name="data.equipment.weapons.weapon{{id}}.numberOfHands" data-dtype="Number" value="{{formatNumber weapon.numberOfHands}}">
+            </div>                      
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.range" }} :</label>
+                <input type="text" maxlength="5" placeholder="-----" name="data.equipment.weapons.weapon{{id}}.range" data-dtype="String" value="{{weapon.range}}">
+            </div>
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.test" }} :</label>
+                <input type="text" maxlength="3" placeholder="--" name="data.equipment.weapons.weapon{{id}}.test" data-dtype="String" value="{{weapon.test}}">
+            </div>
+            <div>
+                <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.damage" }} :</label>
+                <input type="text" placeholder="-----------------" name="data.equipment.weapons.weapon{{id}}.damage" data-dtype="String" value="{{weapon.damage}}">
+            </div>                
+        </div>           
+
+        <div class="fieldArea">
+            <label>{{ localize "dhs-jdr.ui.sheets.equipped.weapon.effects" }} :</label>
+            <textarea maxlength="50" rows="2" placeholder="--------------------------------------------------" name="data.equipment.weapons.weapon{{id}}.effects" data-dtype="String">{{{formatTextarea weapon.effects}}}</textarea>
+        </div>
+    </div>
+</div>

@@ -1,328 +1,348 @@
 {
-  "Actor": {
-    "types": [
-      "character",
-      "npc"
-    ],
-    "templates":{
-      "attributes": {
-        "attributes": {
-          "strength": null,
-          "dexterity": null,
-          "constitution": null,
-          "arcana": null,
-          "charisma": null,
-          "erudition": null                                                
+	"Actor": {
+		"types": [
+			"character",
+			"npc"
+		],
+		"templates": {
+      "identity":{
+        "size": {
+          "units": null,
+          "decimals": null
+        },
+        "sexe": null,
+        "race": null,
+        "weight": null,
+        "language": null        
+      },
+      "speed":{
+        "speed":{
+          "distance": null
         }
       },
-      "bonus": {
-        "bonus":{
-          "attack":{
-            "piercing": null,
-            "slash": null,
-            "contondant": null,
-            "fire": null,
-            "water": null,
-            "nature": null,
-            "air": null,
-            "occult": null,
-            "spirit": null,
-            "light": null,
-            "darkness": null
-          },
-          "defense":{
-            "piercing": null,
-            "slash": null,
-            "contondant": null,
-            "fire": null,
-            "water": null,
-            "nature": null,
-            "air": null,
-            "occult": null,
-            "spirit": null,
-            "light": null,
-            "darkness": null
-          }
-        }
-      },
-      "capacities" : {
-        "capacities":{
-          "activeCapacities": [],
-          "passiveCapacities": []
-        }
-      }
-    },
-    "character": {
-      "templates":[
-        "attributes",
-        "bonus",
-        "capacities"
-      ],
-      "age": null,
-      "size": {
-        "units": null,
-        "decimals": null
-      },
-      "sexe": null,
-      "race": null,
-      "weight": null,
-      "language": null,
-      "racialCapacity": null,
-      "speed": {
-        "distance": null,
-        "modifier": null
-      },
+			"attributes": {
+				"attributes": {
+					"strength": null,
+					"dexterity": null,
+					"constitution": null,
+					"arcana": null,
+					"charisma": null,
+					"erudition": null
+				}
+			},
       "hp": {
-        "current": null,
-        "max": null
-      },
-      "mp": {
-        "current": null,
-        "max": null
-      },
-      "level": null,
-      "xp": {
-        "current": null
-      },
-      "attributes":{
-        "charisma": null,
-        "erudition": null
-      },
-      "inventory":{
-        "consumables": [],
-        "items":[],
-        "weapons": [],
-        "armors": []
-      },
-      "wallet": {
-        "pc": null,
-        "pa": null,
-        "po": null
-      },
-      "bag": {
-        "name": null,
-        "price": null,
-        "weight": {
+        "hp": {
           "current": null,
           "max": null
-        },
-        "capacity": null
-      },
-      "rest": {
-        "hp": null,
-        "mp": null,
-        "tent": {
-          "name": null,
-          "price": null,
-          "weight": null,
-          "rest": null,
-          "bonus": null
-        },
-        "sleepingBag": {
-          "name": null,
-          "price": null,
-          "weight": null,
-          "rest": null,
-          "bonus": null          
         }
       },
-      "capacities":{
-        "activeCapacities": [],
-        "passiveCapacities": []
+      "mp": {
+        "mp": {
+          "current": null,
+          "max": null
+        }        
       },
-      "aptitudes": {
-        "specializations": [],
-        "racialCapacities": []
-      },
-      "equipment": {
-        "armor": {
-          "helmet": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          },
-          "torso": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          },
-          "gloves": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          },
-          "boots": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          },
-          "pendant": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          },
-          "ring1": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          },
-          "ring2": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "resistance": {
-              "piercing": null,
-              "slash": null,
-              "contondant": null,
-              "fire": null,
-              "water": null,
-              "nature": null,
-              "air": null,
-              "occult": null,
-              "spirit": null,
-              "light": null,
-              "darkness": null
-            },
-            "effects": null
-          } 
-        },
-        "weapons": {
-          "weapon1": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "numberOfHands": null,
-            "range": null,
-            "test": null,
-            "damage": null,
-            "effects": null
-          },
-          "weapon2": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "numberOfHands": null,
-            "range": null,
-            "test": null,
-            "damage": null,
-            "effects": null
-          },
-          "weapon3": {
-            "name": null,
-            "price": null,
-            "weight": null,
-            "type": null,
-            "numberOfHands": null,
-            "range": null,
-            "test": null,
-            "damage": null,
-            "effects": null
-          }                    
-        }
-      }      
-    },
-    "npc": {
-      "templates":[        
-        "capacities"
-      ]      
-    }
-  },
-  "Item": {
-    "types": [
-      "item"
-    ]
-  }
+			"bonus": {
+				"bonus": {
+					"attack": {
+						"piercing": null,
+						"slash": null,
+						"contondant": null,
+						"fire": null,
+						"water": null,
+						"nature": null,
+						"air": null,
+						"occult": null,
+						"spirit": null,
+						"light": null,
+						"darkness": null
+					},
+					"defense": {
+						"piercing": null,
+						"slash": null,
+						"contondant": null,
+						"fire": null,
+						"water": null,
+						"nature": null,
+						"air": null,
+						"occult": null,
+						"spirit": null,
+						"light": null,
+						"darkness": null
+					}
+				}
+			},
+			"capacities": {
+				"capacities": {
+					"activeCapacities": [],
+					"passiveCapacities": []
+				}
+			},
+			"weapons": {
+				"equipment": {
+					"weapons": {
+						"weapon1": {
+							"name": null,
+							"price": null,
+							"weight": null,
+							"type": null,
+							"numberOfHands": null,
+							"range": null,
+							"test": null,
+							"damage": null,
+							"effects": null
+						},
+						"weapon2": {
+							"name": null,
+							"price": null,
+							"weight": null,
+							"type": null,
+							"numberOfHands": null,
+							"range": null,
+							"test": null,
+							"damage": null,
+							"effects": null
+						},
+						"weapon3": {
+							"name": null,
+							"price": null,
+							"weight": null,
+							"type": null,
+							"numberOfHands": null,
+							"range": null,
+							"test": null,
+							"damage": null,
+							"effects": null
+						}
+					}
+				}
+			}
+		},
+		"character": {
+			"templates": [
+        "identity",
+        "speed",
+				"attributes",
+        "hp",
+        "mp",
+				"bonus",
+				"capacities",
+				"weapons"
+			],
+			"age": null,		
+			"racialCapacity": null,
+			"speed": {
+				"modifier": null
+			},
+			"level": null,
+			"xp": {
+				"current": null
+			},
+			"attributes": {
+				"charisma": null,
+				"erudition": null
+			},
+			"inventory": {
+				"consumables": [],
+				"items": [],
+				"weapons": [],
+				"armors": []
+			},
+			"wallet": {
+				"pc": null,
+				"pa": null,
+				"po": null
+			},
+			"bag": {
+				"name": null,
+				"price": null,
+				"weight": {
+					"current": null,
+					"max": null
+				},
+				"capacity": null
+			},
+			"rest": {
+				"hp": null,
+				"mp": null,
+				"tent": {
+					"name": null,
+					"price": null,
+					"weight": null,
+					"rest": null,
+					"bonus": null
+				},
+				"sleepingBag": {
+					"name": null,
+					"price": null,
+					"weight": null,
+					"rest": null,
+					"bonus": null
+				}
+			},
+			"aptitudes": {
+				"specializations": [],
+				"racialCapacities": []
+			},
+			"equipment": {
+				"armors": {
+					"helmet": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					},
+					"torso": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					},
+					"gloves": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					},
+					"boots": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					},
+					"pendant": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					},
+					"ring1": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					},
+					"ring2": {
+						"name": null,
+						"price": null,
+						"weight": null,
+						"type": null,
+						"resistance": {
+							"piercing": null,
+							"slash": null,
+							"contondant": null,
+							"fire": null,
+							"water": null,
+							"nature": null,
+							"air": null,
+							"occult": null,
+							"spirit": null,
+							"light": null,
+							"darkness": null
+						},
+						"effects": null
+					}
+				}
+			}
+		},
+		"npc": {
+			"templates": [
+        "identity",
+        "speed",
+        "attributes",
+        "hp",
+        "mp",
+				"capacities",
+				"weapons"
+			],
+      "dodge": null,
+      "parry": null,
+      "xp": null,
+      "type": null
+		}		
+	}
 }

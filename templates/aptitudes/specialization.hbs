@@ -3,17 +3,17 @@
         <div class="multiFields-start">
             <div class="specialization">
                 <label>{{ localize "dhs-jdr.ui.sheets.aptitudes.specialization" }} :</label>                
-                <input type="text" placeholder="---------------------------------------------">
+                <input type="text" placeholder="---------------------------------------------" name="data.aptitudes.specializations.{{id}}.name" data-dtype="String" value="{{name}}">
             </div>
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.aptitudes.level" }} :</label>
-                <input type="text" maxlength="3" placeholder="--------------------------------------------------">
+                <input type="text" maxlength="3" placeholder="--------------------------------------------------" name="data.aptitudes.specializations.{{id}}.level" data-dtype="String" value="{{level}}">
             </div>               
         </div>                               
 
         <div class="fieldArea">
             <label>{{ localize "dhs-jdr.ui.sheets.aptitudes.description" }} :</label>
-            <textarea rows="2" placeholder="-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"></textarea>
+            <textarea rows="2" placeholder="-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" name="data.aptitudes.specializations.{{id}}.description" data-dtype="String">{{{formatTextarea description}}}</textarea>
         </div>
     </div>
 

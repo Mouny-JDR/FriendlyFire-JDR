@@ -7,34 +7,21 @@
         <img class="legs">
         <img class="leftGlove">
         <img class="rightGlove">
-        <img class="leftRing">
-        <img class="rightRing">
+        <img class="ring1">
+        <img class="ring2">
         <img class="boots">                
     </div>
     <div id="equippedArmor" class="armorContainer">
-        
-        {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=data.data.equipment.armor.helmet armorType="helmet" id=id}}
-        {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=data.data.equipment.armor.torso armorType="torso" id=id}}
-        {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=data.data.equipment.armor.gloves armorType="gloves" id=id}}
-        {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=data.data.equipment.armor.legs armorType="legs" id=id}}
-        {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=data.data.equipment.armor.boots armorType="boots" id=id}}
-        {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=data.data.equipment.armor.pendant armorType="pendant" id=id}}
-
-        <div id="leftRing" class="item"> <!--Anneau 1-->
-            <div class="item-data">
-                <div class="multiFields-spaced">
-                    <div>
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.ring" }} 1 :</label>
-                        {{> "systems/dhs-jdr/templates/actors/tabs/parts/armor.hbs"}}                        
-        </div> 
-
-        <div id="rightRing" class="item"> <!--Anneau 2-->
-            <div class="item-data">
-                <div class="multiFields-spaced">
-                    <div>
-                        <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.armor.ring" }} 2 :</label>
-                        {{> "systems/dhs-jdr/templates/actors/tabs/parts/armor.hbs"}}                        
-        </div>                                                      
+        {{#with data.data.equipment.armors}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=helmet armorType="helmet" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=torso armorType="torso" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=gloves armorType="gloves" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=legs armorType="legs" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=boots armorType="boots" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=pendant armorType="pendant" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=ring1 armorType="ring1" id=id}}
+            {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=ring2 armorType="ring2" id=id}}
+        {{/with}}
     </div>
 </div>
 

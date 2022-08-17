@@ -2397,16 +2397,16 @@
   width: 20px;
   top: 205px;
 }
-.characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.leftRing,
-.npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.leftRing {
+.characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.ring1,
+.npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.ring1 {
   content: url('../ui/actors/ring.webp');
   width: 20px;
   top: 205px;
   left: calc(50% - 80px);
   transform: scaleX(-1);
 }
-.characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.rightRing,
-.npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.rightRing {
+.characterSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.ring2,
+.npcSheet .character-sheet-body .tab.equipmentTab .armorRow .armor img.ring2 {
   content: url('../ui/actors/ring.webp');
   width: 20px;
   top: 205px;
@@ -2448,4 +2448,15 @@
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea {
   height: 50px;
+}
+.dhs-dialog .dialog-content,
+.dhs-dialog .dialog-buttons {
+  flex-grow: 0;
+}
+.dhs-dialog .dialog-content {
+  padding-block: 20px;
+  padding-inline: 10px;
+}
+.dhs-dialog .dialog-buttons {
+  display: flex;
 }

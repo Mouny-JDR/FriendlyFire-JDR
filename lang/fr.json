@@ -116,7 +116,8 @@
     "dhs-jdr.ui.sheets.inventory.equipment.armor.legs" : "Jambière",
     "dhs-jdr.ui.sheets.inventory.equipment.armor.boots" : "Bottes",
     "dhs-jdr.ui.sheets.inventory.equipment.armor.pendant" : "Amulette",
-    "dhs-jdr.ui.sheets.inventory.equipment.armor.ring" : "Anneau",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.ring1" : "Anneau 1",
+    "dhs-jdr.ui.sheets.inventory.equipment.armor.ring2" : "Anneau 2",
 
     "dhs-jdr.ui.sheets.inventory.equipment.price" : "Prix",
     "dhs-jdr.ui.sheets.inventory.equipment.weight" : "Poids",
@@ -206,5 +207,22 @@
     "dhs-jdr.ui.sheets.equipped.weapon.range" : "Portée",
     "dhs-jdr.ui.sheets.equipped.weapon.test" : "Test",
     "dhs-jdr.ui.sheets.equipped.weapon.damage" : "Degat",
-    "dhs-jdr.ui.sheets.equipped.weapon.effects" : "Effet supp"
-}
+    "dhs-jdr.ui.sheets.equipped.weapon.effects" : "Effet supp",
+
+
+
+
+    "dhs-jdr.ui.dialog.deleteConfirmation.title": "Confirmation de suppression",
+    "dhs-jdr.ui.dialog.deleteConfirmation.question": "Etes-vous sur de vouloir supprimer",
+    "dhs-jdr.ui.dialog.deleteConfirmation.submit": "Supprimer",
+    "dhs-jdr.ui.dialog.deleteConfirmation.cancel": "Annuler",
+    
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.consumables": "le consommable",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.items": "l'objet",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.weapons": "l'arme",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.armors": "l'armure",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.activeCapacities": "la capacité active",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.passiveCapacities": "la capacité passive",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.specializations": "la spécialisation",
+    "dhs-jdr.ui.dialog.deleteConfirmation.type.racialCapacities": "la capacité raciale"
+ }
