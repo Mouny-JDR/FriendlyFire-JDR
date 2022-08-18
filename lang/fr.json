@@ -213,7 +213,7 @@
 
 
     "dhs-jdr.ui.dialog.deleteConfirmation.title": "Confirmation de suppression",
-    "dhs-jdr.ui.dialog.deleteConfirmation.question": "Etes-vous sur de vouloir supprimer",
+    "dhs-jdr.ui.dialog.deleteConfirmation.question": "Êtes-vous sûr de vouloir supprimer",
     "dhs-jdr.ui.dialog.deleteConfirmation.submit": "Supprimer",
     "dhs-jdr.ui.dialog.deleteConfirmation.cancel": "Annuler",
     
