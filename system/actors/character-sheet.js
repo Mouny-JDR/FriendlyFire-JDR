@@ -28,5 +28,29 @@ export class dhsCharacterSheet extends dhsBaseSheet{
                 html.find(`#equippedArmor #${className}`)?.get()[0].scrollIntoView({behavior:'smooth', block: 'end'});
             }            
         });
+
+        html.find('.roll').click(async (ev)=>{            
+            ev.preventDefault();
+            let target = $(ev.currentTarget)[0];
+            let stat = target.attributes.getNamedItem("data-roll-stat").value
+            let key = `dhs-jdr.ui.dialog.roll.${stat}`; 
+            let title = `Test ${game.i18n.localize(key)}`;
+
+            let content = await renderTemplate('systems/dhs-jdr/templates/dialogs/statRoll.hbs',{title: title});
+            new Dialog({
+                title: title,
+                content: content,
+                buttons: {
+                    submit: {
+                        icon: '<div class="roll"></div>',
+                        label: game.i18n.localize("dhs-jdr.ui.dialog.roll.rollDice")                  
+                    },		
+                    cancel: {
+                        icon: '<i class="fas fa-times"></i>',
+                        label: game.i18n.localize("dhs-jdr.ui.dialog.cancel")
+                    }
+                }
+            },{classes:['rollForm'], width:'325', height:'fit-content'}).render(true);               
+        });
     }
 }

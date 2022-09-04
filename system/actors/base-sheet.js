@@ -42,12 +42,12 @@ export class dhsBaseSheet extends ActorSheet{
                         },		
                         cancel: {
                             icon: '<i class="fas fa-times"></i>',
-                            label: game.i18n.localize("dhs-jdr.ui.dialog.deleteConfirmation.cancel"),
+                            label: game.i18n.localize("dhs-jdr.ui.dialog.cancel"),
                             callback: () => {
                             }
                         }
                     }
-                },{classes:['dhs-dialog'],width:'fit-content',height:'fit-content'}).render(true);                
+                },{classes:['deleteDialog'],width:'fit-content',height:'fit-content'}).render(true);                
             }
         });
     }    

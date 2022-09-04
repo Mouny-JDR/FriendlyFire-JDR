@@ -210,13 +210,25 @@
     "dhs-jdr.ui.sheets.equipped.weapon.effects" : "Effet supp",
 
 
+    "dhs-jdr.ui.dialog.cancel": "Annuler",
 
+    "dhs-jdr.ui.dialog.roll.strength": "de Force",
+    "dhs-jdr.ui.dialog.roll.dexterity": "de Dextérité",
+    "dhs-jdr.ui.dialog.roll.constitution": "de Constitution",
+    "dhs-jdr.ui.dialog.roll.arcana": "d'Arcane",
+    "dhs-jdr.ui.dialog.roll.dodge": "d'Esquive",
+    "dhs-jdr.ui.dialog.roll.parry": "de Parade",
+    "dhs-jdr.ui.dialog.roll.charisma": "de Charisme",
+    "dhs-jdr.ui.dialog.roll.erudition": "d'Erudition",
+
+    "dhs-jdr.ui.dialog.roll.avantage": "Avantage",
+    "dhs-jdr.ui.dialog.roll.disavantage": "Désavantage",
+    "dhs-jdr.ui.dialog.roll.rollDice": "Lancer les dés",
 
     "dhs-jdr.ui.dialog.deleteConfirmation.title": "Confirmation de suppression",
     "dhs-jdr.ui.dialog.deleteConfirmation.question": "Êtes-vous sûr de vouloir supprimer",
-    "dhs-jdr.ui.dialog.deleteConfirmation.submit": "Supprimer",
-    "dhs-jdr.ui.dialog.deleteConfirmation.cancel": "Annuler",
-    
+    "dhs-jdr.ui.dialog.deleteConfirmation.submit": "Supprimer",        
+
     "dhs-jdr.ui.dialog.deleteConfirmation.type.consumables": "le consommable",
     "dhs-jdr.ui.dialog.deleteConfirmation.type.items": "l'objet",
     "dhs-jdr.ui.dialog.deleteConfirmation.type.weapons": "l'arme",

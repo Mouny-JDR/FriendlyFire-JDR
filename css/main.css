@@ -1116,13 +1116,35 @@
   width: 100%;
   position: relative;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-1 .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-1 .roll {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  background-image: url('/icons/vtt-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-1 .roll:hover,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-1 .roll:hover {
+  filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-1 div:first-of-type,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-1 div:first-of-type {
   right: 30px;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-1 div:first-of-type .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-1 div:first-of-type .roll {
+  left: 0px;
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type),
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type) {
   left: 30px;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type) .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-1 div:not(:first-of-type) .roll {
+  right: 0px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-1 label,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-1 label {
@@ -1156,13 +1178,35 @@
   width: 100%;
   position: relative;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-2 .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-2 .roll {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  background-image: url('/icons/vtt-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-2 .roll:hover,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-2 .roll:hover {
+  filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-2 div:first-of-type,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-2 div:first-of-type {
   right: 120px;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-2 div:first-of-type .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-2 div:first-of-type .roll {
+  left: 0px;
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type),
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type) {
   left: 120px;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type) .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-2 div:not(:first-of-type) .roll {
+  right: 0px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-2 label,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-2 label {
@@ -1196,13 +1240,35 @@
   width: 100%;
   position: relative;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-3 .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-3 .roll {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  background-image: url('/icons/vtt-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-3 .roll:hover,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-3 .roll:hover {
+  filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-3 div:first-of-type,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-3 div:first-of-type {
   right: 120px;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-3 div:first-of-type .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-3 div:first-of-type .roll {
+  left: 0px;
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type),
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type) {
   left: 120px;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type) .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-3 div:not(:first-of-type) .roll {
+  right: 0px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-3 label,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-3 label {
@@ -1236,13 +1302,35 @@
   width: 100%;
   position: relative;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-4 .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-4 .roll {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  background-image: url('/icons/vtt-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-4 .roll:hover,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-4 .roll:hover {
+  filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(0deg);
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-4 div:first-of-type,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-4 div:first-of-type {
   right: 30px;
 }
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-4 div:first-of-type .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-4 div:first-of-type .roll {
+  left: 0px;
+}
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type),
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type) {
   left: 30px;
+}
+.characterSheet .character-sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type) .roll,
+.npcSheet .character-sheet-body .tab.characterTab .rowStats-4 div:not(:first-of-type) .roll {
+  right: 0px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .rowStats-4 label,
 .npcSheet .character-sheet-body .tab.characterTab .rowStats-4 label {
@@ -2453,10 +2541,89 @@
 .dhs-dialog .dialog-buttons {
   flex-grow: 0;
 }
-.dhs-dialog .dialog-content {
+.dhs-dialog .dialog-buttons {
+  display: flex;
+}
+.deleteDialog .dialog-content,
+.deleteDialog .dialog-buttons {
+  flex-grow: 0;
+}
+.deleteDialog .dialog-buttons {
+  display: flex;
+}
+.deleteDialog .dialog-content {
   padding-block: 20px;
   padding-inline: 10px;
 }
-.dhs-dialog .dialog-buttons {
+.rollForm .dialog-content,
+.rollForm .dialog-buttons {
+  flex-grow: 0;
+}
+.rollForm .dialog-buttons {
   display: flex;
+}
+.rollForm .window-content {
+  padding: unset;
+  background-image: url('../ui/actors/avatar.webp');
+  background-size: contain;
+}
+.rollForm .dialog-content {
+  display: flex;
+  flex-direction: column;
+}
+.rollForm .dialog-content .title {
+  flex-basis: 30px;
+  justify-content: center;
+  display: flex;
+  font-size: 22px;
+  background-image: url('../ui/actors/banner.webp');
+  background-size: contain;
+  color: white;
+}
+.rollForm .dialog-content .content {
+  display: flex;
+  flex-direction: column;
+  padding-block: 8px;
+  padding-inline: 15px;
+}
+.rollForm .dialog-content .content .row {
+  flex-basis: 30px;
+  display: flex;
+  align-items: center;
+  padding-block: 5px;
+}
+.rollForm .dialog-content .content .row div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  color: white;
+}
+.rollForm .dialog-content .content .row input,
+.rollForm .dialog-content .content .row select {
+  height: 20px;
+  flex-grow: 2;
+  border: none;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.rollForm .dialog-content .content .row:last-of-type input {
+  flex-grow: 0;
+  width: 30px;
+}
+.rollForm .dialog-buttons {
+  padding: 8px;
+}
+.rollForm .dialog-buttons .roll {
+  height: 20px;
+  width: 20px;
+  background-image: url('/icons/vtt-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-inline-end: 5px;
+}
+.rollForm .dialog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 5px;
 }

@@ -38,7 +38,10 @@ export const preloadHandlebarsTemplates = async function () {
         
         // Equipment
         "systems/dhs-jdr/templates/equipment/armor.hbs",
-        "systems/dhs-jdr/templates/equipment/weapon.hbs"
+        "systems/dhs-jdr/templates/equipment/weapon.hbs",
+
+        // Dialogs
+        "systems/dhs-jdr/templates/dialogs/statRoll.hbs",
     ];
 
     // Load the template parts

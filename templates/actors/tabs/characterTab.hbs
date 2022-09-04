@@ -64,11 +64,12 @@
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.strength" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.strength" data-dtype="Number" value="{{formatNumber data.data.attributes.strength}}">
-        <div style="height: 30px; width: 30px; position: absolute; top: 20px; left: 0px; background-image: url(icons/vtt-512.png); background-size: contain; background-repeat: no-repeat;"></div>
+        <div class="roll" data-roll-stat="strength"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dexterity" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.dexterity" data-dtype="Number" value="{{formatNumber data.data.attributes.dexterity}}">
+        <div class="roll" data-roll-stat="dexterity"></div>
     </div>
 </div>
 
@@ -76,10 +77,12 @@
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.constitution" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.constitution" data-dtype="Number" value="{{formatNumber data.data.attributes.constitution}}">
+        <div class="roll" data-roll-stat="constitution"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.arcana" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.arcana" data-dtype="Number" value="{{formatNumber data.data.attributes.arcana}}">
+        <div class="roll" data-roll-stat="arcana"></div>
     </div>
 </div>
 
@@ -103,10 +106,12 @@
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dodge" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.dodge" data-dtype="Number" value="{{formatNumber data.data.attributes.dodge}}">
+        <div class="roll" data-roll-stat="dodge"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.parry" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.parry" data-dtype="Number" value="{{formatNumber data.data.attributes.parry}}">
+        <div class="roll" data-roll-stat="parry"></div>
     </div>
 </div>
 
@@ -114,10 +119,12 @@
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.charisma" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.charisma" data-dtype="Number" value="{{formatNumber data.data.attributes.charisma}}">
+        <div class="roll" data-roll-stat="charisma"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.erudition" }}</label>
         <input type="number" maxlength="2" placeholder="--" name="data.attributes.erudition" data-dtype="Number" value="{{formatNumber data.data.attributes.erudition}}">
+        <div class="roll" data-roll-stat="erudition"></div>
     </div>
 </div>
 
