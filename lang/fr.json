@@ -225,6 +225,9 @@
     "dhs-jdr.ui.dialog.roll.disavantage": "Désavantage",
     "dhs-jdr.ui.dialog.roll.rollDice": "Lancer les dés",
 
+    "dhs-jdr.ui.dialog.roll.invalidDifficulty": "La difficulté doit être un nombre supérieur ou égal à 0",
+    "dhs-jdr.ui.dialog.roll.invalidRoll": "Formule du jet de dé non valide",
+
     "dhs-jdr.ui.dialog.deleteConfirmation.title": "Confirmation de suppression",
     "dhs-jdr.ui.dialog.deleteConfirmation.question": "Êtes-vous sûr de vouloir supprimer",
     "dhs-jdr.ui.dialog.deleteConfirmation.submit": "Supprimer",        

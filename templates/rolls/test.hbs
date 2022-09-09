@@ -1,0 +1,20 @@
+{{#if hasDifficulty}}
+    {{#if success}}
+        {{#if criticalSuccess}}
+            <h2 class="success critical"><i class="fas fa-check-double"></i>&nbsp;Critique</h2>
+        {{#if }}
+        {{#unless criticalSuccess}}
+            <h2 class="success"><i class="fas fa-check-double"></i>&nbsp;Succès</h2>
+        {{/unless}}
+    {{/if}}
+    {{#unless success}}
+        {{#if criticalFailure}}
+            <h2 class="failure fumble"><i class="fas fa-skull-crossbones"></i>&nbsp;Critique</h2>
+        {{/if}}
+        {{#unless criticalFailure}}
+            <h2 class="failure"><i class="fas fa-times"></i>&nbsp;Echec</h2>
+        {{/unless}}
+    {{/unless}}
+{{/if}}
+
+<h3>Test de <strong>Force</strong> {{#if hasDifficulty}}difficulté 2{{/if}}</h3>

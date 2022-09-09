@@ -1,4 +1,5 @@
 import { dhsBaseSheet } from "./base-sheet.js";
+import { CustomDialog } from "../customDialog.js";
 
 export class dhsCharacterSheet extends dhsBaseSheet{
     
@@ -37,13 +38,41 @@ export class dhsCharacterSheet extends dhsBaseSheet{
             let title = `Test ${game.i18n.localize(key)}`;
 
             let content = await renderTemplate('systems/dhs-jdr/templates/dialogs/statRoll.hbs',{title: title});
-            new Dialog({
+            new CustomDialog({
                 title: title,
                 content: content,
                 buttons: {
                     submit: {
                         icon: '<div class="roll"></div>',
-                        label: game.i18n.localize("dhs-jdr.ui.dialog.roll.rollDice")                  
+                        label: game.i18n.localize("dhs-jdr.ui.dialog.roll.rollDice"),
+                        callback: (html) => {
+                            debugger;
+                            let selectedIndex = +html.find('.dices select')[0].selectedIndex;
+                            let bonus = html.find('.bonus input')[0].value;
+                            let difficulty = +html.find('.difficulty input')[0].value;
+                            
+                            let rollFormula = "1d20";
+                            let roll;
+                            let chatMessage;
+                            switch (selectedIndex) {
+                                case 0:
+                                    if (isNaN(difficulty) || difficulty < 0) {
+                                        ui.notifications.warn(game.i18n.localize('dhs-jdr.ui.dialog.roll.invalidDifficulty'));                                        
+                                        return false;
+                                    }                                    
+                                    if (bonus.length > 0) rollFormula += ` + ${bonus}`;
+                                    roll = new Roll(rollFormula);
+                                    chatMessage = renderTemplate('systems/dhs-jdr/templates/rolls/test.hbs',{title: title}).then(mess=>
+                                        roll.evaluate().then((ro)=>ro.toMessage({flavor:mess})).catch((err)=> ui.notifications.warn(game.i18n.localize('dhs-jdr.ui.dialog.roll.invalidRoll')))
+                                    );                                    
+                                    break;
+                                case 1:
+                                    if (bonus.length > 0) rollFormula += ` + ${bonus}`;
+                                    roll = new Roll(rollFormula);
+                                    roll.evaluate().then((ro)=>ro.toMessage()).catch((err)=> ui.notifications.warn(game.i18n.localize('dhs-jdr.ui.dialog.roll.invalidRoll')));                                    
+                                    break;
+                            }
+                        }                  
                     },		
                     cancel: {
                         icon: '<i class="fas fa-times"></i>',

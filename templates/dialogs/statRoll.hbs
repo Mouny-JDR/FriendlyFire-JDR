@@ -1,17 +1,20 @@
 <div class="title">{{title}}</div>
 <div class="content">
-    <div class="row">
+    <div class="row dices">
         <div>Test DE</div>
-        <select class="flex1" name="dice" id="dice" data-type="String">
+        <select class="flex1" name="dice" id="dice" data-type="String" onChange="
+            let difficulty = document.querySelector('.difficulty');
+            if (difficulty) difficulty.style.visibility = this.value === 'confront' ? 'hidden' : 'visible';">
+
             <option value="test">Test (1d20)</option>
             <option value="confront">Confrontation (1d20 + stats)</option>
         </select>
     </div>
-    <div class="row">
+    <div class="row bonus">
         <div>Bonus</div>
         <input>
     </div>
-    <div class="row">
+    <div class="row difficulty">
         <div>Difficulté</div>
         <input maxlength="2">
     </div>   
