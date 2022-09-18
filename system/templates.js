@@ -43,7 +43,7 @@ export const preloadHandlebarsTemplates = async function () {
         // Dialogs
         "systems/dhs-jdr/templates/dialogs/statRoll.hbs",
 
-        "systems/dhs-jdr/templates/rolls/test.hbs"
+        "systems/dhs-jdr/templates/rolls/roll.hbs"
     ];
 
     // Load the template parts

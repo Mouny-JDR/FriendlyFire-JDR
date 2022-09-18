@@ -1,0 +1,126 @@
+.dhs-dialog {
+
+    .dialog {
+        &-content, &-buttons {
+            flex-grow: 0;
+        }
+
+        &-buttons {
+            display: flex;
+        }
+    }
+}
+
+.deleteDialog {
+    .dhs-dialog();
+
+    .dialog {
+        &-content {
+            padding-block: 20px;
+            padding-inline: 10px;
+        }
+    }
+}
+
+.rollForm {
+
+    .dhs-dialog();
+
+    .window-content {
+        padding: unset;
+
+        background-image: url('../ui/actors/avatar.webp');
+        background-size: contain;
+    }
+
+    .dialog {
+
+        &-content {
+            & {
+                display:flex;
+                flex-direction: column; 
+            }
+            
+            .title {
+                flex-basis: 30px;
+                justify-content: center;
+                
+                display: flex;
+
+                font-size: 22px;
+        
+                background-image: url('../ui/actors/banner.webp');
+                background-size: contain;
+        
+                color: white;
+            }
+
+            .content {
+                
+                & {
+                    display:flex;
+                    flex-direction: column;
+        
+                    padding-block: 8px;
+                    padding-inline: 15px;
+                }
+
+                .row {
+                    flex-basis: 30px;
+                    display: flex;
+                    align-items: center;
+            
+                    padding-block: 5px;
+            
+                    div {
+                        flex-grow: 0;
+                        flex-shrink: 0;
+                        flex-basis: 100px;
+                        
+                        color: white;
+                    }
+            
+                    input, select {
+                        height: 20px;
+                        flex-grow: 2;
+                        border: none;
+
+                        background-color: white;
+                        background-color: rgba(255,255,255,0.7);
+                    }
+
+                    &:last-of-type{                    
+                        input{
+                            flex-grow: 0;
+                            width: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &-buttons {
+            padding: 8px;                         
+
+            .roll {
+                height: 20px;
+                width: 20px;                                
+                
+                background-image: url('/icons/vtt-512.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                margin-inline-end: 5px;
+            }
+        }
+
+        &-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-inline: 5px;
+        }
+    }
+}

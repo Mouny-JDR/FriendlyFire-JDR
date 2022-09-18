@@ -210,23 +210,38 @@
     "dhs-jdr.ui.sheets.equipped.weapon.effects" : "Effet supp",
 
 
+    "dhs-jdr.ui.dialog.roll": "Jet",
+    "dhs-jdr.ui.dialog.testType": "Test DE",
+    "dhs-jdr.ui.dialog.test": "Test (1d20)",
+    "dhs-jdr.ui.dialog.confront": "Confrontation (1d20 + stats)",
+    "dhs-jdr.ui.dialog.bonus": "Bonus",
+    "dhs-jdr.ui.dialog.difficulty": "Difficulté",
+
+    "dhs-jdr.ui.dialog.rollDice": "Lancer les dés",
     "dhs-jdr.ui.dialog.cancel": "Annuler",
 
-    "dhs-jdr.ui.dialog.roll.strength": "de Force",
-    "dhs-jdr.ui.dialog.roll.dexterity": "de Dextérité",
-    "dhs-jdr.ui.dialog.roll.constitution": "de Constitution",
-    "dhs-jdr.ui.dialog.roll.arcana": "d'Arcane",
-    "dhs-jdr.ui.dialog.roll.dodge": "d'Esquive",
-    "dhs-jdr.ui.dialog.roll.parry": "de Parade",
-    "dhs-jdr.ui.dialog.roll.charisma": "de Charisme",
-    "dhs-jdr.ui.dialog.roll.erudition": "d'Erudition",
+    "dhs-jdr.ui.dialog.invalidDifficulty": "La difficulté doit être un nombre supérieur ou égal à 0",
 
-    "dhs-jdr.ui.dialog.roll.avantage": "Avantage",
-    "dhs-jdr.ui.dialog.roll.disavantage": "Désavantage",
-    "dhs-jdr.ui.dialog.roll.rollDice": "Lancer les dés",
+    "dhs-jdr.ui.roll.test": "Test",
+    "dhs-jdr.ui.roll.confront": "Confrontation",
 
-    "dhs-jdr.ui.dialog.roll.invalidDifficulty": "La difficulté doit être un nombre supérieur ou égal à 0",
-    "dhs-jdr.ui.dialog.roll.invalidRoll": "Formule du jet de dé non valide",
+    "dhs-jdr.ui.roll.prefix.strength": "de ",
+    "dhs-jdr.ui.roll.prefix.dexterity": "de ",
+    "dhs-jdr.ui.roll.prefix.constitution": "de ",
+    "dhs-jdr.ui.roll.prefix.arcana": "d'",
+    "dhs-jdr.ui.roll.prefix.dodge": "d'",
+    "dhs-jdr.ui.roll.prefix.parry": "de ",
+    "dhs-jdr.ui.roll.prefix.charisma": "de ",
+    "dhs-jdr.ui.roll.prefix.erudition": "d'",
+
+    "dhs-jdr.ui.roll.invalidRoll": "Formule du jet de dé non valide",
+
+    "dhs-jdr.ui.roll.success": "Succès",
+    "dhs-jdr.ui.roll.criticalSuccess": "Succès critique",
+    "dhs-jdr.ui.roll.fail": "Echec",
+    "dhs-jdr.ui.roll.criticalFail": "Echec critique",
+
+    "dhs-jdr.ui.roll.difficulty": "difficulté",
 
     "dhs-jdr.ui.dialog.deleteConfirmation.title": "Confirmation de suppression",
     "dhs-jdr.ui.dialog.deleteConfirmation.question": "Êtes-vous sûr de vouloir supprimer",

@@ -2635,3 +2635,13 @@
   color: #aa0200;
   filter: sepia(0.5) hue-rotate(-60deg);
 }
+.chat-message .success,
+.chat-message .failure {
+  font-weight: bold;
+}
+.chat-message .success {
+  color: green;
+}
+.chat-message .failure {
+  color: red;
+}
