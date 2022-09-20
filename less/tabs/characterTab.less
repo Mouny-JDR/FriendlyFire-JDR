@@ -23,11 +23,24 @@
             flex-basis: @attributesSize;
         }
 
+        .age, .taille, .weight {
+            input {
+                width: 30px;
+            }
+        }
+
+        /*.age {
+            input {
+                width: 25px;
+            }
+        }*/
+
         .sexe {
             input {
                 text-align: end;
+                width: 20px;
             }
-        }
+        }        
     }
 
     .right {
@@ -187,6 +200,10 @@ each(range(length(@rowStatsSpace)), {
     &{
         width: 100%;
         top:-30px;        
+
+        input {
+            width: 30px;
+        }
     }
 
     .header{
@@ -223,6 +240,10 @@ each(range(length(@rowStatsSpace)), {
             color: blue;
             text-shadow: 0px 0px 4px #ffffff;
         }
+    }
+
+    input {
+        width: 30px;
     }
 }
 
@@ -264,6 +285,10 @@ each(range(length(@rowStatsSpace)), {
 
     .xp {
         .field();
+
+        input {
+            width: 50px;
+        }
     }
 }
 

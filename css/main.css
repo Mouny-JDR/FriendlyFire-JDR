@@ -708,6 +708,10 @@
   display: flex;
   flex-direction: column;
 }
+.characterSheet .npc-sheet-banner .hpMp input,
+.npcSheet .npc-sheet-banner .hpMp input {
+  width: 30px;
+}
 .characterSheet .npc-sheet-banner .hpMp > div,
 .npcSheet .npc-sheet-banner .hpMp > div {
   height: 20px;
@@ -846,6 +850,10 @@
 .npcSheet .npc-sheet-banner .dodge > div input[maxlength="5"] {
   width: 50px;
 }
+.characterSheet .npc-sheet-banner .dodge > div input,
+.npcSheet .npc-sheet-banner .dodge > div input {
+  width: 30px;
+}
 .characterSheet .npc-sheet-banner .dodge > div label,
 .npcSheet .npc-sheet-banner .dodge > div label,
 .characterSheet .npc-sheet-banner .dodge > div input,
@@ -869,6 +877,10 @@
 .characterSheet .npc-sheet-banner .distance div,
 .npcSheet .npc-sheet-banner .distance div {
   height: 20 px;
+}
+.characterSheet .npc-sheet-banner .distance input,
+.npcSheet .npc-sheet-banner .distance input {
+  width: 30px;
 }
 .characterSheet .npc-sheet-banner .xp,
 .npcSheet .npc-sheet-banner .xp {
@@ -916,6 +928,10 @@
   font-weight: bold;
   text-shadow: 1px 1px 1px black;
 }
+.characterSheet .npc-sheet-banner .xp input,
+.npcSheet .npc-sheet-banner .xp input {
+  width: 50px;
+}
 .characterSheet .npc-sheet-body,
 .npcSheet .npc-sheet-body {
   align-items: center;
@@ -945,6 +961,10 @@
 .characterSheet .npc-sheet-body .attributes-row .attributes-block label,
 .npcSheet .npc-sheet-body .attributes-row .attributes-block label {
   padding-inline: 5px;
+}
+.characterSheet .npc-sheet-body .attributes-row .attributes-block input,
+.npcSheet .npc-sheet-body .attributes-row .attributes-block input {
+  width: 30px;
 }
 .characterSheet .npc-sheet-body .activeCapacitiescontainer,
 .npcSheet .npc-sheet-body .activeCapacitiescontainer {
@@ -1044,10 +1064,24 @@
 .npcSheet .character-sheet-body .tab.characterTab .attributes .left {
   height: fit-content;
   flex-basis: 255px;
+  /*.age {
+            input {
+                width: 25px;
+            }
+        }*/
+}
+.characterSheet .character-sheet-body .tab.characterTab .attributes .left .age input,
+.npcSheet .character-sheet-body .tab.characterTab .attributes .left .age input,
+.characterSheet .character-sheet-body .tab.characterTab .attributes .left .taille input,
+.npcSheet .character-sheet-body .tab.characterTab .attributes .left .taille input,
+.characterSheet .character-sheet-body .tab.characterTab .attributes .left .weight input,
+.npcSheet .character-sheet-body .tab.characterTab .attributes .left .weight input {
+  width: 30px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .attributes .left .sexe input,
 .npcSheet .character-sheet-body .tab.characterTab .attributes .left .sexe input {
   text-align: end;
+  width: 20px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .attributes .right,
 .npcSheet .character-sheet-body .tab.characterTab .attributes .right {
@@ -1372,6 +1406,10 @@
   align-items: center;
   position: relative;
 }
+.characterSheet .character-sheet-body .tab.characterTab .hpmp input,
+.npcSheet .character-sheet-body .tab.characterTab .hpmp input {
+  width: 30px;
+}
 .characterSheet .character-sheet-body .tab.characterTab .hpmp .header,
 .npcSheet .character-sheet-body .tab.characterTab .hpmp .header {
   align-self: flex-start;
@@ -1473,6 +1511,10 @@
   color: blue;
   text-shadow: 0px 0px 4px #ffffff;
 }
+.characterSheet .character-sheet-body .tab.characterTab .hpmp input,
+.npcSheet .character-sheet-body .tab.characterTab .hpmp input {
+  width: 30px;
+}
 .characterSheet .character-sheet-body .tab.characterTab .level,
 .npcSheet .character-sheet-body .tab.characterTab .level {
   display: flex;
@@ -1540,6 +1582,10 @@
 }
 .characterSheet .character-sheet-body .tab.characterTab .level .xp input[maxlength="5"],
 .npcSheet .character-sheet-body .tab.characterTab .level .xp input[maxlength="5"] {
+  width: 50px;
+}
+.characterSheet .character-sheet-body .tab.characterTab .level .xp input,
+.npcSheet .character-sheet-body .tab.characterTab .level .xp input {
   width: 50px;
 }
 .characterSheet .character-sheet-body .tab.characterTab .bonusStats,
@@ -1884,6 +1930,10 @@
   position: relative;
   right: 10px;
 }
+.characterSheet .character-sheet-body .tab.inventoryTab .itemRow .wallet .box input,
+.npcSheet .character-sheet-body .tab.inventoryTab .itemRow .wallet .box input {
+  width: 30px;
+}
 .characterSheet .character-sheet-body .tab.inventoryTab .itemRow .wallet .box div,
 .npcSheet .character-sheet-body .tab.inventoryTab .itemRow .wallet .box div {
   display: flex;
@@ -2000,6 +2050,10 @@
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="5"],
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight .box div input[maxlength="5"] {
   width: 50px;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight .box input,
+.npcSheet .character-sheet-body .tab.inventoryTab .generalRow .left .weight .box input {
+  width: 30px;
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .left .bag,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .left .bag {
@@ -2153,6 +2207,10 @@
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1),
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest .box div input:first-of-type:nth-last-of-type(1) {
   text-align: end;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest .box input,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .rest .box input {
+  width: 30px;
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .tent,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .left .tent {
@@ -2408,6 +2466,10 @@
 .characterSheet .character-sheet-body .tab.aptitudesTab .attributes-header label,
 .npcSheet .character-sheet-body .tab.aptitudesTab .attributes-header label {
   height: 100%;
+}
+.characterSheet .character-sheet-body .tab.aptitudesTab .attributes-block input,
+.npcSheet .character-sheet-body .tab.aptitudesTab .attributes-block input {
+  width: 30px;
 }
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow {

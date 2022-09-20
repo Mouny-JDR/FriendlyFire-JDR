@@ -25,13 +25,21 @@
     }
 }
 
-.attributes-header {
-    & {
-        .box();
-        margin:10px;
+.attributes {
+    &-header {
+        & {
+            .box();
+            margin:10px;
+        }
+
+        label {
+            height:100%;
+        }
     }
 
-    label {
-        height:100%;
+    &-block {
+        input {
+            width: 30px;
+        }
     }
 }
