@@ -954,6 +954,22 @@
   height: 100%;
   flex-basis: 200px;
 }
+.characterSheet .npc-sheet-body .attributes-row > .box .type input,
+.npcSheet .npc-sheet-body .attributes-row > .box .type input {
+  width: 50px;
+}
+.characterSheet .npc-sheet-body .attributes-row > .box .taille input,
+.npcSheet .npc-sheet-body .attributes-row > .box .taille input {
+  width: 25px;
+}
+.characterSheet .npc-sheet-body .attributes-row > .box .sexe input,
+.npcSheet .npc-sheet-body .attributes-row > .box .sexe input {
+  width: 20px;
+}
+.characterSheet .npc-sheet-body .attributes-row > .box .weight input,
+.npcSheet .npc-sheet-body .attributes-row > .box .weight input {
+  width: 30px;
+}
 .characterSheet .npc-sheet-body .attributes-row .attributes-block,
 .npcSheet .npc-sheet-body .attributes-row .attributes-block {
   flex-basis: 140px;
@@ -1977,6 +1993,14 @@
 .npcSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container {
   flex-basis: 120px;
 }
+.characterSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container .price input,
+.npcSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container .price input {
+  width: 30px;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container .weight input,
+.npcSheet .character-sheet-body .tab.inventoryTab .itemRow .right .container .weight input {
+  width: 25px;
+}
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow {
   width: 100%;
@@ -2121,6 +2145,14 @@
 .characterSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container,
 .npcSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container {
   flex-basis: 120px;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container .price input,
+.npcSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container .price input {
+  width: 30px;
+}
+.characterSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container .weight input,
+.npcSheet .character-sheet-body .tab.inventoryTab .generalRow .right .container .weight input {
+  width: 25px;
 }
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow {
@@ -2338,6 +2370,16 @@
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item input {
   height: 15px;
 }
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .price input,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .price input,
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .weight input,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .weight input,
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .numberOfHands input,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .numberOfHands input,
+.characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .range input,
+.npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .item .range input {
+  width: 50px;
+}
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow {
   display: flex;
@@ -2374,6 +2416,18 @@
 .characterSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton,
 .npcSheet .character-sheet-body .tab.inventoryTab .equipmentRow .right .container .addEquipmentRow .addWeaponButton {
   background-image: url('../ui/actors/sword.webp');
+}
+.characterSheet .character-sheet-body .tab.capacitiesTab .activeCapacitiescontainer .level input,
+.npcSheet .character-sheet-body .tab.capacitiesTab .activeCapacitiescontainer .level input {
+  width: 30px;
+}
+.characterSheet .character-sheet-body .tab.capacitiesTab .activeCapacitiescontainer .cost input,
+.npcSheet .character-sheet-body .tab.capacitiesTab .activeCapacitiescontainer .cost input {
+  width: 50px;
+}
+.characterSheet .character-sheet-body .tab.capacitiesTab .passiveCapacitiesContainer .level input,
+.npcSheet .character-sheet-body .tab.capacitiesTab .passiveCapacitiesContainer .level input {
+  width: 30px;
 }
 .characterSheet .character-sheet-body .tab.aptitudesTab .specializationContainer,
 .npcSheet .character-sheet-body .tab.aptitudesTab .specializationContainer {
@@ -2598,6 +2652,20 @@
 .characterSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea,
 .npcSheet .character-sheet-body .tab.equipmentTab .armorRow #equippedArmor textarea {
   height: 50px;
+}
+.characterSheet .character-sheet-body .tab.equipmentTab .item .price input,
+.npcSheet .character-sheet-body .tab.equipmentTab .item .price input,
+.characterSheet .character-sheet-body .tab.equipmentTab .item .weight input,
+.npcSheet .character-sheet-body .tab.equipmentTab .item .weight input,
+.characterSheet .character-sheet-body .tab.equipmentTab .item .range input,
+.npcSheet .character-sheet-body .tab.equipmentTab .item .range input,
+.characterSheet .character-sheet-body .tab.equipmentTab .item .test input,
+.npcSheet .character-sheet-body .tab.equipmentTab .item .test input {
+  width: 50px;
+}
+.characterSheet .character-sheet-body .tab.equipmentTab .item .numberOfHands input,
+.npcSheet .character-sheet-body .tab.equipmentTab .item .numberOfHands input {
+  width: 25px;
 }
 .dhs-dialog .dialog-content,
 .dhs-dialog .dialog-buttons {

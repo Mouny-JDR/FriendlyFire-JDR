@@ -5,13 +5,13 @@
                 <label>{{ armorLabel "dhs-jdr.ui.sheets.inventory.equipment.armor." armorType }} :</label>
                 <input type="text" placeholder="----------" name="data.equipment.armors.{{armorType}}.name" data-dtype="String" value="{{armor.name}}">
             </div>                      
-            <div>
+            <div class="price">
                 <label>{{ localize "dhs-jdr.ui.sheets.equipped.armor.price" }} :</label>
-                <input type="text" maxlength="5" placeholder="-----" name="data.equipment.armors.{{armorType}}.price" data-dtype="String" value="{{armor.price}}">
+                <input type="text" placeholder="-----" name="data.equipment.armors.{{armorType}}.price" data-dtype="String" value="{{armor.price}}">
             </div>
-            <div>
+            <div class="weight">
                 <label>{{ localize "dhs-jdr.ui.sheets.equipped.armor.weight" }} :</label>
-                <input type="text" maxlength="3" placeholder="--" name="data.equipment.armors.{{armorType}}.weight" data-dtype="String" value="{{armor.weight}}">
+                <input type="text" placeholder="--" name="data.equipment.armors.{{armorType}}.weight" data-dtype="String" value="{{armor.weight}}">
             </div>
         </div>
 

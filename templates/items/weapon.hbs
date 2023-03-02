@@ -6,13 +6,13 @@
         </div>       
 
         <div class="multiFields-start">
-            <div>
+            <div class="price">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.price" }} :</label>
-                <input type="number" maxlength="5" placeholder="-----" name="data.inventory.weapons.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
+                <input type="number" placeholder="-----" name="data.inventory.weapons.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
             </div>
-            <div>
+            <div class="weight">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weight" }} :</label>
-                <input type="number" maxlength="5" placeholder="-----" name="data.inventory.weapons.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
+                <input type="number" placeholder="-----" name="data.inventory.weapons.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
             </div>
 
             <div>
@@ -22,13 +22,13 @@
         </div>
 
         <div class="multiFields-start">
-            <div>
+            <div class="numberOfHands">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.numberOfHands" }} :</label>
-                <input type="number" maxlength="5" placeholder="-----" name="data.inventory.weapons.{{id}}.numberOfHands" data-dtype="String" value="{{numberOfHands}}">
+                <input type="number" placeholder="-----" name="data.inventory.weapons.{{id}}.numberOfHands" data-dtype="String" value="{{numberOfHands}}">
             </div>
-            <div>
+            <div class="range">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weapon.range" }} :</label>
-                <input type="text" maxlength="5" placeholder="-----" name="data.inventory.weapons.{{id}}.range" data-dtype="String" value="{{range}}">
+                <input type="text" placeholder="-----" name="data.inventory.weapons.{{id}}.range" data-dtype="String" value="{{range}}">
             </div>
 
             <div>

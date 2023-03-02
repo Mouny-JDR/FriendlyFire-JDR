@@ -6,13 +6,13 @@
         </div>       
 
         <div class="multiFields-start">                        
-            <div>
+            <div class="price">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.price" }} :</label>
-                <input type="number" maxlength="5" placeholder="-----" name="data.inventory.armors.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
+                <input type="number" placeholder="-----" name="data.inventory.armors.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
             </div>
-            <div>
+            <div class="weight">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.equipment.weight" }} :</label>
-                <input type="number" maxlength="2" placeholder="--" name="data.inventory.armors.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
+                <input type="number" placeholder="--" name="data.inventory.armors.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
             </div>
         </div>
 

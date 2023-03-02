@@ -54,26 +54,26 @@
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.race" }} :</label>
                             <input type="text" placeholder="----------" name="data.race" data-dtype="String" value="{{data.data.race}}">
                         </div>                      
-                        <div>
+                        <div class="type">
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.type" }} :</label>
-                            <input type="text" maxlength="5" placeholder="-----" name="data.type" data-dtype="String" value="{{data.data.type}}">
+                            <input type="text" placeholder="-----" name="data.type" data-dtype="String" value="{{data.data.type}}">
                         </div>
                     </div>
 
                     <div class="multiFields-spaced">
-                        <div>
+                        <div class="taille">
                             <label for="taillem">{{ localize "dhs-jdr.ui.sheets.npc.size" }} :</label>
-                            <input id="taillem" type="number" maxlength="2" placeholder="--" name="data.size.units" data-dtype="Number" value="{{formatNumber data.data.size.units}}">
+                            <input id="taillem" type="number" placeholder="--" name="data.size.units" data-dtype="Number" value="{{formatNumber data.data.size.units}}">
                             <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.sizeUnit" }}</label>
-                            <input id="taillecm" type="number" maxlength="2" placeholder="--" name="data.size.decimals" data-dtype="Number" value="{{formatNumber data.data.size.decimals}}">
+                            <input id="taillecm" type="number" placeholder="--" name="data.size.decimals" data-dtype="Number" value="{{formatNumber data.data.size.decimals}}">
                         </div>
-                        <div>
+                        <div class="sexe">
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.sexe" }} :</label>
-                            <input type="text" maxlength="1" placeholder="-" name="data.sexe" data-dtype="String" value="{{data.data.sexe}}">
+                            <input type="text" placeholder="-" name="data.sexe" data-dtype="String" value="{{data.data.sexe}}">
                         </div>
-                        <div>
+                        <div class="weight">
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.weight" }} :</label>
-                            <input type="number" maxlength="3" placeholder="---" name="data.weight" data-dtype="Number" value="{{formatNumber data.data.weight}}">
+                            <input type="number" placeholder="---" name="data.weight" data-dtype="Number" value="{{formatNumber data.data.weight}}">
                             <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.weightUnit" }}</label>
                         </div>                            
                     </div>
