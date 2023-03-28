@@ -1,6 +1,6 @@
 <div class="tab-title">{{ localize "dhs-jdr.ui.sheets.tabs.aptitudes" }}</div>
 <div class="specializationContainer" data-category="aptitudes">
-    {{#each data.data.aptitudes.specializations as |aptitude id|}}
+    {{#each actor.system.aptitudes.specializations as |aptitude id|}}
         {{> "systems/dhs-jdr/templates/aptitudes/specialization.hbs" aptitude=aptitude id=id}}
     {{/each}}       
 
@@ -8,7 +8,7 @@
 </div>
 
 <div class="racialAptitudesContainer" data-category="aptitudes">
-    {{#each data.data.aptitudes.racialCapacities as |aptitude id|}}
+    {{#each actor.system.aptitudes.racialCapacities as |aptitude id|}}
         {{> "systems/dhs-jdr/templates/aptitudes/racialCapacity.hbs" aptitude=aptitude id=id}}
     {{/each}}   
 
@@ -22,32 +22,32 @@
 <div class="attributes-block">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.strength" }}</label>
-        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber data.data.attributes.strength}}" readonly>
+        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber actor.system.attributes.strength}}" readonly>
     </div>
 
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dexterity" }}</label>
-        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber data.data.attributes.dexterity}}" readonly>
+        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber actor.system.attributes.dexterity}}" readonly>
     </div>
 
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.arcana" }}</label>
-        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber data.data.attributes.arcana}}" readonly>
+        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber actor.system.attributes.arcana}}" readonly>
     </div>
 
 
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.constitution" }}</label>
-        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber data.data.attributes.constitution}}" readonly>
+        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber actor.system.attributes.constitution}}" readonly>
     </div>
 
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.charisma" }}</label>
-        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber data.data.attributes.charisma}}" readonly>
+        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber actor.system.attributes.charisma}}" readonly>
     </div>
 
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.erudition" }}</label>
-        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber data.data.attributes.erudition}}" readonly>
+        <input type="number" placeholder="---" data-dtype="Number" value="{{formatNumber actor.system.attributes.erudition}}" readonly>
     </div>           
 </div>

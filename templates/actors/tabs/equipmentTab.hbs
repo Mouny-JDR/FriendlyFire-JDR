@@ -12,7 +12,7 @@
         <img class="boots">                
     </div>
     <div id="equippedArmor" class="armorContainer">
-        {{#with data.data.equipment.armors}}
+        {{#with actor.system.equipment.armors}}
             {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=helmet armorType="helmet" id=id}}
             {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=torso armorType="torso" id=id}}
             {{> "systems/dhs-jdr/templates/equipment/armor.hbs" armor=gloves armorType="gloves" id=id}}

@@ -6,42 +6,42 @@
             <div class="hpMp">
                 <div class="hp">
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.hp" }} :</label>
-                    <input type="number" placeholder="---" name="data.hp.current" data-dtype="Number" value="{{formatNumber data.data.hp.current}}">
+                    <input type="number" placeholder="---" name="system.hp.current" data-dtype="Number" value="{{formatNumber actor.system.hp.current}}">
                     <label>/</label>
-                    <input type="number" placeholder="---" name="data.hp.max" data-dtype="Number" value="{{formatNumber data.data.hp.max}}">
+                    <input type="number" placeholder="---" name="system.hp.max" data-dtype="Number" value="{{formatNumber actor.system.hp.max}}">
                 </div>
 
                 <div class="mp">
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.mp" }} :</label>
-                    <input type="number" placeholder="---" name="data.mp.current" data-dtype="Number" value="{{formatNumber data.data.mp.current}}">
+                    <input type="number" placeholder="---" name="system.mp.current" data-dtype="Number" value="{{formatNumber actor.system.mp.current}}">
                     <label>/</label>
-                    <input type="number" placeholder="---" name="data.mp.max" data-dtype="Number" value="{{formatNumber data.data.mp.max}}">
+                    <input type="number" placeholder="---" name="system.mp.max" data-dtype="Number" value="{{formatNumber actor.system.mp.max}}">
                 </div>             
             </div>
 
             <div class="dodge">
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.dodge" }} :</label>
-                    <input type="number" placeholder="---" name="data.attributes.dodge" data-dtype="Number" value="{{formatNumber data.data.attributes.dodge}}">
+                    <input type="number" placeholder="---" name="system.attributes.dodge" data-dtype="Number" value="{{formatNumber actor.system.attributes.dodge}}">
                 </div>
 
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.parry" }} :</label>
-                    <input type="number" placeholder="---" name="data.attributes.parry" data-dtype="Number" value="{{formatNumber data.data.attributes.parry}}">
+                    <input type="number" placeholder="---" name="system.attributes.parry" data-dtype="Number" value="{{formatNumber actor.system.attributes.parry}}">
                 </div>                
             </div>
 
             <div class="distance">
                 <label>{{ localize "dhs-jdr.ui.sheets.npc.speed" }} :</label>
                 <div class="field">
-                    <input type="number" placeholder="---" name="data.speed.distance" data-dtype="Number" value="{{formatNumber data.data.speed.distance}}">
+                    <input type="number" placeholder="---" name="system.speed.distance" data-dtype="Number" value="{{formatNumber actor.system.speed.distance}}">
                     <label>{{ localize "dhs-jdr.ui.sheets.npc.speedUnit" }}</label>
                 </div>
             </div>
 
             <div class="xp" style="height: 20px;">
                 <label>{{ localize "dhs-jdr.ui.sheets.npc.xp" }} :</label>
-                <input type="number" placeholder="-----" name="data.xp" data-dtype="Number" value="{{formatNumber data.data.xp}}">
+                <input type="number" placeholder="-----" name="system.xp" data-dtype="Number" value="{{formatNumber actor.system.xp}}">
             </div>
         </div>
         
@@ -52,28 +52,28 @@
                     <div class="multiFields-spaced">
                         <div>
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.race" }} :</label>
-                            <input type="text" placeholder="----------" name="data.race" data-dtype="String" value="{{data.data.race}}">
+                            <input type="text" placeholder="----------" name="system.race" data-dtype="String" value="{{actor.system.race}}">
                         </div>                      
                         <div class="type">
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.type" }} :</label>
-                            <input type="text" placeholder="-----" name="data.type" data-dtype="String" value="{{data.data.type}}">
+                            <input type="text" placeholder="-----" name="system.type" data-dtype="String" value="{{actor.system.type}}">
                         </div>
                     </div>
 
                     <div class="multiFields-spaced">
                         <div class="taille">
                             <label for="taillem">{{ localize "dhs-jdr.ui.sheets.npc.size" }} :</label>
-                            <input id="taillem" type="number" placeholder="--" name="data.size.units" data-dtype="Number" value="{{formatNumber data.data.size.units}}">
+                            <input id="taillem" type="number" placeholder="--" name="system.size.units" data-dtype="Number" value="{{formatNumber actor.system.size.units}}">
                             <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.sizeUnit" }}</label>
-                            <input id="taillecm" type="number" placeholder="--" name="data.size.decimals" data-dtype="Number" value="{{formatNumber data.data.size.decimals}}">
+                            <input id="taillecm" type="number" placeholder="--" name="system.size.decimals" data-dtype="Number" value="{{formatNumber actor.system.size.decimals}}">
                         </div>
                         <div class="sexe">
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.sexe" }} :</label>
-                            <input type="text" placeholder="-" name="data.sexe" data-dtype="String" value="{{data.data.sexe}}">
+                            <input type="text" placeholder="-" name="system.sexe" data-dtype="String" value="{{actor.system.sexe}}">
                         </div>
                         <div class="weight">
                             <label>{{ localize "dhs-jdr.ui.sheets.npc.weight" }} :</label>
-                            <input type="number" placeholder="---" name="data.weight" data-dtype="Number" value="{{formatNumber data.data.weight}}">
+                            <input type="number" placeholder="---" name="system.weight" data-dtype="Number" value="{{formatNumber actor.system.weight}}">
                             <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.npc.weightUnit" }}</label>
                         </div>                            
                     </div>
@@ -85,40 +85,40 @@
 
                     <div class="fieldArea">
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.language" }} :</label>                
-                        <textarea rows="2" placeholder="--------------------------------------------------" name="data.language" data-dtype="String">{{{formatTextarea data.data.language}}}</textarea>
+                        <textarea rows="2" placeholder="--------------------------------------------------" name="system.language" data-dtype="String">{{{formatTextarea actor.system.language}}}</textarea>
                     </div>        
                 </div>
 
                 <div class="attributes-block">
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.strength" }}</label>
-                        <input type="number" placeholder="---" name="data.attributes.strength" data-dtype="Number" value="{{formatNumber data.data.attributes.strength}}">
+                        <input type="number" placeholder="---" name="system.attributes.strength" data-dtype="Number" value="{{formatNumber actor.system.attributes.strength}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.dexterity" }}</label>
-                        <input type="number" placeholder="---" name="data.attributes.dexterity" data-dtype="Number" value="{{formatNumber data.data.attributes.dexterity}}">
+                        <input type="number" placeholder="---" name="system.attributes.dexterity" data-dtype="Number" value="{{formatNumber actor.system.attributes.dexterity}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.arcana" }}</label>
-                        <input type="number" placeholder="---" name="data.attributes.arcana" data-dtype="Number" value="{{formatNumber data.data.attributes.arcana}}">
+                        <input type="number" placeholder="---" name="system.attributes.arcana" data-dtype="Number" value="{{formatNumber actor.system.attributes.arcana}}">
                     </div>
 
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.constitution" }}</label>
-                        <input type="number" placeholder="---" name="data.attributes.constitution" data-dtype="Number" value="{{formatNumber data.data.attributes.constitution}}">
+                        <input type="number" placeholder="---" name="system.attributes.constitution" data-dtype="Number" value="{{formatNumber actor.system.attributes.constitution}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.charisma" }}</label>
-                        <input type="number" placeholder="---" name="data.attributes.charisma" data-dtype="Number" value="{{formatNumber data.data.attributes.charisma}}">
+                        <input type="number" placeholder="---" name="system.attributes.charisma" data-dtype="Number" value="{{formatNumber actor.system.attributes.charisma}}">
                     </div>
 
                     <div>
                         <label>{{ localize "dhs-jdr.ui.sheets.npc.attributes.erudition" }}</label>
-                        <input type="number" placeholder="---" name="data.attributes.erudition" data-dtype="Number" value="{{formatNumber data.data.attributes.erudition}}">
+                        <input type="number" placeholder="---" name="system.attributes.erudition" data-dtype="Number" value="{{formatNumber actor.system.attributes.erudition}}">
                     </div>           
                 </div>        
             </div>
