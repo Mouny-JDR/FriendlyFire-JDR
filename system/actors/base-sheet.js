@@ -12,9 +12,9 @@ export class dhsBaseSheet extends ActorSheet{
             let type = $(ev.currentTarget)?.data("type");      
 
             if (category && type){
-                let items = Array.isArray(this.actor.data.data[category][type]) ? duplicate(this.actor.data.data[category][type]) : [];
+                let items = Array.isArray(this.actor.system[category][type]) ? duplicate(this.actor.system[category][type]) : [];
                 items.push({});
-                this.actor.update({[`data.${category}.${type}`]: items}); 
+                this.actor.update({[`system.${category}.${type}`]: items}); 
             }                  
         });
 
@@ -26,7 +26,7 @@ export class dhsBaseSheet extends ActorSheet{
 
             if (!isNaN(+index) && category && type) {
                 
-                let items = duplicate(this.actor.data.data[category][type]);
+                let items = duplicate(this.actor.system[category][type]);
                 let item = items.splice(index, 1)[0];                    
 
                 new Dialog({
@@ -37,7 +37,7 @@ export class dhsBaseSheet extends ActorSheet{
                             icon: '<i class="fas fa-trash-alt"></i>',
                             label: game.i18n.localize("dhs-jdr.ui.dialog.deleteConfirmation.submit"),
                             callback: (html) => {
-                                this.actor.update({[`data.${category}.${type}`]: items});                                
+                                this.actor.update({[`system.${category}.${type}`]: items});                                
                             }
                         },		
                         cancel: {
@@ -54,19 +54,20 @@ export class dhsBaseSheet extends ActorSheet{
 
     _getSubmitData(updateData={}) {
         const fd = new FormDataExtended(this.form, {editors: this.editors});
-        let data = foundry.utils.expandObject(fd.toObject());
+        let data = foundry.utils.expandObject(fd.object);
+        let system = data.system;
         if ( updateData ) foundry.utils.mergeObject(data, updateData);
 
-        if (data.data.inventory?.consumables) data.data.inventory.consumables = Array.from(Object.values(data.data.inventory.consumables || {}));
-        if (data.data.inventory?.items) data.data.inventory.items = Array.from(Object.values(data.data.inventory.items || {}));
-        if (data.data.inventory?.weapons) data.data.inventory.weapons = Array.from(Object.values(data.data.inventory.weapons || {}));
-        if (data.data.inventory?.armors) data.data.inventory.armors = Array.from(Object.values(data.data.inventory.armors || {}));
+        if (system.inventory?.consumables) system.inventory.consumables = Array.from(Object.values(system.inventory.consumables || {}));
+        if (system.inventory?.items) system.inventory.items = Array.from(Object.values(system.inventory.items || {}));
+        if (system.inventory?.weapons) system.inventory.weapons = Array.from(Object.values(system.inventory.weapons || {}));
+        if (system.inventory?.armors) system.inventory.armors = Array.from(Object.values(system.inventory.armors || {}));
         
-        if (data.data.capacities?.activeCapacities) data.data.capacities.activeCapacities = Array.from(Object.values(data.data.capacities.activeCapacities || {}));
-        if (data.data.capacities?.passiveCapacities) data.data.capacities.passiveCapacities = Array.from(Object.values(data.data.capacities.passiveCapacities || {}));
+        if (system.capacities?.activeCapacities) system.capacities.activeCapacities = Array.from(Object.values(system.capacities.activeCapacities || {}));
+        if (system.capacities?.passiveCapacities) system.capacities.passiveCapacities = Array.from(Object.values(system.capacities.passiveCapacities || {}));
 
-        if (data.data.aptitudes?.specializations) data.data.aptitudes.specializations = Array.from(Object.values(data.data.aptitudes.specializations || {}));
-        if (data.data.aptitudes?.racialCapacities) data.data.aptitudes.racialCapacities = Array.from(Object.values(data.data.aptitudes.racialCapacities || {}));
+        if (system.aptitudes?.specializations) system.aptitudes.specializations = Array.from(Object.values(system.aptitudes.specializations || {}));
+        if (system.aptitudes?.racialCapacities) system.aptitudes.racialCapacities = Array.from(Object.values(system.aptitudes.racialCapacities || {}));
 
         return data;
     }    
