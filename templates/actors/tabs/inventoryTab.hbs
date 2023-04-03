@@ -5,17 +5,17 @@
         <div class="box">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.wallet.PO" }}</label>
-                <input type="number" placeholder="---" name="data.wallet.po" data-dtype="Number" value="{{formatNumber data.data.wallet.po}}">
+                <input type="number" placeholder="---" name="system.wallet.po" data-dtype="Number" value="{{formatNumber actor.system.wallet.po}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.wallet.PA" }}</label>
-                <input type="number" placeholder="---" name="data.wallet.pa" data-dtype="Number" value="{{formatNumber data.data.wallet.pa}}">
+                <input type="number" placeholder="---" name="system.wallet.pa" data-dtype="Number" value="{{formatNumber actor.system.wallet.pa}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.wallet.PC" }}</label>
-                <input type="number" placeholder="---" name="data.wallet.pc" data-dtype="Number" value="{{formatNumber data.data.wallet.pc}}">
+                <input type="number" placeholder="---" name="system.wallet.pc" data-dtype="Number" value="{{formatNumber actor.system.wallet.pc}}">
             </div>            
         </div>
     </div>
@@ -28,7 +28,7 @@
 
         <div class="container" data-category="inventory">
 
-            {{#each data.data.inventory.consumables as |item id|}}
+            {{#each actor.system.inventory.consumables as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/consumable.hbs" item=item id=id}}
             {{/each}}
 
@@ -48,9 +48,9 @@
                 </div>
 
                 <div>
-                    <input type="number" placeholder="---" name="data.bag.weight.current" data-dtype="Number" value="{{formatNumber data.data.bag.weight.current}}">
+                    <input type="number" placeholder="---" name="system.bag.weight.current" data-dtype="Number" value="{{formatNumber actor.system.bag.weight.current}}">
                     <label>/</label>
-                    <input type="number" placeholder="---" name="data.bag.weight.max" data-dtype="Number" value="{{formatNumber data.data.bag.weight.max}}">
+                    <input type="number" placeholder="---" name="system.bag.weight.max" data-dtype="Number" value="{{formatNumber actor.system.bag.weight.max}}">
                 </div>
 
                 <div>
@@ -62,17 +62,17 @@
         <div class="bag">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.bag.description" }} :</label>
-                <input type="text" placeholder="--------------------" name="data.bag.name" data-dtype="String" value="{{data.data.bag.name}}">
+                <input type="text" placeholder="--------------------" name="system.bag.name" data-dtype="String" value="{{actor.system.bag.name}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.bag.price" }} :</label>
-                <input type="number" placeholder="----------" name="data.bag.price" data-dtype="Number" value="{{formatNumber data.data.bag.price}}">
+                <input type="number" placeholder="----------" name="system.bag.price" data-dtype="Number" value="{{formatNumber actor.system.bag.price}}">
             </div>
 
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.bag.size" }} :</label>
-                <input type="text" placeholder="--------------------" name="data.bag.capacity" data-dtype="String" value="{{data.data.bag.capacity}}">
+                <input type="text" placeholder="--------------------" name="system.bag.capacity" data-dtype="String" value="{{actor.system.bag.capacity}}">
             </div>                
         </div>            
     </div>
@@ -85,7 +85,7 @@
 
         <div class="container" data-category="inventory">            
 
-            {{#each data.data.inventory.items as |item id|}}
+            {{#each actor.system.inventory.items as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/item.hbs" item=item id=id}}
             {{/each}}           
 
@@ -104,13 +104,13 @@
 
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.inventory.rest.hp" }}</label>
-                    <input type="number" placeholder="---" name="data.rest.hp" data-dtype="Number" value="{{formatNumber data.data.rest.hp}}">
+                    <input type="number" placeholder="---" name="system.rest.hp" data-dtype="Number" value="{{formatNumber actor.system.rest.hp}}">
                     <label>/ {{ localize "dhs-jdr.ui.sheets.inventory.rest.hpDelay" }}</label>                    
                 </div>
 
                 <div>
                     <label>{{ localize "dhs-jdr.ui.sheets.inventory.rest.mp" }}</label>
-                    <input type="number" placeholder="---" name="data.rest.mp" data-dtype="Number" value="{{formatNumber data.data.rest.mp}}">
+                    <input type="number" placeholder="---" name="system.rest.mp" data-dtype="Number" value="{{formatNumber actor.system.rest.mp}}">
                     <label>/ {{ localize "dhs-jdr.ui.sheets.inventory.rest.mpDelay" }}</label>                    
                 </div>                  
             </div>
@@ -119,39 +119,39 @@
         <div class="tent">
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.name" }} :</label>
-                <input type="text" placeholder="----------" name="data.rest.tent.name" data-dtype="String" value="{{data.data.rest.tent.name}}">
+                <input type="text" placeholder="----------" name="system.rest.tent.name" data-dtype="String" value="{{actor.system.rest.tent.name}}">
             </div>
             <div class="multiFields-spaced">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.price" }} :</label>
-                <input type="number" placeholder="------" name="data.rest.tent.price" data-dtype="Number" value="{{formatNumber data.data.rest.tent.price}}">
+                <input type="number" placeholder="------" name="system.rest.tent.price" data-dtype="Number" value="{{formatNumber actor.system.rest.tent.price}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.weight" }} :</label>
-                <input type="number" placeholder="------" name="data.rest.tent.weight" data-dtype="Number" value="{{formatNumber data.data.rest.tent.weight}}">
+                <input type="number" placeholder="------" name="system.rest.tent.weight" data-dtype="Number" value="{{formatNumber actor.system.rest.tent.weight}}">
             </div>
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.rest" }} :</label>
-                <input type="text" placeholder="----------" name="data.rest.tent.rest" data-dtype="String" value="{{data.data.rest.tent.rest}}">
+                <input type="text" placeholder="----------" name="system.rest.tent.rest" data-dtype="String" value="{{actor.system.rest.tent.rest}}">
             </div>
             <div class="fieldArea">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.tent.bonus" }} :</label>
-                <textarea rows="2" placeholder="--------------------------------------------------" name="data.rest.tent.bonus" data-dtype="String">{{{formatTextarea data.data.rest.tent.bonus}}}</textarea>
+                <textarea rows="2" placeholder="--------------------------------------------------" name="system.rest.tent.bonus" data-dtype="String">{{{formatTextarea actor.system.rest.tent.bonus}}}</textarea>
             </div>
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.name" }} :</label>
-                <input type="text" placeholder="----------" name="data.rest.sleepingBag.name" data-dtype="String" value="{{data.data.rest.sleepingBag.name}}">
+                <input type="text" placeholder="----------" name="system.rest.sleepingBag.name" data-dtype="String" value="{{actor.system.rest.sleepingBag.name}}">
             </div>
             <div class="multiFields-spaced">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.price" }} :</label>
-                <input type="number" placeholder="------" name="data.rest.sleepingBag.price" data-dtype="Number" value="{{formatNumber data.data.rest.sleepingBag.price}}">
+                <input type="number" placeholder="------" name="system.rest.sleepingBag.price" data-dtype="Number" value="{{formatNumber actor.system.rest.sleepingBag.price}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.weight" }} :</label>
-                <input type="number" placeholder="------" name="data.rest.sleepingBag.weight" data-dtype="Number" value="{{formatNumber data.data.rest.sleepingBag.weight}}">                
+                <input type="number" placeholder="------" name="system.rest.sleepingBag.weight" data-dtype="Number" value="{{formatNumber actor.system.rest.sleepingBag.weight}}">                
             </div>            
             <div class="field">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.rest" }} :</label>
-                <input type="text" placeholder="----------" name="data.rest.sleepingBag.rest" data-dtype="String" value="{{data.data.rest.sleepingBag.rest}}">
+                <input type="text" placeholder="----------" name="system.rest.sleepingBag.rest" data-dtype="String" value="{{actor.system.rest.sleepingBag.rest}}">
             </div>                        
             <div class="fieldArea">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.sleeping.bag.bonus" }} :</label>
-                <textarea rows="2" placeholder="--------------------------------------------------" name="data.rest.sleepingBag.bonus" data-dtype="String">{{{formatTextarea data.data.rest.sleepingBag.bonus}}}</textarea>
+                <textarea rows="2" placeholder="--------------------------------------------------" name="system.rest.sleepingBag.bonus" data-dtype="String">{{{formatTextarea actor.system.rest.sleepingBag.bonus}}}</textarea>
             </div>
         </div>
     </div>
@@ -164,11 +164,11 @@
 
         <div class="container" data-category="inventory">
 
-            {{#each data.data.inventory.weapons as |item id|}}
+            {{#each actor.system.inventory.weapons as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/weapon.hbs" item=item id=id}}
             {{/each}} 
 
-            {{#each data.data.inventory.armors as |item id|}}
+            {{#each actor.system.inventory.armors as |item id|}}
                 {{> "systems/dhs-jdr/templates/items/armor.hbs" item=item id=id}}
             {{/each}}                   
 

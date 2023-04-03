@@ -3,22 +3,22 @@
         <div class="multiFields-spaced">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.name" }} :</label>                
-                <input type="text" placeholder="-------------------------" name="data.inventory.consumables.{{id}}.name" data-dtype="String" value="{{name}}">
+                <input type="text" placeholder="-------------------------" name="system.inventory.consumables.{{id}}.name" data-dtype="String" value="{{name}}">
             </div>
             <div class="price">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.price" }} :</label>
-                <input type="number" placeholder="---" name="data.inventory.consumables.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
+                <input type="number" placeholder="---" name="system.inventory.consumables.{{id}}.price" data-dtype="Number" value="{{formatNumber price}}">
             </div>
             <div class="weight">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weight" }} :</label>
-                <input type="text" placeholder="--" name="data.inventory.consumables.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
+                <input type="text" placeholder="--" name="system.inventory.consumables.{{id}}.weight" data-dtype="Number" value="{{formatNumber weight}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.weightUnit" }}</label>
             </div>
         </div>
 
         <div class="fieldArea">
             <label>{{ localize "dhs-jdr.ui.sheets.inventory.item.effects" }} :</label>
-            <textarea rows="2" placeholder="--------------------------------------------------" name="data.inventory.consumables.{{id}}.effects" data-dtype="String">{{{formatTextarea effects}}}</textarea>
+            <textarea rows="2" placeholder="--------------------------------------------------" name="system.inventory.consumables.{{id}}.effects" data-dtype="String">{{{formatTextarea effects}}}</textarea>
         </div>
     </div>
 

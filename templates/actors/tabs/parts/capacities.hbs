@@ -1,5 +1,5 @@
 <div class="activeCapacitiescontainer" data-category="capacities">
-    {{#each data.data.capacities.activeCapacities as |capacity id|}}
+    {{#each actor.system.capacities.activeCapacities as |capacity id|}}
         {{> "systems/dhs-jdr/templates/capacities/activeCapacity.hbs" capacity=capacity id=id}}
     {{/each}}          
 
@@ -7,7 +7,7 @@
 </div>
 
 <div class="passiveCapacitiesContainer" data-category="capacities">
-    {{#each data.data.capacities.passiveCapacities as |capacity id|}}
+    {{#each actor.system.capacities.passiveCapacities as |capacity id|}}
         {{> "systems/dhs-jdr/templates/capacities/passiveCapacity.hbs" capacity=capacity id=id}}
     {{/each}}     
 

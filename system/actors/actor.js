@@ -1,8 +1,8 @@
 export class dhsActor extends Actor {
     prepareDerivedData() {
-        let level = +this.data.data.level; 
+        let level = +this.system.level; 
         if (!isNaN(level)){
-            this.data.data.xp.max = (level * (level+1)/2)*100;
+            this.system.xp.max = (level * (level+1)/2)*100;
         }
     }
 }

@@ -4,28 +4,28 @@
         <div class="multiFields-spaced">
             <div class="age">
                 <label>{{ localize "dhs-jdr.ui.sheets.character.age" }} :</label>                
-                <input type="number" placeholder="---" name="data.age" data-dtype="Number" value="{{formatNumber data.data.age}}">
+                <input type="number" placeholder="---" name="system.age" data-dtype="Number" value="{{formatNumber actor.system.age}}">
             </div>
             <div class="taille">
                 <label for="taillem">{{ localize "dhs-jdr.ui.sheets.character.size" }} :</label>
-                <input id="taillem" type="number" placeholder="--" name="data.size.units" data-dtype="Number" value="{{formatNumber data.data.size.units}}">
+                <input id="taillem" type="number" placeholder="--" name="system.size.units" data-dtype="Number" value="{{formatNumber actor.system.size.units}}">
                 <label for="taillecm">{{ localize "dhs-jdr.ui.sheets.character.sizeUnit" }}</label>
-                <input id="taillecm" type="number" placeholder="--" name="data.size.decimals" data-dtype="Number" value="{{formatNumber data.data.size.decimals}}">
+                <input id="taillecm" type="number" placeholder="--" name="system.size.decimals" data-dtype="Number" value="{{formatNumber actor.system.size.decimals}}">
             </div>
             <div class="sexe">
                 <label>{{ localize "dhs-jdr.ui.sheets.character.sexe" }} :</label>
-                <input type="text" placeholder="-" name="data.sexe" data-dtype="String" value="{{data.data.sexe}}">
+                <input type="text" placeholder="-" name="system.sexe" data-dtype="String" value="{{actor.system.sexe}}">
             </div>
         </div>
 
         <div class="multiFields-spaced">
             <div>
                 <label>{{ localize "dhs-jdr.ui.sheets.character.race" }} :</label>                
-                <input type="text" placeholder="------------------" name="data.race" data-dtype="String" value="{{data.data.race}}">
+                <input type="text" placeholder="------------------" name="system.race" data-dtype="String" value="{{actor.system.race}}">
             </div>
             <div class="weight">
                 <label>{{ localize "dhs-jdr.ui.sheets.character.weight" }} :</label>
-                <input type="number" placeholder="---" name="data.weight" data-dtype="Number" value="{{formatNumber data.data.weight}}">
+                <input type="number" placeholder="---" name="system.weight" data-dtype="Number" value="{{formatNumber actor.system.weight}}">
                 <label class="field" for="taillecm">{{ localize "dhs-jdr.ui.sheets.character.weightUnit" }}</label>
             </div>
         </div>
@@ -37,7 +37,7 @@
 
         <div class="fieldArea">
             <label>{{ localize "dhs-jdr.ui.sheets.character.language" }} :</label>                
-            <textarea rows="2" placeholder="--------------------------------------------------" name="data.language" data-dtype="String">{{{formatTextarea data.data.language}}}</textarea>
+            <textarea rows="2" placeholder="--------------------------------------------------" name="system.language" data-dtype="String">{{{formatTextarea actor.system.language}}}</textarea>
         </div>        
 
     </div>
@@ -45,16 +45,16 @@
     <div class="right">
         <div class="box racial">
             <div>{{ localize "dhs-jdr.ui.sheets.character.racialCapacities.label" }}</div>
-            <textarea rows="4" placeholder="--------------------------------------------------" name="data.racialCapacity" data-dtype="String">{{{formatTextarea data.data.racialCapacity}}}</textarea>
+            <textarea rows="4" placeholder="--------------------------------------------------" name="system.racialCapacity" data-dtype="String">{{{formatTextarea actor.system.racialCapacity}}}</textarea>
         </div>
         <div class="speed">
             <div></div>
             <div class="box">                                              
-                <input type="text" placeholder="---" name="data.speed.distance" data-dtype="Number" value="{{formatNumber data.data.speed.distance}}">
+                <input type="text" placeholder="---" name="system.speed.distance" data-dtype="Number" value="{{formatNumber actor.system.speed.distance}}">
                 <label>{{ localize "dhs-jdr.ui.sheets.character.speedUnit" }}</label>  
             </div>
             <div>
-                <input type="text" placeholder="---" name="data.speed.modifier" data-dtype="Number" value="{{formatNumber data.data.speed.modifier}}">
+                <input type="text" placeholder="---" name="system.speed.modifier" data-dtype="Number" value="{{formatNumber actor.system.speed.modifier}}">
             </div>
         </div>
     </div>
@@ -63,12 +63,12 @@
 <div class="rowStats-1">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.strength" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.strength" data-dtype="Number" value="{{formatNumber data.data.attributes.strength}}">
+        <input type="number" placeholder="--" name="system.attributes.strength" data-dtype="Number" value="{{formatNumber actor.system.attributes.strength}}">
         <div class="roll" data-roll-stat="strength"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dexterity" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.dexterity" data-dtype="Number" value="{{formatNumber data.data.attributes.dexterity}}">
+        <input type="number" placeholder="--" name="system.attributes.dexterity" data-dtype="Number" value="{{formatNumber actor.system.attributes.dexterity}}">
         <div class="roll" data-roll-stat="dexterity"></div>
     </div>
 </div>
@@ -76,41 +76,41 @@
 <div class="rowStats-2">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.constitution" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.constitution" data-dtype="Number" value="{{formatNumber data.data.attributes.constitution}}">
+        <input type="number" placeholder="--" name="system.attributes.constitution" data-dtype="Number" value="{{formatNumber actor.system.attributes.constitution}}">
         <div class="roll" data-roll-stat="constitution"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.arcana" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.arcana" data-dtype="Number" value="{{formatNumber data.data.attributes.arcana}}">
+        <input type="number" placeholder="--" name="system.attributes.arcana" data-dtype="Number" value="{{formatNumber actor.system.attributes.arcana}}">
         <div class="roll" data-roll-stat="arcana"></div>
     </div>
 </div>
 
 <div class="hpmp">
     <div class="hp">
-        <input type="number" placeholder="---" name="data.hp.current" data-dtype="Number" value="{{formatNumber data.data.hp.current}}">
+        <input type="number" placeholder="---" name="system.hp.current" data-dtype="Number" value="{{formatNumber actor.system.hp.current}}">
         <label>/</label>
-        <input type="number" placeholder="---" name="data.hp.max" data-dtype="Number" value="{{formatNumber data.data.hp.max}}">
+        <input type="number" placeholder="---" name="system.hp.max" data-dtype="Number" value="{{formatNumber actor.system.hp.max}}">
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.hp" }}</label>
     </div>
     <img class="avatar" src="{{actor.img}}" data-edit="img"></img>
     <div class="mp">
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.mp" }}</label>
-        <input type="number" placeholder="---" name="data.mp.current" data-dtype="Number" value="{{formatNumber data.data.mp.current}}">
+        <input type="number" placeholder="---" name="system.mp.current" data-dtype="Number" value="{{formatNumber actor.system.mp.current}}">
         <label>/</label>
-        <input type="number" placeholder="---" name="data.mp.max" data-dtype="Number" value="{{formatNumber data.data.mp.max}}">
+        <input type="number" placeholder="---" name="system.mp.max" data-dtype="Number" value="{{formatNumber actor.system.mp.max}}">
     </div>
 </div>
 
 <div class="rowStats-3">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.dodge" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.dodge" data-dtype="Number" value="{{formatNumber data.data.attributes.dodge}}">
+        <input type="number" placeholder="--" name="system.attributes.dodge" data-dtype="Number" value="{{formatNumber actor.system.attributes.dodge}}">
         <div class="roll" data-roll-stat="dodge"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.parry" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.parry" data-dtype="Number" value="{{formatNumber data.data.attributes.parry}}">
+        <input type="number" placeholder="--" name="system.attributes.parry" data-dtype="Number" value="{{formatNumber actor.system.attributes.parry}}">
         <div class="roll" data-roll-stat="parry"></div>
     </div>
 </div>
@@ -118,23 +118,23 @@
 <div class="rowStats-4">
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.charisma" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.charisma" data-dtype="Number" value="{{formatNumber data.data.attributes.charisma}}">
+        <input type="number" placeholder="--" name="system.attributes.charisma" data-dtype="Number" value="{{formatNumber actor.system.attributes.charisma}}">
         <div class="roll" data-roll-stat="charisma"></div>
     </div>
     <div>
         <label>{{ localize "dhs-jdr.ui.sheets.character.attributes.erudition" }}</label>
-        <input type="number" placeholder="--" name="data.attributes.erudition" data-dtype="Number" value="{{formatNumber data.data.attributes.erudition}}">
+        <input type="number" placeholder="--" name="system.attributes.erudition" data-dtype="Number" value="{{formatNumber actor.system.attributes.erudition}}">
         <div class="roll" data-roll-stat="erudition"></div>
     </div>
 </div>
 
 <div class="level">
     <label>{{ localize "dhs-jdr.ui.sheets.character.level.label" }}</label>
-    <input type="number" placeholder="--" name="data.level" data-dtype="Number" value="{{formatNumber data.data.level}}">
+    <input type="number" placeholder="--" name="system.level" data-dtype="Number" value="{{formatNumber actor.system.level}}">
     <div class="xp">
-        <input type="number" placeholder="-----" name="data.xp.current" data-dtype="Number" value="{{formatNumber data.data.xp.current}}">
+        <input type="number" placeholder="-----" name="system.xp.current" data-dtype="Number" value="{{formatNumber actor.system.xp.current}}">
         <label>/</label>
-        <input type="number" placeholder="-----" data-dtype="Number" value="{{formatNumber data.data.xp.max}}" readonly>
+        <input type="number" placeholder="-----" data-dtype="Number" value="{{formatNumber actor.system.xp.max}}" readonly>
     </div>
 </div>
 
@@ -143,59 +143,59 @@
 
         <div class="piercing">
             <img></img>
-            <input type="number" placeholder="--" name="data.bonus.attack.piercing" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.piercing}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.piercing" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.piercing}}">
         </div>
 
         <div class="slash">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.slash" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.slash}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.slash" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.slash}}">
         </div>
 
         <div class="contondant">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.contondant" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.contondant}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.contondant" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.contondant}}">
         </div>
 
         <div></div>
 
         <div class="fire">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.fire" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.fire}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.fire" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.fire}}">
         </div>
 
         <div class="water">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.water" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.water}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.water" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.water}}">
         </div>
 
         <div class="nature">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.nature" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.nature}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.nature" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.nature}}">
         </div>
 
         <div class="air">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.air" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.air}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.air" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.air}}">
         </div>
 
         <div class="occult">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.occult" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.occult}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.occult" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.occult}}">
         </div>
 
         <div class="spirit">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.spirit" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.spirit}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.spirit" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.spirit}}">
         </div>
 
         <div class="light">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.light" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.light}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.light" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.light}}">
         </div>
 
         <div class="darkness">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.attack.darkness" data-dtype="Number" value="{{formatNumber data.data.bonus.attack.darkness}}">
+            <input type="number" placeholder="--" name="system.bonus.attack.darkness" data-dtype="Number" value="{{formatNumber actor.system.bonus.attack.darkness}}">
         </div>                                                                
     </div>
 
@@ -204,57 +204,57 @@
         
         <div class="piercing">
             <img></img>
-            <input type="number" placeholder="--" name="data.bonus.defense.piercing" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.piercing}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.piercing" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.piercing}}">
         </div>
 
         <div class="slash">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.slash" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.slash}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.slash" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.slash}}">
         </div>
 
         <div class="contondant">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.contondant" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.contondant}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.contondant" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.contondant}}">
         </div>
 
         <div class="fire">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.fire" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.fire}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.fire" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.fire}}">
         </div>
 
         <div class="water">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.water" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.water}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.water" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.water}}">
         </div>
 
         <div class="nature">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.nature" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.nature}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.nature" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.nature}}">
         </div>
 
         <div class="air">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.air" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.air}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.air" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.air}}">
         </div>
 
         <div class="occult">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.occult" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.occult}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.occult" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.occult}}">
         </div>
 
         <div class="spirit">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.spirit" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.spirit}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.spirit" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.spirit}}">
         </div>
 
         <div class="light">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.light" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.light}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.light" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.light}}">
         </div>
 
         <div class="darkness">
             <img/>
-            <input type="number" placeholder="--" name="data.bonus.defense.darkness" data-dtype="Number" value="{{formatNumber data.data.bonus.defense.darkness}}">
+            <input type="number" placeholder="--" name="system.bonus.defense.darkness" data-dtype="Number" value="{{formatNumber actor.system.bonus.defense.darkness}}">
         </div>  
     </div>
 </div>
