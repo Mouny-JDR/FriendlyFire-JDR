@@ -20,13 +20,6 @@
   "styles": [
     "./css/main.css"
   ],
-  "languages": [
-    {
-      "lang": "fr",
-      "name": "Français",
-      "path": "lang/fr.json"
-    }
-  ],
   "socket": true,
   "gridDistance": 1.5,
   "gridUnits": "m",
