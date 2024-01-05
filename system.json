@@ -4,9 +4,9 @@
   "description": "Système de jeu Homemade par Mouny",  
   "version": "2.0",
   "compatibility": {
-      "minimum": 10,
-      "verified": "10.291",
-      "maximum": 10
+      "minimum": 11,
+      "verified": "11.315",
+      "maximum": 11
   },  
   "templateVersion": 2,
   "authors": [
